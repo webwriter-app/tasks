@@ -3,25 +3,39 @@
 
 Add interactive tasks (multiple choice, order, free text, highlighting, or speech input). Make a quiz out of multiple tasks.
 
-In WebWriter 2, use the quiz’s question buttons to insert questions. The package includes one-question snippets for each built-in type with question titles and points hidden.
+## Snippets
+[Snippets](https://webwriter.app/docs/snippets/snippets/) are examples and templates using the package's widgets.
 
-In edit mode, **Add Feedback** inserts a block you can edit and format in the question. Choice and Order group it with **Add Option** in both layouts. The last question shares that row with **Add Question** on the right. Learners see the feedback block after a valid submission, including for open-ended and ungraded questions. **Show detailed feedback** controls answer-specific feedback and solution reveal.
+| Name | Import Path |
+| :--: | :---------: |
+| True Or False | `@webwriter/quiz/snippets/true-or-false.html` |
+| Single Choice | `@webwriter/quiz/snippets/single-choice.html` |
+| Multiple Choice | `@webwriter/quiz/snippets/multiple-choice.html` |
+| Order | `@webwriter/quiz/snippets/order.html` |
+| Text | `@webwriter/quiz/snippets/text.html` |
+| Mark | `@webwriter/quiz/snippets/mark.html` |
+| Speech | `@webwriter/quiz/snippets/speech.html` |
+| Gap | `@webwriter/quiz/snippets/gap.html` |
+| Pairing | `@webwriter/quiz/snippets/pairing.html` |
 
 
 
 ## `WebwriterQuiz` (`<webwriter-quiz>`)
-A quiz groups direct question elements into one exercise that is submitted,
-graded, and reset as a whole. Each question owns its prompt, point value, and
-type-specific content.
+A quiz groups multiple question elements into one exercise that is
+submitted, graded and reset as a whole.
 
-```html
-<webwriter-quiz>
-  <webwriter-true-false points="2">
-    <webwriter-quiz-hint slot="hint"><p>Think about the solar system.</p></webwriter-quiz-hint>
-    <p slot="prompt">Earth orbits the Sun.</p>
-  </webwriter-true-false>
-</webwriter-quiz>
-```
+The tasks must be assigned to the default slot.
+
+In WebWriter 2, use the quiz's question buttons to insert questions. The
+package includes one-question snippets for each built-in type with question
+titles and points hidden.
+
+In edit mode, "Add Feedback" inserts a block that can be edited and
+formatted in the question. Choice and Order group it with "Add Option" in
+both layouts. The last question shares that row with "Add Question" on the
+right. Learners see the feedback block after a valid submission, including
+for open-ended and ungraded questions. "Show detailed feedback" controls
+answer-specific feedback and solution reveal.
 
 ### Usage
 
@@ -47,13 +61,22 @@ npm install @webwriter/quiz
 ## Fields
 | Name (Attribute Name) | Type | Description | Default | Reflects |
 | :-------------------: | :--: | :---------: | :-----: | :------: |
+| `WebwriterQuiz.options` | `Record<string, Declared<OptionDeclaration>>` | - | `{ detailedFeedback: { type: "boolean", label: (widget: { msg: MsgFn }) => widget.msg("Show detailed feedback") }, confirmSubmit: { type: "boolean", label: (widget: { msg: MsgFn }) => widget.msg("Require confirmation before submitting") }, confirmReset: { type: "boolean", label: (widget: { msg: MsgFn }) => widget.msg("Require confirmation before resetting") }, hideQuestionTitle: { type: "boolean", label: (widget: { msg: MsgFn }) => widget.msg("Hide question titles") }, hidePoints: { type: "boolean", label: (widget: { msg: MsgFn }) => widget.msg("Hide points") }, }` | ✗ |
 | `detailedFeedback` (`detailed-feedback`) | `boolean` | Whether learners see per-answer feedback and the solution after submitting. | `false` | ✓ |
 | `confirmSubmit` (`confirm-submit`) | `boolean` | Whether learners have to confirm a dialog before submitting. | `false` | ✓ |
 | `confirmReset` (`confirm-reset`) | `boolean` | Whether learners have to confirm a dialog before resetting. | `false` | ✓ |
 | `hideQuestionTitle` (`hide-question-title`) | `boolean` | Whether the generated question titles are hidden. | `false` | ✓ |
 | `hidePoints` (`hide-points`) | `boolean` | Whether the points of each task and the total score are hidden. | `false` | ✓ |
+| `localize` | - | - | - | ✗ |
 
 *Fields including [properties](https://developer.mozilla.org/en-US/docs/Glossary/Property/JavaScript) and [attributes](https://developer.mozilla.org/en-US/docs/Glossary/Attribute) define the current state of the widget and offer customization options.*
+
+## Events
+| Name | Description |
+| :--: | :---------: |
+| optionschange | - |
+
+*[Events](https://developer.mozilla.org/en-US/docs/Web/Events) are dispatched by the widget after certain triggers.*
 
 ## Editing config
 | Name | Value |
@@ -62,25 +85,8 @@ npm install @webwriter/quiz
 
 *The [editing config](https://webwriter.app/docs/packages/configuring/#editingconfig) defines how explorable authoring tools such as [WebWriter](https://webwriter.app) treat the widget.*
 
-*No public methods, slots, events, custom CSS properties, or CSS parts.*
+*No public methods, slots, custom CSS properties, or CSS parts.*
 
-
-## Custom question types
-
-Extend `WebwriterTask` from `@webwriter/quiz/task`. Implement
-`renderAnswer()`, `checkValidity()`, and `reset()`. To grade the answer,
-also implement `checkAnswer(detailedFeedback)` and return a score from 0 to 1.
-Extend the base styles and scoped elements when declaring your own. Merge
-`super.options` and `super.actions` into any instance declarations so the
-drawer shows points and question commands.
-
-Register the custom element and call `registerQuizType` from
-`@webwriter/quiz/api` with a factory that creates an instance. Give the widget
-the `quiz-task` editing group and start its content expression with
-`webwriter-quiz-hint? p webwriter-quiz-feedback?`. The quiz supplies a `<p slot="prompt">` when the
-factory has not supplied one. A question hint is a direct
-`<webwriter-quiz-hint slot="hint">` child before the prompt. **Add Feedback**
-inserts a `<webwriter-quiz-feedback slot="feedback">` child after the answer content.
 
 ## `WebwriterQuizHint` (`<webwriter-quiz-hint>`)
 A generic hint element that can be used inside a variety of elements that
@@ -110,6 +116,20 @@ npm install @webwriter/quiz
 <webwriter-quiz-hint></webwriter-quiz-hint>
 ```
 
+## Fields
+| Name (Attribute Name) | Type | Description | Default | Reflects |
+| :-------------------: | :--: | :---------: | :-----: | :------: |
+| `localize` | - | - | - | ✗ |
+
+*Fields including [properties](https://developer.mozilla.org/en-US/docs/Glossary/Property/JavaScript) and [attributes](https://developer.mozilla.org/en-US/docs/Glossary/Attribute) define the current state of the widget and offer customization options.*
+
+## Events
+| Name | Description |
+| :--: | :---------: |
+| optionschange | - |
+
+*[Events](https://developer.mozilla.org/en-US/docs/Web/Events) are dispatched by the widget after certain triggers.*
+
 ## Editing config
 | Name | Value |
 | :--: | :---------: |
@@ -117,7 +137,55 @@ npm install @webwriter/quiz
 
 *The [editing config](https://webwriter.app/docs/packages/configuring/#editingconfig) defines how explorable authoring tools such as [WebWriter](https://webwriter.app) treat the widget.*
 
-*No public fields, methods, slots, events, custom CSS properties, or CSS parts.*
+*No public methods, slots, custom CSS properties, or CSS parts.*
+
+
+## `WebwriterQuizFeedback` (`<webwriter-quiz-feedback>`)
+Formatted feedback authored in the feedback slot of a question.
+
+### Usage
+
+Use with a CDN (e.g. [jsdelivr](https://jsdelivr.com)):
+```html
+<link href="https://cdn.jsdelivr.net/npm/@webwriter/quiz/widgets/webwriter-quiz-feedback.css" rel="stylesheet">
+<script type="module" src="https://cdn.jsdelivr.net/npm/@webwriter/quiz/widgets/webwriter-quiz-feedback.js"></script>
+<webwriter-quiz-feedback></webwriter-quiz-feedback>
+```
+
+Or use with a bundler (e.g. [Vite](https://vite.dev)):
+
+```
+npm install @webwriter/quiz
+```
+
+```html
+<link href="@webwriter/quiz/widgets/webwriter-quiz-feedback.css" rel="stylesheet">
+<script type="module" src="@webwriter/quiz/widgets/webwriter-quiz-feedback.js"></script>
+<webwriter-quiz-feedback></webwriter-quiz-feedback>
+```
+
+## Fields
+| Name (Attribute Name) | Type | Description | Default | Reflects |
+| :-------------------: | :--: | :---------: | :-----: | :------: |
+| `localize` | - | - | - | ✗ |
+
+*Fields including [properties](https://developer.mozilla.org/en-US/docs/Glossary/Property/JavaScript) and [attributes](https://developer.mozilla.org/en-US/docs/Glossary/Attribute) define the current state of the widget and offer customization options.*
+
+## Events
+| Name | Description |
+| :--: | :---------: |
+| optionschange | - |
+
+*[Events](https://developer.mozilla.org/en-US/docs/Web/Events) are dispatched by the widget after certain triggers.*
+
+## Editing config
+| Name | Value |
+| :--: | :---------: |
+
+
+*The [editing config](https://webwriter.app/docs/packages/configuring/#editingconfig) defines how explorable authoring tools such as [WebWriter](https://webwriter.app) treat the widget.*
+
+*No public methods, slots, custom CSS properties, or CSS parts.*
 
 
 ## `WebwriterTrueFalse` (`<webwriter-true-false>`)
@@ -148,6 +216,11 @@ npm install @webwriter/quiz
 | Name (Attribute Name) | Type | Description | Default | Reflects |
 | :-------------------: | :--: | :---------: | :-----: | :------: |
 | `solution` (`solution`) | `TrueFalse` | The value counting as correct.<br><br>- `true`: The statement is true.<br>- `false`: The statement is false. | `"true"` | ✓ |
+| `WebwriterTrueFalse.actions` | `object` | Only questions inside a quiz can be moved or deleted from the drawer. | `{ moveQuestionUp: { label: (widget: { msg: MsgFn }) => widget.msg("Move question up") }, moveQuestionDown: { label: (widget: { msg: MsgFn }) => widget.msg("Move question down") }, deleteQuestion: { label: (widget: { msg: MsgFn }) => widget.msg("Delete question"), intent: "danger" as const }, }` | ✗ |
+| `WebwriterTrueFalse.options` | `object` | - | `{ points: { type: Number, label: (widget: { msg: MsgFn }) => widget.msg("Points") }, }` | ✗ |
+| `points` (`points`) | `number` | The maximum score for this question. | `1` | ✓ |
+| `feedback` (`feedback`) | `string` | - | `""` | ✓ |
+| `localize` | - | - | - | ✗ |
 
 *Fields including [properties](https://developer.mozilla.org/en-US/docs/Glossary/Property/JavaScript) and [attributes](https://developer.mozilla.org/en-US/docs/Glossary/Attribute) define the current state of the widget and offer customization options.*
 
@@ -160,6 +233,13 @@ npm install @webwriter/quiz
 
 *[Methods](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Method_definitions) allow programmatic access to the widget.*
 
+## Events
+| Name | Description |
+| :--: | :---------: |
+| optionschange | - |
+
+*[Events](https://developer.mozilla.org/en-US/docs/Web/Events) are dispatched by the widget after certain triggers.*
+
 ## Editing config
 | Name | Value |
 | :--: | :---------: |
@@ -167,7 +247,7 @@ npm install @webwriter/quiz
 
 *The [editing config](https://webwriter.app/docs/packages/configuring/#editingconfig) defines how explorable authoring tools such as [WebWriter](https://webwriter.app) treat the widget.*
 
-*No public slots, events, custom CSS properties, or CSS parts.*
+*No public slots, custom CSS properties, or CSS parts.*
 
 
 ## `WebwriterChoice` (`<webwriter-choice>`)
@@ -200,10 +280,16 @@ npm install @webwriter/quiz
 ## Fields
 | Name (Attribute Name) | Type | Description | Default | Reflects |
 | :-------------------: | :--: | :---------: | :-----: | :------: |
+| `WebwriterChoice.shadowRootOptions` | `ShadowRootInit` | - | `{ ...WebwriterTask.shadowRootOptions, slotAssignment: "manual" }` | ✗ |
+| `WebwriterChoice.actions` | `object` | Only questions inside a quiz can be moved or deleted from the drawer. | `{ ...WebwriterTask.actions, addOption: { label: (widget: { msg: MsgFn }) => widget.msg("Add Option") }, }` | ✗ |
+| `WebwriterChoice.options` | `object` | - | `{ ...WebwriterTask.options, "mode": { type: "select", options: [ { value: "single", label: (widget: { msg: MsgFn }) => widget.msg("Single Choice") }, { value: "multiple", label: (widget: { msg: MsgFn }) => widget.msg("Multiple Choice") }, ], label: (widget: { msg: MsgFn }) => widget.msg("Mode"), }, "layout": { type: "select", options: [ { value: "list", label: (widget: { msg: MsgFn }) => widget.msg("List") }, { value: "tiles", label: (widget: { msg: MsgFn }) => widget.msg("Tiles") }, ], label: (widget: { msg: MsgFn }) => widget.msg("Layout"), }, randomizeOrder: { type: "boolean", label: (widget: { msg: MsgFn }) => widget.msg("Randomize Order") }, gradingMethod: { type: "select", options: [ { value: "pass-fail", label: (widget: { msg: MsgFn }) => widget.msg("Pass/Fail") }, { value: "partial", label: (widget: { msg: MsgFn }) => widget.msg("Partial Credit") }, ], label: (widget: { msg: MsgFn }) => widget.msg("Grading Method"), }, }` | ✗ |
 | `mode` (`mode`) | `ChoiceMode` | How many options learners may select.<br><br>- `single`: Exactly one option can be selected.<br>- `multiple`: Any number of options can be selected. | `"single"` | ✓ |
 | `layout` (`layout`) | `ChoiceLayout` | How the options are arranged.<br><br>- `list`: One option per row.<br>- `tiles`: A responsive grid of equally sized tiles. | `"list"` | ✓ |
 | `gradingMethod` (`grading-method`) | `ChoiceGradingMethod` | How the score of this answer is calculated.<br><br>- `pass-fail`: Full score only if exactly the correct options are selected.<br>- `partial`: Correct selections earn credit, wrong ones subtract from it. | `"pass-fail"` | ✓ |
 | `solution` (`solution`) | `ChoiceSolution` | The options counting as correct, as a map from option ID to whether it has to be selected.<br>It is obfuscated in the markup so that learners cannot read it directly. | `{}` | ✓ |
+| `points` (`points`) | `number` | The maximum score for this question. | `1` | ✓ |
+| `feedback` (`feedback`) | `string` | - | `""` | ✓ |
+| `localize` | - | - | - | ✗ |
 
 *Fields including [properties](https://developer.mozilla.org/en-US/docs/Glossary/Property/JavaScript) and [attributes](https://developer.mozilla.org/en-US/docs/Glossary/Attribute) define the current state of the widget and offer customization options.*
 
@@ -216,6 +302,13 @@ npm install @webwriter/quiz
 
 *[Methods](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Method_definitions) allow programmatic access to the widget.*
 
+## Events
+| Name | Description |
+| :--: | :---------: |
+| optionschange | - |
+
+*[Events](https://developer.mozilla.org/en-US/docs/Web/Events) are dispatched by the widget after certain triggers.*
+
 ## Editing config
 | Name | Value |
 | :--: | :---------: |
@@ -223,7 +316,7 @@ npm install @webwriter/quiz
 
 *The [editing config](https://webwriter.app/docs/packages/configuring/#editingconfig) defines how explorable authoring tools such as [WebWriter](https://webwriter.app) treat the widget.*
 
-*No public slots, events, custom CSS properties, or CSS parts.*
+*No public slots, custom CSS properties, or CSS parts.*
 
 
 ## `WebwriterChoiceItem` (`<webwriter-choice-item>`)
@@ -256,10 +349,19 @@ npm install @webwriter/quiz
 ## Fields
 | Name (Attribute Name) | Type | Description | Default | Reflects |
 | :-------------------: | :--: | :---------: | :-----: | :------: |
+| `WebwriterChoiceItem.options` | `Record<string, Declared<OptionDeclaration>>` | - | `{ feedbackSelected: { type: "string", label: (widget: { msg: MsgFn }) => widget.msg("Feedback if selected") }, feedbackNotSelected: { type: "string", label: (widget: { msg: MsgFn }) => widget.msg("Feedback if not selected") }, }` | ✗ |
 | `feedbackSelected` (`feedback-selected`) | `string` | The feedback shown after submitting if learners selected this option. | `""` | ✓ |
 | `feedbackNotSelected` (`feedback-not-selected`) | `string` | The feedback shown after submitting if learners did not select this option. | `""` | ✓ |
+| `localize` | - | - | - | ✗ |
 
 *Fields including [properties](https://developer.mozilla.org/en-US/docs/Glossary/Property/JavaScript) and [attributes](https://developer.mozilla.org/en-US/docs/Glossary/Attribute) define the current state of the widget and offer customization options.*
+
+## Events
+| Name | Description |
+| :--: | :---------: |
+| optionschange | - |
+
+*[Events](https://developer.mozilla.org/en-US/docs/Web/Events) are dispatched by the widget after certain triggers.*
 
 ## Editing config
 | Name | Value |
@@ -268,7 +370,7 @@ npm install @webwriter/quiz
 
 *The [editing config](https://webwriter.app/docs/packages/configuring/#editingconfig) defines how explorable authoring tools such as [WebWriter](https://webwriter.app) treat the widget.*
 
-*No public methods, slots, events, custom CSS properties, or CSS parts.*
+*No public methods, slots, custom CSS properties, or CSS parts.*
 
 
 ## `WebwriterOrder` (`<webwriter-order>`)
@@ -301,11 +403,17 @@ npm install @webwriter/quiz
 ## Fields
 | Name (Attribute Name) | Type | Description | Default | Reflects |
 | :-------------------: | :--: | :---------: | :-----: | :------: |
+| `WebwriterOrder.shadowRootOptions` | `ShadowRootInit` | - | `{ ...WebwriterTask.shadowRootOptions, slotAssignment: "manual" }` | ✗ |
+| `WebwriterOrder.actions` | `object` | Only questions inside a quiz can be moved or deleted from the drawer. | `{ ...WebwriterTask.actions, addOption: { label: (widget: { msg: MsgFn }) => widget.msg("Add Option") }, }` | ✗ |
+| `WebwriterOrder.options` | `object` | - | `{ ...WebwriterTask.options, "layout": { type: "select", label: (widget: { msg: MsgFn }) => widget.msg("Layout"), options: [ { value: "list", label: (widget: { msg: MsgFn }) => widget.msg("List") }, { value: "tiles", label: (widget: { msg: MsgFn }) => widget.msg("Tiles") }, ], description: (widget: { msg: MsgFn }) => widget.msg("The layout variant to use."), }, "direction": { type: "select", label: (widget: { msg: MsgFn }) => widget.msg("Direction"), options: [ { value: "ascending", label: (widget: { msg: MsgFn }) => widget.msg("Ascending") }, { value: "descending", label: (widget: { msg: MsgFn }) => widget.msg("Descending") }, ], description: (widget: { msg: MsgFn }) => widget.msg("The order direction to use."), }, numberingStyle: { type: "select", label: (widget: { msg: MsgFn }) => widget.msg("Numbering"), options: [ { value: "none", label: (widget: { msg: MsgFn }) => widget.msg("None") }, { value: "numeric", label: (widget: { msg: MsgFn }) => widget.msg("Numeric") }, { value: "alphabetic", label: (widget: { msg: MsgFn }) => widget.msg("Alphabetic") }, { value: "roman", label: (widget: { msg: MsgFn }) => widget.msg("Roman") }, ], description: (widget: { msg: MsgFn }) => widget.msg("The numbering style to use."), }, gradingMethod: { type: "select", label: (widget: { msg: MsgFn }) => widget.msg("Grading"), options: [ { value: "pass-fail", label: (widget: { msg: MsgFn }) => widget.msg("Pass/Fail") }, { value: "partial-position", label: (widget: { msg: MsgFn }) => widget.msg("Partial (Position)") }, { value: "partial-sequence", label: (widget: { msg: MsgFn }) => widget.msg("Partial (Sequence)") }, ], description: (widget: { msg: MsgFn }) => widget.msg("The grading method to use."), }, }` | ✗ |
 | `layout` (`layout`) | `OrderLayout` | How the items are arranged.<br><br>- `list`: One item per row.<br>- `tiles`: A responsive grid of equally sized tiles. | `"list"` | ✓ |
 | `direction` (`direction`) | `OrderDirection` | The direction in which the items are numbered.<br><br>- `ascending`: The first item carries the lowest position.<br>- `descending`: The first item carries the highest position. | `"ascending"` | ✓ |
 | `numberingStyle` (`numbering-style`) | `OrderNumberingStyle` | How the position of each item is labelled.<br><br>- `none`: No position is shown.<br>- `numeric`: Arabic numerals (1., 2., 3., ...).<br>- `alphabetic`: Latin letters (A., B., C., ...).<br>- `roman`: Roman numerals (I., II., III., ...). | `"numeric"` | ✓ |
 | `gradingMethod` (`grading-method`) | `OrderGradingMethod` | How the score of this answer is calculated.<br><br>- `pass-fail`: Full score only if every item is in its correct position.<br>- `partial-position`: Credit for each item in its correct position.<br>- `partial-sequence`: Credit for each pair of adjacent items in the correct order. | `"pass-fail"` | ✓ |
 | `solution` (`solution`) | `OrderSolution` | The IDs of the items in their correct order. It is obfuscated in the markup so that learners cannot read it directly. | `[]` | ✓ |
+| `points` (`points`) | `number` | The maximum score for this question. | `1` | ✓ |
+| `feedback` (`feedback`) | `string` | - | `""` | ✓ |
+| `localize` | - | - | - | ✗ |
 
 *Fields including [properties](https://developer.mozilla.org/en-US/docs/Glossary/Property/JavaScript) and [attributes](https://developer.mozilla.org/en-US/docs/Glossary/Attribute) define the current state of the widget and offer customization options.*
 
@@ -318,6 +426,13 @@ npm install @webwriter/quiz
 
 *[Methods](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Method_definitions) allow programmatic access to the widget.*
 
+## Events
+| Name | Description |
+| :--: | :---------: |
+| optionschange | - |
+
+*[Events](https://developer.mozilla.org/en-US/docs/Web/Events) are dispatched by the widget after certain triggers.*
+
 ## Editing config
 | Name | Value |
 | :--: | :---------: |
@@ -325,7 +440,7 @@ npm install @webwriter/quiz
 
 *The [editing config](https://webwriter.app/docs/packages/configuring/#editingconfig) defines how explorable authoring tools such as [WebWriter](https://webwriter.app) treat the widget.*
 
-*No public slots, events, custom CSS properties, or CSS parts.*
+*No public slots, custom CSS properties, or CSS parts.*
 
 
 ## `WebwriterOrderItem` (`<webwriter-order-item>`)
@@ -355,6 +470,20 @@ npm install @webwriter/quiz
 <webwriter-order-item></webwriter-order-item>
 ```
 
+## Fields
+| Name (Attribute Name) | Type | Description | Default | Reflects |
+| :-------------------: | :--: | :---------: | :-----: | :------: |
+| `localize` | - | - | - | ✗ |
+
+*Fields including [properties](https://developer.mozilla.org/en-US/docs/Glossary/Property/JavaScript) and [attributes](https://developer.mozilla.org/en-US/docs/Glossary/Attribute) define the current state of the widget and offer customization options.*
+
+## Events
+| Name | Description |
+| :--: | :---------: |
+| optionschange | - |
+
+*[Events](https://developer.mozilla.org/en-US/docs/Web/Events) are dispatched by the widget after certain triggers.*
+
 ## Editing config
 | Name | Value |
 | :--: | :---------: |
@@ -362,7 +491,7 @@ npm install @webwriter/quiz
 
 *The [editing config](https://webwriter.app/docs/packages/configuring/#editingconfig) defines how explorable authoring tools such as [WebWriter](https://webwriter.app) treat the widget.*
 
-*No public fields, methods, slots, events, custom CSS properties, or CSS parts.*
+*No public methods, slots, custom CSS properties, or CSS parts.*
 
 
 ## `WebwriterSpeech` (`<webwriter-speech>`)
@@ -393,6 +522,11 @@ npm install @webwriter/quiz
 | Name (Attribute Name) | Type | Description | Default | Reflects |
 | :-------------------: | :--: | :---------: | :-----: | :------: |
 | `src` (`src`) | `string \| null` | An existing recording URL saved in authored HTML. | `null` | ✓ |
+| `WebwriterSpeech.actions` | `object` | Only questions inside a quiz can be moved or deleted from the drawer. | `{ moveQuestionUp: { label: (widget: { msg: MsgFn }) => widget.msg("Move question up") }, moveQuestionDown: { label: (widget: { msg: MsgFn }) => widget.msg("Move question down") }, deleteQuestion: { label: (widget: { msg: MsgFn }) => widget.msg("Delete question"), intent: "danger" as const }, }` | ✗ |
+| `WebwriterSpeech.options` | `object` | - | `{ points: { type: Number, label: (widget: { msg: MsgFn }) => widget.msg("Points") }, }` | ✗ |
+| `points` (`points`) | `number` | The maximum score for this question. | `1` | ✓ |
+| `feedback` (`feedback`) | `string` | - | `""` | ✓ |
+| `localize` | - | - | - | ✗ |
 
 *Fields including [properties](https://developer.mozilla.org/en-US/docs/Glossary/Property/JavaScript) and [attributes](https://developer.mozilla.org/en-US/docs/Glossary/Attribute) define the current state of the widget and offer customization options.*
 
@@ -404,6 +538,13 @@ npm install @webwriter/quiz
 
 *[Methods](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Method_definitions) allow programmatic access to the widget.*
 
+## Events
+| Name | Description |
+| :--: | :---------: |
+| optionschange | - |
+
+*[Events](https://developer.mozilla.org/en-US/docs/Web/Events) are dispatched by the widget after certain triggers.*
+
 ## Editing config
 | Name | Value |
 | :--: | :---------: |
@@ -411,7 +552,7 @@ npm install @webwriter/quiz
 
 *The [editing config](https://webwriter.app/docs/packages/configuring/#editingconfig) defines how explorable authoring tools such as [WebWriter](https://webwriter.app) treat the widget.*
 
-*No public slots, events, custom CSS properties, or CSS parts.*
+*No public slots, custom CSS properties, or CSS parts.*
 
 
 ## `WebwriterText` (`<webwriter-text>`)
@@ -441,6 +582,8 @@ npm install @webwriter/quiz
 ## Fields
 | Name (Attribute Name) | Type | Description | Default | Reflects |
 | :-------------------: | :--: | :---------: | :-----: | :------: |
+| `WebwriterText.options` | `object` | - | `{ ...WebwriterTask.options, type: { type: "select", label: (widget: { msg: MsgFn }) => widget.msg("Type"), options: [ { value: "long-text", label: (widget: { msg: MsgFn }) => widget.msg("Long Text") }, { value: "text", label: (widget: { msg: MsgFn }) => widget.msg("Short Text") }, { value: "number", label: (widget: { msg: MsgFn }) => widget.msg("Number") }, { value: "date", label: (widget: { msg: MsgFn }) => widget.msg("Date") }, { value: "time", label: (widget: { msg: MsgFn }) => widget.msg("Time") }, { value: "datetime-local", label: (widget: { msg: MsgFn }) => widget.msg("Date & Time") }, ], }, placeholder: { type: "string", label: (widget: { msg: MsgFn }) => widget.msg("Placeholder") }, freeText: { type: "boolean", label: (widget: { msg: MsgFn }) => widget.msg("Free answer") }, ignoreCase: { type: "boolean", label: (widget: { msg: MsgFn }) => widget.msg("Ignore capitalization") }, correctMessage: { type: "string", label: (widget: { msg: MsgFn }) => widget.msg("Message for correct solution") }, wrongMessage: { type: "string", label: (widget: { msg: MsgFn }) => widget.msg("Message for wrong solution") }, }` | ✗ |
+| `WebwriterText.options` | `object` | - | `{ ...WebwriterTask.options, type: { type: "select", label: (widget: { msg: MsgFn }) => widget.msg("Type"), options: [ { value: "long-text", label: (widget: { msg: MsgFn }) => widget.msg("Long Text") }, { value: "text", label: (widget: { msg: MsgFn }) => widget.msg("Short Text") }, { value: "number", label: (widget: { msg: MsgFn }) => widget.msg("Number") }, { value: "date", label: (widget: { msg: MsgFn }) => widget.msg("Date") }, { value: "time", label: (widget: { msg: MsgFn }) => widget.msg("Time") }, { value: "datetime-local", label: (widget: { msg: MsgFn }) => widget.msg("Date & Time") }, ], }, placeholder: { type: "string", label: (widget: { msg: MsgFn }) => widget.msg("Placeholder") }, freeText: { type: "boolean", label: (widget: { msg: MsgFn }) => widget.msg("Free answer") }, ignoreCase: { type: "boolean", label: (widget: { msg: MsgFn }) => widget.msg("Ignore capitalization") }, correctMessage: { type: "string", label: (widget: { msg: MsgFn }) => widget.msg("Message for correct solution") }, wrongMessage: { type: "string", label: (widget: { msg: MsgFn }) => widget.msg("Message for wrong solution") }, }` | ✗ |
 | `type` (`type`) | `TextType` | The kind of input field learners answer in.<br><br>- `long-text`: A multi-line text area.<br>- `text`: A single-line text field.<br>- `number`: A number field.<br>- `date`: A date picker.<br>- `time`: A time picker.<br>- `datetime-local`: A combined date and time picker. | `"long-text"` | ✓ |
 | `placeholder` (`placeholder`) | `string` | The placeholder shown while the field is empty. | `""` | ✓ |
 | `freeText` (`free-text`) | `boolean` | Whether any non-empty answer counts as correct, without comparing it to the solution. | `false` | ✓ |
@@ -448,6 +591,10 @@ npm install @webwriter/quiz
 | `correctMessage` (`correct-message`) | `string` | The feedback shown after submitting if the answer is correct. | `""` | ✓ |
 | `wrongMessage` (`wrong-message`) | `string` | The feedback shown after submitting if the answer is wrong. | `""` | ✓ |
 | `solution` (`solution`) | `string` | The value counting as correct. It is obfuscated in the markup so that learners cannot read it directly. | `""` | ✓ |
+| `WebwriterText.actions` | `object` | Only questions inside a quiz can be moved or deleted from the drawer. | `{ moveQuestionUp: { label: (widget: { msg: MsgFn }) => widget.msg("Move question up") }, moveQuestionDown: { label: (widget: { msg: MsgFn }) => widget.msg("Move question down") }, deleteQuestion: { label: (widget: { msg: MsgFn }) => widget.msg("Delete question"), intent: "danger" as const }, }` | ✗ |
+| `points` (`points`) | `number` | The maximum score for this question. | `1` | ✓ |
+| `feedback` (`feedback`) | `string` | - | `""` | ✓ |
+| `localize` | - | - | - | ✗ |
 
 *Fields including [properties](https://developer.mozilla.org/en-US/docs/Glossary/Property/JavaScript) and [attributes](https://developer.mozilla.org/en-US/docs/Glossary/Attribute) define the current state of the widget and offer customization options.*
 
@@ -461,6 +608,13 @@ npm install @webwriter/quiz
 
 *[Methods](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Method_definitions) allow programmatic access to the widget.*
 
+## Events
+| Name | Description |
+| :--: | :---------: |
+| optionschange | - |
+
+*[Events](https://developer.mozilla.org/en-US/docs/Web/Events) are dispatched by the widget after certain triggers.*
+
 ## Editing config
 | Name | Value |
 | :--: | :---------: |
@@ -468,7 +622,7 @@ npm install @webwriter/quiz
 
 *The [editing config](https://webwriter.app/docs/packages/configuring/#editingconfig) defines how explorable authoring tools such as [WebWriter](https://webwriter.app) treat the widget.*
 
-*No public slots, events, custom CSS properties, or CSS parts.*
+*No public slots, custom CSS properties, or CSS parts.*
 
 
 ## `WebWriterMark` (`<webwriter-mark>`)
@@ -500,8 +654,13 @@ npm install @webwriter/quiz
 ## Fields
 | Name (Attribute Name) | Type | Description | Default | Reflects |
 | :-------------------: | :--: | :---------: | :-----: | :------: |
+| `WebWriterMark.actions` | `object` | Only questions inside a quiz can be moved or deleted from the drawer. | `{ ...WebwriterTask.actions, toggleMarkingAtPosition: { label: (widget: { msg: MsgFn }) => widget.msg("Toggle Marking at Position") }, }` | ✗ |
+| `WebWriterMark.options` | `object` | - | `{ ...WebwriterTask.options, gradingMethod: { type: "select", options: [ { value: "pass-fail", label: (widget: { msg: MsgFn }) => widget.msg("Pass/Fail") }, { value: "partial", label: (widget: { msg: MsgFn }) => widget.msg("Partial Credit") }, ], label: (widget: { msg: MsgFn }) => widget.msg("Grading Method"), }, }` | ✗ |
 | `gradingMethod` (`grading-method`) | `MarkGradingMethod` | How the score of this answer is calculated.<br><br>- `pass-fail`: Full score only if exactly the correct words are marked.<br>- `partial`: Correctly marked words earn credit, wrong ones subtract from it. | `"pass-fail"` | ✓ |
 | `solution` (`solution`) | `number[]` | The indices of the word-like segments counting as correct. It is obfuscated in the markup so that learners cannot read it directly. | `[]` | ✓ |
+| `points` (`points`) | `number` | The maximum score for this question. | `1` | ✓ |
+| `feedback` (`feedback`) | `string` | - | `""` | ✓ |
+| `localize` | - | - | - | ✗ |
 
 *Fields including [properties](https://developer.mozilla.org/en-US/docs/Glossary/Property/JavaScript) and [attributes](https://developer.mozilla.org/en-US/docs/Glossary/Attribute) define the current state of the widget and offer customization options.*
 
@@ -514,6 +673,13 @@ npm install @webwriter/quiz
 
 *[Methods](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Method_definitions) allow programmatic access to the widget.*
 
+## Events
+| Name | Description |
+| :--: | :---------: |
+| optionschange | - |
+
+*[Events](https://developer.mozilla.org/en-US/docs/Web/Events) are dispatched by the widget after certain triggers.*
+
 ## Editing config
 | Name | Value |
 | :--: | :---------: |
@@ -521,7 +687,7 @@ npm install @webwriter/quiz
 
 *The [editing config](https://webwriter.app/docs/packages/configuring/#editingconfig) defines how explorable authoring tools such as [WebWriter](https://webwriter.app) treat the widget.*
 
-*No public slots, events, custom CSS properties, or CSS parts.*
+*No public slots, custom CSS properties, or CSS parts.*
 
 
 ## `WebwriterGap` (`<webwriter-gap>`)
@@ -554,8 +720,14 @@ npm install @webwriter/quiz
 ## Fields
 | Name (Attribute Name) | Type | Description | Default | Reflects |
 | :-------------------: | :--: | :---------: | :-----: | :------: |
+| `WebwriterGap.actions` | `object` | Only questions inside a quiz can be moved or deleted from the drawer. | `{ ...WebwriterTask.actions, insertGapAtSelection: { label: (widget: { msg: MsgFn }) => widget.msg("Insert gap at selection") }, }` | ✗ |
+| `WebwriterGap.options` | `object` | - | `{ ...WebwriterTask.options, mode: { type: "select", label: (widget: { msg: MsgFn }) => widget.msg("Mode"), options: [ { value: "input", label: (widget: { msg: MsgFn }) => widget.msg("Freeform input") }, { value: "drag-and-drop", label: (widget: { msg: MsgFn }) => widget.msg("Drag and drop") }, ], }, ignoreCase: { type: "boolean", label: (widget: { msg: MsgFn }) => widget.msg("Ignore case") }, }` | ✗ |
+| `WebwriterGap.options` | `object` | - | `{ ...WebwriterTask.options, mode: { type: "select", label: (widget: { msg: MsgFn }) => widget.msg("Mode"), options: [ { value: "input", label: (widget: { msg: MsgFn }) => widget.msg("Freeform input") }, { value: "drag-and-drop", label: (widget: { msg: MsgFn }) => widget.msg("Drag and drop") }, ], }, ignoreCase: { type: "boolean", label: (widget: { msg: MsgFn }) => widget.msg("Ignore case") }, }` | ✗ |
 | `mode` (`mode`) | `GapMode` | How learners fill the gaps.<br><br>- `input`: Each gap is a text field learners type into.<br>- `drag-and-drop`: The gaps are filled from a shared pool of draggable answers. | `"input"` | ✓ |
 | `ignoreCase` (`ignore-case`) | `boolean` | Whether answers are compared to the solution case-insensitively. Only applies in `input` mode. | `false` | ✓ |
+| `points` (`points`) | `number` | The maximum score for this question. | `1` | ✓ |
+| `feedback` (`feedback`) | `string` | - | `""` | ✓ |
+| `localize` | - | - | - | ✗ |
 
 *Fields including [properties](https://developer.mozilla.org/en-US/docs/Glossary/Property/JavaScript) and [attributes](https://developer.mozilla.org/en-US/docs/Glossary/Attribute) define the current state of the widget and offer customization options.*
 
@@ -572,6 +744,7 @@ npm install @webwriter/quiz
 | Name | Description |
 | :--: | :---------: |
 | change | Dispatched when learners move an answer into or out of a gap. Only in `drag-and-drop` mode. |
+| optionschange | - |
 
 *[Events](https://developer.mozilla.org/en-US/docs/Web/Events) are dispatched by the widget after certain triggers.*
 
@@ -615,9 +788,19 @@ npm install @webwriter/quiz
 ## Fields
 | Name (Attribute Name) | Type | Description | Default | Reflects |
 | :-------------------: | :--: | :---------: | :-----: | :------: |
+| `WebwriterGapItem.options` | `Record<string, Declared<OptionDeclaration>>` | - | `{ placeholder: { type: "string", label: (widget: { msg: MsgFn }) => widget.msg("Placeholder") }, }` | ✗ |
+| `options` | - | A placeholder only applies to freeform input. | - | ✗ |
 | `placeholder` (`placeholder`) | `string` | The placeholder shown while the gap is empty. Only applies in `input` mode. | `""` | ✓ |
+| `localize` | - | - | - | ✗ |
 
 *Fields including [properties](https://developer.mozilla.org/en-US/docs/Glossary/Property/JavaScript) and [attributes](https://developer.mozilla.org/en-US/docs/Glossary/Attribute) define the current state of the widget and offer customization options.*
+
+## Events
+| Name | Description |
+| :--: | :---------: |
+| optionschange | - |
+
+*[Events](https://developer.mozilla.org/en-US/docs/Web/Events) are dispatched by the widget after certain triggers.*
 
 ## Editing config
 | Name | Value |
@@ -626,7 +809,7 @@ npm install @webwriter/quiz
 
 *The [editing config](https://webwriter.app/docs/packages/configuring/#editingconfig) defines how explorable authoring tools such as [WebWriter](https://webwriter.app) treat the widget.*
 
-*No public methods, slots, events, custom CSS properties, or CSS parts.*
+*No public methods, slots, custom CSS properties, or CSS parts.*
 
 
 ## `WebwriterPairing` (`<webwriter-pairing>`)
@@ -658,8 +841,13 @@ npm install @webwriter/quiz
 ## Fields
 | Name (Attribute Name) | Type | Description | Default | Reflects |
 | :-------------------: | :--: | :---------: | :-----: | :------: |
+| `WebwriterPairing.actions` | `object` | Only questions inside a quiz can be moved or deleted from the drawer. | `{ ...WebwriterTask.actions, addPair: { label: (widget: { msg: MsgFn }) => widget.msg("Add Pair") }, }` | ✗ |
+| `WebwriterPairing.options` | `object` | - | `{ ...WebwriterTask.options, mode: { type: "select", label: (widget: { msg: MsgFn }) => widget.msg("Mode"), options: [ { value: "pairing", label: (widget: { msg: MsgFn }) => widget.msg("Pairing") }, { value: "memory", label: (widget: { msg: MsgFn }) => widget.msg("Memory") }, ], }, }` | ✗ |
 | `mode` (`mode`) | `PairingMode` | How learners match the items.<br><br>- `pairing`: All items are visible and learners drag them together.<br>- `memory`: The items are face down and learners uncover two at a time. | `"pairing"` | ✓ |
 | `solution` (`solution`) | `[string, string][]` | The pairs counting as correct, as tuples of the two item IDs. It is obfuscated in the markup so that learners cannot read it directly. | `[]` | ✓ |
+| `points` (`points`) | `number` | The maximum score for this question. | `1` | ✓ |
+| `feedback` (`feedback`) | `string` | - | `""` | ✓ |
+| `localize` | - | - | - | ✗ |
 
 *Fields including [properties](https://developer.mozilla.org/en-US/docs/Glossary/Property/JavaScript) and [attributes](https://developer.mozilla.org/en-US/docs/Glossary/Attribute) define the current state of the widget and offer customization options.*
 
@@ -672,6 +860,13 @@ npm install @webwriter/quiz
 
 *[Methods](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Method_definitions) allow programmatic access to the widget.*
 
+## Events
+| Name | Description |
+| :--: | :---------: |
+| optionschange | - |
+
+*[Events](https://developer.mozilla.org/en-US/docs/Web/Events) are dispatched by the widget after certain triggers.*
+
 ## Editing config
 | Name | Value |
 | :--: | :---------: |
@@ -679,7 +874,7 @@ npm install @webwriter/quiz
 
 *The [editing config](https://webwriter.app/docs/packages/configuring/#editingconfig) defines how explorable authoring tools such as [WebWriter](https://webwriter.app) treat the widget.*
 
-*No public slots, events, custom CSS properties, or CSS parts.*
+*No public slots, custom CSS properties, or CSS parts.*
 
 
 ## `WebwriterPairing` (`<webwriter-pairing-item>`)
@@ -708,6 +903,32 @@ npm install @webwriter/quiz
 <webwriter-pairing-item></webwriter-pairing-item>
 ```
 
+## Fields
+| Name (Attribute Name) | Type | Description | Default | Reflects |
+| :-------------------: | :--: | :---------: | :-----: | :------: |
+| `WebwriterPairing.actions` | `object` | Only questions inside a quiz can be moved or deleted from the drawer. | `{ moveQuestionUp: { label: (widget: { msg: MsgFn }) => widget.msg("Move question up") }, moveQuestionDown: { label: (widget: { msg: MsgFn }) => widget.msg("Move question down") }, deleteQuestion: { label: (widget: { msg: MsgFn }) => widget.msg("Delete question"), intent: "danger" as const }, }` | ✗ |
+| `WebwriterPairing.options` | `object` | - | `{ points: { type: Number, label: (widget: { msg: MsgFn }) => widget.msg("Points") }, }` | ✗ |
+| `points` (`points`) | `number` | The maximum score for this question. | `1` | ✓ |
+| `feedback` (`feedback`) | `string` | - | `""` | ✓ |
+| `localize` | - | - | - | ✗ |
+
+*Fields including [properties](https://developer.mozilla.org/en-US/docs/Glossary/Property/JavaScript) and [attributes](https://developer.mozilla.org/en-US/docs/Glossary/Attribute) define the current state of the widget and offer customization options.*
+
+## Methods
+| Name | Description | Parameters |
+| :--: | :---------: | :-------: |
+| `checkValidity` | - | -
+| `reset` | - | -
+
+*[Methods](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Method_definitions) allow programmatic access to the widget.*
+
+## Events
+| Name | Description |
+| :--: | :---------: |
+| optionschange | - |
+
+*[Events](https://developer.mozilla.org/en-US/docs/Web/Events) are dispatched by the widget after certain triggers.*
+
 ## Editing config
 | Name | Value |
 | :--: | :---------: |
@@ -715,7 +936,7 @@ npm install @webwriter/quiz
 
 *The [editing config](https://webwriter.app/docs/packages/configuring/#editingconfig) defines how explorable authoring tools such as [WebWriter](https://webwriter.app) treat the widget.*
 
-*No public fields, methods, slots, events, custom CSS properties, or CSS parts.*
+*No public slots, custom CSS properties, or CSS parts.*
 
 
 ---

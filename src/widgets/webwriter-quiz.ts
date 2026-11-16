@@ -1,3 +1,5 @@
+import type { Declared, OptionDeclaration } from "@webwriter/lit";
+import type { MsgFn } from "@lit/localize";
 import { str } from "@lit/localize";
 import SlButton from "@shoelace-style/shoelace/dist/components/button/button.component.js";
 import SlDialog from "@shoelace-style/shoelace/dist/components/dialog/dialog.component.js";
@@ -5,43 +7,33 @@ import SlDropdown from "@shoelace-style/shoelace/dist/components/dropdown/dropdo
 import SlIcon from "@shoelace-style/shoelace/dist/components/icon/icon.component.js";
 import SlProgressBar from "@shoelace-style/shoelace/dist/components/progress-bar/progress-bar.component.js";
 import "@shoelace-style/shoelace/dist/themes/light.css";
-import type { OptionDeclaration } from "@webwriter/lit";
-import AddIcon from "bootstrap-icons/icons/plus-lg.svg";
+import AddIcon from "@tabler/icons/outline/plus.svg";
 import { css, html, nothing, type PropertyValues } from "lit";
 import { customElement, property, state } from "lit/decorators.js";
 import { createRef, ref } from "lit/directives/ref.js";
-import { isQuizTask, onQuizTypesChanged, type QuizTaskElement, type QuizType } from "../api";
-import { QuizElement } from "../lib/localization";
-import { questionPickerStyles } from "../lib/question-picker-styles";
+import { isQuizTask, onQuizTypesChanged, type QuizTaskElement, type QuizType } from "../model/quiz-api";
+import { QuizElement } from "../components/localization";
+import { questionPickerStyles } from "../components/question-picker-styles";
 
 /**
  * A quiz groups multiple question elements into one exercise that is
  * submitted, graded and reset as a whole.
  *
  * The tasks must be assigned to the default slot.
+ *
+ * In WebWriter 2, use the quiz's question buttons to insert questions. The
+ * package includes one-question snippets for each built-in type with question
+ * titles and points hidden.
+ *
+ * In edit mode, "Add Feedback" inserts a block that can be edited and
+ * formatted in the question. Choice and Order group it with "Add Option" in
+ * both layouts. The last question shares that row with "Add Question" on the
+ * right. Learners see the feedback block after a valid submission, including
+ * for open-ended and ungraded questions. "Show detailed feedback" controls
+ * answer-specific feedback and solution reveal.
  */
 @customElement("webwriter-quiz")
 export class WebwriterQuiz extends QuizElement {
-	/** @internal */
-	get options(): Record<string, OptionDeclaration> {
-		return {
-			detailedFeedback: { type: "boolean", label: { _: this.msg("Show detailed feedback") } },
-			confirmSubmit: { type: "boolean", label: { _: this.msg("Require confirmation before submitting") } },
-			confirmReset: { type: "boolean", label: { _: this.msg("Require confirmation before resetting") } },
-			hideQuestionTitle: { type: "boolean", label: { _: this.msg("Hide question titles") } },
-			hidePoints: { type: "boolean", label: { _: this.msg("Hide points") } },
-		};
-	}
-
-	/** @internal */
-	static scopedElements = {
-		"sl-button": SlButton,
-		"sl-dialog": SlDialog,
-		"sl-dropdown": SlDropdown,
-		"sl-icon": SlIcon,
-		"sl-progress-bar": SlProgressBar,
-	};
-
 	static styles = [questionPickerStyles, css`
 		:host {
 			display: block;
@@ -91,6 +83,23 @@ export class WebwriterQuiz extends QuizElement {
 			}
 		}
 	`];
+
+	/** @internal */
+	static scopedElements = {
+		"sl-button": SlButton,
+		"sl-dialog": SlDialog,
+		"sl-dropdown": SlDropdown,
+		"sl-icon": SlIcon,
+		"sl-progress-bar": SlProgressBar,
+	};
+
+	static options: Record<string, Declared<OptionDeclaration>> = {
+		detailedFeedback: { type: "boolean", label: (widget: { msg: MsgFn }) => widget.msg("Show detailed feedback") },
+		confirmSubmit: { type: "boolean", label: (widget: { msg: MsgFn }) => widget.msg("Require confirmation before submitting") },
+		confirmReset: { type: "boolean", label: (widget: { msg: MsgFn }) => widget.msg("Require confirmation before resetting") },
+		hideQuestionTitle: { type: "boolean", label: (widget: { msg: MsgFn }) => widget.msg("Hide question titles") },
+		hidePoints: { type: "boolean", label: (widget: { msg: MsgFn }) => widget.msg("Hide points") },
+	};
 
 	/**
 	 * Whether learners see per-answer feedback and the solution after submitting.
@@ -151,17 +160,17 @@ export class WebwriterQuiz extends QuizElement {
 
 	protected updated(changedProperties: PropertyValues) {
 		super.updated(changedProperties);
-		if (changedProperties.has("editable") && this.editable) this.confirmationAction = undefined;
+		if (changedProperties.has("editable") && this.editing) this.confirmationAction = undefined;
 		if (changedProperties.has("hidePoints") || changedProperties.has("hideQuestionTitle") || changedProperties.has("editable")) {
 			this.getTasks().forEach(task => task.requestUpdate?.());
-		} else if (this.editable) {
+		} else if (this.editing) {
 			this.getTasks().at(-1)?.requestUpdate();
 		}
 	}
 
 	private insertQuizType(key: string) {
 		const quizType = this.questionTypes.get(key);
-		if (!quizType || !this.isConnected || !this.editable) return;
+		if (!quizType || !this.isConnected || !this.editing) return;
 		const task = quizType.createInstance();
 		if (!isQuizTask(task)) return;
 
@@ -186,7 +195,7 @@ export class WebwriterQuiz extends QuizElement {
 	/** @internal */
 	renderAddQuestion(task?: QuizTaskElement) {
 		const last = this.getTasks().at(-1);
-		if (!this.editable || !last || (last.hostsQuestionPicker ? task !== last : task !== undefined)) return nothing;
+		if (!this.editing || !last || (last.hostsQuestionPicker ? task !== last : task !== undefined)) return nothing;
 
 		return html`<sl-dropdown class="add-question" placement="bottom-end" distance="4" ${ref(this.addQuestionDropdown)}>
 			<sl-button slot="trigger" caret>
@@ -279,7 +288,7 @@ export class WebwriterQuiz extends QuizElement {
 	}
 
 	render() {
-		if (!this.editable) {
+		if (!this.editing) {
 			return html`<slot @slotchange=${this.updateTasks}></slot>
 
 				<div class="actions">

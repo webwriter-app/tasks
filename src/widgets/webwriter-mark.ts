@@ -1,15 +1,16 @@
+import type { MsgFn } from "@lit/localize";
 import SlTooltip from "@shoelace-style/shoelace/dist/components/tooltip/tooltip.component.js";
 import { type OptionDeclaration } from "@webwriter/lit";
-import HighlighterIcon from "bootstrap-icons/icons/highlighter.svg";
+import HighlighterIcon from "@tabler/icons/outline/highlight.svg";
 import { css, html, type PropertyValues } from "lit";
 import { customElement, property, state } from "lit/decorators.js";
 import { createRef, ref } from "lit/directives/ref.js";
 import { styleMap } from "lit/directives/style-map.js";
 import { name as packageId } from "../../package.json";
-import { registerQuizType } from "../api";
-import { encryptedProperty, encryptPlaintextAttributes } from "../lib/encrypted-property";
-import { messageFor } from "../lib/localization";
-import { WebwriterTask } from "./webwriter-task";
+import { registerQuizType } from "../model/quiz-api";
+import { encryptedProperty, encryptPlaintextAttributes } from "../components/encrypted-property";
+import { messageFor } from "../components/localization";
+import { WebwriterTask } from "../components/webwriter-task";
 
 declare global {
 	interface HTMLElementTagNameMap {
@@ -46,51 +47,6 @@ function rangesOverlap(a: Range, b: Range): boolean {
  */
 @customElement("webwriter-mark")
 export class WebWriterMark extends WebwriterTask {
-	/** @internal */
-	get actions() {
-		return {
-			...super.actions,
-			toggleMarkingAtPosition: { label: { _: this.msg("Toggle Marking at Position") } },
-		};
-	}
-
-	/** @internal */
-	get options(): Record<string, OptionDeclaration> {
-		return {
-			...super.options,
-			gradingMethod: {
-				type: "select",
-				options: [
-					{ value: "pass-fail", label: { _: this.msg("Pass/Fail") } },
-					{ value: "partial", label: { _: this.msg("Partial Credit") } },
-				],
-				label: { _: this.msg("Grading Method") },
-			},
-		};
-	}
-
-	/** @internal */
-	static scopedElements = {
-		...WebwriterTask.scopedElements,
-		"sl-tooltip": SlTooltip,
-	};
-
-	private static segmenter = new Intl.Segmenter(undefined, { granularity: "word" });
-
-	// Since highlights are document-level, we should share them across all instances of this widget.
-	private static highlights: Record<HighlightGroup, Highlight> = {
-		marked: new Highlight(),
-		correct: new Highlight(),
-		missed: new Highlight(),
-		wrong: new Highlight(),
-	};
-
-	static {
-		for (const [group, highlight] of Object.entries(this.highlights)) {
-			CSS.highlights.set(`webwriter-mark-${group}`, highlight);
-		}
-	}
-
 	static styles = [WebwriterTask.styles, css`
 		:host {
 			display: block;
@@ -148,6 +104,45 @@ export class WebWriterMark extends WebwriterTask {
 		}
 	`];
 
+	/** @internal */
+	static scopedElements = {
+		...WebwriterTask.scopedElements,
+		"sl-tooltip": SlTooltip,
+	};
+
+	static actions = {
+		...WebwriterTask.actions,
+		toggleMarkingAtPosition: { label: (widget: { msg: MsgFn }) => widget.msg("Toggle Marking at Position") },
+	};
+
+	static options = {
+		...WebwriterTask.options,
+		gradingMethod: {
+			type: "select",
+			options: [
+				{ value: "pass-fail", label: (widget: { msg: MsgFn }) => widget.msg("Pass/Fail") },
+				{ value: "partial", label: (widget: { msg: MsgFn }) => widget.msg("Partial Credit") },
+			],
+			label: (widget: { msg: MsgFn }) => widget.msg("Grading Method"),
+		},
+	};
+
+	private static segmenter = new Intl.Segmenter(undefined, { granularity: "word" });
+
+	// Since highlights are document-level, we should share them across all instances of this widget.
+	private static highlights: Record<HighlightGroup, Highlight> = {
+		marked: new Highlight(),
+		correct: new Highlight(),
+		missed: new Highlight(),
+		wrong: new Highlight(),
+	};
+
+	static {
+		for (const [group, highlight] of Object.entries(this.highlights)) {
+			CSS.highlights.set(`webwriter-mark-${group}`, highlight);
+		}
+	}
+
 	/**
 	 * How the score of this answer is calculated.
 	 *
@@ -181,7 +176,7 @@ export class WebWriterMark extends WebwriterTask {
 
 	protected firstUpdated(changed: PropertyValues): void {
 		super.firstUpdated(changed);
-		if (this.editable) encryptPlaintextAttributes(this);
+		if (this.editing) encryptPlaintextAttributes(this);
 	}
 
 	connectedCallback(): void {
@@ -238,8 +233,8 @@ export class WebWriterMark extends WebwriterTask {
 		const segments = this.getWordSegments();
 		const toRanges = (indices: number[]) => indices.filter(i => segments[i]).map(i => this.toRange(segments[i]));
 
-		const showFeedback = this.graded && this.detailedFeedback && !this.isContentEditable;
-		const marked = this.isContentEditable ? this.solution : this.currentAnswer;
+		const showFeedback = this.graded && this.detailedFeedback && !this.editing;
+		const marked = this.editing ? this.solution : this.currentAnswer;
 		const solution = new Set(this.solution);
 		const answer = new Set(this.currentAnswer);
 
@@ -259,7 +254,7 @@ export class WebWriterMark extends WebwriterTask {
 			? [...record.addedNodes, ...record.removedNodes].some(node => node instanceof Text || node instanceof Element && !node.slot)
 			: this.isAnswerContent(record.target));
 		if (!changedAnswer) return;
-		if (this.isContentEditable) {
+		if (this.editing) {
 			const liveRanges = this.renderedRanges.marked.filter(range => !range.collapsed);
 			const solution = this.getWordSegments()
 				.map((segment, index) => (liveRanges.some(range => rangesOverlap(range, this.toRange(segment))) ? index : -1))
@@ -307,18 +302,18 @@ export class WebWriterMark extends WebwriterTask {
 
 	/** @internal */
 	toggleMarkingAtPosition() {
-		if (!this.isContentEditable) return;
+		if (!this.editing) return;
 		this.toggleSolutionMarking(null);
 	}
 
 	private handleContextMenu(event: MouseEvent) {
-		if (!this.isContentEditable) return;
+		if (!this.editing) return;
 		const point = document.caretPositionFromPoint(event.clientX, event.clientY);
 		if (this.toggleSolutionMarking(point)) event.preventDefault();
 	}
 
 	private handleClick(event: MouseEvent) {
-		if (this.isContentEditable || this.graded) return;
+		if (this.editing || this.graded) return;
 		const point = document.caretPositionFromPoint(event.clientX, event.clientY);
 		if (!point) return;
 		const segments = this.getWordSegments();
@@ -330,7 +325,7 @@ export class WebWriterMark extends WebwriterTask {
 	}
 
 	private handleKeyDown = (event: KeyboardEvent) => {
-		if (!this.isContentEditable) return;
+		if (!this.editing) return;
 		const selection = document.getSelection();
 
 		// As ProseMirror re-creates the DOM on a line break, we cannot support multi-line highlights.
@@ -366,8 +361,8 @@ export class WebWriterMark extends WebwriterTask {
 
 		const solution = new Set(this.solution);
 		const selected = new Set(this.currentAnswer);
-		const selectedCorrect = selected.intersection(solution);
-		const selectedWrong = selected.difference(solution);
+		const selectedCorrect = new Set([...selected].filter(i => solution.has(i)));
+		const selectedWrong = new Set([...selected].filter(i => !solution.has(i)));
 
 		if (solution.size === 0) return 0;
 		if (this.gradingMethod === "pass-fail") {

@@ -133,34 +133,38 @@
   "author": "Frederic Salmen <frederic@fsalmen.de>",
   "repository": "https://github.com/webwriter-app/quiz",
   "scripts": {
-    "prepublishOnly": "build && node scripts/build-exports.mjs && npm run build:api",
-    "build:api": "tsc -p tsconfig.api.json && tsc -p tsconfig.task.json",
-    "dev": "build dev",
+    "prepublishOnly": "npx @webwriter/build --shared-dependencies && node scripts/build-exports.mjs",
+    "dev": "build dev --shared-dependencies",
     "localize": "npx @lit/localize-tools extract && npx @lit/localize-tools build",
     "localize:apply": "node scripts/apply-translations.mjs"
   },
   "dependencies": {
     "@lit/localize": "^0.12.2",
     "@shoelace-style/shoelace": "^2.20.1",
-    "@webwriter/lit": "^3.0.0",
-    "bootstrap-icons": "^1.13.2",
-    "lit": "^3"
+    "@tabler/icons": "^3.52.0",
+    "@webwriter/lit": "^3.2.0",
+    "@webwriter/widget": "^1.2.0",
+    "lit": "^3.3.0"
   },
   "devDependencies": {
     "@lit/localize-tools": "^0.8",
-    "@webwriter/build": "^1.13.1",
-    "typescript": "~7.0.2"
+    "@types/chai": "^5.2.3",
+    "@types/mocha": "^10.0.10",
+    "@webwriter/build": "^1.14.0",
+    "chai": "^6.3.0",
+    "mocha": "^12.0.3",
+    "typescript": "^7.0.2"
   },
   "exports": {
     "./api": {
-      "types": "./dist/api/index.d.ts",
-      "source": "./src/api/index.ts",
-      "import": "./dist/api/index.js",
-      "default": "./dist/api/index.js"
+      "types": "./dist/api/quiz-api.d.ts",
+      "source": "./src/model/quiz-api.ts",
+      "import": "./dist/api/quiz-api.js",
+      "default": "./dist/api/quiz-api.js"
     },
     "./task": {
-      "types": "./dist/types/src/widgets/webwriter-task.d.ts",
-      "source": "./src/widgets/webwriter-task.ts",
+      "types": "./dist/types/src/components/webwriter-task.d.ts",
+      "source": "./src/components/webwriter-task.ts",
       "default": "./dist/task.js"
     },
     "./widgets/webwriter-quiz.*": {
@@ -176,27 +180,27 @@
       "default": "./dist/widgets/webwriter-quiz-feedback.*"
     },
     "./widgets/webwriter-true-false.*": {
-      "source": "./src/widgets/choice/webwriter-true-false.ts",
+      "source": "./src/widgets/webwriter-true-false.ts",
       "default": "./dist/widgets/webwriter-true-false.*"
     },
     "./widgets/webwriter-choice.*": {
-      "source": "./src/widgets/choice/webwriter-choice.ts",
+      "source": "./src/widgets/webwriter-choice.ts",
       "default": "./dist/widgets/webwriter-choice.*"
     },
     "./widgets/webwriter-choice-item.*": {
-      "source": "./src/widgets/choice/webwriter-choice-item.ts",
+      "source": "./src/widgets/webwriter-choice-item.ts",
       "default": "./dist/widgets/webwriter-choice-item.*"
     },
     "./widgets/webwriter-order.*": {
-      "source": "./src/widgets/order/webwriter-order.ts",
+      "source": "./src/widgets/webwriter-order.ts",
       "default": "./dist/widgets/webwriter-order.*"
     },
     "./widgets/webwriter-order-item.*": {
-      "source": "./src/widgets/order/webwriter-order-item.ts",
+      "source": "./src/widgets/webwriter-order-item.ts",
       "default": "./dist/widgets/webwriter-order-item.*"
     },
     "./widgets/webwriter-speech.*": {
-      "source": "./src/widgets/speech/webwriter-speech.ts",
+      "source": "./src/widgets/webwriter-speech.ts",
       "default": "./dist/widgets/webwriter-speech.*"
     },
     "./widgets/webwriter-text.*": {
@@ -208,34 +212,46 @@
       "default": "./dist/widgets/webwriter-mark.*"
     },
     "./widgets/webwriter-gap.*": {
-      "source": "./src/widgets/gap/webwriter-gap.ts",
+      "source": "./src/widgets/webwriter-gap.ts",
       "default": "./dist/widgets/webwriter-gap.*"
     },
     "./widgets/webwriter-gap-item.*": {
-      "source": "./src/widgets/gap/webwriter-gap-item.ts",
+      "source": "./src/widgets/webwriter-gap-item.ts",
       "default": "./dist/widgets/webwriter-gap-item.*"
     },
     "./widgets/webwriter-pairing.*": {
-      "source": "./src/widgets/pairing/webwriter-pairing.ts",
+      "source": "./src/widgets/webwriter-pairing.ts",
       "default": "./dist/widgets/webwriter-pairing.*"
     },
     "./widgets/webwriter-pairing-item.*": {
-      "source": "./src/widgets/pairing/webwriter-pairing-item.ts",
+      "source": "./src/widgets/webwriter-pairing-item.ts",
       "default": "./dist/widgets/webwriter-pairing-item.*"
     },
     "./tests/quiz.*": {
-      "source": "./src/tests/quiz.ts",
+      "source": "./tests/quiz.test.ts",
       "default": "./dist/tests/quiz.*"
     },
-    "./snippets/true-or-false.html": "./src/snippets/true-or-false.html",
-    "./snippets/single-choice.html": "./src/snippets/single-choice.html",
-    "./snippets/multiple-choice.html": "./src/snippets/multiple-choice.html",
-    "./snippets/order.html": "./src/snippets/order.html",
-    "./snippets/text.html": "./src/snippets/text.html",
-    "./snippets/mark.html": "./src/snippets/mark.html",
-    "./snippets/speech.html": "./src/snippets/speech.html",
-    "./snippets/gap.html": "./src/snippets/gap.html",
-    "./snippets/pairing.html": "./src/snippets/pairing.html",
+    "./tests/pairing.*": {
+      "source": "./tests/pairing.test.ts",
+      "default": "./dist/tests/pairing.*"
+    },
+    "./tests/lists.*": {
+      "source": "./tests/lists.test.ts",
+      "default": "./dist/tests/lists.*"
+    },
+    "./tests/undo.*": {
+      "source": "./tests/undo.test.ts",
+      "default": "./dist/tests/undo.*"
+    },
+    "./snippets/true-or-false.html": "./snippets/true-or-false.html",
+    "./snippets/single-choice.html": "./snippets/single-choice.html",
+    "./snippets/multiple-choice.html": "./snippets/multiple-choice.html",
+    "./snippets/order.html": "./snippets/order.html",
+    "./snippets/text.html": "./snippets/text.html",
+    "./snippets/mark.html": "./snippets/mark.html",
+    "./snippets/speech.html": "./snippets/speech.html",
+    "./snippets/gap.html": "./snippets/gap.html",
+    "./snippets/pairing.html": "./snippets/pairing.html",
     "./icon": "./icon.svg",
     "./editing-config.json": "./editing-config.json",
     "./custom-elements.json": "./custom-elements.json"

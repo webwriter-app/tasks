@@ -1,7 +1,7 @@
 import { css, html } from "lit";
 import { customElement } from "lit/decorators.js";
 import { styleMap } from "lit/directives/style-map.js";
-import { QuizElement } from "../lib/localization";
+import { QuizElement } from "../components/localization";
 
 declare global {
 	interface HTMLElementTagNameMap {

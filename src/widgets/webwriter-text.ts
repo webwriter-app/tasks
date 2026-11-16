@@ -1,14 +1,15 @@
+import type { MsgFn } from "@lit/localize";
 import SlInput from "@shoelace-style/shoelace/dist/components/input/input.component.js";
 import SlTextarea from "@shoelace-style/shoelace/dist/components/textarea/textarea.component.js";
 import { type OptionDeclaration } from "@webwriter/lit";
-import TextParagraphIcon from "bootstrap-icons/icons/text-paragraph.svg";
+import TextParagraphIcon from "@tabler/icons/outline/align-left.svg";
 import { css, html, nothing, type PropertyValues } from "lit";
 import { customElement, property, query, state } from "lit/decorators.js";
 import { name as packageId } from "../../package.json";
-import { registerQuizType } from "../api";
-import { encryptedProperty, encryptPlaintextAttributes } from "../lib/encrypted-property";
-import { messageFor } from "../lib/localization";
-import { WebwriterTask } from "./webwriter-task";
+import { registerQuizType } from "../model/quiz-api";
+import { encryptedProperty, encryptPlaintextAttributes } from "../components/encrypted-property";
+import { messageFor } from "../components/localization";
+import { WebwriterTask } from "../components/webwriter-task";
 
 declare global {
 	interface HTMLElementTagNameMap {
@@ -32,14 +33,6 @@ registerQuizType({
  */
 @customElement("webwriter-text")
 export class WebwriterText extends WebwriterTask {
-	/** @internal */
-	static scopedElements = {
-		...WebwriterTask.scopedElements,
-		// Shoelace's autocorrect type predates the boolean HTMLElement property.
-		"sl-textarea": SlTextarea as unknown as CustomElementConstructor,
-		"sl-input": SlInput as unknown as CustomElementConstructor,
-	};
-
 	static styles = [WebwriterTask.styles, css`
 		:host {
 			display: block;
@@ -98,6 +91,44 @@ export class WebwriterText extends WebwriterTask {
 		}
 	`];
 
+	/** @internal */
+	static scopedElements = {
+		...WebwriterTask.scopedElements,
+		// Shoelace's autocorrect type predates the boolean HTMLElement property.
+		"sl-textarea": SlTextarea as unknown as CustomElementConstructor,
+		"sl-input": SlInput as unknown as CustomElementConstructor,
+	};
+
+	static options = {
+		...WebwriterTask.options,
+		type: {
+			type: "select",
+			label: (widget: { msg: MsgFn }) => widget.msg("Type"),
+			options: [
+				{ value: "long-text", label: (widget: { msg: MsgFn }) => widget.msg("Long Text") },
+				{ value: "text", label: (widget: { msg: MsgFn }) => widget.msg("Short Text") },
+				{ value: "number", label: (widget: { msg: MsgFn }) => widget.msg("Number") },
+				{ value: "date", label: (widget: { msg: MsgFn }) => widget.msg("Date") },
+				{ value: "time", label: (widget: { msg: MsgFn }) => widget.msg("Time") },
+				{ value: "datetime-local", label: (widget: { msg: MsgFn }) => widget.msg("Date & Time") },
+			],
+		},
+		placeholder: { type: "string", label: (widget: { msg: MsgFn }) => widget.msg("Placeholder") },
+		freeText: { type: "boolean", label: (widget: { msg: MsgFn }) => widget.msg("Free answer") },
+		ignoreCase: { type: "boolean", label: (widget: { msg: MsgFn }) => widget.msg("Ignore capitalization") },
+		correctMessage: { type: "string", label: (widget: { msg: MsgFn }) => widget.msg("Message for correct solution") },
+		wrongMessage: { type: "string", label: (widget: { msg: MsgFn }) => widget.msg("Message for wrong solution") },
+	};
+
+	get options() {
+		const isText = this.type === "long-text" || this.type === "text";
+		const omitted: string[] = [];
+		if (!isText && this.type !== "number") omitted.push("placeholder");
+		if (this.freeText) omitted.push("ignoreCase", "correctMessage", "wrongMessage");
+		else if (!isText) omitted.push("ignoreCase");
+		return this.declarationsWithout("options", omitted);
+	}
+
 	/**
 	 * The kind of input field learners answer in.
 	 *
@@ -141,56 +172,7 @@ export class WebwriterText extends WebwriterTask {
 	@property({ type: String, attribute: "wrong-message", reflect: true, useDefault: true })
 	accessor wrongMessage: string = "";
 
-	/** @internal */
-	get options(): Record<string, OptionDeclaration> {
-		const isText = this.type === "long-text" || this.type === "text";
-		const options: Record<string, OptionDeclaration> = {
-			...super.options,
-			type: {
-				type: "select",
-				label: { _: this.msg("Type") },
-				options: [
-					{ value: "long-text", label: { _: this.msg("Long Text") } },
-					{ value: "text", label: { _: this.msg("Short Text") } },
-					{ value: "number", label: { _: this.msg("Number") } },
-					{ value: "date", label: { _: this.msg("Date") } },
-					{ value: "time", label: { _: this.msg("Time") } },
-					{ value: "datetime-local", label: { _: this.msg("Date & Time") } },
-				],
-			},
-		};
-
-		if (isText || this.type === "number") {
-			options.placeholder = { type: "string", label: { _: this.msg("Placeholder") } };
-		}
-
-		options.freeText = { type: "boolean", label: { _: this.msg("Free answer") } };
-
-		if (!this.freeText) {
-			if (isText) {
-				options.ignoreCase = {
-					type: "boolean",
-					label: { _: this.msg("Ignore capitalization") },
-				};
-			}
-			options.correctMessage = {
-				type: "string",
-				label: { _: this.msg("Message for correct solution") },
-			};
-			options.wrongMessage = {
-				type: "string",
-				label: { _: this.msg("Message for wrong solution") },
-			};
-		}
-
-		return options;
-	}
-
-	protected updated(changed: PropertyValues) {
-		super.updated(changed);
-		if (changed.has("type") || changed.has("freeText")) this.refreshDrawer();
-	}
-
+	/** The drawer offers only the settings that apply to the current answer type. */
 	/**
 	 * The value counting as correct. It is obfuscated in the markup so that learners cannot read it directly.
 	 */
@@ -204,17 +186,22 @@ export class WebwriterText extends WebwriterTask {
 	@query("sl-textarea, sl-input")
 	private accessor input!: SlTextarea | SlInput;
 
+	protected updated(changed: PropertyValues) {
+		super.updated(changed);
+		if (changed.has("type") || changed.has("freeText")) this.refreshDrawer();
+	}
+
 	protected firstUpdated(changed: PropertyValues): void {
 		super.firstUpdated(changed);
-		if (this.editable) encryptPlaintextAttributes(this);
+		if (this.editing) encryptPlaintextAttributes(this);
 	}
 
 	private get value(): string {
-		return this.isContentEditable ? this.solution : (this.currentAnswer ?? "");
+		return this.editing ? this.solution : (this.currentAnswer ?? "");
 	}
 
 	private set value(value: string) {
-		if (this.isContentEditable) this.solution = value;
+		if (this.editing) this.solution = value;
 		else this.currentAnswer = value;
 	}
 
@@ -253,7 +240,7 @@ export class WebwriterText extends WebwriterTask {
 
 	private get feedbackState(): "correct" | "incorrect" | undefined {
 		// Free answers are locked on submit but never marked correct/incorrect.
-		if (this.freeText || this.isContentEditable || !this.graded || !this.detailedFeedback) return undefined;
+		if (this.freeText || this.editing || !this.graded || !this.detailedFeedback) return undefined;
 		return this.isCorrect() ? "correct" : "incorrect";
 	}
 
@@ -262,7 +249,7 @@ export class WebwriterText extends WebwriterTask {
 		const state = this.feedbackState;
 		const message = state === "correct" ? this.correctMessage : this.wrongMessage;
 		const showSolution = this.detailedFeedback && this.solution.trim() !== "";
-		const disabled = this.graded && !this.editable;
+		const disabled = this.graded && !this.editing;
 
 		const field =
 			this.type === "long-text"
