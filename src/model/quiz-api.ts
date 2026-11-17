@@ -9,7 +9,7 @@ export type QuizType = {
 	createInstance(): QuizTaskElement;
 };
 
-export interface IWebWriterQuizType {
+interface IWebWriterQuizType {
 	checkValidity(): boolean;
 	reset(): void;
 	checkAnswer?(detailedFeedback: boolean): number;

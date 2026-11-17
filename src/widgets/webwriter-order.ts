@@ -1,5 +1,4 @@
 import type { MsgFn } from "@lit/localize";
-import { type OptionDeclaration } from "@webwriter/lit";
 import { Drag, type DragCommitDetail } from "@webwriter/lit/drag";
 import { transaction } from "@webwriter/widget/transaction";
 import ArrowDownUpIcon from "@tabler/icons/outline/arrows-sort.svg";
@@ -19,11 +18,11 @@ declare global {
 	}
 }
 
-export type OrderLayout = "list" | "tiles";
-export type OrderDirection = "ascending" | "descending";
-export type OrderNumberingStyle = "none" | "numeric" | "alphabetic" | "roman";
-export type OrderGradingMethod = "pass-fail" | "partial-position" | "partial-sequence";
-export type OrderSolution = string[];
+type OrderLayout = "list" | "tiles";
+type OrderDirection = "ascending" | "descending";
+type OrderNumberingStyle = "none" | "numeric" | "alphabetic" | "roman";
+type OrderGradingMethod = "pass-fail" | "partial-position" | "partial-sequence";
+type OrderSolution = string[];
 
 registerQuizType({
 	packageId,
@@ -197,7 +196,7 @@ export class WebwriterOrder extends WebwriterTask {
 		this.orderItems.shuffle();
 	}
 
-	checkAnswer(detailedFeedback: boolean): number {
+	checkAnswer(_detailedFeedback?: boolean): number {
 		const order = this.items.map(item => item.id);
 		const solution = this.solution.length || this.hasAttribute("solution")
 			? this.solution

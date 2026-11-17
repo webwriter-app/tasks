@@ -116,7 +116,7 @@ function decryptAttribute(value: string) {
 	) as unknown;
 }
 
-export function isEncryptedProperty(value: string | null) {
+function isEncryptedProperty(value: string | null) {
 	if (value === null) {
 		return false;
 	}

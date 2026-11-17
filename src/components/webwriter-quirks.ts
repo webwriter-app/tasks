@@ -1,9 +1,9 @@
-export interface RelativeSelectionEndpoint {
+interface RelativeSelectionEndpoint {
 	path: number[];
 	offset: number;
 }
 
-export interface RelativeSelection {
+interface RelativeSelection {
 	anchor: RelativeSelectionEndpoint;
 	focus: RelativeSelectionEndpoint;
 }
@@ -12,7 +12,7 @@ export interface RelativeSelection {
  * Serializes the current selection relative to `root`
  * @returns the serialized selection, or `undefined` if there is no selection or if the selection is not fully contained in `root`
  */
-export function serializeRelativeSelection(root: Node): RelativeSelection | undefined {
+function serializeRelativeSelection(root: Node): RelativeSelection | undefined {
 	const selection = root.ownerDocument?.getSelection();
 	if (!selection?.anchorNode || !selection.focusNode) return;
 
@@ -36,7 +36,7 @@ export function serializeRelativeSelection(root: Node): RelativeSelection | unde
  * Restores a selection previously serialized with `serializeRelativeSelection` on the given `root` element.
  * @returns true if the selection was successfully restored
  */
-export function restoreRelativeSelection(root: Node, relative: RelativeSelection): boolean {
+function restoreRelativeSelection(root: Node, relative: RelativeSelection): boolean {
 	const resolve = ({ path, offset }: RelativeSelectionEndpoint) => {
 		let node = root;
 		for (const index of path) {

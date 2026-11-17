@@ -1,7 +1,6 @@
 import type { MsgFn } from "@lit/localize";
 import SlInput from "@shoelace-style/shoelace/dist/components/input/input.component.js";
 import SlTextarea from "@shoelace-style/shoelace/dist/components/textarea/textarea.component.js";
-import { type OptionDeclaration } from "@webwriter/lit";
 import TextParagraphIcon from "@tabler/icons/outline/align-left.svg";
 import { css, html, nothing, type PropertyValues } from "lit";
 import { customElement, property, query, state } from "lit/decorators.js";
@@ -17,7 +16,7 @@ declare global {
 	}
 }
 
-export type TextType = "long-text" | "text" | "number" | "date" | "time" | "datetime-local";
+type TextType = "long-text" | "text" | "number" | "date" | "time" | "datetime-local";
 
 registerQuizType({
 	packageId,

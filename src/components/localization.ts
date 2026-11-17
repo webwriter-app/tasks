@@ -12,7 +12,7 @@ import { templates as nl } from "../../localization/generated/nl";
 import { sourceLocale, targetLocales } from "../../localization/generated/locale-codes";
 
 /** The languages of one widget instance: it follows the `lang` of the element or of its ancestors. */
-export const localizeOptions: LocalizeOptions = {
+const localizeOptions: LocalizeOptions = {
 	sourceLocale,
 	targetLocales,
 	load: locale => import(`../../localization/generated/${locale}.ts`),

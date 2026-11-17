@@ -25,7 +25,7 @@ declare global {
 	}
 }
 
-export type PairingMode = "pairing" | "memory";
+type PairingMode = "pairing" | "memory";
 
 type PairingQuizState = {
 	leftItemIds: string[];

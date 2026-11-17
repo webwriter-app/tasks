@@ -1,6 +1,5 @@
 import type { MsgFn } from "@lit/localize";
 import SlTooltip from "@shoelace-style/shoelace/dist/components/tooltip/tooltip.component.js";
-import { type OptionDeclaration } from "@webwriter/lit";
 import HighlighterIcon from "@tabler/icons/outline/highlight.svg";
 import { css, html, type PropertyValues } from "lit";
 import { customElement, property, state } from "lit/decorators.js";
@@ -18,7 +17,7 @@ declare global {
 	}
 }
 
-export type MarkGradingMethod = "pass-fail" | "partial";
+type MarkGradingMethod = "pass-fail" | "partial";
 
 registerQuizType({
 	packageId,

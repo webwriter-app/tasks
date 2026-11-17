@@ -1,5 +1,4 @@
 import type { MsgFn } from "@lit/localize";
-import { type OptionDeclaration } from "@webwriter/lit";
 import { Drag } from "@webwriter/lit/drag";
 import UiChecksIcon from "@tabler/icons/outline/list-check.svg";
 import UiRadiosIcon from "@tabler/icons/outline/circle-dot.svg";
@@ -19,10 +18,10 @@ declare global {
 	}
 }
 
-export type ChoiceMode = "single" | "multiple";
-export type ChoiceLayout = "list" | "tiles";
-export type ChoiceGradingMethod = "pass-fail" | "partial";
-export type ChoiceSolution = { [id: string]: boolean };
+type ChoiceMode = "single" | "multiple";
+type ChoiceLayout = "list" | "tiles";
+type ChoiceGradingMethod = "pass-fail" | "partial";
+type ChoiceSolution = { [id: string]: boolean };
 
 function createChoice(mode: ChoiceMode) {
 	const choice = document.createElement("webwriter-choice");
