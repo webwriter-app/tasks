@@ -44,6 +44,8 @@ registerQuizType({
  *
  * The items must be `<webwriter-order-item>` elements assigned to the default
  * slot.
+ *
+ * Conversion: the items can be converted to an `ol` in their correct order.
  */
 @customElement("webwriter-order")
 export class WebwriterOrder extends WebwriterTask {
@@ -84,6 +86,8 @@ export class WebwriterOrder extends WebwriterTask {
 		...WebwriterTask.actions,
 		addOption: { label: (widget: { msg: MsgFn }) => widget.msg("Add Option") },
 	};
+
+	static convertTo = { ol: "toList" };
 
 	static options = {
 		...WebwriterTask.options,
@@ -186,6 +190,19 @@ export class WebwriterOrder extends WebwriterTask {
 		if (changed.has("layout") || changed.has("numberingStyle") || changed.has("direction") || changed.has("editable")) {
 			this.refreshItems();
 		}
+	}
+
+	/** @internal The items in their correct order as a numbered list. */
+	toList() {
+		const authored = this.orderItems.authored;
+		const ordered = this.solution.map(id => authored.find(item => item.id === id)).filter((item): item is WebwriterOrderItem => item !== undefined);
+		const list = this.ownerDocument.createElement("ol");
+		for (const item of ordered.length > 0 ? ordered : authored) {
+			const entry = this.ownerDocument.createElement("li");
+			entry.textContent = item.textContent?.trim() ?? "";
+			list.append(entry);
+		}
+		return list.childElementCount > 0 ? list : null;
 	}
 
 	checkValidity(): boolean {

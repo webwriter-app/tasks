@@ -58,6 +58,10 @@ export class HintPopup extends LitElementWw {
 	@property({ type: String, attribute: "position", reflect: true })
 	accessor position: "start" | "end" = "end";
 
+	/** The accessible name of the trigger. */
+	@property({ type: String })
+	accessor label = "";
+
 	@state()
 	private accessor open = false;
 
@@ -119,10 +123,18 @@ export class HintPopup extends LitElementWw {
 			shift
 			distance="5"
 			@selectstart=${(e: Event) => e.stopImmediatePropagation()}
+			@keydown=${(e: KeyboardEvent) => {
+				if (e.key === "Escape" && this.open) {
+					e.stopPropagation();
+					this.open = false;
+				}
+			}}
 		>
 			<sl-icon-button
 				part=${this.hasContent || this.open ? "filled" : "empty"}
 				slot="anchor"
+				label=${this.label || nothing}
+				aria-expanded=${this.open ? "true" : "false"}
 				src=${this.hasContent || this.open ? IconQuestionCircleFill : IconQuestionCircle}
 				@click=${() => this.toggle()}
 			></sl-icon-button>

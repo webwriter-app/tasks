@@ -69,7 +69,7 @@ export class WebwriterGapItem extends QuizElement {
 			content: "";
 			position: absolute;
 			inset: -4px;
-			border: 2px dotted var(--sl-color-primary-400);
+			border: 2px dotted var(--ww-theme-accent-1, var(--sl-color-primary-400));
 			border-radius: calc(var(--sl-border-radius-medium) + 3px);
 			pointer-events: none;
 			opacity: 0;
@@ -199,6 +199,7 @@ export class WebwriterGapItem extends QuizElement {
 				}}
 			></slot>
 			<sl-icon-button
+				label=${this.msg("Remove gap")}
 				src=${XIcon}
 				@click=${() => {
 					const slot = this.slotRef.value;

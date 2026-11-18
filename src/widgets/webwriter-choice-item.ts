@@ -40,6 +40,11 @@ export class WebwriterChoiceItem extends QuizElement {
 					var(--sl-transition-fast) background-color;
 				cursor: inherit;
 
+				&:focus-visible {
+					outline: var(--sl-focus-ring-width) var(--sl-focus-ring-style) var(--sl-focus-ring-color);
+					outline-offset: var(--sl-focus-ring-offset);
+				}
+
 				.mode-single & {
 					border-radius: var(--sl-border-radius-circle);
 				}
@@ -56,8 +61,8 @@ export class WebwriterChoiceItem extends QuizElement {
 				--color-background: var(--sl-color-neutral-0);
 
 				&.selected {
-					--color-border: var(--sl-color-primary-600);
-					--color-marker: var(--sl-color-primary-600);
+					--color-border: var(--ww-theme-accent-1, var(--sl-color-primary-600));
+					--color-marker: var(--ww-theme-accent-1, var(--sl-color-primary-600));
 					--color-background: var(--sl-color-primary-50);
 				}
 
@@ -96,8 +101,8 @@ export class WebwriterChoiceItem extends QuizElement {
 
 					.selected &,
 					&.selected {
-						--color-border: var(--sl-color-primary-500);
-						--color-marker: var(--sl-color-primary-500);
+						--color-border: var(--ww-theme-accent-1, var(--sl-color-primary-500));
+						--color-marker: var(--ww-theme-accent-1, var(--sl-color-primary-500));
 					}
 				}
 			}
@@ -131,12 +136,31 @@ export class WebwriterChoiceItem extends QuizElement {
 				opacity: 0;
 			}
 
-			:host(:hover) .actions {
+			:is(:host(:hover), :host(:focus-within)) .actions {
 				opacity: 1;
 			}
 
-			:is(:host(.ww-selected-text-within), :host(:hover)) hint-popup::part(empty) {
+			:is(:host(.ww-selected-text-within), :host(:hover), :host(:focus-within)) hint-popup::part(empty) {
 				opacity: 1;
+			}
+
+			/* Without a pointer that hovers, the controls would stay invisible. */
+			@media (hover: none) {
+				.actions,
+				hint-popup::part(empty) {
+					opacity: 1;
+				}
+			}
+
+			@media print {
+				.actions,
+				hint-popup {
+					display: none;
+				}
+
+				.choice-item {
+					break-inside: avoid;
+				}
 			}
 
 			.layout-list {
@@ -268,6 +292,10 @@ export class WebwriterChoiceItem extends QuizElement {
 			>
 				<div class="marker-container" @click=${() => this.editing && this.dispatchSelectEvent()}>
 					<button
+						type="button"
+						role=${parent.mode === "multiple" ? "checkbox" : "radio"}
+						aria-checked=${state.selected ? "true" : "false"}
+						aria-labelledby="content"
 						class=${classMap({
 							marker: true,
 							correct: state.correct,
@@ -278,7 +306,7 @@ export class WebwriterChoiceItem extends QuizElement {
 					</button>
 				</div>
 
-				<div class="content">
+				<div class="content" id="content">
 					<slot style="--ww-placeholder: '${"Option"}'"></slot>
 					${state.showFeedback
 						? html`<div class="feedback-message">
@@ -290,12 +318,13 @@ export class WebwriterChoiceItem extends QuizElement {
 				<div class="actions" data-ww-can="edit">
 					<sl-icon-button
 						class="drag-handle"
+						label=${this.msg("Move option")}
 						data-ww-drag-handle
 						src=${parent.layout === "list" ? GripVerticalIcon : GripHorizontalIcon}
 					></sl-icon-button>
 				</div>
 
-				<hint-popup position="start"><slot name="hint"></slot></hint-popup>
+				<hint-popup position="start" label=${this.msg("Hint")}><slot name="hint"></slot></hint-popup>
 			</div>
 		`;
 	}

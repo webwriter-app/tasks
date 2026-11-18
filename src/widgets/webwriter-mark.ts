@@ -1,7 +1,7 @@
 import type { MsgFn } from "@lit/localize";
 import SlTooltip from "@shoelace-style/shoelace/dist/components/tooltip/tooltip.component.js";
 import HighlighterIcon from "@tabler/icons/outline/highlight.svg";
-import { css, html, type PropertyValues } from "lit";
+import { css, html, nothing, type PropertyValues } from "lit";
 import { customElement, property, state } from "lit/decorators.js";
 import { createRef, ref } from "lit/directives/ref.js";
 import { styleMap } from "lit/directives/style-map.js";
@@ -33,7 +33,7 @@ registerQuizType({
 });
 
 type WordSegment = { node: Text; start: number; end: number };
-type HighlightGroup = "marked" | "correct" | "missed" | "wrong";
+type HighlightGroup = "marked" | "correct" | "missed" | "wrong" | "focus";
 
 function rangesOverlap(a: Range, b: Range): boolean {
 	return a.compareBoundaryPoints(Range.END_TO_START, b) < 0 && a.compareBoundaryPoints(Range.START_TO_END, b) > 0;
@@ -98,8 +98,27 @@ export class WebWriterMark extends WebwriterTask {
 			text-decoration: line-through;
 		}
 
+		:host ::highlight(webwriter-mark-focus) {
+			text-decoration: underline 2px;
+			text-decoration-color: var(--sl-focus-ring-color);
+		}
+
+		slot:not([name]):focus-visible {
+			outline: var(--sl-focus-ring-width) var(--sl-focus-ring-style) var(--sl-focus-ring-color);
+			outline-offset: var(--sl-focus-ring-offset);
+		}
+
 		.enter-anchor {
 			position: absolute;
+		}
+
+		.announcement {
+			position: absolute;
+			inline-size: 1px;
+			block-size: 1px;
+			overflow: hidden;
+			clip-path: inset(50%);
+			white-space: nowrap;
 		}
 	`];
 
@@ -134,6 +153,7 @@ export class WebWriterMark extends WebwriterTask {
 		correct: new Highlight(),
 		missed: new Highlight(),
 		wrong: new Highlight(),
+		focus: new Highlight(),
 	};
 
 	static {
@@ -166,7 +186,12 @@ export class WebWriterMark extends WebwriterTask {
 		correct: [],
 		missed: [],
 		wrong: [],
+		focus: [],
 	};
+
+	/** The word the keyboard is on while the text has focus. */
+	@state() private accessor focusedWord: number | undefined;
+	@state() private accessor announcement = "";
 
 	private observer = new MutationObserver(records => this.handleMutation(records));
 
@@ -241,6 +266,7 @@ export class WebWriterMark extends WebwriterTask {
 		this.setHighlight("correct", showFeedback ? toRanges(this.currentAnswer.filter(i => solution.has(i))) : []);
 		this.setHighlight("missed", showFeedback ? toRanges(this.solution.filter(i => !answer.has(i))) : []);
 		this.setHighlight("wrong", showFeedback ? toRanges(this.currentAnswer.filter(i => !solution.has(i))) : []);
+		this.setHighlight("focus", !this.editing && this.focusedWord !== undefined ? toRanges([this.focusedWord]) : []);
 	}
 
 	protected updated(changed: PropertyValues): void {
@@ -323,6 +349,37 @@ export class WebWriterMark extends WebwriterTask {
 		this.currentAnswer = this.toggleIndices(this.currentAnswer, [index]);
 	}
 
+	/** Words are reachable by keyboard: arrows move, Space or Enter marks. */
+	private handleWordKeyDown(event: KeyboardEvent) {
+		if (this.editing || this.graded || event.altKey || event.ctrlKey || event.metaKey) return;
+		const segments = this.getWordSegments();
+		if (!segments.length) return;
+		let index = Math.min(this.focusedWord ?? 0, segments.length - 1);
+		switch (event.key) {
+			case "ArrowRight": case "ArrowDown": index = Math.min(index + 1, segments.length - 1); break;
+			case "ArrowLeft": case "ArrowUp": index = Math.max(index - 1, 0); break;
+			case "Home": index = 0; break;
+			case "End": index = segments.length - 1; break;
+			case " ": case "Enter":
+				this.currentAnswer = this.toggleIndices(this.currentAnswer, [index]);
+				break;
+			default: return;
+		}
+		event.preventDefault();
+		this.focusedWord = index;
+		const { node, start, end } = segments[index];
+		this.announcement = node.data.slice(start, end) + (this.currentAnswer.includes(index) ? `, ${this.msg("Marked")}` : "");
+	}
+
+	private handleWordFocus() {
+		if (!this.editing) this.focusedWord ??= 0;
+	}
+
+	private handleWordBlur() {
+		this.focusedWord = undefined;
+		this.announcement = "";
+	}
+
 	private handleKeyDown = (event: KeyboardEvent) => {
 		if (!this.editing) return;
 		const selection = document.getSelection();
@@ -384,9 +441,16 @@ export class WebWriterMark extends WebwriterTask {
 				})}
 				?data-empty=${!Array.from(this.childNodes).some(node =>
 					(node instanceof Text || node instanceof Element) && this.isAnswerContent(node) && node.textContent?.trim())}
+				tabindex=${this.editing || this.graded ? nothing : "0"}
+				role=${this.editing ? nothing : "group"}
+				aria-label=${this.editing ? nothing : this.msg("Text to Highlight")}
 				@click=${this.handleClick}
 				@contextmenu=${this.handleContextMenu}
+				@keydown=${this.handleWordKeyDown}
+				@focus=${this.handleWordFocus}
+				@blur=${this.handleWordBlur}
 			></slot>
+			<span class="announcement" role="status">${this.announcement}</span>
 			<sl-tooltip
 				${ref(this.enterTooltipRef)}
 				content=${this.msg("Multiple lines are not supported")}

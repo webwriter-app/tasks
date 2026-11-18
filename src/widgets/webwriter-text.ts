@@ -88,6 +88,23 @@ export class WebwriterText extends WebwriterTask {
 		.solution {
 			margin-top: var(--sl-spacing-x-small);
 		}
+
+		/* On paper the empty field is a box (long text) or a line (short answers) to write into. */
+		@media print {
+			sl-textarea {
+				min-height: 6em;
+			}
+
+			sl-textarea::part(textarea) {
+				min-height: 6em;
+			}
+
+			sl-input::part(base) {
+				background: transparent;
+				border-width: 0 0 1px;
+				border-radius: 0;
+			}
+		}
 	`];
 
 	/** @internal */

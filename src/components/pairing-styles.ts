@@ -48,8 +48,15 @@ export const pairingStyles = [WebwriterTask.styles, css`
 			opacity: 0;
 
 			&:hover,
+			&:focus-within,
 			.pair:hover &,
+			.pair:focus-within &,
 			.pair[data-ww-dragging] & {
+				opacity: 1;
+			}
+
+			/* Without a pointer that hovers, the controls would stay invisible. */
+			@media (hover: none) {
 				opacity: 1;
 			}
 		}
@@ -115,7 +122,7 @@ export const pairingStyles = [WebwriterTask.styles, css`
 			content: "";
 			position: absolute;
 			inset: -4px;
-			border: 2px dashed var(--sl-color-primary-400);
+			border: 2px dashed var(--ww-theme-accent-1, var(--sl-color-primary-400));
 			border-radius: calc(var(--sl-border-radius-medium) + 3px);
 			pointer-events: none;
 			opacity: 0;
@@ -310,6 +317,26 @@ export const pairingStyles = [WebwriterTask.styles, css`
 	@media (prefers-reduced-motion: reduce) {
 		.memory-card-inner {
 			transition-duration: 0ms;
+		}
+	}
+
+	#add-pair:focus-visible {
+		outline: var(--sl-focus-ring-width) var(--sl-focus-ring-style) var(--sl-focus-ring-color);
+		outline-offset: var(--sl-focus-ring-offset);
+	}
+
+	@media print {
+		.pair .actions,
+		#add-pair {
+			display: none;
+		}
+
+		.memory-grid {
+			display: none;
+		}
+
+		.pairing-card {
+			break-inside: avoid;
 		}
 	}
 `];

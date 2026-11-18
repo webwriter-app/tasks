@@ -35,6 +35,12 @@ export class WebwriterSpeech extends WebwriterTask {
 			display: block;
 			width: 100%;
 		}
+
+		@media print {
+			.answer-control {
+				display: none;
+			}
+		}
 	`];
 
 	/** @internal */
@@ -79,7 +85,9 @@ export class WebwriterSpeech extends WebwriterTask {
 	protected renderAnswer() {
 		const source = this.activeSource;
 		if (!source) {
-			return html`<audio-recorder
+			return html`<p class="print-note">${this.msg("Interactive content: open the document online")}</p>
+			<audio-recorder
+				class="answer-control"
 				.disabled=${this.editing}
 				@recording-complete=${(e: CustomEvent) => {
 					if (!this.isConnected || this.editing) return;
@@ -89,7 +97,9 @@ export class WebwriterSpeech extends WebwriterTask {
 				}}
 			></audio-recorder>`;
 		} else {
-			return html`<audio-player
+			return html`<p class="print-note">${this.msg("Interactive content: open the document online")}</p>
+			<audio-player
+				class="answer-control"
 				.src=${source}
 				.allowDelete=${!this.editing}
 				@delete-recording=${() => {

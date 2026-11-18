@@ -192,7 +192,7 @@
       "declarations": [
         {
           "kind": "class",
-          "description": "An answer where learners pick one or more options.\n\nThe options must be `<webwriter-choice-item>` elements assigned to the\ndefault slot.",
+          "description": "An answer where learners pick one or more options.\n\nThe options must be `<webwriter-choice-item>` elements assigned to the\ndefault slot.\n\nConversion: the options can be converted to a `ul` (the solution is not carried over).",
           "name": "WebwriterChoice",
           "members": [
             {
@@ -218,6 +218,15 @@
                 "name": "WebwriterTask",
                 "module": "src/components/webwriter-task.ts"
               }
+            },
+            {
+              "kind": "field",
+              "name": "convertTo",
+              "type": {
+                "text": "object"
+              },
+              "static": true,
+              "default": "{ ul: \"toList\" }"
             },
             {
               "kind": "field",
@@ -789,6 +798,40 @@
           },
           "tagName": "webwriter-choice",
           "customElement": true,
+          "cssParts": [
+            {
+              "description": "The generated question title (\"Question 1\").",
+              "name": "title",
+              "inheritedFrom": {
+                "name": "WebwriterTask",
+                "module": "src/components/webwriter-task.ts"
+              }
+            },
+            {
+              "description": "The prompt of the question.",
+              "name": "prompt",
+              "inheritedFrom": {
+                "name": "WebwriterTask",
+                "module": "src/components/webwriter-task.ts"
+              }
+            },
+            {
+              "description": "The area with the answer controls.",
+              "name": "answer",
+              "inheritedFrom": {
+                "name": "WebwriterTask",
+                "module": "src/components/webwriter-task.ts"
+              }
+            },
+            {
+              "description": "The feedback block shown after submitting.",
+              "name": "feedback",
+              "inheritedFrom": {
+                "name": "WebwriterTask",
+                "module": "src/components/webwriter-task.ts"
+              }
+            }
+          ],
           "events": [
             {
               "name": "optionschange",
@@ -1692,6 +1735,40 @@
           },
           "tagName": "webwriter-gap",
           "customElement": true,
+          "cssParts": [
+            {
+              "description": "The generated question title (\"Question 1\").",
+              "name": "title",
+              "inheritedFrom": {
+                "name": "WebwriterTask",
+                "module": "src/components/webwriter-task.ts"
+              }
+            },
+            {
+              "description": "The prompt of the question.",
+              "name": "prompt",
+              "inheritedFrom": {
+                "name": "WebwriterTask",
+                "module": "src/components/webwriter-task.ts"
+              }
+            },
+            {
+              "description": "The area with the answer controls.",
+              "name": "answer",
+              "inheritedFrom": {
+                "name": "WebwriterTask",
+                "module": "src/components/webwriter-task.ts"
+              }
+            },
+            {
+              "description": "The feedback block shown after submitting.",
+              "name": "feedback",
+              "inheritedFrom": {
+                "name": "WebwriterTask",
+                "module": "src/components/webwriter-task.ts"
+              }
+            }
+          ],
           "modulePath": "src/widgets/webwriter-gap.ts",
           "definitionPath": "src/widgets/webwriter-gap.ts"
         }
@@ -1767,7 +1844,7 @@
               },
               "privacy": "private",
               "static": true,
-              "default": "{ marked: new Highlight(), correct: new Highlight(), missed: new Highlight(), wrong: new Highlight(), }"
+              "default": "{ marked: new Highlight(), correct: new Highlight(), missed: new Highlight(), wrong: new Highlight(), focus: new Highlight(), }"
             },
             {
               "kind": "field",
@@ -1825,7 +1902,25 @@
                 "text": "Record<HighlightGroup, Range[]>"
               },
               "privacy": "private",
-              "default": "{ marked: [], correct: [], missed: [], wrong: [], }"
+              "default": "{ marked: [], correct: [], missed: [], wrong: [], focus: [], }"
+            },
+            {
+              "kind": "field",
+              "name": "focusedWord",
+              "type": {
+                "text": "number | undefined"
+              },
+              "privacy": "private",
+              "description": "The word the keyboard is on while the text has focus."
+            },
+            {
+              "kind": "field",
+              "name": "announcement",
+              "type": {
+                "text": "string"
+              },
+              "privacy": "private",
+              "default": "\"\""
             },
             {
               "kind": "field",
@@ -1975,6 +2070,30 @@
                   }
                 }
               ]
+            },
+            {
+              "kind": "method",
+              "name": "handleWordKeyDown",
+              "privacy": "private",
+              "parameters": [
+                {
+                  "name": "event",
+                  "type": {
+                    "text": "KeyboardEvent"
+                  }
+                }
+              ],
+              "description": "Words are reachable by keyboard: arrows move, Space or Enter marks."
+            },
+            {
+              "kind": "method",
+              "name": "handleWordFocus",
+              "privacy": "private"
+            },
+            {
+              "kind": "method",
+              "name": "handleWordBlur",
+              "privacy": "private"
             },
             {
               "kind": "field",
@@ -2394,6 +2513,40 @@
           },
           "tagName": "webwriter-mark",
           "customElement": true,
+          "cssParts": [
+            {
+              "description": "The generated question title (\"Question 1\").",
+              "name": "title",
+              "inheritedFrom": {
+                "name": "WebwriterTask",
+                "module": "src/components/webwriter-task.ts"
+              }
+            },
+            {
+              "description": "The prompt of the question.",
+              "name": "prompt",
+              "inheritedFrom": {
+                "name": "WebwriterTask",
+                "module": "src/components/webwriter-task.ts"
+              }
+            },
+            {
+              "description": "The area with the answer controls.",
+              "name": "answer",
+              "inheritedFrom": {
+                "name": "WebwriterTask",
+                "module": "src/components/webwriter-task.ts"
+              }
+            },
+            {
+              "description": "The feedback block shown after submitting.",
+              "name": "feedback",
+              "inheritedFrom": {
+                "name": "WebwriterTask",
+                "module": "src/components/webwriter-task.ts"
+              }
+            }
+          ],
           "events": [
             {
               "name": "optionschange",
@@ -2558,7 +2711,7 @@
       "declarations": [
         {
           "kind": "class",
-          "description": "An answer where learners drag items into the correct order.\n\nThe items must be `<webwriter-order-item>` elements assigned to the default\nslot.",
+          "description": "An answer where learners drag items into the correct order.\n\nThe items must be `<webwriter-order-item>` elements assigned to the default\nslot.\n\nConversion: the items can be converted to an `ol` in their correct order.",
           "name": "WebwriterOrder",
           "members": [
             {
@@ -2584,6 +2737,15 @@
                 "name": "WebwriterTask",
                 "module": "src/components/webwriter-task.ts"
               }
+            },
+            {
+              "kind": "field",
+              "name": "convertTo",
+              "type": {
+                "text": "object"
+              },
+              "static": true,
+              "default": "{ ol: \"toList\" }"
             },
             {
               "kind": "field",
@@ -2695,7 +2857,8 @@
               },
               "parameters": [
                 {
-                  "name": "detailedFeedback",
+                  "name": "_detailedFeedback",
+                  "optional": true,
                   "type": {
                     "text": "boolean"
                   }
@@ -3110,6 +3273,40 @@
           },
           "tagName": "webwriter-order",
           "customElement": true,
+          "cssParts": [
+            {
+              "description": "The generated question title (\"Question 1\").",
+              "name": "title",
+              "inheritedFrom": {
+                "name": "WebwriterTask",
+                "module": "src/components/webwriter-task.ts"
+              }
+            },
+            {
+              "description": "The prompt of the question.",
+              "name": "prompt",
+              "inheritedFrom": {
+                "name": "WebwriterTask",
+                "module": "src/components/webwriter-task.ts"
+              }
+            },
+            {
+              "description": "The area with the answer controls.",
+              "name": "answer",
+              "inheritedFrom": {
+                "name": "WebwriterTask",
+                "module": "src/components/webwriter-task.ts"
+              }
+            },
+            {
+              "description": "The feedback block shown after submitting.",
+              "name": "feedback",
+              "inheritedFrom": {
+                "name": "WebwriterTask",
+                "module": "src/components/webwriter-task.ts"
+              }
+            }
+          ],
           "events": [
             {
               "name": "optionschange",
@@ -3527,6 +3724,40 @@
           },
           "tagName": "webwriter-pairing-item",
           "customElement": true,
+          "cssParts": [
+            {
+              "description": "The generated question title (\"Question 1\").",
+              "name": "title",
+              "inheritedFrom": {
+                "name": "WebwriterTask",
+                "module": "src/components/webwriter-task.ts"
+              }
+            },
+            {
+              "description": "The prompt of the question.",
+              "name": "prompt",
+              "inheritedFrom": {
+                "name": "WebwriterTask",
+                "module": "src/components/webwriter-task.ts"
+              }
+            },
+            {
+              "description": "The area with the answer controls.",
+              "name": "answer",
+              "inheritedFrom": {
+                "name": "WebwriterTask",
+                "module": "src/components/webwriter-task.ts"
+              }
+            },
+            {
+              "description": "The feedback block shown after submitting.",
+              "name": "feedback",
+              "inheritedFrom": {
+                "name": "WebwriterTask",
+                "module": "src/components/webwriter-task.ts"
+              }
+            }
+          ],
           "attributes": [
             {
               "name": "points",
@@ -4239,6 +4470,40 @@
           },
           "tagName": "webwriter-pairing-item",
           "customElement": true,
+          "cssParts": [
+            {
+              "description": "The generated question title (\"Question 1\").",
+              "name": "title",
+              "inheritedFrom": {
+                "name": "WebwriterTask",
+                "module": "src/components/webwriter-task.ts"
+              }
+            },
+            {
+              "description": "The prompt of the question.",
+              "name": "prompt",
+              "inheritedFrom": {
+                "name": "WebwriterTask",
+                "module": "src/components/webwriter-task.ts"
+              }
+            },
+            {
+              "description": "The area with the answer controls.",
+              "name": "answer",
+              "inheritedFrom": {
+                "name": "WebwriterTask",
+                "module": "src/components/webwriter-task.ts"
+              }
+            },
+            {
+              "description": "The feedback block shown after submitting.",
+              "name": "feedback",
+              "inheritedFrom": {
+                "name": "WebwriterTask",
+                "module": "src/components/webwriter-task.ts"
+              }
+            }
+          ],
           "events": [
             {
               "name": "optionschange",
@@ -4526,9 +4791,33 @@
       "declarations": [
         {
           "kind": "class",
-          "description": "A quiz groups multiple question elements into one exercise that is\nsubmitted, graded and reset as a whole.\n\nThe tasks must be assigned to the default slot.\n\nIn WebWriter 2, use the quiz's question buttons to insert questions. The\npackage includes one-question snippets for each built-in type with question\ntitles and points hidden.\n\nIn edit mode, \"Add Feedback\" inserts a block that can be edited and\nformatted in the question. Choice and Order group it with \"Add Option\" in\nboth layouts. The last question shares that row with \"Add Question\" on the\nright. Learners see the feedback block after a valid submission, including\nfor open-ended and ungraded questions. \"Show detailed feedback\" controls\nanswer-specific feedback and solution reveal.",
+          "description": "A quiz groups multiple question elements into one exercise that is\nsubmitted, graded and reset as a whole.\n\nThe tasks must be assigned to the default slot.\n\nIn WebWriter 2, use the quiz's question buttons to insert questions. The\npackage includes one-question snippets for each built-in type with question\ntitles and points hidden.\n\nIn edit mode, \"Add Feedback\" inserts a block that can be edited and\nformatted in the question. Choice and Order group it with \"Add Option\" in\nboth layouts. The last question shares that row with \"Add Question\" on the\nright. Learners see the feedback block after a valid submission, including\nfor open-ended and ungraded questions. \"Show detailed feedback\" controls\nanswer-specific feedback and solution reveal.\n\nOn paper the buttons are hidden and the questions print with a box or line\nto write into.\n\nConversions: the quiz imports and exports GIFT (`.gift`, Moodle's plain-text\nformat) for true/false, single and multiple choice, short answer and numeric,\nessay, matching (pairing) and missing-word (gap) tasks. Order, mark and speech\ntasks have no GIFT form and are written as comments on export. GIFT keeps\nplain text only (formatting, hints, feedback, points and grading settings\nare dropped), gives a short answer one solution, and cannot carry the case\noption, so imported text answers are case sensitive. Importing replaces the\ntasks of the quiz. A `ul` or `ol` becomes a single-choice task with one option\nper list item and no option marked correct.\n\nSignals: `score` (number from 0 to 1, the share of the points reached; 0\nbefore submitting) and `complete` (boolean, true once the answers are\nsubmitted). Both go back to their start values when the answers are reset.",
           "name": "WebwriterQuiz",
+          "cssParts": [
+            {
+              "description": "The total score with its progress bar, shown after submitting.",
+              "name": "result"
+            }
+          ],
           "members": [
+            {
+              "kind": "field",
+              "name": "convertFrom",
+              "type": {
+                "text": "object"
+              },
+              "static": true,
+              "default": "{ \".gift\": \"importGift\", ul: \"loadList\", ol: \"loadList\" }"
+            },
+            {
+              "kind": "field",
+              "name": "convertTo",
+              "type": {
+                "text": "object"
+              },
+              "static": true,
+              "default": "{ \".gift\": \"exportGift\" }"
+            },
             {
               "kind": "field",
               "name": "options",
@@ -4608,6 +4897,25 @@
                 "text": "\"submit\" | \"reset\" | undefined"
               },
               "privacy": "private"
+            },
+            {
+              "kind": "field",
+              "name": "#score",
+              "privacy": "private"
+            },
+            {
+              "kind": "field",
+              "name": "#complete",
+              "privacy": "private"
+            },
+            {
+              "kind": "field",
+              "name": "signals",
+              "type": {
+                "text": "object"
+              },
+              "default": "{ score: computed(() => this.#score.get()), complete: computed(() => this.#complete.get()), }",
+              "description": "Public signals for other widgets: see the class description."
             },
             {
               "kind": "field",
@@ -5307,6 +5615,40 @@
           },
           "tagName": "webwriter-speech",
           "customElement": true,
+          "cssParts": [
+            {
+              "description": "The generated question title (\"Question 1\").",
+              "name": "title",
+              "inheritedFrom": {
+                "name": "WebwriterTask",
+                "module": "src/components/webwriter-task.ts"
+              }
+            },
+            {
+              "description": "The prompt of the question.",
+              "name": "prompt",
+              "inheritedFrom": {
+                "name": "WebwriterTask",
+                "module": "src/components/webwriter-task.ts"
+              }
+            },
+            {
+              "description": "The area with the answer controls.",
+              "name": "answer",
+              "inheritedFrom": {
+                "name": "WebwriterTask",
+                "module": "src/components/webwriter-task.ts"
+              }
+            },
+            {
+              "description": "The feedback block shown after submitting.",
+              "name": "feedback",
+              "inheritedFrom": {
+                "name": "WebwriterTask",
+                "module": "src/components/webwriter-task.ts"
+              }
+            }
+          ],
           "events": [
             {
               "name": "optionschange",
@@ -5992,6 +6334,40 @@
           },
           "tagName": "webwriter-text",
           "customElement": true,
+          "cssParts": [
+            {
+              "description": "The generated question title (\"Question 1\").",
+              "name": "title",
+              "inheritedFrom": {
+                "name": "WebwriterTask",
+                "module": "src/components/webwriter-task.ts"
+              }
+            },
+            {
+              "description": "The prompt of the question.",
+              "name": "prompt",
+              "inheritedFrom": {
+                "name": "WebwriterTask",
+                "module": "src/components/webwriter-task.ts"
+              }
+            },
+            {
+              "description": "The area with the answer controls.",
+              "name": "answer",
+              "inheritedFrom": {
+                "name": "WebwriterTask",
+                "module": "src/components/webwriter-task.ts"
+              }
+            },
+            {
+              "description": "The feedback block shown after submitting.",
+              "name": "feedback",
+              "inheritedFrom": {
+                "name": "WebwriterTask",
+                "module": "src/components/webwriter-task.ts"
+              }
+            }
+          ],
           "events": [
             {
               "name": "optionschange",
@@ -6519,6 +6895,40 @@
           },
           "tagName": "webwriter-true-false",
           "customElement": true,
+          "cssParts": [
+            {
+              "description": "The generated question title (\"Question 1\").",
+              "name": "title",
+              "inheritedFrom": {
+                "name": "WebwriterTask",
+                "module": "src/components/webwriter-task.ts"
+              }
+            },
+            {
+              "description": "The prompt of the question.",
+              "name": "prompt",
+              "inheritedFrom": {
+                "name": "WebwriterTask",
+                "module": "src/components/webwriter-task.ts"
+              }
+            },
+            {
+              "description": "The area with the answer controls.",
+              "name": "answer",
+              "inheritedFrom": {
+                "name": "WebwriterTask",
+                "module": "src/components/webwriter-task.ts"
+              }
+            },
+            {
+              "description": "The feedback block shown after submitting.",
+              "name": "feedback",
+              "inheritedFrom": {
+                "name": "WebwriterTask",
+                "module": "src/components/webwriter-task.ts"
+              }
+            }
+          ],
           "events": [
             {
               "name": "optionschange",

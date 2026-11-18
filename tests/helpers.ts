@@ -47,16 +47,17 @@ const fire = (target: Element, type: string, at: Point, init: PointerEventInit =
 
 const settle = () => Promise.all(document.getAnimations().map(animation => animation.finished.catch(() => {})));
 
-export async function drag(from: Element, to: Element | Point, { cancel = false } = {}) {
+export async function drag(from: Element, to: Element | Point, { cancel = false, pointerType = "mouse" } = {}) {
 	const start = centre(from);
-	fire(from, "pointerdown", start);
-	fire(from, "pointermove", { x: start.x + 6, y: start.y + 6 });
+	const init = { pointerType };
+	fire(from, "pointerdown", start, init);
+	fire(from, "pointermove", { x: start.x + 6, y: start.y + 6 }, init);
 	await frame(2);
 	const end = to instanceof Element ? centre(to) : to;
-	fire(from, "pointermove", end);
+	fire(from, "pointermove", end, init);
 	await frame(2);
 	if (cancel) window.dispatchEvent(new KeyboardEvent("keydown", { key: "Escape", bubbles: true, composed: true }));
-	else fire(from, "pointerup", end);
+	else fire(from, "pointerup", end, init);
 	await frame(3);
 	await settle();
 }

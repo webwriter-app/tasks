@@ -167,8 +167,8 @@ export class WebwriterPairing extends WebwriterTask {
 					([a, b], index) =>
 						html`<div class="pair" data-ww-drag="pair" data-ww-key=${index}>
 							<div class="actions">
-								<sl-icon-button class="drag-handle" data-ww-drag-handle src=${GripHorizontalIcon}></sl-icon-button>
-								<sl-icon-button src=${TrashIcon} @click=${() => this.removePair(a, b)}></sl-icon-button>
+								<sl-icon-button class="drag-handle" data-ww-drag-handle label=${this.msg("Move pair")} src=${GripHorizontalIcon}></sl-icon-button>
+								<sl-icon-button label=${this.msg("Remove pair")} src=${TrashIcon} @click=${() => this.removePair(a, b)}></sl-icon-button>
 							</div>
 							<div class="pair-content">
 								<slot data-child-id=${a}></slot>
@@ -177,7 +177,17 @@ export class WebwriterPairing extends WebwriterTask {
 							</div>
 						</div>`,
 				)}
-				<div @click=${this.addPair} id="add-pair">
+				<div
+					@click=${this.addPair}
+					@keydown=${(event: KeyboardEvent) => {
+						if (event.key !== "Enter" && event.key !== " ") return;
+						event.preventDefault();
+						this.addPair();
+					}}
+					id="add-pair"
+					role="button"
+					tabindex="0"
+				>
 					<div class="label"><sl-icon src=${PlusIcon}></sl-icon>${this.msg("Add Pair")}</div>
 					<!-- Required so that the height of add-pair always matches the height of the pairings -->
 					<div class="size-placeholder"></div>
@@ -308,7 +318,8 @@ export class WebwriterPairing extends WebwriterTask {
 
 	private renderMemoryGame() {
 		if (!this.memoryGame) return nothing;
-		return html`<div class="memory-grid">
+		return html`<p class="print-note">${this.msg("Interactive content: open the document online")}</p>
+		<div class="memory-grid">
 			${this.memoryGame.itemIds.map(id => {
 				const matched = this.memoryGame!.matchedItemIds.includes(id);
 				const flipped = matched || this.memoryGame!.flippedItemIds.includes(id);

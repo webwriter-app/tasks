@@ -114,7 +114,13 @@
 			"ckb-Arab": "تاقیکردنەوە",
 			"af-ZA": "Vasvra",
 			"af-NA": "Vasvra"
-		}
+		},
+		"importFormats": [
+			".gift"
+		],
+		"exportFormats": [
+			".gift"
+		]
 	},
 	"./widgets/webwriter-quiz-hint": {
 		"group": "containerinline",

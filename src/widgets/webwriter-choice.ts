@@ -55,6 +55,8 @@ registerQuizType({
  *
  * The options must be `<webwriter-choice-item>` elements assigned to the
  * default slot.
+ *
+ * Conversion: the options can be converted to a `ul` (the solution is not carried over).
  */
 @customElement("webwriter-choice")
 export class WebwriterChoice extends WebwriterTask {
@@ -92,6 +94,8 @@ export class WebwriterChoice extends WebwriterTask {
 		...WebwriterTask.actions,
 		addOption: { label: (widget: { msg: MsgFn }) => widget.msg("Add Option") },
 	};
+
+	static convertTo = { ul: "toList" };
 
 	static options = {
 		...WebwriterTask.options,
@@ -232,6 +236,17 @@ export class WebwriterChoice extends WebwriterTask {
 		}
 	}
 
+	/** @internal The options as a bulleted list; which ones are correct is not carried over. */
+	toList() {
+		const list = this.ownerDocument.createElement("ul");
+		for (const item of this.choices.authored) {
+			const entry = this.ownerDocument.createElement("li");
+			entry.textContent = item.textContent?.trim() ?? "";
+			list.append(entry);
+		}
+		return list.childElementCount > 0 ? list : null;
+	}
+
 	protected addOption() {
 		if (!this.isConnected || !this.editing) return;
 		const item = this.ownerDocument.createElement("webwriter-choice-item");
@@ -273,6 +288,7 @@ export class WebwriterChoice extends WebwriterTask {
 	protected renderAnswer() {
 		return html`<div
 			class="container-${this.layout}"
+			role=${this.mode === "single" ? "radiogroup" : "group"}
 			data-ww-drop="option"
 			data-ww-drop-position="index"
 		>

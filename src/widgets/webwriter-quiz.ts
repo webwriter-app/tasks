@@ -8,11 +8,14 @@ import SlIcon from "@shoelace-style/shoelace/dist/components/icon/icon.component
 import SlProgressBar from "@shoelace-style/shoelace/dist/components/progress-bar/progress-bar.component.js";
 import "@shoelace-style/shoelace/dist/themes/light.css";
 import AddIcon from "@tabler/icons/outline/plus.svg";
+import { computed, signal } from "@webwriter/lit";
 import { css, html, nothing, type PropertyValues } from "lit";
 import { customElement, property, state } from "lit/decorators.js";
 import { createRef, ref } from "lit/directives/ref.js";
 import { isQuizTask, onQuizTypesChanged, type QuizTaskElement, type QuizType } from "../model/quiz-api";
 import { QuizElement } from "../components/localization";
+import { exportGift, importGift } from "../components/quiz-gift";
+import { GiftError } from "../model/gift";
 import { questionPickerStyles } from "../components/question-picker-styles";
 
 /**
@@ -31,14 +34,43 @@ import { questionPickerStyles } from "../components/question-picker-styles";
  * right. Learners see the feedback block after a valid submission, including
  * for open-ended and ungraded questions. "Show detailed feedback" controls
  * answer-specific feedback and solution reveal.
+ *
+ * On paper the buttons are hidden and the questions print with a box or line
+ * to write into.
+ *
+ * Conversions: the quiz imports and exports GIFT (`.gift`, Moodle's plain-text
+ * format) for true/false, single and multiple choice, short answer and numeric,
+ * essay, matching (pairing) and missing-word (gap) tasks. Order, mark and speech
+ * tasks have no GIFT form and are written as comments on export. GIFT keeps
+ * plain text only (formatting, hints, feedback, points and grading settings
+ * are dropped), gives a short answer one solution, and cannot carry the case
+ * option, so imported text answers are case sensitive. Importing replaces the
+ * tasks of the quiz. A `ul` or `ol` becomes a single-choice task with one option
+ * per list item and no option marked correct.
+ *
+ * Signals: `score` (number from 0 to 1, the share of the points reached; 0
+ * before submitting) and `complete` (boolean, true once the answers are
+ * submitted). Both go back to their start values when the answers are reset.
+ *
+ * @part result - The total score with its progress bar, shown after submitting.
  */
 @customElement("webwriter-quiz")
 export class WebwriterQuiz extends QuizElement {
 	static styles = [questionPickerStyles, css`
 		:host {
 			display: block;
+			box-sizing: border-box;
 			container-type: inline-size;
-			min-inline-size: 0;
+			min-width: min(300px, 100%);
+			max-width: 2100px;
+			color: var(--ww-text-color, inherit);
+			font-family: var(--ww-font-family, inherit);
+			print-color-adjust: exact;
+		}
+
+		:focus-visible {
+			outline: var(--sl-focus-ring-width) var(--sl-focus-ring-style) var(--sl-focus-ring-color);
+			outline-offset: var(--sl-focus-ring-offset);
 		}
 
 		::slotted(:not(:last-child)) {
@@ -74,12 +106,23 @@ export class WebwriterQuiz extends QuizElement {
 
 			sl-progress-bar {
 				flex: 1;
+				--indicator-color: var(--ww-theme-accent-1, var(--sl-color-primary-600));
+			}
+		}
+
+		@container (max-width: 400px) {
+			.actions > sl-button {
+				flex: 1 1 100%;
 			}
 		}
 
 		@media print {
-			.actions, sl-dialog, .quiz-footer, .insert-task-grid, .header-placeholder {
+			.actions sl-button, sl-dialog, .quiz-footer, .insert-task-grid, .header-placeholder, .add-question {
 				display: none;
+			}
+
+			::slotted(:not(:last-child)) {
+				margin-bottom: var(--sl-spacing-large);
 			}
 		}
 	`];
@@ -92,6 +135,9 @@ export class WebwriterQuiz extends QuizElement {
 		"sl-icon": SlIcon,
 		"sl-progress-bar": SlProgressBar,
 	};
+
+	static convertFrom = { ".gift": "importGift", ul: "loadList", ol: "loadList" };
+	static convertTo = { ".gift": "exportGift" };
 
 	static options: Record<string, Declared<OptionDeclaration>> = {
 		detailedFeedback: { type: "boolean", label: (widget: { msg: MsgFn }) => widget.msg("Show detailed feedback") },
@@ -132,6 +178,15 @@ export class WebwriterQuiz extends QuizElement {
 	@state() private accessor totalResult: { score: number; maximum: number } | undefined;
 
 	@state() private accessor confirmationAction: "submit" | "reset" | undefined;
+
+	#score = signal(0);
+	#complete = signal(false);
+
+	/** Public signals for other widgets: see the class description. */
+	signals = {
+		score: computed(() => this.#score.get()),
+		complete: computed(() => this.#complete.get()),
+	};
 
 	private unsubscribe?: () => void;
 
@@ -230,6 +285,50 @@ export class WebwriterQuiz extends QuizElement {
 			task.resetFeedback();
 		}
 		this.totalResult = undefined;
+		this.#score.set(0);
+		this.#complete.set(false);
+	}
+
+	/** @internal Replaces the questions with the ones of a GIFT file; the file is parsed before the quiz changes. */
+	async importGift(file: File) {
+		let tasks: HTMLElement[];
+		try {
+			tasks = importGift(this.ownerDocument, await file.text());
+		} catch (error) {
+			if (!(error instanceof GiftError)) throw error;
+			throw new Error(error.code === "unbalanced"
+				? this.msg("The file is not valid GIFT: a brace is not closed.")
+				: this.msg("The file contains no GIFT question that this quiz can import."));
+		}
+		return () => {
+			this.replaceChildren(...tasks);
+			this.resetAnswers();
+		};
+	}
+
+	/** @internal */
+	exportGift() {
+		return new File([exportGift(this)], "quiz.gift", { type: "text/plain" });
+	}
+
+	/** @internal Takes over the items of a list as the options of a single-choice question. */
+	loadList(fragment: DocumentFragment) {
+		const items = Array.from(fragment.querySelector("ul, ol")?.children ?? []).filter(child => child.localName === "li");
+		if (items.length === 0) return false;
+		const choice = this.ownerDocument.createElement("webwriter-choice");
+		choice.setAttribute("mode", "single");
+		choice.append(this.ownerDocument.createElement("p"));
+		(choice.firstElementChild as HTMLElement).slot = "prompt";
+		for (const item of items) {
+			const option = this.ownerDocument.createElement("webwriter-choice-item");
+			option.id = "ww" + crypto.randomUUID();
+			const paragraph = this.ownerDocument.createElement("p");
+			paragraph.textContent = item.textContent?.trim() ?? "";
+			option.append(paragraph);
+			choice.append(option);
+		}
+		this.replaceChildren(choice);
+		return true;
 	}
 
 	private submit() {
@@ -242,6 +341,8 @@ export class WebwriterQuiz extends QuizElement {
 		});
 
 		this.totalResult = undefined;
+		this.#score.set(0);
+		this.#complete.set(false);
 		if (validities.some(valid => !valid)) return;
 
 		let score = 0;
@@ -260,6 +361,8 @@ export class WebwriterQuiz extends QuizElement {
 			maximum += points;
 		}
 		this.totalResult = { score, maximum };
+		this.#score.set(maximum > 0 ? score / maximum : 0);
+		this.#complete.set(true);
 	}
 
 	private ConfirmationDialog() {
@@ -293,7 +396,7 @@ export class WebwriterQuiz extends QuizElement {
 
 				<div class="actions">
 					${this.totalResult
-						? this.hidePoints ? nothing : html`<div class="total-result">
+						? this.hidePoints ? nothing : html`<div class="total-result" part="result">
 								<sl-progress-bar .value=${this.getResultPercentage(this.totalResult)}></sl-progress-bar>
 								<strong
 									>${this.formatScore(this.totalResult.score)} / ${this.formatScore(this.totalResult.maximum)}</strong

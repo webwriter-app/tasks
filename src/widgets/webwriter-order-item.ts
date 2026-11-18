@@ -64,13 +64,27 @@ export class WebwriterOrderItem extends QuizElement {
 				opacity: 0;
 			}
 
-			:host(:hover) .actions {
+			:is(:host(:hover), :host(:focus-within)) .actions {
 				opacity: 1;
 			}
 
-			:is(:host(.ww-selected-text-within), :host(:hover)) hint-popup::part(empty) {
+			:is(:host(.ww-selected-text-within), :host(:hover), :host(:focus-within)) hint-popup::part(empty) {
 				opacity: 1;
 			}
+
+			/* Without a pointer that hovers, the controls would stay invisible. */
+			@media (hover: none) {
+				.actions,
+				hint-popup::part(empty) {
+					opacity: 1;
+				}
+			}
+
+			.order-item:focus-visible {
+				outline: var(--sl-focus-ring-width) var(--sl-focus-ring-style) var(--sl-focus-ring-color);
+				outline-offset: var(--sl-focus-ring-offset);
+			}
+
 
 			.layout-tiles {
 				border: 1px solid var(--sl-input-border-color);
@@ -153,6 +167,27 @@ export class WebwriterOrderItem extends QuizElement {
 				cursor: grab;
 				touch-action: none;
 			}
+
+			@media print {
+				.actions,
+				.grip,
+				hint-popup {
+					display: none;
+				}
+
+				.order-item {
+					break-inside: avoid;
+				}
+
+				/* On paper the learner writes the position into the box. */
+				.position {
+					color: transparent;
+					min-width: 2em;
+					border-bottom: 1px solid var(--sl-color-neutral-600);
+					margin-inline-end: var(--sl-spacing-small);
+					padding-right: 0;
+				}
+			}
 		`,
 	];
 
@@ -212,14 +247,15 @@ export class WebwriterOrderItem extends QuizElement {
 					[`layout-${parent.layout}`]: true,
 				})}
 				?data-ww-drag-handle=${!this.editing}
+				tabindex=${this.editing ? nothing : "0"}
 			>
 				${this.editing ? html`<div></div>` : html`<sl-icon class="grip" src=${gripIcon}></sl-icon>`}
 				<div class="position numbering-${parent.numberingStyle}">${this.getPositionText()}</div>
 				<slot class="content" style=${`--ww-placeholder: "${this.msg("Option")}"`}></slot>
 				<div class="actions" data-ww-can="edit">
-					<sl-icon-button ?data-ww-drag-handle=${this.editing} src=${gripIcon}></sl-icon-button>
+					<sl-icon-button ?data-ww-drag-handle=${this.editing} label=${this.msg("Move option")} src=${gripIcon}></sl-icon-button>
 				</div>
-				<hint-popup position="start"><slot name="hint"></slot></hint-popup>
+				<hint-popup position="start" label=${this.msg("Hint")}><slot name="hint"></slot></hint-popup>
 			</div>
 		`;
 	}

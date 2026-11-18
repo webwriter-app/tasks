@@ -18,7 +18,14 @@ import { mutateWithStableSelection } from "./webwriter-quirks";
 import type { WebwriterQuiz } from "../widgets/webwriter-quiz";
 import { QuizElement } from "./localization";
 
-/** Base class for a question. Put the prompt in the named slot and implement the answer UI. */
+/**
+ * Base class for a question. Put the prompt in the named slot and implement the answer UI.
+ *
+ * @part title - The generated question title ("Question 1").
+ * @part prompt - The prompt of the question.
+ * @part answer - The area with the answer controls.
+ * @part feedback - The feedback block shown after submitting.
+ */
 export abstract class WebwriterTask extends QuizElement implements QuizTaskElement {
 	abstract checkValidity(): boolean;
 	abstract reset(): void;
@@ -26,6 +33,23 @@ export abstract class WebwriterTask extends QuizElement implements QuizTaskEleme
 	static styles: CSSResultGroup = [questionPickerStyles, css`
 		:host {
 			display: block;
+			box-sizing: border-box;
+			min-width: min(300px, 100%);
+			max-width: 2100px;
+			color: var(--ww-text-color, inherit);
+			font-family: var(--ww-font-family, inherit);
+			print-color-adjust: exact;
+		}
+
+		:host ::slotted(img),
+		:host ::slotted(video) {
+			max-width: 100%;
+			height: auto;
+		}
+
+		:focus-visible {
+			outline: var(--sl-focus-ring-width) var(--sl-focus-ring-style) var(--sl-focus-ring-color);
+			outline-offset: var(--sl-focus-ring-offset);
 		}
 
 		sl-tag {
@@ -118,9 +142,23 @@ export abstract class WebwriterTask extends QuizElement implements QuizTaskEleme
 			}
 		}
 
+		.print-note {
+			display: none;
+		}
+
 		@media print {
-			.authoring-row {
+			:host {
+				break-inside: avoid;
+			}
+
+			.authoring-row,
+			hint-popup {
 				display: none;
+			}
+
+			.print-note {
+				display: block;
+				font-style: italic;
 			}
 		}
 	`];
@@ -288,7 +326,7 @@ export abstract class WebwriterTask extends QuizElement implements QuizTaskEleme
 
 		return html`
 			<div class="quiz-header">
-				${quiz.hideQuestionTitle ? nothing : html`<div class="title">${this.msg(str`Question ${index + 1}`)}</div>`}
+				${quiz.hideQuestionTitle ? nothing : html`<div class="title" part="title">${this.msg(str`Question ${index + 1}`)}</div>`}
 				${requiredWarning
 					? html`<sl-tag variant="danger" class="required-warning">
 							<sl-icon src=${WarningIcon}></sl-icon> ${this.msg("Unanswered")}
@@ -345,7 +383,7 @@ export abstract class WebwriterTask extends QuizElement implements QuizTaskEleme
 	private QuestionFeedback() {
 		const feedback = this.feedbackElement;
 		if (this.editing ? !feedback : !this.submitted || (!feedback && !this.feedback.trim())) return nothing;
-		return html`<div class="question-feedback">
+		return html`<div class="question-feedback" part="feedback">
 			<div class="feedback-label">${this.msg("Feedback")}</div>
 			${feedback ? html`<slot name="feedback"></slot>`
 				: html`<div class="legacy-feedback">${this.feedback}</div>`}
@@ -357,11 +395,11 @@ export abstract class WebwriterTask extends QuizElement implements QuizTaskEleme
 		const showHint = children.some(child => child.slot === "hint") ||
 			this.editing && children.some(child => child.slot === "prompt");
 		return html`${this.QuizHeader()}
-			<div class="task-prompt">
-				${showHint ? html`<hint-popup position="start"><slot name="hint"></slot></hint-popup>` : nothing}
+			<div class="task-prompt" part="prompt">
+				${showHint ? html`<hint-popup position="start" label=${this.msg("Hint")}><slot name="hint"></slot></hint-popup>` : nothing}
 				<slot name="prompt" style=${styleMap({ "--ww-placeholder": `"${this.msg("Prompt")}"` })}></slot>
 			</div>
-			${this.renderAnswer()}
+			<div class="answer" part="answer">${this.renderAnswer()}</div>
 			${this.QuestionFeedback()}
 			${this.editing ? this.AuthoringRow() : nothing}`;
 	}
