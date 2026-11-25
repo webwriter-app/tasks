@@ -235,9 +235,11 @@
 </trans-unit>
 <trans-unit id="s2dcbe9c695234958">
   <source>Add Row</source>
+<target>Сап кошуу</target>
 </trans-unit>
 <trans-unit id="s136c24957f6ff7ae">
   <source>Add Column</source>
+<target>Мамыча кошуу</target>
 </trans-unit>
 <trans-unit id="s7ccb6d0c2577eec4">
   <source>All or nothing</source>
@@ -247,12 +249,14 @@
 </trans-unit>
 <trans-unit id="s1fc7cdaeb2298208">
   <source>Per row</source>
+<target>Ар бир сапка</target>
 </trans-unit>
 <trans-unit id="s82d2d155e7e9ce8f">
   <source>Proportional credit for each fully correct row.</source>
 </trans-unit>
 <trans-unit id="sc94ed95bae83b5c0">
   <source>Per cell</source>
+<target>Ар бир уячага</target>
 </trans-unit>
 <trans-unit id="scc342659e1e69063">
   <source>Penalized partial credit within multi-select rows.</source>
@@ -285,12 +289,15 @@
 </trans-unit>
 <trans-unit id="s2b045181a53644ce">
   <source>Add column</source>
+<target>Мамыча кошуу</target>
 </trans-unit>
 <trans-unit id="sa013e119fec906fb">
   <source>Row</source>
+<target>Сап</target>
 </trans-unit>
 <trans-unit id="s9e40e59654c8ad67">
   <source>Column</source>
+<target>Мамыча</target>
 </trans-unit>
 <trans-unit id="sd98791ec2fa7277c">
   <source>Remove feedback</source>
@@ -301,12 +308,15 @@
 </trans-unit>
 <trans-unit id="s33450ee8e71388ad">
   <source>Gap options</source>
+<target>Бош жердин тандоолору</target>
 </trans-unit>
 <trans-unit id="s2d30555e682a8525">
   <source>Add option</source>
+<target>Тандоо кошуу</target>
 </trans-unit>
 <trans-unit id="sc47fbba134f97bc1">
   <source>Remove answer</source>
+<target>Жоопту алып салуу</target>
 </trans-unit>
 <trans-unit id="sd1a1ef004aadb208">
   <source>Show column headers</source>
@@ -341,12 +351,15 @@
 </trans-unit>
 <trans-unit id="sa8b55cab62e439b5">
   <source>Remove column</source>
+<target>Мамычаны алып салуу</target>
 </trans-unit>
 <trans-unit id="s77318393dfdb0775">
   <source>Remove row</source>
+<target>Сапты алып салуу</target>
 </trans-unit>
 <trans-unit id="saf3c323b553ddc21">
   <source>Toggle gap</source>
+<target>Бош жерди кошуу же алып салуу</target>
 </trans-unit>
 <trans-unit id="s500fd71a4232050e">
   <source>Empty</source>
@@ -385,6 +398,7 @@
 </trans-unit>
 <trans-unit id="s1f2f2be86efd928c">
   <source>Hide scoring</source>
+<target>Упай берүүнү жашыруу</target>
 </trans-unit>
 <trans-unit id="sb5ada04f142c4972">
   <source>This task is ungraded.</source>
@@ -419,6 +433,7 @@
 </trans-unit>
 <trans-unit id="s8a13240ec237a9ef">
   <source>Other tasks</source>
+<target>Башка тапшырмалар</target>
 </trans-unit>
 <trans-unit id="s7013a0bd5cf697ec">
   <source>Task type</source>
@@ -436,12 +451,15 @@
 </trans-unit>
 <trans-unit id="s79edd0a02d3adfc5">
   <source>Add Hint</source>
+<target>Кыйытма кошуу</target>
 </trans-unit>
 <trans-unit id="s823c091104445186">
   <source>Remove hint</source>
+<target>Кыйытманы алып салуу</target>
 </trans-unit>
 <trans-unit id="s0ac2f44b55475b68">
   <source>Tolerance</source>
+<target>Жол берилген четтөө</target>
 </trans-unit>
 <trans-unit id="s62b2c51610dc615b">
   <source>The current content or settings require this layout.</source>
@@ -465,15 +483,18 @@
 </trans-unit>
 <trans-unit id="s08873708079f6e23">
   <source>Per item</source>
+<target>Ар бир нерсеге</target>
 </trans-unit>
 <trans-unit id="s46d5bd7d13f2238f">
   <source>Proportional credit for each item placed in its right group.</source>
 </trans-unit>
 <trans-unit id="scb9da282dc6a8c06">
   <source>Option <x id="0" equiv-text="${index + 1}"/></source>
+<target><x id="0" equiv-text="${index + 1}"/>-тандоо</target>
 </trans-unit>
 <trans-unit id="s2a64d2dca3da9b0e">
   <source>Group <x id="0" equiv-text="${index + 1}"/></source>
+<target><x id="0" equiv-text="${index + 1}"/>-топ</target>
 </trans-unit>
 <trans-unit id="s5468d720047eb162">
   <source>Add item to <x id="0" equiv-text="${name}"/></source>
@@ -483,6 +504,7 @@
 </trans-unit>
 <trans-unit id="sfe592af2e37a2214">
   <source>Multi-group</source>
+<target>Бир нече топ</target>
 </trans-unit>
 <trans-unit id="s635ffba679db4c52">
   <source>Multi</source>
@@ -521,6 +543,7 @@
 </trans-unit>
 <trans-unit id="s408cd1e9be6e74f0">
   <source>Missed</source>
+<target>Өткөрүлгөн</target>
 </trans-unit>
 <trans-unit id="s33c59364235732dd">
   <source>Full credit only if every right option and no wrong option is selected.</source>
@@ -533,6 +556,7 @@
 </trans-unit>
 <trans-unit id="s997c32dc20df1235">
   <source>Exact match</source>
+<target>Так дал келүү</target>
 </trans-unit>
 <trans-unit id="s88fa46d7b66ff1e6">
   <source>Full credit for selecting the correct option.</source>
@@ -568,6 +592,7 @@
 </trans-unit>
 <trans-unit id="sbe4508f09222c889">
   <source>Single</source>
+<target>Жалгыз</target>
 </trans-unit>
 <trans-unit id="s12b13f3557a8e6c2">
   <source>Dictation</source>
@@ -584,6 +609,7 @@
 </trans-unit>
 <trans-unit id="s921ae54cca4fd6a7">
   <source>Add recording</source>
+<target>Үн жазмасын кошуу</target>
 </trans-unit>
 <trans-unit id="s6599a3d76cdf16c6">
   <source>This browser cannot transcribe recordings automatically.</source>
@@ -608,6 +634,7 @@
 </trans-unit>
 <trans-unit id="s7da110cc5d71e597">
   <source>1 play left</source>
+<target>1 жолу угуу калды</target>
 </trans-unit>
 <trans-unit id="s3dd2e91200254ee7">
   <source><x id="0" equiv-text="${remaining}"/> plays left</source>
@@ -642,6 +669,7 @@
 </trans-unit>
 <trans-unit id="s065289e6cba017c6">
   <source>Transcribe</source>
+<target>Текстке айлантуу</target>
 </trans-unit>
 <trans-unit id="s37658628514bfa29">
   <source>Sketch</source>
@@ -651,6 +679,7 @@
 </trans-unit>
 <trans-unit id="s25fadd3e7388516c">
   <source>Canvas height</source>
+<target>Тартуу аянтынын бийиктиги</target>
 </trans-unit>
 <trans-unit id="s4f888fe2eebd3ac4">
   <source>Completion credit</source>
@@ -672,9 +701,11 @@
 </trans-unit>
 <trans-unit id="s8dc59619f423a210">
   <source>Pen</source>
+<target>Калем</target>
 </trans-unit>
 <trans-unit id="s3cf8a6b47fddf8e7">
   <source>Line</source>
+<target>Сызык</target>
 </trans-unit>
 <trans-unit id="s5d0b63df0bad8c2e">
   <source>Rectangle</source>
@@ -686,6 +717,7 @@
 </trans-unit>
 <trans-unit id="s085cd8fee92a2cc5">
   <source>Eraser</source>
+<target>Өчүргүч</target>
 </trans-unit>
 <trans-unit id="s5e3cb80d43a34044">
   <source>Black</source>
@@ -709,6 +741,7 @@
 </trans-unit>
 <trans-unit id="s56339226771df73e">
   <source>Drawing tools</source>
+<target>Тартуу куралдары</target>
 </trans-unit>
 <trans-unit id="s5a71f1fb3a12c6a7">
   <source>Tool</source>
@@ -734,18 +767,21 @@
 </trans-unit>
 <trans-unit id="s78391e806efb04be">
   <source>Modify image</source>
+<target>Сүрөттү өзгөртүү</target>
 </trans-unit>
 <trans-unit id="s8f8bbd8053618688">
   <source>Add background</source>
 </trans-unit>
 <trans-unit id="sc25a259379b9ddf9">
   <source>Remove gap</source>
+<target>Бош жерди алып салуу</target>
 </trans-unit>
 <trans-unit id="s3c6170c7cbb3c96c">
   <source>Full credit only if every gap is filled correctly.</source>
 </trans-unit>
 <trans-unit id="s7cf3abae566db880">
   <source>Per gap</source>
+<target>Ар бир боштукка</target>
 </trans-unit>
 <trans-unit id="sf5246d0ef9e92c22">
   <source>Proportional credit for each correctly filled gap.</source>
@@ -783,6 +819,7 @@
 </trans-unit>
 <trans-unit id="s703202c2ebdf2d61">
   <source>Zone <x id="0" equiv-text="${index + 1}"/></source>
+<target><x id="0" equiv-text="${index + 1}"/>-аймак</target>
 </trans-unit>
 <trans-unit id="se8a94a95a76e488a">
   <source>This task needs an image and a correct item for each zone.</source>
@@ -798,18 +835,22 @@
 </trans-unit>
 <trans-unit id="s6dfb48202e30e3f6">
   <source>Per marker</source>
+<target>Ар бир белги үчүн</target>
 </trans-unit>
 <trans-unit id="sb912798fe55d8e34">
   <source>Credit per matched marker, subtracting extra wrong pins.</source>
 </trans-unit>
 <trans-unit id="s1667f96d19635ec7">
   <source>Zone</source>
+<target>Аймак</target>
 </trans-unit>
 <trans-unit id="se2dbf72e263c272e">
   <source>Label pin</source>
+<target>Белги төөнөгүчү</target>
 </trans-unit>
 <trans-unit id="sb51270e19988f9bd">
   <source>Region</source>
+<target>Чөлкөм</target>
 </trans-unit>
 <trans-unit id="s82059beffcb7fed7">
   <source>Resize left edge</source>
@@ -832,18 +873,23 @@
 </trans-unit>
 <trans-unit id="sa348c16c7e7e7f9c">
   <source>Hotspot</source>
+<target>Активдүү чекит</target>
 </trans-unit>
 <trans-unit id="s2b2a10d7e7c742dd">
   <source>Marker type</source>
+<target>Белгинин түрү</target>
 </trans-unit>
 <trans-unit id="s81627c2242106fca">
   <source>Add zone</source>
+<target>Аймак кошуу</target>
 </trans-unit>
 <trans-unit id="s4a9c975e50c1c4ff">
   <source>Add hotspot</source>
+<target>Активдүү чекит кошуу</target>
 </trans-unit>
 <trans-unit id="s626d8911506b0db5">
   <source>Add label pin</source>
+<target>Белги төөнөгүчүн кошуу</target>
 </trans-unit>
 <trans-unit id="s613e777f99178cf3">
   <source>Add an image to define the solution zones.</source>
@@ -877,18 +923,21 @@
 </trans-unit>
 <trans-unit id="sa894b36f20aab589">
   <source>Edit zone</source>
+<target>Аймакты түзөтүү</target>
 </trans-unit>
 <trans-unit id="s345eb75f6da5e520">
   <source>Edit label pin</source>
 </trans-unit>
 <trans-unit id="s6e27fd7a0431d14a">
   <source>Edit hotspot</source>
+<target>Активдүү чекитти түзөтүү</target>
 </trans-unit>
 <trans-unit id="s1d4fb8833a6ede92">
   <source>Selected point</source>
 </trans-unit>
 <trans-unit id="s8a9eb438abac7c6a">
   <source>Labels</source>
+<target>Белгилер</target>
 </trans-unit>
 <trans-unit id="s5ba21ea6d3f246a4">
   <source>All labels are placed.</source>
@@ -915,18 +964,22 @@
 </trans-unit>
 <trans-unit id="sd645983eef83ec21">
   <source>Marked</source>
+<target>Белгиленген</target>
 </trans-unit>
 <trans-unit id="s77d276c07612f65e">
   <source>Right-click to mark the solution.</source>
 </trans-unit>
 <trans-unit id="s745ad67c65bcea27">
   <source><x id="0" equiv-text="${toFind}"/> marked</source>
+<target><x id="0" equiv-text="${toFind}"/> белгиленди</target>
 </trans-unit>
 <trans-unit id="s959d28a246839d0a">
   <source>Toggle mark</source>
+<target>Белгини кошуу же алып салуу</target>
 </trans-unit>
 <trans-unit id="s7aba8fc293a40c7d">
   <source><x id="0" equiv-text="${toFind}"/> to find</source>
+<target><x id="0" equiv-text="${toFind}"/> табуу керек</target>
 </trans-unit>
 <trans-unit id="sd0e6c99efa390583">
   <source>Click the words to mark.</source>
@@ -951,12 +1004,15 @@
 </trans-unit>
 <trans-unit id="s01efb169e6921610">
   <source>Tolerance type</source>
+<target>Четтөөнүн түрү</target>
 </trans-unit>
 <trans-unit id="s27f42912a50df5e1">
   <source>Absolute (± value)</source>
+<target>Абсолюттук (± маани)</target>
 </trans-unit>
 <trans-unit id="se4fd08ea4526ece6">
   <source>Relative (± %)</source>
+<target>Салыштырмалуу (± %)</target>
 </trans-unit>
 <trans-unit id="sd47d4d5489d1da3a">
   <source>Partial credit band</source>
@@ -966,12 +1022,15 @@
 </trans-unit>
 <trans-unit id="s8f26e0f086cc2787">
   <source>Unit</source>
+<target>Өлчөө бирдиги</target>
 </trans-unit>
 <trans-unit id="seb4eae68d45315b7">
   <source>Minimum</source>
+<target>Эң кичине маани</target>
 </trans-unit>
 <trans-unit id="s00decbd8fed4f501">
   <source>Maximum</source>
+<target>Эң чоң маани</target>
 </trans-unit>
 <trans-unit id="sd9994f251f1280cf">
   <source>Step</source>
@@ -1025,15 +1084,18 @@
 </trans-unit>
 <trans-unit id="s91b7363f68d1d46e">
   <source>Right place</source>
+<target>Туура жер</target>
 </trans-unit>
 <trans-unit id="s4bb40a5590d12e02">
   <source>Belongs at <x id="0" equiv-text="${this.positionLabel(correctIndex, parent.numberingStyle === &quot;none&quot; ? &quot;numeric&quot; : parent.numberingStyle).replace(/\.$/, &quot;&quot;)}"/></source>
 </trans-unit>
 <trans-unit id="s4ea0f21fc2a338a1">
   <source>Move up</source>
+<target>Жогору жылдыруу</target>
 </trans-unit>
 <trans-unit id="sb233557012dcb328">
   <source>Move down</source>
+<target>Төмөн жылдыруу</target>
 </trans-unit>
 <trans-unit id="s5eb9c175b78abf88">
   <source>Sequence</source>
@@ -1089,6 +1151,7 @@
 </trans-unit>
 <trans-unit id="se53e36e5899543e9">
   <source>Left item <x id="0" equiv-text="${index + 1}"/></source>
+<target>Сол жактагы нерсе <x id="0" equiv-text="${index + 1}"/></target>
 </trans-unit>
 <trans-unit id="secb5bea561069c82">
   <source>Right item <x id="0" equiv-text="${index + 1}"/></source>
@@ -1137,6 +1200,7 @@
 </trans-unit>
 <trans-unit id="s65c455f516ab03af">
   <source><x id="0" equiv-text="${result.correct}"/> correct</source>
+<target><x id="0" equiv-text="${result.correct}"/> туура</target>
 </trans-unit>
 <trans-unit id="s743d10fa06e71c23">
   <source><x id="0" equiv-text="${result.partial}"/> partly correct</source>
@@ -1146,6 +1210,7 @@
 </trans-unit>
 <trans-unit id="sb2b44de8a70ae954">
   <source><x id="0" equiv-text="${this.formatPoints(result.score)}"/> of <x id="1" equiv-text="${this.formatPoints(result.maximum)}"/></source>
+<target><x id="1" equiv-text="${this.formatPoints(result.maximum)}"/> ичинен <x id="0" equiv-text="${this.formatPoints(result.score)}"/></target>
 </trans-unit>
 <trans-unit id="s7d684b6257284e55">
   <source>Score</source>
@@ -1210,6 +1275,7 @@
 </trans-unit>
 <trans-unit id="s0622a6e6cb77254b">
   <source>Transcript</source>
+<target>Үндүн тексти</target>
 </trans-unit>
 <trans-unit id="s4e38b5e50c309443">
   <source>Record the solution or enter its transcript.</source>
@@ -1233,6 +1299,7 @@
 </trans-unit>
 <trans-unit id="sbad6e8411baba23a">
   <source>Minimum words</source>
+<target>Сөздөрдүн эң аз саны</target>
 </trans-unit>
 <trans-unit id="s6c97064da028dfb4">
   <source>Maximum words</source>
@@ -1269,6 +1336,7 @@
 </trans-unit>
 <trans-unit id="sa3a7b3637151e12d">
   <source>Answer limits</source>
+<target>Жооптун чеги</target>
 </trans-unit>
 <trans-unit id="sefd6ddf636c816cc">
   <source>Extra solutions &amp; tolerance</source>
@@ -1290,9 +1358,11 @@
 </trans-unit>
 <trans-unit id="sa26fe9ae4bb4e13c">
   <source>1 word</source>
+<target>1 сөз</target>
 </trans-unit>
 <trans-unit id="s7db7a94759a49274">
   <source><x id="0" equiv-text="${words}"/> words</source>
+<target><x id="0" equiv-text="${words}"/> сөз</target>
 </trans-unit>
 <trans-unit id="s9a231c50b9969eb0">
   <source><x id="0" equiv-text="${count}"/> (min. <x id="1" equiv-text="${minWords}"/>)</source>
@@ -1302,6 +1372,7 @@
 </trans-unit>
 <trans-unit id="s5796c82cf4f3e6fb">
   <source>1 character</source>
+<target>1 тамга</target>
 </trans-unit>
 <trans-unit id="s6dbe9cb1faacdff3">
   <source><x id="0" equiv-text="${answer.length}"/> characters</source>
@@ -1318,6 +1389,7 @@
 </trans-unit>
 <trans-unit id="sebacf3e0e9d3be58">
   <source>Model answer</source>
+<target>Үлгү жооп</target>
 </trans-unit>
 </body>
 </file>
