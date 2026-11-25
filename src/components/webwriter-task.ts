@@ -8,16 +8,18 @@ import SlMenu from "@shoelace-style/shoelace/dist/components/menu/menu.component
 import SlSwitch from "@shoelace-style/shoelace/dist/components/switch/switch.component.js";
 import {
 	computed,
-	readWidgetOption,
 	renderWidgetOptionField,
 	signal,
+	widgetOptionControlStyles,
+} from "@webwriter/lit";
+import {
+	readWidgetOption,
 	validWidgetOptionValue,
 	widgetDeclarations,
 	widgetOptionAttributeValue,
-	widgetOptionControlStyles,
 	type WidgetOptionState,
 	type WidgetOptionValue,
-} from "@webwriter/lit";
+} from "@webwriter/widget/widget-options";
 import { transaction } from "@webwriter/widget/transaction";
 import { solutionControlStyles } from "./solution-control-styles";
 import WarningIcon from "@tabler/icons/outline/alert-triangle.svg";

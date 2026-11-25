@@ -7,7 +7,7 @@ export class QuizItems<T extends HTMLElement> implements ReactiveController {
 	private learnerOrder: T[] | undefined;
 
 	constructor(
-		private host: WebwriterTask,
+		private host: Pick<WebwriterTask, "addController" | "children" | "childNodes" | "editable" | "renderRoot" | "requestUpdate">,
 		private tag: string,
 		private shuffleInUse: () => boolean,
 	) {

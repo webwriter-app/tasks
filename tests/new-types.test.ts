@@ -2415,10 +2415,9 @@ Mentions distance">
 
 			const sampleBlob = new Blob([Uint8Array.from(atob(TEST_AUDIO.split(",")[1]), c => c.charCodeAt(0))], { type: "audio/wav" });
 			recorder.dispatchEvent(new CustomEvent("recording-complete", { detail: { audioBlob: sampleBlob }, bubbles: true }));
-			await new Promise(resolve => setTimeout(resolve, 60));
+			await until(() => speech.solution.startsWith("data:"), "edit recording persists to solution attribute");
 			await done(speech);
 
-			assert.ok(speech.solution.startsWith("data:"), "edit recording persists to solution attribute");
 			assert.ok(speech.shadowRoot.querySelector("audio-player"), "shows player for authored solution");
 
 			speech.removeAttribute("contenteditable");

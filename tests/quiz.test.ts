@@ -2,7 +2,7 @@
 import "mocha/mocha.js";
 import { assert } from "chai";
 import { getMochaConfig } from "@webwriter/build/test";
-import { widgetDeclarations, widgetOptionType } from "@webwriter/lit";
+import { widgetDeclarations, widgetOptionType } from "@webwriter/widget/widget-options";
 import { findQuizTypeById, registerQuizType } from "../src/model/quiz-api";
 import "../src/widgets/webwriter-choice";
 import "../src/widgets/webwriter-choice-item";
@@ -769,15 +769,15 @@ async function languages(fixture: HTMLElement) {
 	assert.ok(french.shadowRoot!.textContent!.includes("Envoyer"), "Keep the other widget's language");
 
 	fixture.contentEditable = "true";
-	fixture.lang = "dv";
+	fixture.lang = "ar";
 	second.lang = "zh-Hant";
-	const dhivehiChoice = "އެއް އިޚްތިޔާރު / ގިނަ އިޚްތިޔާރު";
+	const arabicChoice = "اختيار واحد / اختيارات متعددة";
 	const traditionalChineseChoice = "單選 / 多選";
 	for (let attempt = 0; attempt < 60 && (
-		!questionLabels(first).includes(dhivehiChoice) ||
+		!questionLabels(first).includes(arabicChoice) ||
 		!questionLabels(second).includes(traditionalChineseChoice)
 	); attempt++) await settleUpdates();
-	assert.ok(questionLabels(first).includes(dhivehiChoice), "Use the inherited Dhivehi question type label");
+	assert.ok(questionLabels(first).includes(arabicChoice), "Use the inherited Arabic question type label");
 	assert.ok(questionLabels(second).includes(traditionalChineseChoice), "Use the Traditional Chinese question type label in the other question");
 
 	const filipino = document.createElement("webwriter-text");
@@ -793,10 +793,10 @@ async function languages(fixture: HTMLElement) {
 	await settleUpdates();
 	german.confirmSubmit = true;
 	await german.updateComplete;
-	clickButton(german.shadowRoot!, "ފޮނުވާ");
+	clickButton(german.shadowRoot!, "إرسال");
 	await german.updateComplete;
 	const confirmation = german.shadowRoot!.querySelector("sl-dialog[open]");
-	assert.ok(confirmation?.getAttribute("label") === "ޖަވާބުތައް ފޮނުވަންތޯ؟",
+	assert.ok(confirmation?.getAttribute("label") === "إرسال الإجابات؟",
 		"Render the submit confirmation in the learner's language");
 }
 

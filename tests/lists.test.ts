@@ -1,7 +1,7 @@
 /// <reference types="mocha" />
 import "mocha/mocha.js";
 import { getMochaConfig } from "@webwriter/build/test";
-import { widgetDeclarations } from "@webwriter/lit";
+import { widgetDeclarations } from "@webwriter/widget/widget-options";
 
 import "../src/widgets/webwriter-quiz-feedback";
 import "../src/widgets/webwriter-order";
