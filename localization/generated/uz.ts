@@ -15,7 +15,6 @@
 's0d9a7bb29fee2d85': `To‘g‘ri javob`,
 's159928724265eb05': `Variant qo‘shish`,
 's15bdec250a4a55fb': `Kamayish tartibida`,
-'s16e1bead7b9c95ce': `Xotira`,
 's1705e89d78286348': `To‘g‘ri yechim uchun xabar`,
 's19d2c07c1effbdaf': `Qisman to‘g‘ri`,
 's21b5ec7253ee5705': `Foydalaniladigan tartib yo‘nalishi.`,
@@ -30,6 +29,7 @@
 's2e4818861000b13f': `Joylashuv`,
 's2f9c7cb1f24c3de8': `Yuborishdan oldin tasdiqlash talab qilinsin`,
 's31ac9cd289910c65': `Tanlanmaganda fikr-mulohaza`,
+'s3352fb3d4c200919': `Bitta tanlov / Bir nechta tanlov`,
 's34adfb0ab932043d': `Katta-kichik harflarni farqlamaslik`,
 's36163be9d8064432': `Foydalaniladigan raqamlash uslubi.`,
 's37cbecaec58e2192': `Rejim`,
@@ -113,4 +113,5 @@
 'sf90be97cb08f3d5a': `O‘rinbosar matn`,
 'sfe628f6e69f78cca': `Uzun matn`,
 'sffeb741d73d302b3': `Qisman ball`,
+'sd47b516b630da4a5': `To‘g‘ri yoki noto‘g‘ri`,
     };

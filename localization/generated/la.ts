@@ -15,7 +15,6 @@
 's0d9a7bb29fee2d85': `Responsum rectum`,
 's159928724265eb05': `Optionem adde`,
 's15bdec250a4a55fb': `Descendens`,
-'s16e1bead7b9c95ce': `Memoria`,
 's1705e89d78286348': `Nuntius pro solutione recta`,
 's19d2c07c1effbdaf': `Ex parte rectum`,
 's21b5ec7253ee5705': `Directio ordinis adhibenda.`,
@@ -30,6 +29,7 @@
 's2e4818861000b13f': `Dispositio`,
 's2f9c7cb1f24c3de8': `Confirmationem ante missionem exige`,
 's31ac9cd289910c65': `Responsum si non eligitur`,
+'s3352fb3d4c200919': `Electio unica / Electio multiplex`,
 's34adfb0ab932043d': `Maiusculas minusculasque ne distingue`,
 's36163be9d8064432': `Genus numerationis adhibendum.`,
 's37cbecaec58e2192': `Modus`,
@@ -113,4 +113,5 @@
 'sf90be97cb08f3d5a': `Textus vicarius`,
 'sfe628f6e69f78cca': `Textus longus`,
 'sffeb741d73d302b3': `Puncta ex parte`,
+'sd47b516b630da4a5': `Verum an falsum`,
     };

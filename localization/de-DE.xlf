@@ -10,6 +10,10 @@
   <source>Prompt</source>
   <target>Aufgabenstellung</target>
 </trans-unit>
+<trans-unit id="sb69fe5b15d487851">
+  <source>Task/question</source>
+  <target>Aufgabe/Frage</target>
+</trans-unit>
 <trans-unit id="s468f08dd3166cf44">
   <source>Choose Background</source>
   <target>Hintergrund wählen</target>
@@ -23,7 +27,7 @@
   <target>Feedback ohne Auswahl</target>
 </trans-unit>
 <trans-unit id="s9daa676c05ab2a68">
-  <source>Single Choice</source>
+  <source>Single choice</source>
   <target>Einfachauswahl</target>
 </trans-unit>
 <trans-unit id="s485bbcc5d19e2b20">
@@ -53,6 +57,10 @@
 <trans-unit id="s159928724265eb05">
   <source>Add Option</source>
   <target>Option hinzufügen</target>
+</trans-unit>
+<trans-unit id="se8e6a39f5369c253">
+  <source>Add item</source>
+  <target>Element hinzufügen</target>
 </trans-unit>
 <trans-unit id="s021fb26da6a25f79">
   <source>True or False</source>
@@ -91,8 +99,8 @@
   <target>Auswahl in Lücke umwandeln</target>
 </trans-unit>
 <trans-unit id="sbbb7581f20733d79">
-  <source>Freeform input</source>
-  <target>Freie Eingabe</target>
+  <source>Gap text</source>
+  <target>Lückentext</target>
 </trans-unit>
 <trans-unit id="sb20f85b66b8eed5b">
   <source>Drag and drop</source>
@@ -190,10 +198,6 @@
   <source>Add Pair</source>
   <target>Paar hinzufügen</target>
 </trans-unit>
-<trans-unit id="s16e1bead7b9c95ce">
-  <source>Memory</source>
-  <target>Memory</target>
-</trans-unit>
 <trans-unit id="sf4e3c96801ebe794">
   <source>Volume: <x id="0" equiv-text="${this.volume}"/>%</source>
   <target>Lautstärke: <x id="0" equiv-text="${this.volume}"/>%</target>
@@ -239,7 +243,7 @@
   <target>Markierung an Position umschalten</target>
 </trans-unit>
 <trans-unit id="s80dc9f56411917df">
-  <source>Text to Highlight</source>
+  <source>Text to highlight</source>
   <target>Zu markierender Text</target>
 </trans-unit>
 <trans-unit id="s3ff3b89e5871fae3">
@@ -362,6 +366,18 @@
   <source>Date &amp; Time</source>
   <target>Datum &amp; Uhrzeit</target>
 </trans-unit>
+<trans-unit id="s712144d706e5d284">
+  <source>Date &amp; time</source>
+  <target>Datum &amp; Uhrzeit</target>
+</trans-unit>
+<trans-unit id="s8101e9674e03d8d4">
+  <source>Enter a date.</source>
+  <target>Gib ein Datum ein.</target>
+</trans-unit>
+<trans-unit id="s9ef2eb3d0696a8e3">
+  <source>Enter a time.</source>
+  <target>Gib eine Uhrzeit ein.</target>
+</trans-unit>
 <trans-unit id="sf90be97cb08f3d5a">
   <source>Placeholder</source>
   <target>Platzhalter</target>
@@ -417,6 +433,450 @@
 <trans-unit id="sbb588bb505779122">
   <source>Feedback</source>
   <target>Feedback</target>
+</trans-unit>
+<trans-unit id="s7013a0bd5cf697ec">
+  <source>Task type</source>
+  <target>Aufgabentyp</target>
+</trans-unit>
+<trans-unit id="sa8346ce518263c93">
+  <source>Answer the task first.</source>
+  <target>Bearbeite zuerst die Aufgabe.</target>
+</trans-unit>
+<trans-unit id="s699a491605fde04d">
+  <source>Hide task titles</source>
+  <target>Aufgabentitel ausblenden</target>
+</trans-unit>
+<trans-unit id="s60d9b7bf2152bbec">
+  <source>The file contains no GIFT task that this quiz can import.</source>
+  <target>Die Datei enthält keine GIFT-Aufgabe, die dieses Quiz importieren kann.</target>
+</trans-unit>
+<trans-unit id="s2521b02f548cc7e9">
+  <source>1 task is unanswered.</source>
+  <target>1 Aufgabe ist unbeantwortet.</target>
+</trans-unit>
+<trans-unit id="s68765f320e984d2b">
+  <source><x id="0" equiv-text="${count}" /> tasks are unanswered.</source>
+  <target><x id="0" equiv-text="${count}" /> Aufgaben sind unbeantwortet.</target>
+</trans-unit>
+<trans-unit id="s26dc09247b1685c0">
+  <source>Go to the task</source>
+  <target>Zur Aufgabe</target>
+</trans-unit>
+<trans-unit id="s7d0d0d65b174f073">
+  <source>Go to task <x id="0" equiv-text="${index}" /></source>
+  <target>Zu Aufgabe <x id="0" equiv-text="${index}" /></target>
+</trans-unit>
+<trans-unit id="safa2879deba5c1de">
+  <source>Learners submit the <x id="0" equiv-text="${count}" /> tasks of this quiz here and see their score.</source>
+  <target>Lernende geben die <x id="0" equiv-text="${count}" /> Aufgaben dieses Quiz hier ab und sehen ihr Ergebnis.</target>
+</trans-unit>
+<trans-unit id="seecc1a1785484a8c">
+  <source>Learners submit the task before this card here and see their score.</source>
+  <target>Lernende geben die Aufgabe vor dieser Karte hier ab und sehen ihr Ergebnis.</target>
+</trans-unit>
+<trans-unit id="sf11645ff0230ff59">
+  <source>Insert tasks before this card. Learners submit them here and see their score.</source>
+  <target>Füge Aufgaben vor dieser Karte ein. Lernende geben sie hier ab und sehen ihr Ergebnis.</target>
+</trans-unit>
+<trans-unit id="se66872955dc59191">
+  <source>1 task</source>
+  <target>1 Aufgabe</target>
+</trans-unit>
+<trans-unit id="sea748bf5cf6f28f3">
+  <source><x id="0" equiv-text="${count}" /> tasks</source>
+  <target><x id="0" equiv-text="${count}" /> Aufgaben</target>
+</trans-unit>
+<trans-unit id="sfd71dba826b393cd">
+  <source>Hide total marks to find</source>
+  <target>Anzahl der zu findenden Markierungen ausblenden</target>
+</trans-unit>
+<trans-unit id="sdce919bbdc89eb6b">
+  <source>Configure</source>
+  <target>Konfigurieren</target>
+</trans-unit>
+<trans-unit id="s5b441c947d06bae9">
+  <source>Allow readers to resize</source>
+  <target>Größenänderung für Lesende erlauben</target>
+</trans-unit>
+<trans-unit id="s6c97064da028dfb4">
+  <source>Maximum words</source>
+  <target>Höchstzahl an Wörtern</target>
+</trans-unit>
+<trans-unit id="sc7dae948a542b133">
+  <source>Maximum characters</source>
+  <target>Höchstzahl an Zeichen</target>
+</trans-unit>
+<trans-unit id="s59e0eb09a3b46cf1">
+  <source>Resize answer field</source>
+  <target>Antwortfeld vergrößern oder verkleinern</target>
+</trans-unit>
+<trans-unit id="sa61ba0e06cab9331">
+  <source>Shorten your answer to fit the limit.</source>
+  <target>Kürze deine Antwort, damit sie das Limit einhält.</target>
+</trans-unit>
+<trans-unit id="s326d5d3ac1de6f34">
+  <source>Advanced: Match as regular expression</source>
+  <target>Erweitert: Regulären Ausdruck verwenden</target>
+</trans-unit>
+<trans-unit id="sbcc77dff2df51943">
+  <source>Date/Time</source>
+  <target>Datum/Uhrzeit</target>
+</trans-unit>
+<trans-unit id="s038ab2b3b2f42e20">
+  <source>Match date and time</source>
+  <target>Datum und Uhrzeit abgleichen</target>
+</trans-unit>
+<trans-unit id="s8893ece8e3462e5d">
+  <source><x id="0" equiv-text="${words}"/>/<x id="1" equiv-text="${this.wordLimit}"/> words</source>
+  <target><x id="0" equiv-text="${words}"/>/<x id="1" equiv-text="${this.wordLimit}"/> Wörter</target>
+</trans-unit>
+<trans-unit id="s068999302c9463b8">
+  <source><x id="0" equiv-text="${answer.length}"/>/<x id="1" equiv-text="${this.characterLimit}"/> characters</source>
+  <target><x id="0" equiv-text="${answer.length}"/>/<x id="1" equiv-text="${this.characterLimit}"/> Zeichen</target>
+</trans-unit>
+<trans-unit id="sfc63e31ac7c956ed">
+  <source>Select</source>
+  <target>Auswählen</target>
+</trans-unit>
+<trans-unit id="s78f9fa174282015c">
+  <source>Write</source>
+  <target>Schreiben</target>
+</trans-unit>
+<trans-unit id="sd42f58d8f01b4e47">
+  <source>Arrange</source>
+  <target>Anordnen</target>
+</trans-unit>
+<trans-unit id="se23357f112296589">
+  <source>Speak</source>
+  <target>Sprechen</target>
+</trans-unit>
+<trans-unit id="s1c0ea772de28e773">
+  <source>Draw</source>
+  <target>Zeichnen</target>
+</trans-unit>
+<trans-unit id="s9f26843287bb592d">
+  <source>Groups</source>
+  <target>Gruppen</target>
+</trans-unit>
+<trans-unit id="s25e1a07e454c2c11">
+  <source>Grid</source>
+  <target>Raster</target>
+</trans-unit>
+<trans-unit id="s97dc2365368a965f">
+  <source>Choices</source>
+  <target>Auswahlmöglichkeiten</target>
+</trans-unit>
+<trans-unit id="s37658628514bfa29">
+  <source>Sketch</source>
+  <target>Skizze</target>
+</trans-unit>
+<trans-unit id="sb5949c7e05c6c2f4">
+  <source>Gaps</source>
+  <target>Lücken</target>
+</trans-unit>
+<trans-unit id="seaa5fbd29de72476">
+  <source>Image Hotspots</source>
+  <target>Bild-Hotspots</target>
+</trans-unit>
+<trans-unit id="s8654133f4227b6dc">
+  <source>Highlights</source>
+  <target>Textmarkierungen</target>
+</trans-unit>
+<trans-unit id="s5eb9c175b78abf88">
+  <source>Sequence</source>
+  <target>Reihenfolge</target>
+</trans-unit>
+<trans-unit id="s226775a4cc67dbe6">
+  <source>Voice recording</source>
+  <target>Sprachaufnahme</target>
+</trans-unit>
+<trans-unit id="s3352fb3d4c200919">
+  <source>Single/Multiple Choice</source>
+  <target>Einfach-/Mehrfachauswahl</target>
+</trans-unit>
+<trans-unit id="s862ee826ed9e561c">
+  <source>Self-assessment</source>
+  <target>Selbsteinschätzung</target>
+</trans-unit>
+<trans-unit id="s31e4aca212b90444">
+  <source>Score is based on self-check rubric items checked after submitting.</source>
+  <target>Die Punktzahl richtet sich nach den nach der Abgabe abgehakten Kriterien.</target>
+</trans-unit>
+<trans-unit id="safc5dc23506c8384">
+  <source>Rubric</source>
+  <target>Bewertungsraster</target>
+</trans-unit>
+<trans-unit id="sad144a3342aa6ceb">
+  <source>Rubric criterion</source>
+  <target>Bewertungskriterium</target>
+</trans-unit>
+<trans-unit id="s77c6bf991aa9839e">
+  <source>Self-check</source>
+  <target>Selbstkontrolle</target>
+</trans-unit>
+<trans-unit id="s4709b9e8040269ad">
+  <source>Require a label</source>
+  <target>Beschriftung erforderlich</target>
+</trans-unit>
+<trans-unit id="s2de969afacdaa7a6">
+  <source>Shape</source>
+  <target>Form</target>
+</trans-unit>
+<trans-unit id="s14c54ca33d0f3ea9">
+  <source>Circle</source>
+  <target>Kreis</target>
+</trans-unit>
+<trans-unit id="s5d0b63df0bad8c2e">
+  <source>Rectangle</source>
+  <target>Rechteck</target>
+</trans-unit>
+<trans-unit id="s82059beffcb7fed7">
+  <source>Resize left edge</source>
+  <target>Linken Rand verschieben</target>
+</trans-unit>
+<trans-unit id="s6d5cb65f8a9d4aec">
+  <source>Resize right edge</source>
+  <target>Rechten Rand verschieben</target>
+</trans-unit>
+<trans-unit id="s03635bdd07e891f7">
+  <source>Resize top edge</source>
+  <target>Oberen Rand verschieben</target>
+</trans-unit>
+<trans-unit id="s196f15ed6778fd19">
+  <source>Resize bottom edge</source>
+  <target>Unteren Rand verschieben</target>
+</trans-unit>
+<trans-unit id="s12b13f3557a8e6c2">
+  <source>Dictation</source>
+  <target>Diktat</target>
+</trans-unit>
+<trans-unit id="s6f58c667826545e7">
+  <source>Speak the words</source>
+  <target>Sprich die Wörter</target>
+</trans-unit>
+<trans-unit id="s70945b389a1737de">
+  <source>Image Placements</source>
+  <target>Platzierungen im Bild</target>
+</trans-unit>
+<trans-unit id="s863f9a65357e7d87">
+  <source>Enter the solution date.</source>
+  <target>Gib das Lösungsdatum ein.</target>
+</trans-unit>
+<trans-unit id="sbf57f251472bcb58">
+  <source>Enter the solution time.</source>
+  <target>Gib die richtige Uhrzeit ein.</target>
+</trans-unit>
+<trans-unit id="s7b2019f9159b0153">
+  <source>Enter the solution date and time.</source>
+  <target>Gib das richtige Datum und die richtige Uhrzeit ein.</target>
+</trans-unit>
+<trans-unit id="s8d69dee8addc385a">
+  <source>Set the solution on the slider.</source>
+  <target>Stelle den Lösungswert am Schieberegler ein.</target>
+</trans-unit>
+<trans-unit id="sacac52201fe81268">
+  <source>Enter the solution number.</source>
+  <target>Gib den Lösungswert ein.</target>
+</trans-unit>
+<trans-unit id="s1ec9854f438d7b40">
+  <source>Select the correct answer.</source>
+  <target>Wähle die richtige Antwort aus.</target>
+</trans-unit>
+<trans-unit id="sdd71f5afc90398eb">
+  <source>Select the correct answers.</source>
+  <target>Wähle die richtigen Antworten aus.</target>
+</trans-unit>
+<trans-unit id="sea6985b706b63d8c">
+  <source>Enter the rows and choices.</source>
+  <target>Trage die Zeilen und Auswahlmöglichkeiten ein.</target>
+</trans-unit>
+<trans-unit id="s2e8d398592e3eaa1">
+  <source>Mark the correct choices in each row.</source>
+  <target>Markiere die richtigen Antworten in jeder Zeile.</target>
+</trans-unit>
+<trans-unit id="sdced7e9707b6d9c0">
+  <source>Mark one correct choice per row.</source>
+  <target>Markiere pro Zeile eine richtige Antwort.</target>
+</trans-unit>
+<trans-unit id="s48b9e342e71a62a0">
+  <source>Arrange the items in the correct order.</source>
+  <target>Bringe die Elemente in die richtige Reihenfolge.</target>
+</trans-unit>
+<trans-unit id="se20f511d70159673">
+  <source>Enter the matching items in each pair.</source>
+  <target>Trage in jedes Paar die passenden Elemente ein.</target>
+</trans-unit>
+<trans-unit id="s6b96e758188b1e53">
+  <source>Place each card in its correct group.</source>
+  <target>Lege jede Karte in die richtige Gruppe.</target>
+</trans-unit>
+<trans-unit id="s77d276c07612f65e">
+  <source>Right-click to mark the solution.</source>
+  <target>Markiere die Lösung per Rechtsklick.</target>
+</trans-unit>
+<trans-unit id="s0767fdab6ae788ae">
+  <source>Select the solution text for each gap.</source>
+  <target>Wähle den Lösungstext für jede Lücke aus.</target>
+</trans-unit>
+<trans-unit id="s73658af228bb4a12">
+  <source>Enter the solutions, then mark the gap cells.</source>
+  <target>Trage die Lösungen ein und markiere dann die Lückenzellen.</target>
+</trans-unit>
+<trans-unit id="s4e38b5e50c309443">
+  <source>Record the solution or enter its transcript.</source>
+  <target>Nimm die Lösung auf oder gib ihr Transkript ein.</target>
+</trans-unit>
+<trans-unit id="s12bb8a652aa6c4d1">
+  <source>Add audio and enter the solution transcript.</source>
+  <target>Füge eine Aufnahme hinzu und gib das Lösungstranskript ein.</target>
+</trans-unit>
+<trans-unit id="s613e777f99178cf3">
+  <source>Add an image to define the solution zones.</source>
+  <target>Füge ein Bild hinzu, um die richtigen Zielbereiche festzulegen.</target>
+</trans-unit>
+<trans-unit id="s4f4b1255c353cd38">
+  <source>Add an image to mark the solution hotspots.</source>
+  <target>Füge ein Bild hinzu, um die richtigen Hotspots zu markieren.</target>
+</trans-unit>
+<trans-unit id="sd783a9ddacfc12bf">
+  <source>Double-click a correct spot. Drag or click its center to edit.</source>
+  <target>Doppelklicke auf eine richtige Stelle. Ziehe sie oder klicke zum Bearbeiten in ihre Mitte.</target>
+</trans-unit>
+<trans-unit id="s62c886043b49e255">
+  <source>Connect the matching items.</source>
+  <target>Verbinde die passenden Elemente.</target>
+</trans-unit>
+<trans-unit id="s0b0634acdb057929">
+  <source>Connect the items by their dots.</source>
+  <target>Verbinde die Elemente über ihre Punkte.</target>
+</trans-unit>
+<trans-unit id="s9701dad8e792c621">
+  <source>Multi-connect</source>
+  <target>Mehrfach verbinden</target>
+</trans-unit>
+<trans-unit id="sb1b5ae4d0380c810">
+  <source>Add left item</source>
+  <target>Linkes Element hinzufügen</target>
+</trans-unit>
+<trans-unit id="sc9a03f8477d65aa9">
+  <source>Add right item</source>
+  <target>Rechtes Element hinzufügen</target>
+</trans-unit>
+<trans-unit id="s9bb7da161e1c91f3">
+  <source>Connection added.</source>
+  <target>Verbindung hinzugefügt.</target>
+</trans-unit>
+<trans-unit id="sc3f7dffe760c1035">
+  <source>Connection removed.</source>
+  <target>Verbindung entfernt.</target>
+</trans-unit>
+<trans-unit id="s635ffba679db4c52">
+  <source>Multi</source>
+  <target>Mehrfach</target>
+</trans-unit>
+<trans-unit id="sa5c371b4bb75e590">
+  <source>Left</source>
+  <target>Links</target>
+</trans-unit>
+<trans-unit id="s366991b9c9287765">
+  <source>Right</source>
+  <target>Rechts</target>
+</trans-unit>
+<trans-unit id="sd9f67fbf3f86efcf">
+  <source>Add group</source>
+  <target>Gruppe hinzufügen</target>
+</trans-unit>
+<trans-unit id="s98b1cb8fb62909ec">
+  <source>Group</source>
+  <target>Gruppe</target>
+</trans-unit>
+<trans-unit id="s721e42915b8b094e">
+  <source>Remove group</source>
+  <target>Gruppe entfernen</target>
+</trans-unit>
+<trans-unit id="sd47b516b630da4a5">
+  <source>True/False</source>
+  <target>Wahr oder falsch</target>
+</trans-unit>
+<trans-unit id="s65110cc8f3569002">
+  <source>Task label</source>
+  <target>Aufgabenbezeichnung</target>
+</trans-unit>
+<trans-unit id="seff6153e80bd6a89">
+  <source>Hide task labels</source>
+  <target>Aufgabenbezeichnungen ausblenden</target>
+</trans-unit>
+<trans-unit id="s0337af549735d429">
+  <source>Input type</source>
+  <target>Eingabetyp</target>
+</trans-unit>
+<trans-unit id="s0043cbab8a7a7cfc">
+  <source>Slider</source>
+  <target>Schieberegler</target>
+</trans-unit>
+<trans-unit id="s00e41b3c4a182aa8">
+  <source>Solution transcript</source>
+  <target>Lösungstranskript</target>
+</trans-unit>
+<trans-unit id="s4f521327851555e4">
+  <source>Item <x id="0" equiv-text="${index + 1}"/></source>
+  <target>Element <x id="0" equiv-text="${index + 1}"/></target>
+</trans-unit>
+<trans-unit id="s4c0433e13ae18244">
+  <source>Correct item</source>
+  <target>Richtiges Element</target>
+</trans-unit>
+<trans-unit id="s0b023612a7aac3c6">
+  <source>Choose an item</source>
+  <target>Element auswählen</target>
+</trans-unit>
+<trans-unit id="s05ba009cda8c6a1b">
+  <source>Return selected item</source>
+  <target>Ausgewähltes Element zurücklegen</target>
+</trans-unit>
+<trans-unit id="s6fcdab6f6cf7461b">
+  <source><x id="0" equiv-text="${label}"/> returned to Options.</source>
+  <target><x id="0" equiv-text="${label}"/> ist wieder unter Optionen.</target>
+</trans-unit>
+<trans-unit id="se8a94a95a76e488a">
+  <source>This task needs an image and a correct item for each zone.</source>
+  <target>Diese Aufgabe benötigt ein Bild und ein richtiges Element für jede Zone.</target>
+</trans-unit>
+<trans-unit id="s4adf3e11ff5354ae">
+  <source>Add a zone, then choose its correct item.</source>
+  <target>Füge eine Zone hinzu und wähle das richtige Element aus.</target>
+</trans-unit>
+<trans-unit id="s760dae6a21ba2359">
+  <source>Drag an item to a zone, or select an item and then a zone.</source>
+  <target>Ziehe ein Element in eine Zone oder wähle zuerst das Element und dann die Zone aus.</target>
+</trans-unit>
+<trans-unit id="sba1bfeaf662fe54e">
+  <source>Full credit only if every item is sorted into its right group.</source>
+  <target>Volle Punktzahl gibt es, wenn jedes Element in der richtigen Gruppe ist.</target>
+</trans-unit>
+<trans-unit id="s46d5bd7d13f2238f">
+  <source>Proportional credit for each item placed in its right group.</source>
+  <target>Für jedes Element in der richtigen Gruppe gibt es anteilig Punkte.</target>
+</trans-unit>
+<trans-unit id="s9ecafed1144dba1f">
+  <source><x id="0" equiv-text="${correct}"/> of <x id="1" equiv-text="${total}"/> items are in the right group.</source>
+  <target><x id="0" equiv-text="${correct}"/> von <x id="1" equiv-text="${total}"/> Elementen sind in der richtigen Gruppe.</target>
+</trans-unit>
+<trans-unit id="s5a264cb2ba999afa">
+  <source>Place each item in all its correct groups.</source>
+  <target>Ordne jedes Element allen passenden Gruppen zu.</target>
+</trans-unit>
+<trans-unit id="sc53e8091d43b9066">
+  <source>Place each item in its correct group.</source>
+  <target>Ordne jedes Element der richtigen Gruppe zu.</target>
+</trans-unit>
+<trans-unit id="sd463fe8f70c3242c">
+  <source>Learners submit the <x id="0" equiv-text="${count}"/> tasks in this group here and see their score.</source>
+  <target>Lernende reichen hier die <x id="0" equiv-text="${count}"/> Aufgaben dieser Gruppe ein und sehen ihre Punktzahl.</target>
+</trans-unit>
+<trans-unit id="sd19715215fa7c6ca">
+  <source>Task Results</source>
+  <target>Aufgabenergebnisse</target>
 </trans-unit>
 </body>
 </file>

@@ -1,8 +1,8 @@
 /// <reference types="mocha" />
 import "mocha/mocha.js";
 import { getMochaConfig } from "@webwriter/build/test";
+import { widgetDeclarations } from "@webwriter/lit";
 
-import "../src/widgets/webwriter-quiz";
 import "../src/widgets/webwriter-quiz-feedback";
 import "../src/widgets/webwriter-order";
 import "../src/widgets/webwriter-order-item";
@@ -15,8 +15,8 @@ mocha.setup(getMochaConfig());
 const itemsHtml = (kind: string, n = 4) =>
 	Array.from({ length: n }, (_, i) => `<webwriter-${kind}-item id="i${i + 1}"><p>Item ${i + 1}</p></webwriter-${kind}-item>`).join("");
 
-async function listWidget(kind: string, { edit = false, layout = "list", extra = "" } = {}): Promise<Any> {
-	const root = mount(`<webwriter-quiz hide-question-title hide-points><webwriter-${kind} layout="${layout}" ${extra}><p slot="prompt">P</p>${itemsHtml(kind)}</webwriter-${kind}></webwriter-quiz>`);
+async function listWidget(kind: string, { edit = false, legacyTiles = false } = {}): Promise<Any> {
+	const root = mount(`<div><webwriter-${kind}${legacyTiles ? ' layout="tiles"' : ""}><p slot="prompt">P</p>${itemsHtml(kind)}</webwriter-${kind}></div>`);
 	const w = root.querySelector(`webwriter-${kind}`) as Any;
 	await done(w);
 	if (edit) { editMode(w); await done(w); }
@@ -30,10 +30,39 @@ const grip = (item: Any) => item.shadowRoot.querySelector("[data-ww-drag-handle]
 describe("<webwriter-order> and <webwriter-choice>", function () {
 	afterEach(unmount);
 
-	for (const layout of ["list", "tiles"]) {
-		describe(`order, ${layout} layout`, function () {
+	it("fits disclosures and removes the leading list indent within task items", async function () {
+		mount(`<style>
+			:is(webwriter-order-item, webwriter-choice-item) > details { margin: 1rem; }
+			:is(webwriter-order-item, webwriter-choice-item) > :is(ul, ol) {
+				margin-inline-start: 1rem;
+				padding-inline-start: 2rem;
+			}
+		</style>`);
+		for (const kind of ["order", "choice"]) {
+			const task = await listWidget(kind);
+			const disclosureItem = task.querySelector("#i1") as HTMLElement;
+			const listItem = task.querySelector("#i2") as HTMLElement;
+			disclosureItem.innerHTML = "<details><summary>Show more</summary><p>More content</p></details>";
+			listItem.innerHTML = "<ol><li>First</li><li>Second</li></ol>";
+			await Promise.all([done(disclosureItem), done(listItem)]);
+			const disclosure = disclosureItem.querySelector("details")!;
+			const list = listItem.querySelector("ol")!;
+			const style = getComputedStyle(list);
+			const content = disclosure.assignedSlot!.getBoundingClientRect();
+			const bounds = disclosure.getBoundingClientRect();
+			assert.closeTo(bounds.width, content.width, 1);
+			assert.closeTo(bounds.height, content.height, 1);
+			assert.equal(getComputedStyle(disclosure).margin, "0px");
+			assert.equal(style.marginInlineStart, "0px");
+			assert.equal(style.paddingInlineStart, "0px");
+			assert.equal(getComputedStyle(list.firstElementChild!).listStylePosition, "inside");
+		}
+	});
+
+	for (const legacyTiles of [false, true]) {
+		describe(legacyTiles ? "order with legacy tile markup" : "order list", function () {
 			it("a reader's drag changes the learner's order and leaves the authored children alone", async function () {
-				const w = await listWidget("order", { layout });
+				const w = await listWidget("order", { legacyTiles });
 				const authoredBefore = authored(w);
 				const before = shown(w).split(",");
 				const first = w.querySelector(`#${before[0]}`), last = w.querySelector(`#${before[3]}`);
@@ -47,7 +76,7 @@ describe("<webwriter-order> and <webwriter-choice>", function () {
 			});
 
 			it("the learner's order is graded", async function () {
-				const w = await listWidget("order", { layout });
+				const w = await listWidget("order", { legacyTiles });
 				w.solution = ["i1", "i2", "i3", "i4"];
 				await done(w);
 				for (const id of ["i1", "i2", "i3", "i4"]) {
@@ -61,7 +90,7 @@ describe("<webwriter-order> and <webwriter-choice>", function () {
 			});
 
 			it("an author's drag by the grip moves the authored child and updates the solution", async function () {
-				const w = await listWidget("order", { edit: true, layout });
+				const w = await listWidget("order", { edit: true, legacyTiles });
 				w.solution = ["i1", "i2", "i3", "i4"]; await done(w);
 				await drag(grip(w.querySelector("#i1")), below(w.querySelector("#i4"))); await done(w);
 				assert.ok(authored(w) === "i2,i3,i4,i1", "authored order: " + authored(w));
@@ -86,12 +115,40 @@ describe("<webwriter-order> and <webwriter-choice>", function () {
 			assert.ok(shown(w) === before && authored(w) === "i1,i2,i3,i4", "unchanged");
 		});
 
-		it("the grip actions are hidden for readers and shown to authors", async function () {
+		it("readers and authors see the same grip and arrows; authors drag by the grip only", async function () {
 			const w = await listWidget("order");
-			const actions = () => w.querySelector("#i1").shadowRoot.querySelector(".actions");
-			assert.ok(actions().hidden && getComputedStyle(actions()).display === "none", "hidden in read mode");
-			editMode(w); await until(() => !actions().hidden, "actions shown in edit mode");
-			document.designMode = "off"; w.removeAttribute("contenteditable"); await until(() => actions().hidden, "actions hidden again");
+			const item = () => w.querySelector("#i1").shadowRoot;
+			const box = () => item().querySelector(".order-item").getBoundingClientRect();
+			const read = box();
+			assert.ok(item().querySelector(".grip") && item().querySelector(".move") && item().querySelector(".order-item[data-ww-drag-handle]"),
+				"readers drag the whole item, by the grip or the arrows");
+			editMode(w);
+			await until(() => item().querySelector(".grip[data-ww-drag-handle]"), "the grip is the handle of authors");
+			assert.ok(item().querySelector(".move") && !item().querySelector(".order-item[data-ww-drag-handle]"), "authors keep the arrows and edit the text");
+			const edit = box();
+			assert.ok(read.width === edit.width && read.height === edit.height, `the item keeps its size: ${read.width}x${read.height} and ${edit.width}x${edit.height}`);
+		});
+
+		it("an author's arrows move the authored child and update the solution", async function () {
+			const w = await listWidget("order", { edit: true });
+			w.solution = ["i1", "i2", "i3", "i4"]; await done(w);
+			const first = w.querySelector("#i1") as Any;
+			await done(first);
+			(first.shadowRoot.querySelectorAll(".move sl-icon-button")[1] as HTMLElement).click();
+			await done(w);
+			assert.ok(authored(w) === "i2,i1,i3,i4" && w.solution.join() === "i2,i1,i3,i4", "authored order and solution: " + authored(w));
+		});
+
+		it("an order item has no hint of its own", async function () {
+			for (const legacyTiles of [false, true]) {
+				for (const edit of [false, true]) {
+					const w = await listWidget("order", { edit, legacyTiles });
+					const item = w.querySelector("#i1") as Any;
+					await done(item);
+					assert.ok(!item.shadowRoot.querySelector("hint-popup"), "no hint popup on order item");
+					unmount();
+				}
+			}
 		});
 
 		it("touch scrolling is switched off on the handles only", async function () {
@@ -103,28 +160,25 @@ describe("<webwriter-order> and <webwriter-choice>", function () {
 	});
 
 	describe("choice", function () {
-		for (const layout of ["list", "tiles"]) {
-			it(`dragging the grip moves the authored option (edit, ${layout} layout)`, async function () {
-				const w = await listWidget("choice", { edit: true, layout });
-				const first = w.querySelector("#i1").getBoundingClientRect();
-				await drag(grip(w.querySelector("#i4")), layout === "tiles" ? { x: first.left + 4, y: first.top + first.height / 2 } : above(w.querySelector("#i1"))); await done(w);
-				assert.ok(authored(w) === "i4,i1,i2,i3", "authored order: " + authored(w));
-				assert.ok(w.querySelector("webwriter-choice-item").id === "i4", "moved in the DOM");
+		for (const legacyTiles of [false, true]) {
+			const markup = legacyTiles ? "legacy tile markup" : "current markup";
+			it(`an option stays in a row with ${markup}`, async function () {
+				for (const edit of [false, true]) {
+					const w = await listWidget("choice", { edit, legacyTiles });
+					const item = w.querySelector("#i1") as Any;
+					await done(item);
+					assert.ok(!item.shadowRoot.querySelector("[data-ww-drag-handle], hint-popup"), "no grip and no hint");
+					const marker = item.shadowRoot.querySelector(".marker").getBoundingClientRect();
+					const text = item.querySelector("p").getBoundingClientRect();
+					assert.ok(marker.right <= text.left && Math.abs(marker.top + marker.height / 2 - (text.top + text.height / 2)) < text.height,
+						"the marker is beside the text");
+					unmount();
+				}
 			});
 		}
 
-		it("the options stay in front of the question feedback in edit mode", async function () {
-			const w = await listWidget("choice", { edit: true });
-			const fb = document.createElement("webwriter-quiz-feedback"); fb.slot = "feedback"; fb.innerHTML = "<p>f</p>"; w.append(fb); await done(w);
-			await drag(grip(w.querySelector("#i1")), below(w.querySelector("#i4"))); await done(w);
-			assert.ok(authored(w) === "i2,i3,i4,i1", "authored order: " + authored(w));
-			assert.ok(w.lastElementChild === fb || w.children[w.children.length - 1].slot === "feedback", "feedback is still last");
-		});
-
-		it("readers cannot drag options, and a click still selects", async function () {
+		it("a click selects an option", async function () {
 			const w = await listWidget("choice");
-			await drag(grip(w.querySelector("#i1")), below(w.querySelector("#i4"))); await done(w);
-			assert.ok(authored(w) === "i1,i2,i3,i4" && shown(w) === "i1,i2,i3,i4", "no reorder: " + shown(w));
 			w.querySelector("#i2").click(); await done(w);
 			assert.ok(w.checkValidity(), "the click selected an option");
 		});
@@ -134,6 +188,16 @@ describe("<webwriter-order> and <webwriter-choice>", function () {
 			w.querySelector("#i2").shadowRoot.querySelector(".marker-container").click(); await done(w);
 			assert.ok(w.solution.i2 === true, "solution: " + JSON.stringify(w.solution));
 		});
+	});
+
+	it("legacy tile tasks render in rows without offering a layout setting", async function () {
+		for (const kind of ["choice", "order"]) {
+			const widget = await listWidget(kind, { edit: true, legacyTiles: true });
+			const list = widget.shadowRoot.querySelector(".container-list");
+			assert.equal(getComputedStyle(list).flexDirection, "column");
+			assert.notProperty(widgetDeclarations(widget, "options"), "layout");
+			unmount();
+		}
 	});
 });
 

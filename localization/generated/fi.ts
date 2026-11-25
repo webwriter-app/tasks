@@ -15,7 +15,6 @@
 's0d9a7bb29fee2d85': `Oikea vastaus`,
 's159928724265eb05': `Lisää vaihtoehto`,
 's15bdec250a4a55fb': `Laskeva`,
-'s16e1bead7b9c95ce': `Muisti`,
 's1705e89d78286348': `Oikean ratkaisun viesti`,
 's19d2c07c1effbdaf': `Osittain oikein`,
 's21b5ec7253ee5705': `Käytettävä järjestyssuunta.`,
@@ -30,6 +29,7 @@
 's2e4818861000b13f': `Asettelu`,
 's2f9c7cb1f24c3de8': `Vaadi vahvistus ennen lähettämistä`,
 's31ac9cd289910c65': `Palaute, kun ei valita`,
+'s3352fb3d4c200919': `Yksi valinta / Useita valintoja`,
 's34adfb0ab932043d': `Ohita kirjainkoko`,
 's36163be9d8064432': `Käytettävä numerointityyli.`,
 's37cbecaec58e2192': `Tila`,
@@ -113,4 +113,5 @@
 'sf90be97cb08f3d5a': `Paikkamerkki`,
 'sfe628f6e69f78cca': `Pitkä teksti`,
 'sffeb741d73d302b3': `Osapisteet`,
+'sd47b516b630da4a5': `Tosi vai epätosi`,
     };

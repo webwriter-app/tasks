@@ -15,7 +15,6 @@
 's0d9a7bb29fee2d85': `Helyes válasz`,
 's159928724265eb05': `Válasz hozzáadása`,
 's15bdec250a4a55fb': `Csökkenő`,
-'s16e1bead7b9c95ce': `Memória`,
 's1705e89d78286348': `Üzenet helyes megoldás esetén`,
 's19d2c07c1effbdaf': `Részben helyes`,
 's21b5ec7253ee5705': `A használandó rendezési irány.`,
@@ -30,6 +29,7 @@
 's2e4818861000b13f': `Elrendezés`,
 's2f9c7cb1f24c3de8': `Megerősítés kérése beküldés előtt`,
 's31ac9cd289910c65': `Visszajelzés, ha nincs kijelölve`,
+'s3352fb3d4c200919': `Egyetlen választás / Több választás`,
 's34adfb0ab932043d': `Kis- és nagybetűk figyelmen kívül hagyása`,
 's36163be9d8064432': `A használandó számozási stílus.`,
 's37cbecaec58e2192': `Mód`,
@@ -113,4 +113,5 @@
 'sf90be97cb08f3d5a': `Helyőrző szöveg`,
 'sfe628f6e69f78cca': `Hosszú szöveg`,
 'sffeb741d73d302b3': `Részpontszám`,
+'sd47b516b630da4a5': `Igaz vagy hamis`,
     };

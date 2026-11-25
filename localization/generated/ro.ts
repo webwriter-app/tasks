@@ -15,7 +15,6 @@
 's0d9a7bb29fee2d85': `Răspuns corect`,
 's159928724265eb05': `Adaugă opțiune`,
 's15bdec250a4a55fb': `Descrescător`,
-'s16e1bead7b9c95ce': `Memorie`,
 's1705e89d78286348': `Mesaj pentru soluția corectă`,
 's19d2c07c1effbdaf': `Parțial corect`,
 's21b5ec7253ee5705': `Direcția de ordonare care va fi folosită.`,
@@ -30,6 +29,7 @@
 's2e4818861000b13f': `Aspect`,
 's2f9c7cb1f24c3de8': `Solicită confirmare înainte de trimitere`,
 's31ac9cd289910c65': `Feedback dacă nu este selectat`,
+'s3352fb3d4c200919': `O singură alegere / Alegere multiplă`,
 's34adfb0ab932043d': `Ignoră diferența dintre majuscule și minuscule`,
 's36163be9d8064432': `Stilul de numerotare care va fi folosit.`,
 's37cbecaec58e2192': `Mod`,
@@ -113,4 +113,5 @@
 'sf90be97cb08f3d5a': `Text substituent`,
 'sfe628f6e69f78cca': `Text lung`,
 'sffeb741d73d302b3': `Punctaj parțial`,
+'sd47b516b630da4a5': `Adevărat sau fals`,
     };

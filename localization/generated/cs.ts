@@ -15,7 +15,6 @@
 's0d9a7bb29fee2d85': `Správná odpověď`,
 's159928724265eb05': `Přidat možnost`,
 's15bdec250a4a55fb': `Sestupně`,
-'s16e1bead7b9c95ce': `Paměť`,
 's1705e89d78286348': `Zpráva při správném řešení`,
 's19d2c07c1effbdaf': `Částečně správně`,
 's21b5ec7253ee5705': `Směr řazení, který se má použít.`,
@@ -30,6 +29,7 @@
 's2e4818861000b13f': `Rozvržení`,
 's2f9c7cb1f24c3de8': `Před odesláním vyžadovat potvrzení`,
 's31ac9cd289910c65': `Zpětná vazba při nevybrání`,
+'s3352fb3d4c200919': `Jedna odpověď / Více odpovědí`,
 's34adfb0ab932043d': `Ignorovat velikost písmen`,
 's36163be9d8064432': `Styl číslování, který se má použít.`,
 's37cbecaec58e2192': `Režim`,
@@ -113,4 +113,5 @@
 'sf90be97cb08f3d5a': `Zástupný text`,
 'sfe628f6e69f78cca': `Dlouhý text`,
 'sffeb741d73d302b3': `Částečné body`,
+'sd47b516b630da4a5': `Pravda, nebo nepravda`,
     };

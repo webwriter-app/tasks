@@ -15,7 +15,6 @@
 's0d9a7bb29fee2d85': `Jawaban benar`,
 's159928724265eb05': `Tambahkan opsi`,
 's15bdec250a4a55fb': `Menurun`,
-'s16e1bead7b9c95ce': `Memori`,
 's1705e89d78286348': `Pesan untuk jawaban benar`,
 's19d2c07c1effbdaf': `Sebagian benar`,
 's21b5ec7253ee5705': `Arah urutan yang akan digunakan.`,
@@ -30,6 +29,7 @@
 's2e4818861000b13f': `Tata letak`,
 's2f9c7cb1f24c3de8': `Minta konfirmasi sebelum mengirim`,
 's31ac9cd289910c65': `Umpan balik jika tidak dipilih`,
+'s3352fb3d4c200919': `Pilihan tunggal / Pilihan ganda`,
 's34adfb0ab932043d': `Abaikan kapitalisasi`,
 's36163be9d8064432': `Gaya penomoran yang akan digunakan.`,
 's37cbecaec58e2192': `Mode`,
@@ -113,4 +113,5 @@
 'sf90be97cb08f3d5a': `Teks pengganti`,
 'sfe628f6e69f78cca': `Teks panjang`,
 'sffeb741d73d302b3': `Nilai sebagian`,
+'sd47b516b630da4a5': `Benar atau Salah`,
     };

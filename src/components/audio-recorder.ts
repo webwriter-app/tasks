@@ -16,6 +16,11 @@ import { QuizElement } from "./localization";
 const SAMPLES_PER_SECOND = 15;
 const FADE_WIDTH = 20;
 
+type CaptureDocument = Document & {
+	permissionsPolicy?: { allowsFeature(feature: string): boolean };
+	featurePolicy?: { allowsFeature(feature: string): boolean };
+};
+
 export class AudioRecorder extends QuizElement {
 	static styles = [
 		waveformStyles,
@@ -46,6 +51,8 @@ export class AudioRecorder extends QuizElement {
 	};
 
 	@property({ attribute: false }) accessor disabled = false;
+	@property({ attribute: false }) accessor allowPause = true;
+	@property({ attribute: false }) accessor finishing = false;
 	@state() private accessor recording = false;
 	@state() private accessor requesting = false;
 	@state() private accessor paused = false;
@@ -100,6 +107,12 @@ export class AudioRecorder extends QuizElement {
 
 	private async startRecording() {
 		if (this.disabled || this.requesting || this.mediaRecorder) return;
+		const document = this.ownerDocument as CaptureDocument;
+		const policy = document.permissionsPolicy ?? document.featurePolicy;
+		if (policy?.allowsFeature("microphone") === false) {
+			this.errorMessage = this.msg("This view blocks microphone access.");
+			return;
+		}
 		this.requesting = true;
 		this.errorMessage = null;
 		const request = ++this.recordingRequest;
@@ -141,6 +154,11 @@ export class AudioRecorder extends QuizElement {
 		recorder.ondataavailable = event => {
 			if (event.data.size > 0) audioChunks.push(event.data);
 		};
+		recorder.onerror = () => {
+			if (request !== this.recordingRequest) return;
+			this.cancelRecording();
+			this.errorMessage = this.msg("The recording could not be saved.");
+		};
 		recorder.onstop = () => {
 			if (request !== this.recordingRequest) return;
 			this.mediaRecorder = undefined;
@@ -165,24 +183,30 @@ export class AudioRecorder extends QuizElement {
 		this.recordingTimeOffset = 0;
 
 		this.recording = true;
+		this.dispatchEvent(new CustomEvent("recording-started", { detail: { stream } }));
 		await this.updateComplete;
 		if (!this.recording || request !== this.recordingRequest) return;
 		this.waveform.resize();
 		this.waveformFrame = requestAnimationFrame(this.renderWaveform);
 	}
 
-	private stopRecording() {
-		if (this.mediaRecorder && this.mediaRecorder.state !== "inactive") this.mediaRecorder.stop();
+	private stopRecording(notify = true) {
+		if (this.mediaRecorder && this.mediaRecorder.state !== "inactive") {
+			if (notify) this.dispatchEvent(new Event("recording-stopping"));
+			this.mediaRecorder.stop();
+		}
 		this.releaseCapture();
 	}
 
 	/** Stop a pending or active capture without producing a learner answer. */
 	cancelRecording() {
+		const wasRecording = this.recording;
 		this.recordingRequest++;
 		this.requesting = false;
 		this.recording = false;
-		this.stopRecording();
+		this.stopRecording(false);
 		this.mediaRecorder = undefined;
+		if (wasRecording) this.dispatchEvent(new Event("recording-cancelled"));
 	}
 
 	private releaseCapture() {
@@ -303,14 +327,14 @@ export class AudioRecorder extends QuizElement {
 		if (!this.recording) {
 			if (this.errorMessage) {
 				content = html`<span class="error"><sl-icon src=${ExclamationCircle}></sl-icon>${this.errorMessage}</span>`;
-			} else {
-				content = html`<span class="info">${this.msg("Click to Start Recording")}</span>`;
+			} else if (!this.finishing) {
+				content = html`<span class="info">${this.msg("Start recording")}</span>`;
 			}
 		} else {
 			content = html`
-				<sl-button circle @click=${() => (this.paused ? this.resumeRecording() : this.pauseRecording())}>
+				${this.allowPause ? html`<sl-button circle @click=${() => (this.paused ? this.resumeRecording() : this.pauseRecording())}>
 					<sl-icon src=${this.paused ? PlayFillIcon : PauseFillIcon}></sl-icon>
-				</sl-button>
+				</sl-button>` : ""}
 				<span class="duration">${this.duration}</span>
 				<div class="waveform" ${ref(this.waveform.container)}>
 					<canvas ${ref(this.waveform.canvas)}></canvas>
@@ -319,13 +343,15 @@ export class AudioRecorder extends QuizElement {
 		}
 
 		return html`<sl-button
-				variant="primary"
+				variant=${this.recording ? "danger" : "primary"}
 				circle
+				label=${this.finishing ? this.msg("Finishing recording…")
+					: this.recording ? this.msg("Stop recording") : this.msg("Start recording")}
 				?disabled=${this.disabled || this.requesting}
 				@click=${() => (this.recording ? this.stopRecording() : this.startRecording())}
 			>
 				<sl-icon src=${this.recording ? StopFillIcon : MicFillIcon}></sl-icon>
 			</sl-button>
-			${content}`;
+			${content}<slot name="progress"></slot>`;
 	}
 }

@@ -3,7 +3,7 @@ import { execFileSync } from "node:child_process";
 import { copyFileSync, mkdirSync, readFileSync } from "node:fs";
 
 // WebWriter's release command builds widget entries. Use its bundler for the
-// task base class, the quiz API and the Mocha test modules as well (the release build of @webwriter/build only builds widget entries), with the same
+// task base class, the quiz API, the migration and the Mocha test modules as well (the release build of @webwriter/build only builds widget entries), with the same
 // browser target, and emit the declarations that the ./api and ./task exports
 // point to.
 const require = createRequire(import.meta.url);
@@ -15,7 +15,7 @@ const tests = Object.fromEntries(Object.entries(exports)
 	.map(([, value]) => [value.default.replace(/^\.\/dist\//, "").replace(/\.\*$/, ""), value.source]));
 
 await build({
-	entryPoints: { task: "src/components/webwriter-task.ts", "api/quiz-api": "src/model/quiz-api.ts", ...tests },
+	entryPoints: { task: "src/components/webwriter-task.ts", "api/quiz-api": "src/model/quiz-api.ts", migrate: exports["./migrate.js"].source, ...tests },
 	outdir: "dist",
 	bundle: true,
 	format: "esm",

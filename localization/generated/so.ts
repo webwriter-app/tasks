@@ -15,7 +15,6 @@
 's0d9a7bb29fee2d85': `Jawaabta saxda ah`,
 's159928724265eb05': `Ku dar doorasho`,
 's15bdec250a4a55fb': `Hoos u socda`,
-'s16e1bead7b9c95ce': `Xusuus`,
 's1705e89d78286348': `Farriinta xalka saxda ah`,
 's19d2c07c1effbdaf': `Qayb ahaan sax`,
 's21b5ec7253ee5705': `Jihada kala hormarinta la adeegsanayo.`,
@@ -30,6 +29,7 @@
 's2e4818861000b13f': `Qaab dhismeed`,
 's2f9c7cb1f24c3de8': `Dalbo xaqiijin kahor dirista`,
 's31ac9cd289910c65': `Jawaab celin marka aan la dooran`,
+'s3352fb3d4c200919': `Hal doorasho / Doorashooyin badan`,
 's34adfb0ab932043d': `Iska dhaaf farqiga xarfaha waaweyn iyo kuwa yaryar`,
 's36163be9d8064432': `Habka tiraynta la adeegsanayo.`,
 's37cbecaec58e2192': `Hab`,
@@ -113,4 +113,5 @@
 'sf90be97cb08f3d5a': `Qoraal ku meelgaar ah`,
 'sfe628f6e69f78cca': `Qoraal dheer`,
 'sffeb741d73d302b3': `Dhibco qayb ahaan`,
+'sd47b516b630da4a5': `Run ama been`,
     };

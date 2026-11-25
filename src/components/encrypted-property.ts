@@ -143,9 +143,13 @@ export const encryptedProperty: ComplexAttributeConverter<unknown> = {
 		}
 
 		const plaintext = encoder.encode(JSON.stringify(value));
-		const framedPlaintext = randomBytes(paddedLength(plaintext.length));
+		const framedPlaintext = new Uint8Array(paddedLength(plaintext.length));
 		new DataView(framedPlaintext.buffer).setUint32(0, plaintext.length);
 		framedPlaintext.set(plaintext, LENGTH_LENGTH);
+		// Only the padding needs random bytes. Filling the entire frame exceeds
+		// Web Crypto's per-call limit when a property contains a recording.
+		const paddingStart = LENGTH_LENGTH + plaintext.length;
+		framedPlaintext.set(randomBytes(framedPlaintext.length - paddingStart), paddingStart);
 
 		const key = randomBytes(KEY_LENGTH);
 		const ciphertext = applyKeystream(framedPlaintext, key);

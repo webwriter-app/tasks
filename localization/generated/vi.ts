@@ -15,7 +15,6 @@
 's0d9a7bb29fee2d85': `Câu trả lời đúng`,
 's159928724265eb05': `Thêm tùy chọn`,
 's15bdec250a4a55fb': `Giảm dần`,
-'s16e1bead7b9c95ce': `Trí nhớ`,
 's1705e89d78286348': `Thông báo cho lời giải đúng`,
 's19d2c07c1effbdaf': `Đúng một phần`,
 's21b5ec7253ee5705': `Hướng sắp xếp cần dùng.`,
@@ -30,6 +29,7 @@
 's2e4818861000b13f': `Bố cục`,
 's2f9c7cb1f24c3de8': `Yêu cầu xác nhận trước khi gửi`,
 's31ac9cd289910c65': `Phản hồi khi không được chọn`,
+'s3352fb3d4c200919': `Một lựa chọn / Nhiều lựa chọn`,
 's34adfb0ab932043d': `Bỏ qua phân biệt chữ hoa chữ thường`,
 's36163be9d8064432': `Kiểu đánh số cần dùng.`,
 's37cbecaec58e2192': `Chế độ`,
@@ -113,4 +113,5 @@
 'sf90be97cb08f3d5a': `Văn bản giữ chỗ`,
 'sfe628f6e69f78cca': `Văn bản dài`,
 'sffeb741d73d302b3': `Điểm một phần`,
+'sd47b516b630da4a5': `Đúng hoặc Sai`,
     };

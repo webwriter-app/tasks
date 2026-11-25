@@ -25,7 +25,7 @@
   <source>Feedback if not selected</source>
 <target>未有選取時嘅回饋</target></trans-unit>
 <trans-unit id="s9daa676c05ab2a68">
-  <source>Single Choice</source>
+  <source>Single choice</source>
 <target>單選題</target></trans-unit>
 <trans-unit id="s485bbcc5d19e2b20">
   <source>Multiple Choice</source>
@@ -88,7 +88,7 @@
   <source>Insert gap at selection</source>
 <target>喺所選位置插入填空</target></trans-unit>
 <trans-unit id="sbbb7581f20733d79">
-  <source>Freeform input</source>
+  <source>Gap text</source>
 <target>自由輸入</target></trans-unit>
 <trans-unit id="sb20f85b66b8eed5b">
   <source>Drag and drop</source>
@@ -165,9 +165,6 @@
 <trans-unit id="sbdc2605da169f810">
   <source>Add Pair</source>
 <target>加入配對</target></trans-unit>
-<trans-unit id="s16e1bead7b9c95ce">
-  <source>Memory</source>
-<target>記憶</target></trans-unit>
 <trans-unit id="sf4e3c96801ebe794">
   <source>Volume: <x id="0" equiv-text="${this.volume}" />%</source>
 <target>音量：<x id="0" equiv-text="${this.volume}" />%</target></trans-unit>
@@ -193,7 +190,7 @@
   <source>Toggle Marking at Position</source>
 <target>切換位置標記</target></trans-unit>
 <trans-unit id="s80dc9f56411917df">
-  <source>Text to Highlight</source>
+  <source>Text to highlight</source>
 <target>要標示嘅文字</target></trans-unit>
 <trans-unit id="s3ff3b89e5871fae3">
   <source>Multiple lines are not supported</source>
@@ -315,6 +312,14 @@
 <trans-unit id="sa937fce28916575e">
   <source>Solution</source>
 <target>解答</target></trans-unit>
+<trans-unit id="s3352fb3d4c200919">
+  <source>Single/Multiple Choice</source>
+  <target>單選題 / 多項選擇</target>
+</trans-unit>
+<trans-unit id="sd47b516b630da4a5">
+  <source>True/False</source>
+  <target>是非題</target>
+</trans-unit>
 </body>
 </file>
 </xliff>

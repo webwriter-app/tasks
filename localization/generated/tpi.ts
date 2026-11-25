@@ -15,7 +15,6 @@
 's0d9a7bb29fee2d85': `Stretpela ansa`,
 's159928724265eb05': `Putim narapela ansa`,
 's15bdec250a4a55fb': `I go daun`,
-'s16e1bead7b9c95ce': `Memori`,
 's1705e89d78286348': `Tok bilong stretpela ansa`,
 's19d2c07c1effbdaf': `Sampela hap i stret`,
 's21b5ec7253ee5705': `Hap oda i mas i go long en.`,
@@ -30,6 +29,7 @@
 's2e4818861000b13f': `Pasim ol samting`,
 's2f9c7cb1f24c3de8': `Askim pastaim, bihain salim`,
 's31ac9cd289910c65': `Bekim sapos yu no makim`,
+'s3352fb3d4c200919': `Makim wanpela / Makim planti`,
 's34adfb0ab932043d': `No skelim bikpela na liklik leta`,
 's36163be9d8064432': `Kain namba yu laik putim.`,
 's37cbecaec58e2192': `Mod`,
@@ -113,4 +113,5 @@
 'sf90be97cb08f3d5a': `Teks bilong soim hap`,
 'sfe628f6e69f78cca': `Longpela teks`,
 'sffeb741d73d302b3': `Sampela mak`,
+'sd47b516b630da4a5': `Tru o giaman`,
     };

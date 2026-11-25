@@ -1,13 +1,18 @@
 import type { Declared, OptionDeclaration } from "@webwriter/lit";
+import type { PropertyValues } from "lit";
 import type { MsgFn } from "@lit/localize";
 import SlIconButton from "@shoelace-style/shoelace/dist/components/icon-button/icon-button.component.js";
 import SlInput from "@shoelace-style/shoelace/dist/components/input/input.component.js";
+import SlIcon from "@shoelace-style/shoelace/dist/components/icon/icon.component.js";
+import CheckIcon from "@tabler/icons/outline/check.svg";
 import XIcon from "@tabler/icons/outline/x.svg";
 import { css, html, nothing } from "lit";
 import { customElement, property, state } from "lit/decorators.js";
-import { createRef, ref } from "lit/directives/ref.js";
+import { live } from "lit/directives/live.js";
+import { transaction } from "@webwriter/widget/transaction";
 import type { GapMode } from "./webwriter-gap";
 import { QuizElement } from "../components/localization";
+import { gapChoices, gapChoicesAttribute, GapChoicesEditor } from "../components/gap-choices";
 
 declare global {
 	interface HTMLElementTagNameMap {
@@ -25,15 +30,20 @@ declare global {
 export class WebwriterGapItem extends QuizElement {
 	static styles = css`
 		:host {
-			--outer-line-height: 2.3;
-			--inner-line-height: 2;
+			--outer-line-height: 2;
+			--inner-line-height: 1.6;
 			--inner-height: calc(var(--inner-line-height) * 1em);
+			--empty-gap-width: 8em;
 			display: inline-block !important;
+			margin-inline: 2px;
 			outline: none !important;
 			vertical-align: baseline;
 		}
 
+		/* The box of a gap, with a learner's answer or the correction, cannot be selected; the authored answer can. */
 		.container-base {
+			-webkit-user-select: none;
+			user-select: none;
 			height: var(--inner-height);
 			line-height: var(--outer-line-height);
 			box-sizing: border-box;
@@ -49,13 +59,28 @@ export class WebwriterGapItem extends QuizElement {
 			padding-left: var(--sl-spacing-x-small);
 		}
 
+		.container-select {
+			background-color: var(--sl-input-background-color);
+			border-color: var(--sl-input-border-color);
+			padding: 0 var(--sl-spacing-x-small);
+			font: inherit;
+			color: inherit;
+			line-height: normal;
+			cursor: pointer;
+
+			&:disabled {
+				cursor: default;
+				opacity: 0.9;
+			}
+		}
+
 		.container-placeholder {
 			background-color: var(--sl-color-neutral-100);
 			position: relative;
 			border-color: var(--sl-color-neutral-300);
-			min-width: 8em;
+			min-inline-size: var(--empty-gap-width);
 			padding: 0 var(--sl-spacing-x-small);
-			height: 2em;
+			height: var(--inner-height);
 			white-space: nowrap;
 			font: inherit;
 			color: inherit;
@@ -87,9 +112,86 @@ export class WebwriterGapItem extends QuizElement {
 
 		.container-placeholder.filled {
 			background-color: var(--sl-color-neutral-0);
-			min-width: 0;
+			min-inline-size: 0;
 			width: max-content;
 			cursor: grab;
+		}
+
+		/*
+		 * In edit mode, a gap is the box learners see: an input of the answer's size, or a filled
+		 * placeholder. An internal text input mirrors the light-DOM answer so native focus, caret,
+		 * and selection never collide with editor capture selection.
+		 */
+		.edit {
+			position: relative;
+			padding: 0;
+			color: var(--sl-color-success-700);
+		}
+
+		.edit-input {
+			flex: 1;
+			inline-size: 100%;
+			block-size: 100%;
+			min-inline-size: 0;
+			box-sizing: border-box;
+			padding: 0 var(--sl-spacing-x-small);
+			margin: 0;
+			border: 0;
+			outline: none;
+			background: transparent;
+			font: inherit;
+			color: inherit;
+			line-height: normal;
+			letter-spacing: inherit;
+			text-align: inherit;
+			-webkit-user-select: text;
+			user-select: text;
+		}
+
+		.edit.container-input {
+			box-sizing: border-box;
+			border-radius: var(--sl-input-border-radius-medium);
+		}
+
+		.edit.container-placeholder {
+			inline-size: var(--empty-gap-width);
+			justify-content: center;
+		}
+
+		.edit.container-placeholder .edit-input {
+			text-align: center;
+		}
+
+		.remove-gap {
+			position: absolute;
+			inset-block-start: 0;
+			inset-inline-end: 0;
+			translate: 40% -40%;
+			z-index: 1;
+			border-radius: var(--sl-border-radius-circle);
+			background: var(--sl-color-neutral-0);
+			font-size: var(--sl-font-size-x-small);
+			opacity: 0;
+			pointer-events: none;
+			-webkit-user-select: none;
+			user-select: none;
+		}
+
+		.remove-gap::part(base) {
+			padding: var(--sl-spacing-3x-small);
+		}
+
+		:host(:hover) .remove-gap,
+		:host(:focus-within) .remove-gap {
+			opacity: 1;
+			pointer-events: auto;
+		}
+
+		@media (hover: none) {
+			.remove-gap {
+				opacity: 1;
+				pointer-events: auto;
+			}
 		}
 
 		.feedback {
@@ -111,6 +213,22 @@ export class WebwriterGapItem extends QuizElement {
 		}
 
 		.correction { color: var(--sl-color-success-700); }
+
+		/* A gap is about as wide as its answer, so the sentence still reads as one. */
+		sl-input {
+			max-inline-size: 100%;
+
+			&::part(form-control),
+			&::part(form-control-input),
+			&::part(base) {
+				inline-size: 100%;
+			}
+
+			&::part(input) {
+				min-inline-size: 0;
+				inline-size: 100%;
+			}
+		}
 		.container-placeholder:disabled { cursor: default; }
 
 		sl-input {
@@ -147,16 +265,18 @@ export class WebwriterGapItem extends QuizElement {
 
 	/** @internal */
 	static scopedElements = {
+		"sl-icon": SlIcon,
 		"sl-icon-button": SlIconButton,
 		// Shoelace's autocorrect type predates the boolean HTMLElement property.
 		"sl-input": SlInput as unknown as CustomElementConstructor,
+		"gap-choices-editor": GapChoicesEditor,
 	};
 
 	static options: Record<string, Declared<OptionDeclaration>> = {
 		placeholder: { type: "string", label: (widget: { msg: MsgFn }) => widget.msg("Placeholder") },
 	};
 
-	/** A placeholder only applies to freeform input. */
+	/** Authors can set a placeholder for a typed answer. */
 	get options() {
 		return this.declarationsWithout("options", this.mode === "input" ? [] : ["placeholder"]);
 	}
@@ -173,6 +293,8 @@ export class WebwriterGapItem extends QuizElement {
 	/** @internal */
 	@state() accessor inputAnswer = "";
 	/** @internal */
+	@state() accessor dropdownOptions: string[] = [];
+	/** @internal */
 	@state() accessor graded = false;
 	/** @internal */
 	@state() accessor feedback: { correct: boolean; answer: string; solution: string } | null = null;
@@ -180,8 +302,10 @@ export class WebwriterGapItem extends QuizElement {
 	@state() accessor answerSelected = false;
 	/** @internal */
 	@state() accessor dropActive = false;
+	@state() private accessor editValue = "";
 
-	private slotRef = createRef<HTMLSlotElement>();
+	private textObserver?: MutationObserver;
+	private pendingFocus?: "start" | "end" | "all";
 
 	/**
 	 * The placeholder shown while the gap is empty. Only applies in `input` mode.
@@ -189,33 +313,231 @@ export class WebwriterGapItem extends QuizElement {
 	@property({ type: String, attribute: "placeholder", reflect: true, useDefault: true })
 	accessor placeholder: string = "";
 
+	/**
+	 * Legacy `|`-separated alternatives, used until this gap has its own saved choices.
+	 */
+	@property({ type: String, attribute: true, reflect: true, useDefault: true })
+	accessor distractors: string = "";
+
+	override connectedCallback() {
+		super.connectedCallback();
+		this.syncEditValue();
+		this.textObserver = new MutationObserver(records => {
+			this.syncEditValue();
+			if (records.some(record => record.type === "attributes")) this.requestUpdate();
+		});
+		this.textObserver.observe(this, {
+			characterData: true, childList: true, subtree: true, attributeFilter: [gapChoicesAttribute, "distractors"],
+		});
+	}
+
+	override disconnectedCallback() {
+		this.textObserver?.disconnect();
+		this.textObserver = undefined;
+		this.pendingFocus = undefined;
+		super.disconnectedCallback();
+	}
+
+	protected override updated(changed: PropertyValues) {
+		super.updated(changed);
+		if (this.pendingFocus && this.editing) {
+			const mode = this.pendingFocus;
+			if (this.applyFocusEdit(mode)) this.pendingFocus = undefined;
+		}
+	}
+
+	private syncEditValue() {
+		const value = this.textContent ?? "";
+		if (this.editValue !== value) this.editValue = value;
+	}
+
+	/** Focuses the internal edit input and places or selects its range. */
+	focusEdit(selection: "start" | "end" | "all" = "end") {
+		if (this.editing && this.applyFocusEdit(selection)) {
+			this.pendingFocus = undefined;
+			return;
+		}
+		this.pendingFocus = selection;
+		void this.updateComplete;
+	}
+
+	private applyFocusEdit(selection: "start" | "end" | "all"): boolean {
+		const input = this.shadowRoot?.querySelector<HTMLInputElement>("input.edit-input");
+		if (!input) return false;
+		input.focus({ preventScroll: true });
+		if (selection === "all") {
+			input.select();
+		} else {
+			const pos = selection === "start" ? 0 : input.value.length;
+			input.setSelectionRange(pos, pos);
+		}
+		return true;
+	}
+
+	private focusEditableHost(fallbackParent: ParentNode | null) {
+		const target = this.ownerDocument.body?.isContentEditable
+			? this.ownerDocument.body
+			: (fallbackParent instanceof Element ? fallbackParent.closest<HTMLElement>("[contenteditable]") : null)
+				?? this.ownerDocument.body;
+		target?.focus({ preventScroll: true });
+	}
+
+	/** Leaves the internal input cleanly and places the document caret before or after this gap. */
+	private placeCaretOutside(side: "before" | "after") {
+		const active = this.shadowRoot?.activeElement;
+		if (active instanceof HTMLElement) active.blur();
+		this.focusEditableHost(this.parentNode);
+		const selection = this.ownerDocument.getSelection();
+		if (!selection || !this.parentNode) return;
+		const range = this.ownerDocument.createRange();
+		if (side === "before") {
+			if (this.previousSibling instanceof Text) {
+				range.setStart(this.previousSibling, this.previousSibling.data.length);
+			} else {
+				range.setStartBefore(this);
+			}
+		} else if (this.nextSibling instanceof Text) {
+			range.setStart(this.nextSibling, 0);
+		} else {
+			range.setStartAfter(this);
+		}
+		range.collapse(true);
+		selection.removeAllRanges();
+		selection.addRange(range);
+	}
+
+	/** The width of an input gap: about as wide as its answer or placeholder. */
+	private get inputLength() {
+		return Math.max(this.editValue.trim().length || (this.textContent?.trim().length ?? 0), this.placeholder.length, 3) + 1;
+	}
+
+	private handleEditInput(event: Event) {
+		const value = (event.target as HTMLInputElement).value;
+		this.editValue = value;
+		if (this.childNodes.length === 1 && this.firstChild instanceof Text) {
+			this.firstChild.data = value;
+		} else {
+			this.textContent = value;
+		}
+	}
+
+	private handleEditKeyDown = (event: KeyboardEvent) => {
+		const input = event.target as HTMLInputElement;
+		const value = input.value;
+		const start = input.selectionStart ?? 0;
+		const end = input.selectionEnd ?? 0;
+
+		if (event.key === "Backspace") {
+			const wouldEmpty = value.length === 0
+				|| (start === 0 && end === value.length)
+				|| (!event.ctrlKey && !event.altKey && !event.metaKey && start === end && start === 1 && value.length === 1)
+				|| (event.metaKey && !event.ctrlKey && !event.altKey && end === value.length);
+			if (!wouldEmpty) return;
+
+			event.preventDefault();
+			event.stopPropagation();
+			const previous = this.previousSibling;
+			const next = this.nextSibling;
+			const parent = this.parentNode;
+			const index = parent ? Array.from(parent.childNodes).indexOf(this) : -1;
+			transaction(this, () => this.remove());
+			this.focusEditableHost(parent);
+			const selection = this.ownerDocument.getSelection();
+			if (!selection) return;
+			const range = this.ownerDocument.createRange();
+			if (previous instanceof Text && previous.isConnected) {
+				range.setStart(previous, previous.data.length);
+			} else if (next instanceof Text && next.isConnected) {
+				range.setStart(next, 0);
+			} else if (parent?.isConnected && index >= 0) {
+				range.setStart(parent, Math.min(index, parent.childNodes.length));
+			} else {
+				return;
+			}
+			range.collapse(true);
+			selection.removeAllRanges();
+			selection.addRange(range);
+			return;
+		}
+
+		if (event.shiftKey || event.altKey || event.ctrlKey || event.metaKey) return;
+
+		if (event.key === "ArrowLeft" && start === 0 && end === 0) {
+			event.preventDefault();
+			event.stopPropagation();
+			this.placeCaretOutside("before");
+		} else if (event.key === "ArrowRight" && start === value.length && end === value.length) {
+			event.preventDefault();
+			event.stopPropagation();
+			this.placeCaretOutside("after");
+		}
+	};
+
 	private renderEditable() {
-		return html`<div class="container-base container-input">
-			<slot
-				${ref(this.slotRef)}
-				@slotchange=${(event: Event) => {
-					const slot = event.target as HTMLSlotElement;
-					if (slot.assignedNodes().length == 0) this.remove();
-				}}
-			></slot>
+		const drag = this.mode === "drag-and-drop";
+		return html`<div
+			class="container-base edit ${drag ? "container-placeholder filled" : "container-input"}"
+			data-ww-capture-selection="false"
+			style=${drag ? "" : `inline-size: calc(${this.inputLength}ch + 3em)`}
+		>
+			<input
+				type="text"
+				class="edit-input"
+				data-ww-capture-selection="false"
+				aria-label=${this.msg("Gap")}
+				placeholder=${drag ? "" : this.placeholder}
+				.value=${this.editValue}
+				size=${Math.max(this.editValue.length, 3)}
+				@input=${this.handleEditInput}
+				@keydown=${this.handleEditKeyDown}
+			/>
+			<gap-choices-editor .gap=${this} .solutions=${[this.editValue.trim()]}
+				.alternatives=${gapChoices(this) ?? []} .message=${this.msg}></gap-choices-editor>
 			<sl-icon-button
+				class="remove-gap"
+				data-ww-capture-selection="false"
 				label=${this.msg("Remove gap")}
 				src=${XIcon}
-				@click=${() => {
-					const slot = this.slotRef.value;
-					if (!slot) return;
-					this.replaceWith(...slot.assignedNodes());
+				@mousedown=${(event: MouseEvent) => event.preventDefault()}
+				@click=${(event: MouseEvent) => {
+					event.stopPropagation();
+					const nodes = Array.from(this.childNodes);
+					transaction(this, () => this.replaceWith(...nodes));
+					const selection = this.ownerDocument.getSelection();
+					if (selection && nodes.length) {
+						const range = this.ownerDocument.createRange();
+						range.setStartAfter(nodes[nodes.length - 1]);
+						range.collapse(true);
+						selection.removeAllRanges();
+						selection.addRange(range);
+					}
 				}}
 			></sl-icon-button>
 		</div>`;
 	}
 
 	private renderInput() {
-		return html`<sl-input placeholder=${this.placeholder} .value=${this.inputAnswer} ?disabled=${this.graded}
+		return html`<sl-input style=${`inline-size: calc(${this.inputLength}ch + 3em)`} placeholder=${this.placeholder} .value=${this.inputAnswer} ?disabled=${this.graded}
 			@sl-input=${(event: Event) => {
 				this.inputAnswer = (event.target as SlInput).value;
 			}}
 		></sl-input>`;
+	}
+
+	private renderDropdown() {
+		const selected = this.dropdownOptions.includes(this.inputAnswer) ? this.inputAnswer : "";
+		return html`<select
+			class="container-base container-select"
+			aria-label=${this.msg("Gap")}
+			?disabled=${this.graded}
+			.value=${live(selected)}
+			@change=${(event: Event) => {
+				this.inputAnswer = (event.target as HTMLSelectElement).value;
+			}}
+		>
+			<option value="">—</option>
+			${this.dropdownOptions.map(option => html`<option value=${option} ?selected=${selected === option}>${option}</option>`)}
+		</select>`;
 	}
 
 	private renderDragAndDrop() {
@@ -237,13 +559,14 @@ export class WebwriterGapItem extends QuizElement {
 		if (this.feedback) {
 			const { correct, answer, solution } = this.feedback;
 			return html`<span class="container-base feedback ${correct ? "correct" : "incorrect"}" role="status">
-				${correct ? answer : html`
+				${correct ? html`<sl-icon src=${CheckIcon} label=${this.msg("Correct")}></sl-icon>${answer}` : html`
 					<del aria-label=${this.msg("Your answer")}>${answer || this.msg("No answer")}</del>
-					<span class="correction" aria-label=${this.msg("Correct answer")}>${solution}</span>
+					<span class="correction" aria-label=${this.msg("Solution")}>${solution}</span>
 				`}
 			</span>`;
 		}
 		if (this.mode === "input") return this.renderInput();
+		if (this.mode === "dropdown") return this.renderDropdown();
 		if (this.mode === "drag-and-drop") return this.renderDragAndDrop();
 
 		// An item that is not in a gap yet has no mode, and renders nothing until it is.

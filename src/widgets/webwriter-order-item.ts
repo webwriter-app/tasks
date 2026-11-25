@@ -3,11 +3,15 @@ import SlIcon from "@shoelace-style/shoelace/dist/components/icon/icon.component
 import { css, html, nothing } from "lit";
 import { customElement } from "lit/decorators.js";
 import { classMap } from "lit/directives/class-map.js";
-import GripHorizontalIcon from "@tabler/icons/outline/grip-horizontal.svg";
+import ArrowRightIcon from "@tabler/icons/outline/arrow-right.svg";
+import CheckIcon from "@tabler/icons/outline/check.svg";
+import ChevronDownIcon from "@tabler/icons/outline/chevron-down.svg";
+import ChevronUpIcon from "@tabler/icons/outline/chevron-up.svg";
+import { str } from "@lit/localize";
 import GripVerticalIcon from "@tabler/icons/outline/grip-vertical.svg";
-import { HintPopup } from "../components/hint-popup";
 import { WebwriterOrder } from "./webwriter-order";
 import { QuizElement } from "../components/localization";
+import { hasNonTextContent, itemContentStyles } from "../components/item-content";
 
 declare global {
 	interface HTMLElementTagNameMap {
@@ -34,50 +38,100 @@ const ROMAN_NUMERALS_TABLE: [number, string][] = [
 /**
  * A single item of a `<webwriter-order>`.
  *
- * It must be assigned to the default slot of its parent element. An optional
- * `<webwriter-quiz-hint>` may be assigned to its `hint` slot.
+ * It must be assigned to the default slot of its parent element. Items have no hints of their
+ * own; a hint on an item from an earlier version stays in the markup but is not shown.
  */
 @customElement("webwriter-order-item")
 export class WebwriterOrderItem extends QuizElement {
 	static styles = [
+		itemContentStyles,
 		css`
 			slot {
 				display: block;
+				-webkit-user-select: text;
+				user-select: text;
 			}
 
+			/* The position, the tags and the controls cannot be selected; the authored text of the item can. */
 			.order-item {
-				background-color: var(--sl-color-neutral-0);
-			}
+				display: flex;
+				align-items: center;
+				gap: var(--sl-spacing-2x-small);
+				padding: var(--sl-spacing-2x-small) var(--sl-spacing-x-small);
+				min-height: 2.75rem;
+				box-sizing: border-box;
+				border: 1px solid var(--color-row);
+				border-radius: var(--sl-border-radius-medium);
+				transition:
+					var(--sl-transition-fast) border-color,
+					var(--sl-transition-fast) background-color;
+				-webkit-user-select: none;
+				user-select: none;
+				--color-row: var(--sl-color-neutral-300);
+				--color-background: var(--sl-color-neutral-0);
+				--color-tag: var(--sl-color-neutral-700);
+				background-color: var(--color-background);
 
-			.layout-list {
-				display: grid !important;
-				grid-column: 1 / -1;
-				grid-template-columns: subgrid;
+				&.right {
+					--color-row: var(--sl-color-success-600);
+					--color-background: var(--sl-color-success-50);
+					--color-tag: var(--sl-color-success-700);
+				}
 
-				> * {
-					padding: var(--sl-spacing-2x-small) 0;
+				&.wrong {
+					--color-row: var(--sl-color-danger-600);
+					--color-background: var(--sl-color-danger-50);
+					--color-tag: var(--sl-color-danger-700);
 				}
 			}
 
-			.actions,
-			hint-popup::part(empty) {
-				opacity: 0;
+			.order-item .content {
+				flex: 1;
+				min-width: 0;
 			}
 
-			:is(:host(:hover), :host(:focus-within)) .actions {
-				opacity: 1;
+			.order-item .position.numbering-numeric {
+				min-inline-size: 1.75em;
 			}
 
-			:is(:host(.ww-selected-text-within), :host(:hover), :host(:focus-within)) hint-popup::part(empty) {
-				opacity: 1;
-			}
+			.content-row {
+				display: flex;
+				align-items: center;
+				gap: var(--sl-spacing-x-small);
+				overflow-wrap: break-word;
 
-			/* Without a pointer that hovers, the controls would stay invisible. */
-			@media (hover: none) {
-				.actions,
-				hint-popup::part(empty) {
-					opacity: 1;
+				slot:not([name]) {
+					flex: 1;
+					min-width: 0;
 				}
+			}
+
+			slot:not([name])::slotted(:first-child) {
+				margin-block-start: 0;
+			}
+
+			slot:not([name])::slotted(:last-child) {
+				margin-block-end: 0;
+			}
+
+			.move {
+				display: flex;
+				flex: none;
+
+				sl-icon-button::part(base) {
+					padding: var(--sl-spacing-2x-small);
+				}
+			}
+
+			.tag {
+				flex: none;
+				display: inline-flex;
+				align-items: center;
+				gap: 0.25em;
+				color: var(--color-tag);
+				font-size: var(--sl-font-size-small);
+				font-weight: var(--sl-font-weight-semibold);
+				white-space: nowrap;
 			}
 
 			.order-item:focus-visible {
@@ -86,69 +140,19 @@ export class WebwriterOrderItem extends QuizElement {
 			}
 
 
-			.layout-tiles {
-				border: 1px solid var(--sl-input-border-color);
-				border-radius: var(--sl-border-radius-large);
-				padding: var(--sl-spacing-small);
-				box-sizing: border-box;
-
-				display: grid !important;
-				grid-template-columns: auto 1fr max-content max-content;
-				grid-template-rows: auto 1fr;
-				grid-template-areas: "position . hint grab" "content content content content";
-				position: relative;
-				aspect-ratio: 1 / 1;
-
-				.position {
-					grid-area: position;
-				}
-
-				.content {
-					grid-area: content;
-				}
-
-				hint-popup {
-					grid-area: hint;
-				}
-
-				.grip {
-					grid-area: grab;
-				}
-
-				.actions {
-					position: absolute;
-				}
-
-				.actions {
-					position: absolute;
-					background: var(--sl-color-neutral-0);
-					border: 1px solid var(--sl-input-border-color);
-					border-radius: var(--sl-border-radius-pill);
-					top: 0;
-					left: 50%;
-					translate: -50% -50%;
-					padding: 0 var(--sl-spacing-x-small);
-					box-sizing: border-box;
-				}
-			}
-
 			:host(:not([contenteditable="true"]):not([contenteditable=""])) {
 				.order-item:hover .grip {
 					color: var(--sl-color-primary-600);
 				}
 			}
 
-			.grip,
 			.position {
-				padding-right: var(--sl-spacing-small);
-			}
-
-			.position {
+				padding-inline-end: var(--sl-spacing-small);
 				font-variant-numeric: tabular-nums;
 				font-weight: bold;
 
 				&.numbering-numeric {
-					text-align: right;
+					text-align: end;
 				}
 
 				&.numbering-none {
@@ -156,11 +160,20 @@ export class WebwriterOrderItem extends QuizElement {
 				}
 			}
 
-			.actions,
 			.grip {
 				height: 1lh;
 				display: flex;
 				align-items: center;
+			}
+
+			button.grip {
+				justify-content: center;
+				min-inline-size: 1.5rem;
+				min-block-size: 1.5rem;
+				padding: 0;
+				border: 0;
+				background: none;
+				color: inherit;
 			}
 
 			[data-ww-drag-handle] {
@@ -168,10 +181,16 @@ export class WebwriterOrderItem extends QuizElement {
 				touch-action: none;
 			}
 
+			.order-item.non-text {
+				padding: 0;
+				gap: 0;
+				min-height: 0;
+				.grip, .move, .tag { margin-inline: var(--sl-spacing-2x-small, 0.25rem); }
+				.position { margin-inline-start: var(--sl-spacing-2x-small, 0.25rem); }
+			}
+
 			@media print {
-				.actions,
-				.grip,
-				hint-popup {
+				.grip {
 					display: none;
 				}
 
@@ -194,7 +213,6 @@ export class WebwriterOrderItem extends QuizElement {
 	/** @internal */
 	static scopedElements = {
 		"sl-icon": SlIcon,
-		"hint-popup": HintPopup,
 		"sl-icon-button": SlIconButton,
 	};
 
@@ -202,13 +220,17 @@ export class WebwriterOrderItem extends QuizElement {
 	getPositionText(): string {
 		const parent = this.parentElement as WebwriterOrder | undefined;
 		if (!parent) return "";
+		const index = parent.items.indexOf(this);
+		return index === -1 ? "" : this.positionLabel(index, parent.numberingStyle);
+	}
 
-		let index = parent.items.indexOf(this);
-		if (index === -1) return "";
+	/** The label of a position in the current numbering style and direction. */
+	private positionLabel(position: number, style: WebwriterOrder["numberingStyle"]): string {
+		const parent = this.parentElement as WebwriterOrder | undefined;
+		if (!parent) return "";
+		let index = parent.direction === "descending" ? parent.items.length - 1 - position : position;
 
-		if (parent.direction === "descending") index = parent.items.length - 1 - index;
-
-		switch (parent.numberingStyle) {
+		switch (style) {
 			case "numeric":
 				return (index + 1).toString() + ".";
 			case "alphabetic":
@@ -238,24 +260,66 @@ export class WebwriterOrderItem extends QuizElement {
 		const parent = this.parentElement as WebwriterOrder | undefined;
 		if (!parent) return nothing;
 
-		const gripIcon = parent.layout === "list" ? GripVerticalIcon : GripHorizontalIcon;
+		const learner = !this.editing && !parent.graded;
+		const nonText = hasNonTextContent(this);
+		const dragFromGrip = this.editing || nonText;
+		const feedback = !this.editing && parent.graded && parent.detailedFeedback;
+		const index = parent.items.indexOf(this);
+		const correctIndex = parent.correctIndex(this);
+		const right = feedback && correctIndex === index;
+
+		let tag: unknown = nothing;
+		if (feedback && correctIndex !== -1) {
+			tag = right
+				? html`<sl-icon src=${CheckIcon}></sl-icon>${this.msg("Right place")}`
+				: html`<sl-icon src=${ArrowRightIcon}></sl-icon>${this.msg(str`Belongs at ${this.positionLabel(correctIndex, parent.numberingStyle === "none" ? "numeric" : parent.numberingStyle).replace(/\.$/, "")}`)}`;
+		}
+
+		// Authors move the items with the same grip and arrows; in edit mode they set the correct order.
+		const movable = learner || this.editing;
+		const grip = learner && nonText
+			? html`<button type="button" class="grip" aria-label=${this.msg("Move")} data-ww-drag-handle>
+				<sl-icon src=${GripVerticalIcon} aria-hidden="true"></sl-icon>
+			</button>`
+			: html`<sl-icon class="grip" src=${GripVerticalIcon} ?data-ww-drag-handle=${this.editing}></sl-icon>`;
+		const stop = (event: Event) => event.stopPropagation();
+		const move = movable
+			? html`<div class="move" @pointerdown=${stop} @keydown=${stop}>
+					<sl-icon-button
+						src=${ChevronUpIcon}
+						label=${this.msg("Move up")}
+						?disabled=${index <= 0}
+						@click=${() => parent.moveItem(this, -1)}
+					></sl-icon-button>
+					<sl-icon-button
+						src=${ChevronDownIcon}
+						label=${this.msg("Move down")}
+						?disabled=${index === -1 || index >= parent.items.length - 1}
+						@click=${() => parent.moveItem(this, 1)}
+					></sl-icon-button>
+				</div>`
+			: nothing;
 
 		return html`
 			<div
 				class=${classMap({
 					"order-item": true,
-					[`layout-${parent.layout}`]: true,
+					"non-text": nonText,
+					right,
+					wrong: feedback && correctIndex !== -1 && !right,
 				})}
-				?data-ww-drag-handle=${!this.editing}
-				tabindex=${this.editing ? nothing : "0"}
+				?data-ww-drag-handle=${learner && !dragFromGrip}
+				tabindex=${learner && !dragFromGrip ? "0" : nothing}
 			>
-				${this.editing ? html`<div></div>` : html`<sl-icon class="grip" src=${gripIcon}></sl-icon>`}
+				${movable ? grip : html`<div></div>`}
 				<div class="position numbering-${parent.numberingStyle}">${this.getPositionText()}</div>
-				<slot class="content" style=${`--ww-placeholder: "${this.msg("Option")}"`}></slot>
-				<div class="actions" data-ww-can="edit">
-					<sl-icon-button ?data-ww-drag-handle=${this.editing} label=${this.msg("Move option")} src=${gripIcon}></sl-icon-button>
+				<div class="content">
+					<div class="content-row">
+						<slot style=${`--ww-placeholder: "${this.msg("Item")}"`} @slotchange=${() => this.requestUpdate()}></slot>
+						${tag === nothing ? nothing : html`<span class="tag">${tag}</span>`}
+						${move}
+					</div>
 				</div>
-				<hint-popup position="start" label=${this.msg("Hint")}><slot name="hint"></slot></hint-popup>
 			</div>
 		`;
 	}

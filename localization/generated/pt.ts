@@ -15,7 +15,6 @@
 's0d9a7bb29fee2d85': `Resposta correta`,
 's159928724265eb05': `Adicionar opção`,
 's15bdec250a4a55fb': `Decrescente`,
-'s16e1bead7b9c95ce': `Memória`,
 's1705e89d78286348': `Mensagem para solução correta`,
 's19d2c07c1effbdaf': `Parcialmente correta`,
 's21b5ec7253ee5705': `A direção de ordenação a ser usada.`,
@@ -30,6 +29,7 @@
 's2e4818861000b13f': `Layout`,
 's2f9c7cb1f24c3de8': `Exigir confirmação antes de enviar`,
 's31ac9cd289910c65': `Feedback se não selecionado`,
+'s3352fb3d4c200919': `Escolha única / Múltipla escolha`,
 's34adfb0ab932043d': `Ignorar maiúsculas e minúsculas`,
 's36163be9d8064432': `O estilo de numeração a ser usado.`,
 's37cbecaec58e2192': `Modo`,
@@ -113,4 +113,5 @@
 'sf90be97cb08f3d5a': `Texto de espaço reservado`,
 'sfe628f6e69f78cca': `Texto longo`,
 'sffeb741d73d302b3': `Pontuação parcial`,
+'sd47b516b630da4a5': `Verdadeiro ou falso`,
     };

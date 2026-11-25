@@ -53,7 +53,7 @@ export class QuizItems<T extends HTMLElement> implements ReactiveController {
 	}
 
 	hostUpdated() {
-		const slot = this.host.renderRoot.querySelector<HTMLSlotElement>("slot:not([name])");
+		const slot = this.host.renderRoot.querySelector<HTMLSlotElement>("slot:not([name], [data-child-id])");
 		if (!slot) return;
 		const ordered = this.ordered;
 		const items = new Set(ordered);

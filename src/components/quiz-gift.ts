@@ -1,6 +1,8 @@
 import { isQuizTask } from "../model/quiz-api";
 import { formatGift, parseGift, type GiftQuestion, type GiftSkipped } from "../model/gift";
+import { createChoiceItem, withMinimumChoiceItems } from "./choice-items";
 import { encryptedProperty } from "./encrypted-property";
+import { createPairingItem } from "./migrate-pairing-columns";
 
 const collapse = (text: string | null) => (text ?? "").replace(/\s+/g, " ").trim();
 
@@ -51,22 +53,41 @@ export function giftQuestionOf(task: Element): GiftQuestion | GiftSkipped {
 			return { kind: "true-false", text, answer: task.getAttribute("solution") !== "false" };
 		case "webwriter-choice": {
 			const solution = solutionOf<Record<string, boolean>>(task, {});
+			if (task.getAttribute("mode") === "true-false") {
+				return { kind: "true-false", text, answer: !solution.false || Boolean(solution.true) };
+			}
 			const multiple = task.getAttribute("mode") === "multiple";
 			const options = items(task, "webwriter-choice-item").map(item => ({ text: contentText(item), correct: Boolean(item.id && solution[item.id]) }));
 			const firstCorrect = options.findIndex(option => option.correct);
 			return { kind: "choice", text, multiple, options: multiple ? options : options.map((option, index) => ({ ...option, correct: index === firstCorrect })) };
 		}
 		case "webwriter-text": {
-			const solution = collapse(solutionOf<string>(task, ""));
-			if (task.hasAttribute("free-text") || solution === "") return { kind: "essay", text };
-			return { kind: "short", text, answers: [solution], numeric: task.getAttribute("type") === "number" };
+			const answers = [solutionOf<string | string[]>(task, "")].flat().map(collapse).filter(answer => answer !== "");
+			const method = task.getAttribute("grading-method");
+			const openEnded = method === null ? task.hasAttribute("free-text") : method !== "exact";
+			if (openEnded || answers.length === 0) return { kind: "essay", text };
+			return { kind: "short", text, answers, numeric: task.getAttribute("type") === "number" };
+		}
+		case "webwriter-numeric": {
+			const mode = task.getAttribute("mode") ?? "input";
+			const method = task.getAttribute("grading-method") ?? "exact";
+			const answer = solutionOf<number>(task, 0);
+			return mode === "input" && method === "exact" && Number.isFinite(answer)
+				? { kind: "short", text, answers: [String(answer)], numeric: true }
+				: { kind: "skipped", type: task.localName };
 		}
 		case "webwriter-pairing": {
-			const byId = new Map(items(task, "webwriter-pairing-item").map(item => [item.id, contentText(item)]));
-			const pairs = solutionOf<[string, string][]>(task, [])
-				.map(([left, right]) => [byId.get(left) ?? "", byId.get(right) ?? ""] as [string, string])
-				.filter(([left, right]) => left !== "" && right !== "");
-			return pairs.length > 0 ? { kind: "matching", text, pairs } : { kind: "skipped", type: task.localName };
+			const columns = items(task, "webwriter-pairing-column");
+			const byId = (container: Element) =>
+				new Map(items(container, "webwriter-pairing-item").map(item => [item.id, contentText(item)]));
+			const leftItems = byId(columns[0] ?? task);
+			const rightItems = columns[1] ? byId(columns[1]) : leftItems;
+			const links = solutionOf<[string, string][]>(task, [])
+				.filter(([left, right]) => leftItems.get(left) && rightItems.get(right));
+			const multi = task.hasAttribute("multiple-connections")
+				&& [0, 1].some(side => new Set(links.map(link => link[side])).size < links.length);
+			const pairs = links.map(([left, right]) => [leftItems.get(left)!, rightItems.get(right)!] as [string, string]);
+			return pairs.length && !multi ? { kind: "matching", text, pairs } : { kind: "skipped", type: task.localName };
 		}
 		case "webwriter-gap": {
 			const { segments, solutions } = gapSegments(task);
@@ -78,9 +99,9 @@ export function giftQuestionOf(task: Element): GiftQuestion | GiftSkipped {
 	}
 }
 
-/** The tasks of the quiz as the text of a GIFT file. */
-export function exportGift(quiz: Element) {
-	return formatGift(Array.from(quiz.children).filter(isQuizTask).map(giftQuestionOf));
+/** Questions as the text of a GIFT file. */
+export function exportGift(tasks: Element[]) {
+	return formatGift(tasks.filter(isQuizTask).map(giftQuestionOf));
 }
 
 const newId = () => "ww" + crypto.randomUUID();
@@ -115,20 +136,33 @@ export function tasksFromGift(document: Document, questions: GiftQuestion[]): HT
 			case "choice": {
 				const options = question.options.map(option => ({ id: newId(), ...option }));
 				const solution = Object.fromEntries(options.map(option => [option.id, option.correct]));
+				const items = options.map(option => {
+					const item = createChoiceItem(document, option.text);
+					item.id = option.id;
+					return item;
+				});
 				return element(document, "webwriter-choice", { mode: question.multiple ? "multiple" : "single", solution: encrypted(solution) }, prompt,
-					...options.map(option => element(document, "webwriter-choice-item", { id: option.id }, paragraph(document, option.text))));
+					...withMinimumChoiceItems(document, items));
 			}
 			case "short":
-				return element(document, "webwriter-text", { type: question.numeric ? "number" : "text", solution: encryptedProperty.toAttribute!(question.answers[0], String) as string }, prompt);
+				if (question.numeric) {
+					return element(document, "webwriter-numeric", {
+						solution: encryptedProperty.toAttribute!(Number(question.answers[0]), Number) as string,
+					}, prompt);
+				}
+				return element(document, "webwriter-text", {
+					solution: encryptedProperty.toAttribute!(question.answers.length > 1 ? question.answers : question.answers[0], String) as string,
+				}, prompt);
 			case "essay":
-				return element(document, "webwriter-text", { "free-text": "" }, prompt);
+				return element(document, "webwriter-text", { "grading-method": "completion", rows: "4" }, prompt);
 			case "matching": {
-				const pairs = question.pairs.map(([left, right]) => ({ left: newId(), right: newId(), texts: [left, right] }));
-				return element(document, "webwriter-pairing", { solution: encrypted(pairs.map(pair => [pair.left, pair.right])) }, prompt,
-					...pairs.flatMap(pair => [
-						element(document, "webwriter-pairing-item", { id: pair.left }, paragraph(document, pair.texts[0])),
-						element(document, "webwriter-pairing-item", { id: pair.right }, paragraph(document, pair.texts[1])),
-					]));
+				const pairs = question.pairs.map(texts => ({ ids: [newId(), newId()], texts }));
+				const columns = [0, 1].map(side => {
+					const cards = pairs.map(({ ids, texts }) =>
+						element(document, "webwriter-pairing-item", { id: ids[side] }, paragraph(document, texts[side])));
+					return element(document, "webwriter-pairing-column", {}, ...(cards.length ? cards : [createPairingItem(document)]));
+				});
+				return element(document, "webwriter-pairing", { solution: encrypted(pairs.map(pair => pair.ids)) }, prompt, ...columns);
 			}
 		}
 	});

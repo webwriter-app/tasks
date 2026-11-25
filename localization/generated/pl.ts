@@ -15,7 +15,6 @@
 's0d9a7bb29fee2d85': `Prawidłowa odpowiedź`,
 's159928724265eb05': `Dodaj opcję`,
 's15bdec250a4a55fb': `Malejąco`,
-'s16e1bead7b9c95ce': `Pamięć`,
 's1705e89d78286348': `Komunikat przy poprawnym rozwiązaniu`,
 's19d2c07c1effbdaf': `Częściowo poprawnie`,
 's21b5ec7253ee5705': `Kierunek sortowania do użycia.`,
@@ -30,6 +29,7 @@
 's2e4818861000b13f': `Układ`,
 's2f9c7cb1f24c3de8': `Wymagaj potwierdzenia przed wysłaniem`,
 's31ac9cd289910c65': `Informacja zwrotna po niewybraniu`,
+'s3352fb3d4c200919': `Jedna odpowiedź / Wiele odpowiedzi`,
 's34adfb0ab932043d': `Ignoruj wielkość liter`,
 's36163be9d8064432': `Styl numerowania do użycia.`,
 's37cbecaec58e2192': `Tryb`,
@@ -113,4 +113,5 @@
 'sf90be97cb08f3d5a': `Tekst zastępczy`,
 'sfe628f6e69f78cca': `Długi tekst`,
 'sffeb741d73d302b3': `Częściowe punkty`,
+'sd47b516b630da4a5': `Prawda czy fałsz`,
     };

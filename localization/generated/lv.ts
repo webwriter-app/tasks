@@ -15,7 +15,6 @@
 's0d9a7bb29fee2d85': `Pareizā atbilde`,
 's159928724265eb05': `Pievienot opciju`,
 's15bdec250a4a55fb': `Dilstoši`,
-'s16e1bead7b9c95ce': `Atmiņa`,
 's1705e89d78286348': `Ziņojums par pareizu risinājumu`,
 's19d2c07c1effbdaf': `Daļēji pareizi`,
 's21b5ec7253ee5705': `Izmantojamais secības virziens.`,
@@ -30,6 +29,7 @@
 's2e4818861000b13f': `Izkārtojums`,
 's2f9c7cb1f24c3de8': `Pirms iesniegšanas pieprasīt apstiprinājumu`,
 's31ac9cd289910c65': `Atsauksme, ja nav atlasīts`,
+'s3352fb3d4c200919': `Viena izvēle / Vairākas izvēles`,
 's34adfb0ab932043d': `Ignorēt reģistru`,
 's36163be9d8064432': `Izmantojamais numerācijas stils.`,
 's37cbecaec58e2192': `Režīms`,
@@ -113,4 +113,5 @@
 'sf90be97cb08f3d5a': `Viettura teksts`,
 'sfe628f6e69f78cca': `Garš teksts`,
 'sffeb741d73d302b3': `Daļējs vērtējums`,
+'sd47b516b630da4a5': `Patiesi vai aplami`,
     };

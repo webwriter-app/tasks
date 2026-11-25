@@ -15,7 +15,6 @@
 's0d9a7bb29fee2d85': `Teisingas atsakymas`,
 's159928724265eb05': `Pridėti parinktį`,
 's15bdec250a4a55fb': `Mažėjimo tvarka`,
-'s16e1bead7b9c95ce': `Atmintis`,
 's1705e89d78286348': `Pranešimas apie teisingą sprendimą`,
 's19d2c07c1effbdaf': `Iš dalies teisinga`,
 's21b5ec7253ee5705': `Naudotina rūšiavimo kryptis.`,
@@ -30,6 +29,7 @@
 's2e4818861000b13f': `Išdėstymas`,
 's2f9c7cb1f24c3de8': `Prieš pateikiant reikalauti patvirtinimo`,
 's31ac9cd289910c65': `Atsiliepimas nepasirinkus`,
+'s3352fb3d4c200919': `Vienas pasirinkimas / Keli pasirinkimai`,
 's34adfb0ab932043d': `Nepaisyti raidžių registro`,
 's36163be9d8064432': `Naudotinas numeravimo stilius.`,
 's37cbecaec58e2192': `Režimas`,
@@ -113,4 +113,5 @@
 'sf90be97cb08f3d5a': `Vietos rezervavimo tekstas`,
 'sfe628f6e69f78cca': `Ilgas tekstas`,
 'sffeb741d73d302b3': `Dalinis įvertinimas`,
+'sd47b516b630da4a5': `Tiesa ar netiesa`,
     };

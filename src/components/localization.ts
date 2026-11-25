@@ -1,6 +1,6 @@
 import type { msg } from "@lit/localize";
 import { runtimeMsg } from "@lit/localize/internal/runtime-msg.js";
-import { LitElementWw, resolveDeclarations } from "@webwriter/lit";
+import { LitElementWw, resolveDeclarations, widgetOptionType } from "@webwriter/lit";
 import { localizer, type LocalizeOptions } from "@webwriter/lit/localize";
 import { Permissions } from "@webwriter/lit/permissions";
 import type { PropertyValues } from "lit";
@@ -39,14 +39,32 @@ export class QuizElement extends LitElementWw {
 	}
 
 	/** The static declarations of this class as the editor reads them, without the entries that do not apply at the moment. */
-	protected declarationsWithout(kind: "options" | "actions", omitted: string[]) {
-		const declared = (this.constructor as typeof LitElementWw)[kind];
+	protected declarationsWithout(kind: "options" | "actions", omitted: string[], declared: object | undefined = (this.constructor as typeof LitElementWw)[kind]) {
 		const resolved: Record<string, object> = resolveDeclarations(this, declared as never) ?? {};
-		return Object.fromEntries(Object.entries(resolved).filter(([name]) => !omitted.includes(name)));
+		const entries = Object.entries(resolved).filter(([name]) => !omitted.includes(name));
+		if (kind === "options") {
+			const order = (declaration: object) => Number("type" in declaration && widgetOptionType(declaration.type) === "boolean");
+			entries.sort(([, a], [, b]) => order(a) - order(b));
+		}
+		return Object.fromEntries(entries);
 	}
 
 	protected get msg() {
 		return this.localize.msg;
+	}
+
+	/**
+	 * Puts the caret into authored content of this widget, such as a paragraph that a control just
+	 * added. As WebWriter's guide on selection asks, this waits until the editor has handled the
+	 * click on the control, then moves the focus away from the widget, then sets the selection.
+	 */
+	protected placeCaret(node: Node) {
+		setTimeout(() => {
+			if (!node.isConnected || !this.contains(node)) return;
+			const active = this.shadowRoot?.activeElement;
+			if (active instanceof HTMLElement) active.blur();
+			this.ownerDocument.getSelection()?.collapse(node, 0);
+		});
 	}
 
 	protected updated(changed: PropertyValues) {

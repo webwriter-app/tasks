@@ -15,7 +15,6 @@
 's0d9a7bb29fee2d85': `Rétt svar`,
 's159928724265eb05': `Bæta við valkosti`,
 's15bdec250a4a55fb': `Lækkandi`,
-'s16e1bead7b9c95ce': `Minni`,
 's1705e89d78286348': `Skilaboð fyrir rétt svar`,
 's19d2c07c1effbdaf': `Að hluta rétt`,
 's21b5ec7253ee5705': `Röðunarstefnan sem á að nota.`,
@@ -30,6 +29,7 @@
 's2e4818861000b13f': `Uppsetning`,
 's2f9c7cb1f24c3de8': `Krefjast staðfestingar áður en sent er`,
 's31ac9cd289910c65': `Endurgjöf ef ekki valið`,
+'s3352fb3d4c200919': `Eitt val / Fjölval`,
 's34adfb0ab932043d': `Hunsa hástafi og lágstafi`,
 's36163be9d8064432': `Númerunarstíllinn sem á að nota.`,
 's37cbecaec58e2192': `Hamur`,
@@ -113,4 +113,5 @@
 'sf90be97cb08f3d5a': `Staðgengill`,
 'sfe628f6e69f78cca': `Langur texti`,
 'sffeb741d73d302b3': `Hlutastig`,
+'sd47b516b630da4a5': `Rétt eða rangt`,
     };

@@ -13,7 +13,7 @@ import SlRange from "@shoelace-style/shoelace/dist/components/range/range.compon
 import PauseFillIcon from "@tabler/icons/filled/player-pause.svg";
 import PlayFillIcon from "@tabler/icons/filled/player-play.svg";
 import SlidersIcon from "@tabler/icons/outline/adjustments.svg";
-import TrashIcon from "@tabler/icons/outline/trash.svg";
+import RefreshIcon from "@tabler/icons/outline/refresh.svg";
 import { QuizElement } from "./localization";
 import {
 	BAR_WIDTH,
@@ -309,7 +309,7 @@ export class AudioPlayer extends QuizElement {
 
 	render() {
 		return html`
-			<sl-button variant="primary" circle @click=${this.togglePlayPause}>
+			<sl-button variant="primary" circle label=${this.playing ? this.msg("Pause") : this.msg("Play")} @click=${this.togglePlayPause}>
 				<sl-icon src=${this.playing ? PauseFillIcon : PlayFillIcon}></sl-icon>
 			</sl-button>
 			<span class="duration">${formatDuration(this.currentTime)} / ${formatDuration(this.duration)}</span>
@@ -341,12 +341,15 @@ export class AudioPlayer extends QuizElement {
 						></sl-range>
 					</div>
 				</sl-dropdown>
-				${this.allowDelete ? html`<sl-button
-					@click=${() => this.dispatchEvent(new CustomEvent("delete-recording", { bubbles: true, composed: true }))}
-				>
-					<sl-icon src=${TrashIcon}></sl-icon>
-				</sl-button>` : nothing}
 			</sl-button-group>
+			${this.allowDelete ? html`<sl-button
+				size="small"
+				pill
+				@click=${() => this.dispatchEvent(new CustomEvent("delete-recording", { bubbles: true, composed: true }))}
+			>
+				<sl-icon slot="prefix" src=${RefreshIcon}></sl-icon>
+				${this.msg("Record again")}
+			</sl-button>` : nothing}
 		`;
 	}
 }

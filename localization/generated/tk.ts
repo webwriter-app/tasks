@@ -15,7 +15,6 @@
 's0d9a7bb29fee2d85': `Dogry jogap`,
 's159928724265eb05': `Wariant goş`,
 's15bdec250a4a55fb': `Kemelýän`,
-'s16e1bead7b9c95ce': `Ýat`,
 's1705e89d78286348': `Dogry çözgüt üçin habar`,
 's19d2c07c1effbdaf': `Bölekleýin dogry`,
 's21b5ec7253ee5705': `Ulanyljak tertipleme ugry.`,
@@ -30,6 +29,7 @@
 's2e4818861000b13f': `Ýerleşiş`,
 's2f9c7cb1f24c3de8': `Ibermezden öň tassyklamany sora`,
 's31ac9cd289910c65': `Saýlanmadyk ýagdaýda seslenme`,
+'s3352fb3d4c200919': `Bir wariantly saýlaw / Köp wariantly saýlaw`,
 's34adfb0ab932043d': `Baş we setir harplaryny tapawutlandyrma`,
 's36163be9d8064432': `Ulanyljak belgileme görnüşi.`,
 's37cbecaec58e2192': `Tertip`,
@@ -113,4 +113,5 @@
 'sf90be97cb08f3d5a': `Ýer tutujy tekst`,
 'sfe628f6e69f78cca': `Uzyn tekst`,
 'sffeb741d73d302b3': `Bölekleýin bal`,
+'sd47b516b630da4a5': `Dogry ýa-da nädogry`,
     };

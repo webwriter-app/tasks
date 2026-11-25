@@ -15,7 +15,6 @@
 's0d9a7bb29fee2d85': `Düzgün cavab`,
 's159928724265eb05': `Variant əlavə et`,
 's15bdec250a4a55fb': `Azalan`,
-'s16e1bead7b9c95ce': `Yaddaş`,
 's1705e89d78286348': `Düzgün həll üçün mesaj`,
 's19d2c07c1effbdaf': `Qismən düzgün`,
 's21b5ec7253ee5705': `İstifadə olunacaq sıralama istiqaməti.`,
@@ -30,6 +29,7 @@
 's2e4818861000b13f': `Düzülüş`,
 's2f9c7cb1f24c3de8': `Göndərməzdən əvvəl təsdiq tələb et`,
 's31ac9cd289910c65': `Seçilməzsə rəy`,
+'s3352fb3d4c200919': `Bir variant / Bir neçə variant`,
 's34adfb0ab932043d': `Böyük-kiçik hərf fərqini nəzərə alma`,
 's36163be9d8064432': `İstifadə olunacaq nömrələmə üslubu.`,
 's37cbecaec58e2192': `Rejim`,
@@ -113,4 +113,5 @@
 'sf90be97cb08f3d5a': `Yer tutucu`,
 'sfe628f6e69f78cca': `Uzun mətn`,
 'sffeb741d73d302b3': `Qismən bal`,
+'sd47b516b630da4a5': `Doğru və ya yanlış`,
     };

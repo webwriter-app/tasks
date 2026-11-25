@@ -15,7 +15,6 @@
 's0d9a7bb29fee2d85': `Jibu sahihi`,
 's159928724265eb05': `Ongeza chaguo`,
 's15bdec250a4a55fb': `Kushuka`,
-'s16e1bead7b9c95ce': `Kumbukumbu`,
 's1705e89d78286348': `Ujumbe kwa suluhisho sahihi`,
 's19d2c07c1effbdaf': `Sahihi kwa sehemu`,
 's21b5ec7253ee5705': `Mwelekeo wa kupanga unaotumika.`,
@@ -30,6 +29,7 @@
 's2e4818861000b13f': `Mpangilio wa vipengele`,
 's2f9c7cb1f24c3de8': `Omba uthibitisho kabla ya kutuma`,
 's31ac9cd289910c65': `Maoni isipachaguliwa`,
+'s3352fb3d4c200919': `Chaguo moja / Chaguo nyingi`,
 's34adfb0ab932043d': `Puuza tofauti ya herufi kubwa na ndogo`,
 's36163be9d8064432': `Mtindo wa nambari unaotumika.`,
 's37cbecaec58e2192': `Hali`,
@@ -113,4 +113,5 @@
 'sf90be97cb08f3d5a': `Maandishi ya mfano`,
 'sfe628f6e69f78cca': `Maandishi marefu`,
 'sffeb741d73d302b3': `Alama za sehemu`,
+'sd47b516b630da4a5': `Kweli au si kweli`,
     };

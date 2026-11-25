@@ -15,7 +15,6 @@
 's0d9a7bb29fee2d85': `Përgjigjja e saktë`,
 's159928724265eb05': `Shto alternativë`,
 's15bdec250a4a55fb': `Në zbritje`,
-'s16e1bead7b9c95ce': `Kujtesë`,
 's1705e89d78286348': `Mesazh për zgjidhjen e saktë`,
 's19d2c07c1effbdaf': `Pjesërisht e saktë`,
 's21b5ec7253ee5705': `Drejtimi i renditjes që do të përdoret.`,
@@ -30,6 +29,7 @@
 's2e4818861000b13f': `Paraqitja`,
 's2f9c7cb1f24c3de8': `Kërko konfirmim para dërgimit`,
 's31ac9cd289910c65': `Komenti kur nuk zgjidhet`,
+'s3352fb3d4c200919': `Një zgjedhje / Zgjedhje të shumëfishta`,
 's34adfb0ab932043d': `Injoro shkronjat e mëdha e të vogla`,
 's36163be9d8064432': `Stili i numërimit që do të përdoret.`,
 's37cbecaec58e2192': `Mënyra`,
@@ -113,4 +113,5 @@
 'sf90be97cb08f3d5a': `Tekst zëvendësues`,
 'sfe628f6e69f78cca': `Tekst i gjatë`,
 'sffeb741d73d302b3': `Pikëzim i pjesshëm`,
+'sd47b516b630da4a5': `E vërtetë apo e gabuar`,
     };

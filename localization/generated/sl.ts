@@ -15,7 +15,6 @@
 's0d9a7bb29fee2d85': `Pravilen odgovor`,
 's159928724265eb05': `Dodaj možnost`,
 's15bdec250a4a55fb': `Padajoče`,
-'s16e1bead7b9c95ce': `Spomin`,
 's1705e89d78286348': `Sporočilo ob pravilni rešitvi`,
 's19d2c07c1effbdaf': `Delno pravilno`,
 's21b5ec7253ee5705': `Smer razvrščanja za uporabo.`,
@@ -30,6 +29,7 @@
 's2e4818861000b13f': `Postavitev`,
 's2f9c7cb1f24c3de8': `Pred oddajo zahtevaj potrditev`,
 's31ac9cd289910c65': `Povratne informacije brez izbire`,
+'s3352fb3d4c200919': `En odgovor / Več odgovorov`,
 's34adfb0ab932043d': `Prezri velikost črk`,
 's36163be9d8064432': `Slog oštevilčenja za uporabo.`,
 's37cbecaec58e2192': `Način`,
@@ -113,4 +113,5 @@
 'sf90be97cb08f3d5a': `Nadomestno besedilo`,
 'sfe628f6e69f78cca': `Dolgo besedilo`,
 'sffeb741d73d302b3': `Delne točke`,
+'sd47b516b630da4a5': `Pravilno ali napačno`,
     };

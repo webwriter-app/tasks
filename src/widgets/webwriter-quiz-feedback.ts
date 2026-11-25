@@ -9,7 +9,7 @@ declare global {
 	}
 }
 
-/** Formatted feedback authored in the feedback slot of a question. */
+/** Formatted feedback authored in the feedback slot of a task. */
 @customElement("webwriter-quiz-feedback")
 export class WebwriterQuizFeedback extends QuizElement {
 	static styles = css`
@@ -19,6 +19,14 @@ export class WebwriterQuizFeedback extends QuizElement {
 
 		::slotted(p) {
 			min-block-size: 1lh;
+		}
+
+		::slotted(:first-child) {
+			margin-block-start: 0;
+		}
+
+		::slotted(:last-child) {
+			margin-block-end: 0;
 		}
 	`;
 

@@ -25,7 +25,7 @@
   <source>Feedback if not selected</source>
 <target>चयनित न होने पर प्रतिक्रिया</target></trans-unit>
 <trans-unit id="s9daa676c05ab2a68">
-  <source>Single Choice</source>
+  <source>Single choice</source>
 <target>एक विकल्प</target></trans-unit>
 <trans-unit id="s485bbcc5d19e2b20">
   <source>Multiple Choice</source>
@@ -88,7 +88,7 @@
   <source>Insert gap at selection</source>
 <target>चयनित स्थान पर रिक्त स्थान डालें</target></trans-unit>
 <trans-unit id="sbbb7581f20733d79">
-  <source>Freeform input</source>
+  <source>Gap text</source>
 <target>मुक्त इनपुट</target></trans-unit>
 <trans-unit id="sb20f85b66b8eed5b">
   <source>Drag and drop</source>
@@ -165,9 +165,6 @@
 <trans-unit id="sbdc2605da169f810">
   <source>Add Pair</source>
 <target>जोड़ी जोड़ें</target></trans-unit>
-<trans-unit id="s16e1bead7b9c95ce">
-  <source>Memory</source>
-<target>मेमोरी</target></trans-unit>
 <trans-unit id="sf4e3c96801ebe794">
   <source>Volume: <x id="0" equiv-text="${this.volume}" />%</source>
 <target>वॉल्यूम: <x id="0" equiv-text="${this.volume}" />%</target></trans-unit>
@@ -193,7 +190,7 @@
   <source>Toggle Marking at Position</source>
 <target>इस स्थान पर चिह्नांकन चालू या बंद करें</target></trans-unit>
 <trans-unit id="s80dc9f56411917df">
-  <source>Text to Highlight</source>
+  <source>Text to highlight</source>
 <target>हाइलाइट करने के लिए पाठ</target></trans-unit>
 <trans-unit id="s3ff3b89e5871fae3">
   <source>Multiple lines are not supported</source>
@@ -315,6 +312,14 @@
 <trans-unit id="sbb588bb505779122">
   <source>Feedback</source>
 <target>प्रतिक्रिया</target></trans-unit>
+<trans-unit id="s3352fb3d4c200919">
+  <source>Single/Multiple Choice</source>
+  <target>एक विकल्प / एकाधिक विकल्प</target>
+</trans-unit>
+<trans-unit id="sd47b516b630da4a5">
+  <source>True/False</source>
+  <target>सही या गलत</target>
+</trans-unit>
 </body>
 </file>
 </xliff>

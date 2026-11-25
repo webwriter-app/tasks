@@ -15,7 +15,6 @@
 's0d9a7bb29fee2d85': `Tamang sagot`,
 's159928724265eb05': `Magdagdag ng opsyon`,
 's15bdec250a4a55fb': `Pababa`,
-'s16e1bead7b9c95ce': `Memorya`,
 's1705e89d78286348': `Mensahe para sa tamang sagot`,
 's19d2c07c1effbdaf': `Bahagyang tama`,
 's21b5ec7253ee5705': `Ang direksiyon ng pagkakasunod-sunod na gagamitin.`,
@@ -30,6 +29,7 @@
 's2e4818861000b13f': `Ayos`,
 's2f9c7cb1f24c3de8': `Humingi ng kumpirmasyon bago isumite`,
 's31ac9cd289910c65': `Feedback kapag hindi pinili`,
+'s3352fb3d4c200919': `Iisang pagpipilian / Maramihang pagpipilian`,
 's34adfb0ab932043d': `Huwag pansinin ang malaking titik`,
 's36163be9d8064432': `Ang estilo ng pagkakabilang na gagamitin.`,
 's37cbecaec58e2192': `Mode`,
@@ -113,4 +113,5 @@
 'sf90be97cb08f3d5a': `Pamalit na teksto`,
 'sfe628f6e69f78cca': `Mahabang teksto`,
 'sffeb741d73d302b3': `Bahagyang puntos`,
+'sd47b516b630da4a5': `Tama o Mali`,
     };

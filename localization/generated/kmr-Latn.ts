@@ -15,7 +15,6 @@
 's0d9a7bb29fee2d85': `Bersiva rast`,
 's159928724265eb05': `Vebijarkekê lê zêde bike`,
 's15bdec250a4a55fb': `Ber bi kêm bûnê`,
-'s16e1bead7b9c95ce': `Bîr`,
 's1705e89d78286348': `Peyama çareseriya rast`,
 's19d2c07c1effbdaf': `Hinekî rast`,
 's21b5ec7253ee5705': `Arasteya rêzkirinê ya ku bê bikaranîn.`,
@@ -30,6 +29,7 @@
 's2e4818861000b13f': `Rêzkirin`,
 's2f9c7cb1f24c3de8': `Berî şandinê erêkirinê bixwaze`,
 's31ac9cd289910c65': `Bersiv heke nehat hilbijartin`,
+'s3352fb3d4c200919': `Hilbijartina yekê / Hilbijartina gelekê`,
 's34adfb0ab932043d': `Rewşa tîpan paşguh bike`,
 's36163be9d8064432': `Şêwaza hejmaran a ku bê bikaranîn.`,
 's37cbecaec58e2192': `Mod`,
@@ -113,4 +113,5 @@
 'sf90be97cb08f3d5a': `Nivîsa cihgire`,
 'sfe628f6e69f78cca': `Nivîsa dirêj`,
 'sffeb741d73d302b3': `Krediya beşî`,
+'sd47b516b630da4a5': `Rast An Ne rast`,
     };

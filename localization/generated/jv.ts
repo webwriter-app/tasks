@@ -15,7 +15,6 @@
 's0d9a7bb29fee2d85': `Wangsulan sing bener`,
 's159928724265eb05': `Tambah opsi`,
 's15bdec250a4a55fb': `Urutan mudhun`,
-'s16e1bead7b9c95ce': `Daya eling`,
 's1705e89d78286348': `Pesen kanggo solusi sing bener`,
 's19d2c07c1effbdaf': `Sawetara bener`,
 's21b5ec7253ee5705': `Arah urutan sing arep digunakake.`,
@@ -30,6 +29,7 @@
 's2e4818861000b13f': `Tata letak`,
 's2f9c7cb1f24c3de8': `Perlu konfirmasi sadurunge ngirim`,
 's31ac9cd289910c65': `Umpan balik yen ora dipilih`,
+'s3352fb3d4c200919': `Pilihan siji / Pilihan akeh`,
 's34adfb0ab932043d': `Aja mbedakake aksara gedhe lan cilik`,
 's36163be9d8064432': `Gaya penomoran sing arep digunakake.`,
 's37cbecaec58e2192': `Mode`,
@@ -113,4 +113,5 @@
 'sf90be97cb08f3d5a': `Teks pangganti`,
 'sfe628f6e69f78cca': `Teks dawa`,
 'sffeb741d73d302b3': `Nilai separo`,
+'sd47b516b630da4a5': `Bener utawa Salah`,
     };

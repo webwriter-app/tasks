@@ -15,7 +15,6 @@
 's0d9a7bb29fee2d85': `Riktig svar`,
 's159928724265eb05': `Legg til alternativ`,
 's15bdec250a4a55fb': `Synkende`,
-'s16e1bead7b9c95ce': `Hukommelse`,
 's1705e89d78286348': `Melding for riktig løsning`,
 's19d2c07c1effbdaf': `Delvis riktig`,
 's21b5ec7253ee5705': `Sorteringsretningen som skal brukes.`,
@@ -30,6 +29,7 @@
 's2e4818861000b13f': `Oppsett`,
 's2f9c7cb1f24c3de8': `Krev bekreftelse før innsending`,
 's31ac9cd289910c65': `Tilbakemelding hvis ikke valgt`,
+'s3352fb3d4c200919': `Ett valg / Flere valg`,
 's34adfb0ab932043d': `Ignorer store og små bokstaver`,
 's36163be9d8064432': `Nummereringsstilen som skal brukes.`,
 's37cbecaec58e2192': `Modus`,
@@ -113,4 +113,5 @@
 'sf90be97cb08f3d5a': `Plassholder`,
 'sfe628f6e69f78cca': `Lang tekst`,
 'sffeb741d73d302b3': `Delpoeng`,
+'sd47b516b630da4a5': `Sant eller usant`,
     };

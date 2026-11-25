@@ -23,6 +23,15 @@ export class WebwriterQuizHint extends QuizElement {
 			display: inline-block !important;
 			min-width: 10ch;
 		}
+
+		::slotted(p) {
+			min-block-size: 1lh;
+			margin-block: 0;
+		}
+
+		::slotted(p:not(:first-child)) {
+			margin-block-start: 0.5em;
+		}
 	`;
 
 	render() {

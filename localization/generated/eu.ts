@@ -15,7 +15,6 @@
 's0d9a7bb29fee2d85': `Erantzun zuzena`,
 's159928724265eb05': `Gehitu aukera`,
 's15bdec250a4a55fb': `Beheranzkoa`,
-'s16e1bead7b9c95ce': `Memoria`,
 's1705e89d78286348': `Mezua erantzun zuzenerako`,
 's19d2c07c1effbdaf': `Partzialki zuzena`,
 's21b5ec7253ee5705': `Erabili beharreko ordena-norabidea.`,
@@ -30,6 +29,7 @@
 's2e4818861000b13f': `Diseinua`,
 's2f9c7cb1f24c3de8': `Eskatu berrespena bidali aurretik`,
 's31ac9cd289910c65': `Hautatzen ez bada, iritzia`,
+'s3352fb3d4c200919': `Aukera bakarra / Aukera anitz`,
 's34adfb0ab932043d': `Ez bereizi maiuskulak eta minuskulak`,
 's36163be9d8064432': `Erabili beharreko zenbakitze-estiloa.`,
 's37cbecaec58e2192': `Modua`,
@@ -113,4 +113,5 @@
 'sf90be97cb08f3d5a': `Leku-markatzailea`,
 'sfe628f6e69f78cca': `Testu luzea`,
 'sffeb741d73d302b3': `Puntuazio partziala`,
+'sd47b516b630da4a5': `Egia ala gezurra`,
     };

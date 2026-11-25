@@ -15,7 +15,6 @@
 's0d9a7bb29fee2d85': `Deebii sirrii`,
 's159928724265eb05': `Filannoo dabali`,
 's15bdec250a4a55fb': `Gadi bu'u`,
-'s16e1bead7b9c95ce': `Yaadannoo`,
 's1705e89d78286348': `Ergaa furmaata sirriitiif`,
 's19d2c07c1effbdaf': `Gartokkeen sirrii`,
 's21b5ec7253ee5705': `Kallattii tartiibaa itti fayyadamtu.`,
@@ -30,6 +29,7 @@
 's2e4818861000b13f': `Qindaa'ina`,
 's2f9c7cb1f24c3de8': `Erguu dura mirkaneessa gaafadhu`,
 's31ac9cd289910c65': `Yaada deebii yeroo hin filatamne`,
+'s3352fb3d4c200919': `Filannoo tokko / Filannoo hedduu`,
 's34adfb0ab932043d': `Garaagarummaa qubee guddaa fi xiqqaa dhiisi`,
 's36163be9d8064432': `Akkaataa lakkoofsa kennuu itti fayyadamtu.`,
 's37cbecaec58e2192': `Haalata`,
@@ -113,4 +113,5 @@
 'sf90be97cb08f3d5a': `Barruu bakka bu'aa`,
 'sfe628f6e69f78cca': `Barruu dheeraa`,
 'sffeb741d73d302b3': `Qabxii gartokkee`,
+'sd47b516b630da4a5': `Dhugaa ykn soba`,
     };

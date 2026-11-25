@@ -15,7 +15,6 @@
 's0d9a7bb29fee2d85': `Amsa daidai`,
 's159928724265eb05': `Ƙara zaɓi`,
 's15bdec250a4a55fb': `Daga babba zuwa ƙarami`,
-'s16e1bead7b9c95ce': `Ƙwaƙwalwa`,
 's1705e89d78286348': `Saƙon mafita daidai`,
 's19d2c07c1effbdaf': `Wani ɓangare daidai`,
 's21b5ec7253ee5705': `Hanyar jerin da za a yi amfani da ita.`,
@@ -30,6 +29,7 @@
 's2e4818861000b13f': `Tsarin shimfiɗa`,
 's2f9c7cb1f24c3de8': `Nemi tabbaci kafin aikawa`,
 's31ac9cd289910c65': `Ra’ayi idan ba a zaɓa ba`,
+'s3352fb3d4c200919': `Zaɓi ɗaya / Zaɓi da yawa`,
 's34adfb0ab932043d': `Yi watsi da bambancin manya da ƙananan haruffa`,
 's36163be9d8064432': `Salon sanya lambobi da za a yi amfani da shi.`,
 's37cbecaec58e2192': `Yanayi`,
@@ -113,4 +113,5 @@
 'sf90be97cb08f3d5a': `Rubutun riƙon wuri`,
 'sfe628f6e69f78cca': `Dogon rubutu`,
 'sffeb741d73d302b3': `Makin wani ɓangare`,
+'sd47b516b630da4a5': `Gaskiya ko ƙarya`,
     };

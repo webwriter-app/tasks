@@ -15,7 +15,6 @@
 's0d9a7bb29fee2d85': `Korrekte antwoord`,
 's159928724265eb05': `Voeg opsie by`,
 's15bdec250a4a55fb': `Dalend`,
-'s16e1bead7b9c95ce': `Geheue`,
 's1705e89d78286348': `Boodskap vir korrekte oplossing`,
 's19d2c07c1effbdaf': `Gedeeltelik reg`,
 's21b5ec7253ee5705': `Die sorteerrigting om te gebruik.`,
@@ -30,6 +29,7 @@
 's2e4818861000b13f': `Uitleg`,
 's2f9c7cb1f24c3de8': `Vereis bevestiging voor indiening`,
 's31ac9cd289910c65': `Terugvoer indien nie gekies nie`,
+'s3352fb3d4c200919': `Enkelkeuse / Meervoudige keuse`,
 's34adfb0ab932043d': `Ignoreer hoof- en kleinletters`,
 's36163be9d8064432': `Die nommeringstyl om te gebruik.`,
 's37cbecaec58e2192': `Modus`,
@@ -113,4 +113,5 @@
 'sf90be97cb08f3d5a': `Plekhouer`,
 'sfe628f6e69f78cca': `Lang teks`,
 'sffeb741d73d302b3': `Gedeeltelike punte`,
+'sd47b516b630da4a5': `Waar of onwaar`,
     };

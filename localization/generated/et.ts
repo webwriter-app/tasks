@@ -15,7 +15,6 @@
 's0d9a7bb29fee2d85': `Õige vastus`,
 's159928724265eb05': `Lisa valik`,
 's15bdec250a4a55fb': `Kahanev`,
-'s16e1bead7b9c95ce': `Mälu`,
 's1705e89d78286348': `Õige lahenduse teade`,
 's19d2c07c1effbdaf': `Osaliselt õige`,
 's21b5ec7253ee5705': `Kasutatav järjestussuund.`,
@@ -30,6 +29,7 @@
 's2e4818861000b13f': `Paigutus`,
 's2f9c7cb1f24c3de8': `Nõua enne esitamist kinnitust`,
 's31ac9cd289910c65': `Tagasiside valimata jätmisel`,
+'s3352fb3d4c200919': `Üks valik / Mitu valikut`,
 's34adfb0ab932043d': `Eira tähesuurust`,
 's36163be9d8064432': `Kasutatav nummerdusstiil.`,
 's37cbecaec58e2192': `Režiim`,
@@ -113,4 +113,5 @@
 'sf90be97cb08f3d5a': `Kohatäitetekst`,
 'sfe628f6e69f78cca': `Pikk tekst`,
 'sffeb741d73d302b3': `Osaline punktisumma`,
+'sd47b516b630da4a5': `Õige või vale`,
     };

@@ -15,7 +15,6 @@
 's0d9a7bb29fee2d85': `Doğru yanıt`,
 's159928724265eb05': `Seçenek ekle`,
 's15bdec250a4a55fb': `Azalan`,
-'s16e1bead7b9c95ce': `Bellek`,
 's1705e89d78286348': `Doğru çözüm mesajı`,
 's19d2c07c1effbdaf': `Kısmen doğru`,
 's21b5ec7253ee5705': `Kullanılacak sıralama yönü.`,
@@ -30,6 +29,7 @@
 's2e4818861000b13f': `Düzen`,
 's2f9c7cb1f24c3de8': `Göndermeden önce onay iste`,
 's31ac9cd289910c65': `Seçilmediğinde geri bildirim`,
+'s3352fb3d4c200919': `Tek seçim / Çoklu seçim`,
 's34adfb0ab932043d': `Büyük/küçük harfleri yoksay`,
 's36163be9d8064432': `Kullanılacak numaralandırma biçimi.`,
 's37cbecaec58e2192': `Mod`,
@@ -113,4 +113,5 @@
 'sf90be97cb08f3d5a': `Yer tutucu`,
 'sfe628f6e69f78cca': `Uzun metin`,
 'sffeb741d73d302b3': `Kısmi puan`,
+'sd47b516b630da4a5': `Doğru mu yanlış mı`,
     };

@@ -15,7 +15,6 @@
 's0d9a7bb29fee2d85': `Richteg Äntwert`,
 's159928724265eb05': `Optioun derbäisetzen`,
 's15bdec250a4a55fb': `Ofsteigend`,
-'s16e1bead7b9c95ce': `Erënnerung`,
 's1705e89d78286348': `Message bei richteger Léisung`,
 's19d2c07c1effbdaf': `Deelweis richteg`,
 's21b5ec7253ee5705': `D'Reiefollegrichtung, déi benotzt gëtt.`,
@@ -30,6 +29,7 @@
 's2e4818861000b13f': `Layout`,
 's2f9c7cb1f24c3de8': `Bestätegung virum Ofschécke verlaangen`,
 's31ac9cd289910c65': `Réckmeldung wann net ausgewielt`,
+'s3352fb3d4c200919': `Eng Auswiel / Méi Auswielen`,
 's34adfb0ab932043d': `Grouss- a Klengschreiwung ignoréieren`,
 's36163be9d8064432': `Den Nummeréierungsstil, deen benotzt gëtt.`,
 's37cbecaec58e2192': `Modus`,
@@ -113,4 +113,5 @@
 'sf90be97cb08f3d5a': `Plazhalter`,
 'sfe628f6e69f78cca': `Laangen Text`,
 'sffeb741d73d302b3': `Deelweis Punkten`,
+'sd47b516b630da4a5': `Richteg oder falsch`,
     };

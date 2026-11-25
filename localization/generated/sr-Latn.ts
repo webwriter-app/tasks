@@ -15,7 +15,6 @@
 's0d9a7bb29fee2d85': `Točan odgovor`,
 's159928724265eb05': `Dodaj opciju`,
 's15bdec250a4a55fb': `Silazno`,
-'s16e1bead7b9c95ce': `Pamćenje`,
 's1705e89d78286348': `Poruka za točno rješenje`,
 's19d2c07c1effbdaf': `Djelomično točno`,
 's21b5ec7253ee5705': `Smjer redoslijeda koji će se upotrijebiti.`,
@@ -30,6 +29,7 @@
 's2e4818861000b13f': `Raspored`,
 's2f9c7cb1f24c3de8': `Zatraži potvrdu prije slanja`,
 's31ac9cd289910c65': `Povratna informacija bez izbora`,
+'s3352fb3d4c200919': `Jedan odgovor / Više odgovora`,
 's34adfb0ab932043d': `Zanemari velika i mala slova`,
 's36163be9d8064432': `Način numeriranja koji će se upotrijebiti.`,
 's37cbecaec58e2192': `Način rada`,
@@ -113,4 +113,5 @@
 'sf90be97cb08f3d5a': `Tekst rezerviranog mjesta`,
 'sfe628f6e69f78cca': `Dugi tekst`,
 'sffeb741d73d302b3': `Djelomični bodovi`,
+'sd47b516b630da4a5': `Točno ili netočno`,
     };

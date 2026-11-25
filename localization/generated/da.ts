@@ -15,7 +15,6 @@
 's0d9a7bb29fee2d85': `Korrekt svar`,
 's159928724265eb05': `Tilføj mulighed`,
 's15bdec250a4a55fb': `Faldende`,
-'s16e1bead7b9c95ce': `Hukommelse`,
 's1705e89d78286348': `Besked ved korrekt løsning`,
 's19d2c07c1effbdaf': `Delvist korrekt`,
 's21b5ec7253ee5705': `Den sorteringsretning, der skal bruges.`,
@@ -30,6 +29,7 @@
 's2e4818861000b13f': `Layout`,
 's2f9c7cb1f24c3de8': `Kræv bekræftelse før indsendelse`,
 's31ac9cd289910c65': `Feedback, hvis ikke valgt`,
+'s3352fb3d4c200919': `Enkelt valg / Flere svar`,
 's34adfb0ab932043d': `Ignorer store og små bogstaver`,
 's36163be9d8064432': `Den nummereringsstil, der skal bruges.`,
 's37cbecaec58e2192': `Tilstand`,
@@ -113,4 +113,5 @@
 'sf90be97cb08f3d5a': `Pladsholder`,
 'sfe628f6e69f78cca': `Lang tekst`,
 'sffeb741d73d302b3': `Delvis point`,
+'sd47b516b630da4a5': `Sandt eller falsk`,
     };

@@ -15,7 +15,6 @@
 's0d9a7bb29fee2d85': `Resposta correcta`,
 's159928724265eb05': `Afig una opció`,
 's15bdec250a4a55fb': `Descendent`,
-'s16e1bead7b9c95ce': `Memòria`,
 's1705e89d78286348': `Missatge per a la solució correcta`,
 's19d2c07c1effbdaf': `Parcialment correcte`,
 's21b5ec7253ee5705': `La direcció d'ordenació que s'ha d'utilitzar.`,
@@ -30,6 +29,7 @@
 's2e4818861000b13f': `Disposició`,
 's2f9c7cb1f24c3de8': `Demana confirmació abans d'enviar`,
 's31ac9cd289910c65': `Retroacció quan no se selecciona`,
+'s3352fb3d4c200919': `Opció única / Opció múltiple`,
 's34adfb0ab932043d': `Ignora les majúscules i minúscules`,
 's36163be9d8064432': `L'estil de numeració que s'ha d'utilitzar.`,
 's37cbecaec58e2192': `Mode`,
@@ -113,4 +113,5 @@
 'sf90be97cb08f3d5a': `Text de marcador de posició`,
 'sfe628f6e69f78cca': `Text llarg`,
 'sffeb741d73d302b3': `Puntuació parcial`,
+'sd47b516b630da4a5': `Vertader o fals`,
     };

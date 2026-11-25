@@ -15,7 +15,6 @@
 's0d9a7bb29fee2d85': `Tweġiba korretta`,
 's159928724265eb05': `Żid għażla`,
 's15bdec250a4a55fb': `Nieżel`,
-'s16e1bead7b9c95ce': `Memorja`,
 's1705e89d78286348': `Messaġġ għal soluzzjoni korretta`,
 's19d2c07c1effbdaf': `Parzjalment korretta`,
 's21b5ec7253ee5705': `Id-direzzjoni tal-ordni li għandha tintuża.`,
@@ -30,6 +29,7 @@
 's2e4818861000b13f': `Tqassim`,
 's2f9c7cb1f24c3de8': `Itlob konferma qabel tissottometti`,
 's31ac9cd289910c65': `Feedback meta ma jintgħażilx`,
+'s3352fb3d4c200919': `Għażla waħda / Għażla multipla`,
 's34adfb0ab932043d': `Injora l-ittri kapitali u żgħar`,
 's36163be9d8064432': `L-istil tan-numerazzjoni li għandu jintuża.`,
 's37cbecaec58e2192': `Modalità`,
@@ -113,4 +113,5 @@
 'sf90be97cb08f3d5a': `Test ta' sostituzzjoni`,
 'sfe628f6e69f78cca': `Test twil`,
 'sffeb741d73d302b3': `Punteġġ parzjali`,
+'sd47b516b630da4a5': `Veru jew falz`,
     };
