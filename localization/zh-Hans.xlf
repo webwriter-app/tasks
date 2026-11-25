@@ -276,6 +276,7 @@
 </trans-unit>
 <trans-unit id="s49749a03640a4d55">
   <source>Responses are recorded without scoring (survey or rating).</source>
+<target>记录回答但不评分（调查或评级）。</target>
 </trans-unit>
 <trans-unit id="scc90a4e72a9e3f79">
   <source><x id="0" equiv-text="${correctCount}"/> of <x id="1" equiv-text="${rows.length}"/> rows are correct.</source>
@@ -351,6 +352,7 @@
 </trans-unit>
 <trans-unit id="sd345cbba66419e90">
   <source>Proportional credit for each row where all gaps are correct.</source>
+<target>每个所有空格均正确的行按比例得分。</target>
 </trans-unit>
 <trans-unit id="sa200ceda4a34c65c">
   <source>Responses are recorded without scoring.</source>
@@ -366,6 +368,7 @@
 </trans-unit>
 <trans-unit id="sf2efc78397526616">
   <source>Drag each answer into a gap, or click an answer and then the gap.</source>
+<target>将每个答案拖入空格，或先点击答案再点击空格。</target>
 </trans-unit>
 <trans-unit id="s3b9533e35fe3715d">
   <source>Fill in the gaps.</source>
@@ -488,6 +491,7 @@
 </trans-unit>
 <trans-unit id="scd1dd6ff53d0d01a">
   <source>Try again</source>
+<target>重试</target>
 </trans-unit>
 <trans-unit id="s79edd0a02d3adfc5">
   <source>Add Hint</source>
@@ -569,6 +573,7 @@
 </trans-unit>
 <trans-unit id="sc52e6e561e8f6c78">
   <source>Drag items into their groups, or use + to choose from Options.</source>
+<target>将项目拖入相应组中，或使用 + 从选项中选择。</target>
 </trans-unit>
 <trans-unit id="sc53e8091d43b9066">
   <source>Place each item in its correct group.</source>
@@ -576,6 +581,7 @@
 </trans-unit>
 <trans-unit id="sdf9018f953f702be">
   <source>Drag items into a group, or use + to choose from Options.</source>
+<target>将项目拖入组中，或使用 + 从选项中选择。</target>
 </trans-unit>
 <trans-unit id="se8e6a39f5369c253">
   <source>Add item</source>
@@ -677,6 +683,7 @@
 </trans-unit>
 <trans-unit id="s6599a3d76cdf16c6">
   <source>This browser cannot transcribe recordings automatically.</source>
+<target>此浏览器无法自动转录录音。</target>
 </trans-unit>
 <trans-unit id="s8beb3150837877a2">
   <source>The recording could not be played for transcription.</source>
@@ -772,6 +779,7 @@
 </trans-unit>
 <trans-unit id="s070f9dc186e70d69">
   <source>Shows the optional sample for comparison without scoring.</source>
+<target>显示可选示例以供比较，不评分。</target>
 </trans-unit>
 <trans-unit id="s8f4be9f086eb530f">
   <source>Undo</source>
@@ -803,6 +811,7 @@
 </trans-unit>
 <trans-unit id="s5e3cb80d43a34044">
   <source>Black</source>
+<target>黑色</target>
 </trans-unit>
 <trans-unit id="secf3d3a7c1693e2d">
   <source>Blue</source>
@@ -818,6 +827,7 @@
 </trans-unit>
 <trans-unit id="s6baf78886c99db89">
   <source>Yellow</source>
+<target>黄色</target>
 </trans-unit>
 <trans-unit id="s56339226771df73e">
   <source>Drawing tools</source>
@@ -833,6 +843,7 @@
 </trans-unit>
 <trans-unit id="se615f6ce0dd01061">
   <source>Stroke width</source>
+<target>笔画宽度</target>
 </trans-unit>
 <trans-unit id="s923215988b72aba6">
   <source>Draw your answer.</source>
@@ -888,6 +899,7 @@
 </trans-unit>
 <trans-unit id="s781e64ea47044bd9">
   <source>Add image</source>
+<target>添加图像</target>
 </trans-unit>
 <trans-unit id="s4f521327851555e4">
   <source>Item <x id="0" equiv-text="${index + 1}"/></source>
@@ -926,6 +938,7 @@
 </trans-unit>
 <trans-unit id="sa37e098e69be3dd2">
   <source>Full credit only if every marker matches with no wrong pins.</source>
+<target>仅当所有标记都匹配且没有错误标记时才给满分。</target>
 </trans-unit>
 <trans-unit id="s6dfb48202e30e3f6">
   <source>Per marker</source>
@@ -933,6 +946,7 @@
 </trans-unit>
 <trans-unit id="sb912798fe55d8e34">
   <source>Credit per matched marker, subtracting extra wrong pins.</source>
+<target>每个匹配标记得分，额外错误标记扣分。</target>
 </trans-unit>
 <trans-unit id="s1667f96d19635ec7">
   <source>Zone</source>
@@ -968,6 +982,7 @@
 </trans-unit>
 <trans-unit id="s2de969afacdaa7a6">
   <source>Shape</source>
+<target>形状</target>
 </trans-unit>
 <trans-unit id="sa348c16c7e7e7f9c">
   <source>Hotspot</source>
@@ -1065,9 +1080,11 @@
 </trans-unit>
 <trans-unit id="scab3980db2755f4c">
   <source>Full credit only if exactly the right words are marked.</source>
+<target>仅当标记的词语完全正确时才给满分。</target>
 </trans-unit>
 <trans-unit id="s301bb7275252a013">
   <source>Right marks add credit; wrong marks subtract from it (min. 0).</source>
+<target>正确标记加分；错误标记扣分（最低为 0）。</target>
 </trans-unit>
 <trans-unit id="sfd71dba826b393cd">
   <source>Hide total marks to find</source>
@@ -1138,6 +1155,7 @@
 </trans-unit>
 <trans-unit id="sf88789673a732088">
   <source>Extra range beyond tolerance where credit decays linearly to zero.</source>
+<target>超过容差的额外范围内，分数线性递减至零。</target>
 </trans-unit>
 <trans-unit id="s8f26e0f086cc2787">
   <source>Unit</source>
@@ -1153,6 +1171,7 @@
 </trans-unit>
 <trans-unit id="sd9994f251f1280cf">
   <source>Step</source>
+<target>步骤</target>
 </trans-unit>
 <trans-unit id="s863f9a65357e7d87">
   <source>Enter the solution date.</source>
@@ -1236,6 +1255,7 @@
 </trans-unit>
 <trans-unit id="saf411cadd1a9edb7">
   <source>Full credit only if every item is in its exact position.</source>
+<target>仅当每个项目都在准确位置时才给满分。</target>
 </trans-unit>
 <trans-unit id="sc01de0a714566a19">
   <source>Correct positions</source>
@@ -1406,6 +1426,7 @@
 </trans-unit>
 <trans-unit id="s7b916547ee1e09ac">
   <source>Full credit when the spoken words match the reference transcript.</source>
+<target>所说的词语与参考转录文本匹配时获得满分。</target>
 </trans-unit>
 <trans-unit id="s0682ddcaf7be7a77">
   <source>Give credit word by word, with deductions for missing, extra, or changed words.</source>
@@ -1432,6 +1453,7 @@
 </trans-unit>
 <trans-unit id="sa01ea3b8a9cb6730">
   <source>The browser's speech recognition service is unavailable.</source>
+<target>浏览器的语音识别服务不可用。</target>
 </trans-unit>
 <trans-unit id="sd9ed7407d01ead0c">
   <source>No speech was recognized. Try again.</source>
@@ -1499,6 +1521,7 @@
 </trans-unit>
 <trans-unit id="sfbe249ece4a970b8">
   <source>Full credit when the answer matches an accepted solution.</source>
+<target>答案与可接受解答匹配时获得满分。</target>
 </trans-unit>
 <trans-unit id="s258c598c40e28b44">
   <source>Full credit when the response meets the answer limits.</source>

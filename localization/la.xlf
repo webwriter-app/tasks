@@ -276,6 +276,7 @@
 </trans-unit>
 <trans-unit id="s49749a03640a4d55">
   <source>Responses are recorded without scoring (survey or rating).</source>
+<target>Responsa sine punctis servantur (percontatio vel aestimatio).</target>
 </trans-unit>
 <trans-unit id="scc90a4e72a9e3f79">
   <source><x id="0" equiv-text="${correctCount}"/> of <x id="1" equiv-text="${rows.length}"/> rows are correct.</source>
@@ -351,6 +352,7 @@
 </trans-unit>
 <trans-unit id="sd345cbba66419e90">
   <source>Proportional credit for each row where all gaps are correct.</source>
+<target>Puncta proportionalia pro singulo versu cuius lacunae omnes recte impletae sunt.</target>
 </trans-unit>
 <trans-unit id="sa200ceda4a34c65c">
   <source>Responses are recorded without scoring.</source>
@@ -362,9 +364,11 @@
 </trans-unit>
 <trans-unit id="s73658af228bb4a12">
   <source>Enter the solutions, then mark the gap cells.</source>
+<target>Solutiones insere, deinde cellulas vacuas nota.</target>
 </trans-unit>
 <trans-unit id="sf2efc78397526616">
   <source>Drag each answer into a gap, or click an answer and then the gap.</source>
+<target>Responsum quodque in lacunam trahe, aut responsum deinde lacunam preme.</target>
 </trans-unit>
 <trans-unit id="s3b9533e35fe3715d">
   <source>Fill in the gaps.</source>
@@ -396,6 +400,7 @@
 </trans-unit>
 <trans-unit id="s31e4aca212b90444">
   <source>Score is based on self-check rubric items checked after submitting.</source>
+<target>Puncta ex normis examinis sui post submissionem notatis computantur.</target>
 </trans-unit>
 <trans-unit id="safc5dc23506c8384">
   <source>Rubric</source>
@@ -561,12 +566,15 @@
 </trans-unit>
 <trans-unit id="s9ecafed1144dba1f">
   <source><x id="0" equiv-text="${correct}"/> of <x id="1" equiv-text="${total}"/> items are in the right group.</source>
+<target><x id="0" equiv-text="${correct}"/> ex <x id="1" equiv-text="${total}"/> elementis in grege recto sunt.</target>
 </trans-unit>
 <trans-unit id="s5a264cb2ba999afa">
   <source>Place each item in all its correct groups.</source>
+<target>Elementum quodque in omnibus gregibus suis rectis pone.</target>
 </trans-unit>
 <trans-unit id="sc52e6e561e8f6c78">
   <source>Drag items into their groups, or use + to choose from Options.</source>
+<target>Elementa in greges suos trahe aut + utere ut ex optionibus eligas.</target>
 </trans-unit>
 <trans-unit id="sc53e8091d43b9066">
   <source>Place each item in its correct group.</source>
@@ -574,6 +582,7 @@
 </trans-unit>
 <trans-unit id="sdf9018f953f702be">
   <source>Drag items into a group, or use + to choose from Options.</source>
+<target>Elementa in gregem trahe aut + utere ut ex optionibus eligas.</target>
 </trans-unit>
 <trans-unit id="se8e6a39f5369c253">
   <source>Add item</source>
@@ -675,6 +684,7 @@
 </trans-unit>
 <trans-unit id="s6599a3d76cdf16c6">
   <source>This browser cannot transcribe recordings automatically.</source>
+<target>Hoc navigatrum registrationes sponte transcribere non potest.</target>
 </trans-unit>
 <trans-unit id="s8beb3150837877a2">
   <source>The recording could not be played for transcription.</source>
@@ -718,6 +728,7 @@
 </trans-unit>
 <trans-unit id="s12bb8a652aa6c4d1">
   <source>Add audio and enter the solution transcript.</source>
+<target>Sonum adde et transcriptum solutionis insere.</target>
 </trans-unit>
 <trans-unit id="s4dbda45a874f64ac">
   <source>Listen and type what you hear.</source>
@@ -769,6 +780,7 @@
 </trans-unit>
 <trans-unit id="s070f9dc186e70d69">
   <source>Shows the optional sample for comparison without scoring.</source>
+<target>Exemplum, si adest, ad comparandum sine punctis ostenditur.</target>
 </trans-unit>
 <trans-unit id="s8f4be9f086eb530f">
   <source>Undo</source>
@@ -828,6 +840,7 @@
 </trans-unit>
 <trans-unit id="s344ea8f4939cdc98">
   <source>Color</source>
+<target>Color</target>
 </trans-unit>
 <trans-unit id="se615f6ce0dd01061">
   <source>Stroke width</source>
@@ -871,6 +884,7 @@
 </trans-unit>
 <trans-unit id="s0767fdab6ae788ae">
   <source>Select the solution text for each gap.</source>
+<target>Textum solutionis pro singula lacuna elige.</target>
 </trans-unit>
 <trans-unit id="scfd9561b07fa745f">
   <source>Select the right option for each gap.</source>
@@ -925,6 +939,7 @@
 </trans-unit>
 <trans-unit id="sa37e098e69be3dd2">
   <source>Full credit only if every marker matches with no wrong pins.</source>
+<target>Puncta plena tantum si omnia signa congruunt nec claviculae falsae adsunt.</target>
 </trans-unit>
 <trans-unit id="s6dfb48202e30e3f6">
   <source>Per marker</source>
@@ -932,6 +947,7 @@
 </trans-unit>
 <trans-unit id="sb912798fe55d8e34">
   <source>Credit per matched marker, subtracting extra wrong pins.</source>
+<target>Puncta pro singulo signo congruenti, detractis claviculis falsis supervacuis.</target>
 </trans-unit>
 <trans-unit id="s1667f96d19635ec7">
   <source>Zone</source>
@@ -991,12 +1007,15 @@
 </trans-unit>
 <trans-unit id="s613e777f99178cf3">
   <source>Add an image to define the solution zones.</source>
+<target>Imaginem adde ut zonas solutionis definias.</target>
 </trans-unit>
 <trans-unit id="s4f4b1255c353cd38">
   <source>Add an image to mark the solution hotspots.</source>
+<target>Imaginem adde ut puncta activa solutionis notes.</target>
 </trans-unit>
 <trans-unit id="s4adf3e11ff5354ae">
   <source>Add a zone, then choose its correct item.</source>
+<target>Zonam adde, deinde elementum eius rectum elige.</target>
 </trans-unit>
 <trans-unit id="sd783a9ddacfc12bf">
   <source>Double-click a correct spot. Drag or click its center to edit.</source>
@@ -1062,9 +1081,11 @@
 </trans-unit>
 <trans-unit id="scab3980db2755f4c">
   <source>Full credit only if exactly the right words are marked.</source>
+<target>Puncta plena tantum si omnia verba recta et sola ea notantur.</target>
 </trans-unit>
 <trans-unit id="s301bb7275252a013">
   <source>Right marks add credit; wrong marks subtract from it (min. 0).</source>
+<target>Notae rectae puncta addunt, falsae detrahunt (minimum 0).</target>
 </trans-unit>
 <trans-unit id="sfd71dba826b393cd">
   <source>Hide total marks to find</source>
@@ -1135,6 +1156,7 @@
 </trans-unit>
 <trans-unit id="sf88789673a732088">
   <source>Extra range beyond tolerance where credit decays linearly to zero.</source>
+<target>Spatium additum ultra deviationem concessam in quo puncta lineariter ad nihilum decrescunt.</target>
 </trans-unit>
 <trans-unit id="s8f26e0f086cc2787">
   <source>Unit</source>
@@ -1234,6 +1256,7 @@
 </trans-unit>
 <trans-unit id="saf411cadd1a9edb7">
   <source>Full credit only if every item is in its exact position.</source>
+<target>Puncta plena tantum si omne elementum loco suo exacto est.</target>
 </trans-unit>
 <trans-unit id="sc01de0a714566a19">
   <source>Correct positions</source>
@@ -1260,6 +1283,7 @@
 </trans-unit>
 <trans-unit id="s48b9e342e71a62a0">
   <source>Arrange the items in the correct order.</source>
+<target>Elementa ordine recto dispone.</target>
 </trans-unit>
 <trans-unit id="s195d8970726dcde5">
   <source>Drag the items, or use the arrows.</source>
@@ -1374,12 +1398,14 @@
 </trans-unit>
 <trans-unit id="sd463fe8f70c3242c">
   <source>Learners submit the <x id="0" equiv-text="${count}"/> tasks in this group here and see their score.</source>
+<target>Discentes hic pensa <x id="0" equiv-text="${count}"/> huius gregis submittunt et puncta sua vident.</target>
 </trans-unit>
 <trans-unit id="seecc1a1785484a8c">
   <source>Learners submit the task before this card here and see their score.</source>
 </trans-unit>
 <trans-unit id="sf11645ff0230ff59">
   <source>Insert tasks before this card. Learners submit them here and see their score.</source>
+<target>Pensa ante hanc chartam insere. Discentes ea hic submittunt et puncta sua vident.</target>
 </trans-unit>
 <trans-unit id="se66872955dc59191">
   <source>1 task</source>
@@ -1403,6 +1429,7 @@
 </trans-unit>
 <trans-unit id="s7b916547ee1e09ac">
   <source>Full credit when the spoken words match the reference transcript.</source>
+<target>Puncta plena si verba dicta cum transcripto exemplari congruunt.</target>
 </trans-unit>
 <trans-unit id="s0682ddcaf7be7a77">
   <source>Give credit word by word, with deductions for missing, extra, or changed words.</source>
@@ -1429,6 +1456,7 @@
 </trans-unit>
 <trans-unit id="sa01ea3b8a9cb6730">
   <source>The browser's speech recognition service is unavailable.</source>
+<target>Ministerium recognitionis vocis huius navigatri non praesto est.</target>
 </trans-unit>
 <trans-unit id="sd9ed7407d01ead0c">
   <source>No speech was recognized. Try again.</source>
@@ -1448,6 +1476,7 @@
 </trans-unit>
 <trans-unit id="s4e38b5e50c309443">
   <source>Record the solution or enter its transcript.</source>
+<target>Solutionem registra aut transcriptum eius insere.</target>
 </trans-unit>
 <trans-unit id="sdadcdefc4c36991b">
   <source>Record your answer.</source>
@@ -1495,6 +1524,7 @@
 </trans-unit>
 <trans-unit id="sfbe249ece4a970b8">
   <source>Full credit when the answer matches an accepted solution.</source>
+<target>Puncta plena si responsum cum solutione accepta congruit.</target>
 </trans-unit>
 <trans-unit id="s258c598c40e28b44">
   <source>Full credit when the response meets the answer limits.</source>

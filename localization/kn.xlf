@@ -276,6 +276,7 @@
 </trans-unit>
 <trans-unit id="s49749a03640a4d55">
   <source>Responses are recorded without scoring (survey or rating).</source>
+<target>ಉತ್ತರಗಳನ್ನು ಅಂಕ ನೀಡದೆ ದಾಖಲಿಸಲಾಗುತ್ತದೆ (ಸಮೀಕ್ಷೆ ಅಥವಾ ರೇಟಿಂಗ್).</target>
 </trans-unit>
 <trans-unit id="scc90a4e72a9e3f79">
   <source><x id="0" equiv-text="${correctCount}"/> of <x id="1" equiv-text="${rows.length}"/> rows are correct.</source>
@@ -351,6 +352,7 @@
 </trans-unit>
 <trans-unit id="sd345cbba66419e90">
   <source>Proportional credit for each row where all gaps are correct.</source>
+<target>ಎಲ್ಲಾ ಖಾಲಿ ಜಾಗಗಳು ಸರಿಯಾಗಿರುವ ಪ್ರತಿ ಸಾಲಿಗೆ ಪ್ರಮಾಣಾನುಗುಣ ಅಂಕ.</target>
 </trans-unit>
 <trans-unit id="sa200ceda4a34c65c">
   <source>Responses are recorded without scoring.</source>
@@ -366,6 +368,7 @@
 </trans-unit>
 <trans-unit id="sf2efc78397526616">
   <source>Drag each answer into a gap, or click an answer and then the gap.</source>
+<target>ಪ್ರತಿ ಉತ್ತರವನ್ನು ಖಾಲಿ ಜಾಗಕ್ಕೆ ಎಳೆಯಿರಿ ಅಥವಾ ಉತ್ತರವನ್ನು ನಂತರ ಖಾಲಿ ಜಾಗವನ್ನು ಕ್ಲಿಕ್ ಮಾಡಿ.</target>
 </trans-unit>
 <trans-unit id="s3b9533e35fe3715d">
   <source>Fill in the gaps.</source>
@@ -570,6 +573,7 @@
 </trans-unit>
 <trans-unit id="sc52e6e561e8f6c78">
   <source>Drag items into their groups, or use + to choose from Options.</source>
+<target>ಐಟಂಗಳನ್ನು ಅವುಗಳ ಗುಂಪುಗಳಿಗೆ ಎಳೆಯಿರಿ ಅಥವಾ ಆಯ್ಕೆಗಳಿಂದ ಆರಿಸಲು + ಬಳಸಿ.</target>
 </trans-unit>
 <trans-unit id="sc53e8091d43b9066">
   <source>Place each item in its correct group.</source>
@@ -577,6 +581,7 @@
 </trans-unit>
 <trans-unit id="sdf9018f953f702be">
   <source>Drag items into a group, or use + to choose from Options.</source>
+<target>ಐಟಂಗಳನ್ನು ಗುಂಪಿಗೆ ಎಳೆಯಿರಿ ಅಥವಾ ಆಯ್ಕೆಗಳಿಂದ ಆರಿಸಲು + ಬಳಸಿ.</target>
 </trans-unit>
 <trans-unit id="se8e6a39f5369c253">
   <source>Add item</source>
@@ -678,6 +683,7 @@
 </trans-unit>
 <trans-unit id="s6599a3d76cdf16c6">
   <source>This browser cannot transcribe recordings automatically.</source>
+<target>ಈ ಬ್ರೌಸರ್ ರೆಕಾರ್ಡಿಂಗ್‌ಗಳನ್ನು ಸ್ವಯಂಚಾಲಿತವಾಗಿ ಲಿಪ್ಯಂತರಿಸಲು ಸಾಧ್ಯವಿಲ್ಲ.</target>
 </trans-unit>
 <trans-unit id="s8beb3150837877a2">
   <source>The recording could not be played for transcription.</source>
@@ -773,6 +779,7 @@
 </trans-unit>
 <trans-unit id="s070f9dc186e70d69">
   <source>Shows the optional sample for comparison without scoring.</source>
+<target>ಅಂಕ ನೀಡದೆ ಹೋಲಿಸಲು ಐಚ್ಛಿಕ ಮಾದರಿಯನ್ನು ತೋರಿಸುತ್ತದೆ.</target>
 </trans-unit>
 <trans-unit id="s8f4be9f086eb530f">
   <source>Undo</source>
@@ -931,6 +938,7 @@
 </trans-unit>
 <trans-unit id="sa37e098e69be3dd2">
   <source>Full credit only if every marker matches with no wrong pins.</source>
+<target>ಎಲ್ಲಾ ಮಾರ್ಕರ್‌ಗಳು ಹೊಂದಿ ತಪ್ಪು ಪಿನ್‌ಗಳಿಲ್ಲದಿದ್ದರೆ ಮಾತ್ರ ಪೂರ್ಣ ಅಂಕ.</target>
 </trans-unit>
 <trans-unit id="s6dfb48202e30e3f6">
   <source>Per marker</source>
@@ -938,6 +946,7 @@
 </trans-unit>
 <trans-unit id="sb912798fe55d8e34">
   <source>Credit per matched marker, subtracting extra wrong pins.</source>
+<target>ಪ್ರತಿ ಹೊಂದುವ ಮಾರ್ಕರ್‌ಗೆ ಅಂಕ, ಹೆಚ್ಚುವರಿ ತಪ್ಪು ಪಿನ್‌ಗಳಿಗೆ ಕಡಿತ.</target>
 </trans-unit>
 <trans-unit id="s1667f96d19635ec7">
   <source>Zone</source>
@@ -1071,9 +1080,11 @@
 </trans-unit>
 <trans-unit id="scab3980db2755f4c">
   <source>Full credit only if exactly the right words are marked.</source>
+<target>ನಿಖರವಾಗಿ ಸರಿಯಾದ ಪದಗಳನ್ನು ಗುರುತಿಸಿದರೆ ಮಾತ್ರ ಪೂರ್ಣ ಅಂಕ.</target>
 </trans-unit>
 <trans-unit id="s301bb7275252a013">
   <source>Right marks add credit; wrong marks subtract from it (min. 0).</source>
+<target>ಸರಿಯಾದ ಗುರುತುಗಳು ಅಂಕ ಸೇರಿಸುತ್ತವೆ; ತಪ್ಪು ಗುರುತುಗಳು ಕಡಿತಗೊಳಿಸುತ್ತವೆ (ಕನಿಷ್ಠ 0).</target>
 </trans-unit>
 <trans-unit id="sfd71dba826b393cd">
   <source>Hide total marks to find</source>
@@ -1144,6 +1155,7 @@
 </trans-unit>
 <trans-unit id="sf88789673a732088">
   <source>Extra range beyond tolerance where credit decays linearly to zero.</source>
+<target>ಸಹಿಷ್ಣುತೆಯಾಚೆಯ ಹೆಚ್ಚುವರಿ ವ್ಯಾಪ್ತಿಯಲ್ಲಿ ಅಂಕಗಳು ರೇಖೀಯವಾಗಿ ಶೂನ್ಯಕ್ಕೆ ಇಳಿಯುತ್ತವೆ.</target>
 </trans-unit>
 <trans-unit id="s8f26e0f086cc2787">
   <source>Unit</source>
@@ -1243,6 +1255,7 @@
 </trans-unit>
 <trans-unit id="saf411cadd1a9edb7">
   <source>Full credit only if every item is in its exact position.</source>
+<target>ಪ್ರತಿ ಐಟಂ ನಿಖರ ಸ್ಥಾನದಲ್ಲಿದ್ದರೆ ಮಾತ್ರ ಪೂರ್ಣ ಅಂಕ.</target>
 </trans-unit>
 <trans-unit id="sc01de0a714566a19">
   <source>Correct positions</source>
@@ -1413,6 +1426,7 @@
 </trans-unit>
 <trans-unit id="s7b916547ee1e09ac">
   <source>Full credit when the spoken words match the reference transcript.</source>
+<target>ಮಾತನಾಡಿದ ಪದಗಳು ಉಲ್ಲೇಖ ಲಿಪ್ಯಂತರಕ್ಕೆ ಹೊಂದಿದರೆ ಪೂರ್ಣ ಅಂಕ.</target>
 </trans-unit>
 <trans-unit id="s0682ddcaf7be7a77">
   <source>Give credit word by word, with deductions for missing, extra, or changed words.</source>
@@ -1439,6 +1453,7 @@
 </trans-unit>
 <trans-unit id="sa01ea3b8a9cb6730">
   <source>The browser's speech recognition service is unavailable.</source>
+<target>ಬ್ರೌಸರ್‌ನ ಮಾತಿನ ಗುರುತಿಸುವಿಕೆ ಸೇವೆ ಲಭ್ಯವಿಲ್ಲ.</target>
 </trans-unit>
 <trans-unit id="sd9ed7407d01ead0c">
   <source>No speech was recognized. Try again.</source>
@@ -1506,6 +1521,7 @@
 </trans-unit>
 <trans-unit id="sfbe249ece4a970b8">
   <source>Full credit when the answer matches an accepted solution.</source>
+<target>ಉತ್ತರವು ಸ್ವೀಕೃತ ಪರಿಹಾರಕ್ಕೆ ಹೊಂದಿದರೆ ಪೂರ್ಣ ಅಂಕ.</target>
 </trans-unit>
 <trans-unit id="s258c598c40e28b44">
   <source>Full credit when the response meets the answer limits.</source>

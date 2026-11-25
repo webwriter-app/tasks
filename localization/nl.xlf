@@ -752,6 +752,7 @@
 </trans-unit>
 <trans-unit id="s49749a03640a4d55">
   <source>Responses are recorded without scoring (survey or rating).</source>
+<target>Antwoorden worden vastgelegd zonder beoordeling (enquête of beoordeling).</target>
 </trans-unit>
 <trans-unit id="scc90a4e72a9e3f79">
   <source><x id="0" equiv-text="${correctCount}"/> of <x id="1" equiv-text="${rows.length}"/> rows are correct.</source>
@@ -815,6 +816,7 @@
 </trans-unit>
 <trans-unit id="sd345cbba66419e90">
   <source>Proportional credit for each row where all gaps are correct.</source>
+<target>Evenredige punten voor elke rij waarin alle gaten goed zijn.</target>
 </trans-unit>
 <trans-unit id="sa200ceda4a34c65c">
   <source>Responses are recorded without scoring.</source>
@@ -826,6 +828,7 @@
 </trans-unit>
 <trans-unit id="sf2efc78397526616">
   <source>Drag each answer into a gap, or click an answer and then the gap.</source>
+<target>Sleep elk antwoord naar een gat of klik eerst op een antwoord en daarna op het gat.</target>
 </trans-unit>
 <trans-unit id="s3b9533e35fe3715d">
   <source>Fill in the gaps.</source>
@@ -941,9 +944,11 @@
 </trans-unit>
 <trans-unit id="sc52e6e561e8f6c78">
   <source>Drag items into their groups, or use + to choose from Options.</source>
+<target>Sleep items naar hun groepen of gebruik + om uit de opties te kiezen.</target>
 </trans-unit>
 <trans-unit id="sdf9018f953f702be">
   <source>Drag items into a group, or use + to choose from Options.</source>
+<target>Sleep de items naar een groep of gebruik + om uit de opties te kiezen.</target>
 </trans-unit>
 <trans-unit id="s463b8c4e92751ba5">
   <source>Options</source>
@@ -1025,6 +1030,7 @@
 </trans-unit>
 <trans-unit id="s6599a3d76cdf16c6">
   <source>This browser cannot transcribe recordings automatically.</source>
+<target>Deze browser kan opnamen niet automatisch transcriberen.</target>
 </trans-unit>
 <trans-unit id="s8beb3150837877a2">
   <source>The recording could not be played for transcription.</source>
@@ -1108,6 +1114,7 @@
 </trans-unit>
 <trans-unit id="s070f9dc186e70d69">
   <source>Shows the optional sample for comparison without scoring.</source>
+<target>Toont een optioneel voorbeeld ter vergelijking zonder beoordeling.</target>
 </trans-unit>
 <trans-unit id="s8f4be9f086eb530f">
   <source>Undo</source>
@@ -1227,6 +1234,7 @@
 </trans-unit>
 <trans-unit id="sa37e098e69be3dd2">
   <source>Full credit only if every marker matches with no wrong pins.</source>
+<target>Alleen volledige punten als alle markeringen overeenkomen en er geen verkeerde pinnen zijn.</target>
 </trans-unit>
 <trans-unit id="s6dfb48202e30e3f6">
   <source>Per marker</source>
@@ -1234,6 +1242,7 @@
 </trans-unit>
 <trans-unit id="sb912798fe55d8e34">
   <source>Credit per matched marker, subtracting extra wrong pins.</source>
+<target>Punten per overeenkomende markering, met aftrek voor extra onjuiste markeringen.</target>
 </trans-unit>
 <trans-unit id="s1667f96d19635ec7">
   <source>Zone</source>
@@ -1321,9 +1330,11 @@
 </trans-unit>
 <trans-unit id="scab3980db2755f4c">
   <source>Full credit only if exactly the right words are marked.</source>
+<target>Alleen volledige punten als precies de juiste woorden zijn gemarkeerd.</target>
 </trans-unit>
 <trans-unit id="s301bb7275252a013">
   <source>Right marks add credit; wrong marks subtract from it (min. 0).</source>
+<target>Juiste markeringen leveren punten op; onjuiste trekken punten af (min. 0).</target>
 </trans-unit>
 <trans-unit id="sd645983eef83ec21">
   <source>Marked</source>
@@ -1374,6 +1385,7 @@
 </trans-unit>
 <trans-unit id="sf88789673a732088">
   <source>Extra range beyond tolerance where credit decays linearly to zero.</source>
+<target>Extra bereik boven de tolerantie waarbij de score lineair naar nul afneemt.</target>
 </trans-unit>
 <trans-unit id="s8f26e0f086cc2787">
   <source>Unit</source>
@@ -1437,6 +1449,7 @@
 </trans-unit>
 <trans-unit id="saf411cadd1a9edb7">
   <source>Full credit only if every item is in its exact position.</source>
+<target>Alleen volledige punten als elk item op de exacte plek staat.</target>
 </trans-unit>
 <trans-unit id="sc01de0a714566a19">
   <source>Correct positions</source>
@@ -1523,6 +1536,7 @@
 </trans-unit>
 <trans-unit id="s7b916547ee1e09ac">
   <source>Full credit when the spoken words match the reference transcript.</source>
+<target>Volledige punten als de gesproken woorden overeenkomen met het referentietranscript.</target>
 </trans-unit>
 <trans-unit id="s0682ddcaf7be7a77">
   <source>Give credit word by word, with deductions for missing, extra, or changed words.</source>
@@ -1549,6 +1563,7 @@
 </trans-unit>
 <trans-unit id="sa01ea3b8a9cb6730">
   <source>The browser's speech recognition service is unavailable.</source>
+<target>De spraakherkenningsservice van de browser is niet beschikbaar.</target>
 </trans-unit>
 <trans-unit id="sd9ed7407d01ead0c">
   <source>No speech was recognized. Try again.</source>
@@ -1600,6 +1615,7 @@
 </trans-unit>
 <trans-unit id="sfbe249ece4a970b8">
   <source>Full credit when the answer matches an accepted solution.</source>
+<target>Volledige punten als het antwoord overeenkomt met een geaccepteerde oplossing.</target>
 </trans-unit>
 <trans-unit id="s258c598c40e28b44">
   <source>Full credit when the response meets the answer limits.</source>

@@ -212,6 +212,7 @@
 </trans-unit>
 <trans-unit id="scd105819b5a10243">
   <source>Play</source>
+<target>Նվագարկել</target>
 </trans-unit>
 <trans-unit id="se5803f79964880b8">
   <source>Record again</source>
@@ -275,6 +276,7 @@
 </trans-unit>
 <trans-unit id="s49749a03640a4d55">
   <source>Responses are recorded without scoring (survey or rating).</source>
+<target>Պատասխանները գրանցվում են առանց միավորի (հարցում կամ վարկանիշավորում)։</target>
 </trans-unit>
 <trans-unit id="scc90a4e72a9e3f79">
   <source><x id="0" equiv-text="${correctCount}"/> of <x id="1" equiv-text="${rows.length}"/> rows are correct.</source>
@@ -350,6 +352,7 @@
 </trans-unit>
 <trans-unit id="sd345cbba66419e90">
   <source>Proportional credit for each row where all gaps are correct.</source>
+<target>Համամասնական միավոր այն տողերի համար, որտեղ բոլոր բացերը ճիշտ են լրացված։</target>
 </trans-unit>
 <trans-unit id="sa200ceda4a34c65c">
   <source>Responses are recorded without scoring.</source>
@@ -361,9 +364,11 @@
 </trans-unit>
 <trans-unit id="s73658af228bb4a12">
   <source>Enter the solutions, then mark the gap cells.</source>
+<target>Մուտքագրեք լուծումները, ապա նշեք դատարկ բջիջները։</target>
 </trans-unit>
 <trans-unit id="sf2efc78397526616">
   <source>Drag each answer into a gap, or click an answer and then the gap.</source>
+<target>Քաշեք յուրաքանչյուր պատասխան բացի մեջ կամ սեղմեք պատասխանը, ապա բացը։</target>
 </trans-unit>
 <trans-unit id="s3b9533e35fe3715d">
   <source>Fill in the gaps.</source>
@@ -395,6 +400,7 @@
 </trans-unit>
 <trans-unit id="s31e4aca212b90444">
   <source>Score is based on self-check rubric items checked after submitting.</source>
+<target>Միավորը հիմնված է ներկայացնելուց հետո ինքնաստուգման ժամանակ նշված չափանիշների վրա։</target>
 </trans-unit>
 <trans-unit id="safc5dc23506c8384">
   <source>Rubric</source>
@@ -560,12 +566,15 @@
 </trans-unit>
 <trans-unit id="s9ecafed1144dba1f">
   <source><x id="0" equiv-text="${correct}"/> of <x id="1" equiv-text="${total}"/> items are in the right group.</source>
+<target><x id="1" equiv-text="${total}"/> տարրից <x id="0" equiv-text="${correct}"/>-ը ճիշտ խմբում է։</target>
 </trans-unit>
 <trans-unit id="s5a264cb2ba999afa">
   <source>Place each item in all its correct groups.</source>
+<target>Յուրաքանչյուր տարր տեղադրեք համապատասխան բոլոր խմբերում։</target>
 </trans-unit>
 <trans-unit id="sc52e6e561e8f6c78">
   <source>Drag items into their groups, or use + to choose from Options.</source>
+<target>Քաշեք տարրերը համապատասխան խմբեր կամ օգտագործեք +՝ տարբերակներից ընտրելու համար։</target>
 </trans-unit>
 <trans-unit id="sc53e8091d43b9066">
   <source>Place each item in its correct group.</source>
@@ -573,6 +582,7 @@
 </trans-unit>
 <trans-unit id="sdf9018f953f702be">
   <source>Drag items into a group, or use + to choose from Options.</source>
+<target>Քաշեք տարրերը խումբ կամ օգտագործեք +՝ տարբերակներից ընտրելու համար։</target>
 </trans-unit>
 <trans-unit id="se8e6a39f5369c253">
   <source>Add item</source>
@@ -674,6 +684,7 @@
 </trans-unit>
 <trans-unit id="s6599a3d76cdf16c6">
   <source>This browser cannot transcribe recordings automatically.</source>
+<target>Այս դիտարկիչը չի կարող ինքնաշխատ փոխարկել ձայնագրությունները տեքստի։</target>
 </trans-unit>
 <trans-unit id="s8beb3150837877a2">
   <source>The recording could not be played for transcription.</source>
@@ -717,6 +728,7 @@
 </trans-unit>
 <trans-unit id="s12bb8a652aa6c4d1">
   <source>Add audio and enter the solution transcript.</source>
+<target>Ավելացրեք ձայն և մուտքագրեք լուծման տեքստը։</target>
 </trans-unit>
 <trans-unit id="s4dbda45a874f64ac">
   <source>Listen and type what you hear.</source>
@@ -768,6 +780,7 @@
 </trans-unit>
 <trans-unit id="s070f9dc186e70d69">
   <source>Shows the optional sample for comparison without scoring.</source>
+<target>Եթե նմուշ կա, ցուցադրվում է առանց գնահատման համեմատելու համար։</target>
 </trans-unit>
 <trans-unit id="s8f4be9f086eb530f">
   <source>Undo</source>
@@ -871,6 +884,7 @@
 </trans-unit>
 <trans-unit id="s0767fdab6ae788ae">
   <source>Select the solution text for each gap.</source>
+<target>Ընտրեք լուծման տեքստը յուրաքանչյուր բացի համար։</target>
 </trans-unit>
 <trans-unit id="scfd9561b07fa745f">
   <source>Select the right option for each gap.</source>
@@ -925,6 +939,7 @@
 </trans-unit>
 <trans-unit id="sa37e098e69be3dd2">
   <source>Full credit only if every marker matches with no wrong pins.</source>
+<target>Լրիվ միավոր՝ միայն եթե բոլոր նշիչները համընկնում են և սխալ նշիչ չկա։</target>
 </trans-unit>
 <trans-unit id="s6dfb48202e30e3f6">
   <source>Per marker</source>
@@ -932,6 +947,7 @@
 </trans-unit>
 <trans-unit id="sb912798fe55d8e34">
   <source>Credit per matched marker, subtracting extra wrong pins.</source>
+<target>Միավոր յուրաքանչյուր համընկնող նշիչի համար՝ հանելով ավելորդ սխալ նշիչները։</target>
 </trans-unit>
 <trans-unit id="s1667f96d19635ec7">
   <source>Zone</source>
@@ -991,12 +1007,15 @@
 </trans-unit>
 <trans-unit id="s613e777f99178cf3">
   <source>Add an image to define the solution zones.</source>
+<target>Ավելացրեք պատկեր՝ լուծման գոտիները սահմանելու համար։</target>
 </trans-unit>
 <trans-unit id="s4f4b1255c353cd38">
   <source>Add an image to mark the solution hotspots.</source>
+<target>Ավելացրեք պատկեր՝ լուծման ակտիվ կետերը նշելու համար։</target>
 </trans-unit>
 <trans-unit id="s4adf3e11ff5354ae">
   <source>Add a zone, then choose its correct item.</source>
+<target>Ավելացրեք գոտի, ապա ընտրեք դրան համապատասխան տարրը։</target>
 </trans-unit>
 <trans-unit id="sd783a9ddacfc12bf">
   <source>Double-click a correct spot. Drag or click its center to edit.</source>
@@ -1062,9 +1081,11 @@
 </trans-unit>
 <trans-unit id="scab3980db2755f4c">
   <source>Full credit only if exactly the right words are marked.</source>
+<target>Լրիվ միավոր՝ միայն եթե նշված են ճիշտ բոլոր բառերը և ոչ մի ուրիշ բառ։</target>
 </trans-unit>
 <trans-unit id="s301bb7275252a013">
   <source>Right marks add credit; wrong marks subtract from it (min. 0).</source>
+<target>Ճիշտ նշումները միավոր են ավելացնում, սխալները՝ նվազեցնում (նվազագույնը՝ 0)։</target>
 </trans-unit>
 <trans-unit id="sfd71dba826b393cd">
   <source>Hide total marks to find</source>
@@ -1135,6 +1156,7 @@
 </trans-unit>
 <trans-unit id="sf88789673a732088">
   <source>Extra range beyond tolerance where credit decays linearly to zero.</source>
+<target>Թույլատրելի շեղումից դուրս լրացուցիչ միջակայք, որտեղ միավորը գծային նվազում է մինչև զրո։</target>
 </trans-unit>
 <trans-unit id="s8f26e0f086cc2787">
   <source>Unit</source>
@@ -1234,6 +1256,7 @@
 </trans-unit>
 <trans-unit id="saf411cadd1a9edb7">
   <source>Full credit only if every item is in its exact position.</source>
+<target>Լրիվ միավոր՝ միայն եթե յուրաքանչյուր տարր ճշգրիտ իր դիրքում է։</target>
 </trans-unit>
 <trans-unit id="sc01de0a714566a19">
   <source>Correct positions</source>
@@ -1260,6 +1283,7 @@
 </trans-unit>
 <trans-unit id="s48b9e342e71a62a0">
   <source>Arrange the items in the correct order.</source>
+<target>Դասավորեք տարրերը ճիշտ հերթականությամբ։</target>
 </trans-unit>
 <trans-unit id="s195d8970726dcde5">
   <source>Drag the items, or use the arrows.</source>
@@ -1374,12 +1398,14 @@
 </trans-unit>
 <trans-unit id="sd463fe8f70c3242c">
   <source>Learners submit the <x id="0" equiv-text="${count}"/> tasks in this group here and see their score.</source>
+<target>Սովորողները այս խմբի <x id="0" equiv-text="${count}"/> առաջադրանքներն այստեղ են ներկայացնում և տեսնում իրենց միավորը։</target>
 </trans-unit>
 <trans-unit id="seecc1a1785484a8c">
   <source>Learners submit the task before this card here and see their score.</source>
 </trans-unit>
 <trans-unit id="sf11645ff0230ff59">
   <source>Insert tasks before this card. Learners submit them here and see their score.</source>
+<target>Առաջադրանքները ներդրեք այս քարտից առաջ։ Սովորողներն այստեղ են դրանք ներկայացնում և տեսնում իրենց միավորը։</target>
 </trans-unit>
 <trans-unit id="se66872955dc59191">
   <source>1 task</source>
@@ -1403,6 +1429,7 @@
 </trans-unit>
 <trans-unit id="s7b916547ee1e09ac">
   <source>Full credit when the spoken words match the reference transcript.</source>
+<target>Լրիվ միավոր՝ եթե ասված բառերը համընկնում են հղման տեքստին։</target>
 </trans-unit>
 <trans-unit id="s0682ddcaf7be7a77">
   <source>Give credit word by word, with deductions for missing, extra, or changed words.</source>
@@ -1429,6 +1456,7 @@
 </trans-unit>
 <trans-unit id="sa01ea3b8a9cb6730">
   <source>The browser's speech recognition service is unavailable.</source>
+<target>Դիտարկիչի խոսքի ճանաչման ծառայությունը հասանելի չէ։</target>
 </trans-unit>
 <trans-unit id="sd9ed7407d01ead0c">
   <source>No speech was recognized. Try again.</source>
@@ -1448,6 +1476,7 @@
 </trans-unit>
 <trans-unit id="s4e38b5e50c309443">
   <source>Record the solution or enter its transcript.</source>
+<target>Ձայնագրեք լուծումը կամ մուտքագրեք ձայնագրության տեքստը։</target>
 </trans-unit>
 <trans-unit id="sdadcdefc4c36991b">
   <source>Record your answer.</source>
@@ -1495,6 +1524,7 @@
 </trans-unit>
 <trans-unit id="sfbe249ece4a970b8">
   <source>Full credit when the answer matches an accepted solution.</source>
+<target>Լրիվ միավոր՝ եթե պատասխանը համընկնում է ընդունելի լուծման հետ։</target>
 </trans-unit>
 <trans-unit id="s258c598c40e28b44">
   <source>Full credit when the response meets the answer limits.</source>
