@@ -218,9 +218,11 @@
 </trans-unit>
 <trans-unit id="s53b4850973728528">
   <source>This view blocks microphone access.</source>
+<target>ଏହି ଦୃଶ୍ୟ ମାଇକ୍ରୋଫୋନ୍ ପ୍ରବେଶକୁ ଅବରୋଧ କରେ।</target>
 </trans-unit>
 <trans-unit id="s38f1c1ae5d0356f7">
   <source>The recording could not be saved.</source>
+<target>ରେକର୍ଡିଂ ସଞ୍ଚୟ ହୋଇପାରିଲା ନାହିଁ।</target>
 </trans-unit>
 <trans-unit id="sa9da29c2219e79d4">
   <source>Start recording</source>
@@ -248,6 +250,7 @@
 </trans-unit>
 <trans-unit id="sa7deaffdf7f5df45">
   <source>Full credit only if every row is completely correct.</source>
+<target>ପ୍ରତ୍ୟେକ ଧାଡ଼ି ସମ୍ପୂର୍ଣ୍ଣ ସଠିକ୍ ହେଲେ ମାତ୍ର ପୂର୍ଣ୍ଣ ନମ୍ବର।</target>
 </trans-unit>
 <trans-unit id="s1fc7cdaeb2298208">
   <source>Per row</source>
@@ -255,6 +258,7 @@
 </trans-unit>
 <trans-unit id="s82d2d155e7e9ce8f">
   <source>Proportional credit for each fully correct row.</source>
+<target>ପ୍ରତି ସମ୍ପୂର୍ଣ୍ଣ ସଠିକ୍ ଧାଡ଼ି ପାଇଁ ଅନୁପାତିକ ନମ୍ବର।</target>
 </trans-unit>
 <trans-unit id="sc94ed95bae83b5c0">
   <source>Per cell</source>
@@ -262,6 +266,7 @@
 </trans-unit>
 <trans-unit id="scc342659e1e69063">
   <source>Penalized partial credit within multi-select rows.</source>
+<target>ବହୁ-ଚୟନ ଧାଡ଼ିରେ ଆଂଶିକ ନମ୍ବର କମାଯାଏ।</target>
 </trans-unit>
 <trans-unit id="s96d046d2f7e07e3b">
   <source>Ungraded</source>
@@ -333,15 +338,18 @@
 </trans-unit>
 <trans-unit id="saec69b4e2f2e04e1">
   <source>Full credit only if every gap cell is correct.</source>
+<target>ପ୍ରତ୍ୟେକ ଖାଲି ଘର ସଠିକ୍ ହେଲେ ମାତ୍ର ପୂର୍ଣ୍ଣ ନମ୍ବର।</target>
 </trans-unit>
 <trans-unit id="sdf387eb35c575f35">
   <source>Proportional credit for each correct gap cell.</source>
+<target>ପ୍ରତି ସଠିକ୍ ଖାଲି ଘର ପାଇଁ ଅନୁପାତିକ ନମ୍ବର।</target>
 </trans-unit>
 <trans-unit id="sd345cbba66419e90">
   <source>Proportional credit for each row where all gaps are correct.</source>
 </trans-unit>
 <trans-unit id="sa200ceda4a34c65c">
   <source>Responses are recorded without scoring.</source>
+<target>ନମ୍ବର ନଦେଇ ଉତ୍ତରଗୁଡ଼ିକ ରେକର୍ଡ ହୁଏ।</target>
 </trans-unit>
 <trans-unit id="sb7cfcc79fbcb74d1">
   <source><x id="0" equiv-text="${correctCount}"/> of <x id="1" equiv-text="${activeGaps.length}"/> gaps are correct.</source>
@@ -525,6 +533,7 @@
 </trans-unit>
 <trans-unit id="s0229d85de3888d71">
   <source><x id="0" equiv-text="${correct}"/> of <x id="1" equiv-text="${total}"/> items are in all the right groups.</source>
+<target><x id="1" equiv-text="${total}"/>ଟି ମଧ୍ୟରୁ <x id="0" equiv-text="${correct}"/>ଟି ଆଇଟମ୍ ସମସ୍ତ ସଠିକ୍ ଗୋଷ୍ଠୀରେ ଅଛି।</target>
 </trans-unit>
 <trans-unit id="s9ecafed1144dba1f">
   <source><x id="0" equiv-text="${correct}"/> of <x id="1" equiv-text="${total}"/> items are in the right group.</source>
@@ -575,6 +584,7 @@
 </trans-unit>
 <trans-unit id="s88fa46d7b66ff1e6">
   <source>Full credit for selecting the correct option.</source>
+<target>ସଠିକ୍ ବିକଳ୍ପ ବାଛିଲେ ପୂର୍ଣ୍ଣ ନମ୍ବର।</target>
 </trans-unit>
 <trans-unit id="s5d02042067dcb593">
   <source>Enter the statement.</source>
@@ -600,6 +610,7 @@
 </trans-unit>
 <trans-unit id="s4094f9a53a127ce2">
   <source>Found <x id="0" equiv-text="${found}"/> of <x id="1" equiv-text="${correct.size}"/> correct options.</source>
+<target><x id="1" equiv-text="${correct.size}"/>ଟି ମଧ୍ୟରୁ <x id="0" equiv-text="${found}"/>ଟି ସଠିକ୍ ବିକଳ୍ପ ମିଳିଲା।</target>
 </trans-unit>
 <trans-unit id="s66070c10ddc25bd7">
   <source>1 wrong option selected.</source>
@@ -622,6 +633,7 @@
 </trans-unit>
 <trans-unit id="se6fee24d1cbbc9db">
   <source>Give partial credit for minor typos</source>
+<target>ସାମାନ୍ୟ ଟାଇପ୍ ଭୁଲ୍ ପାଇଁ ଆଂଶିକ ନମ୍ବର ଦିଅନ୍ତୁ</target>
 </trans-unit>
 <trans-unit id="s3ec5145dc8e77493">
   <source>Partial credit</source>
@@ -639,12 +651,15 @@
 </trans-unit>
 <trans-unit id="s0769bd26bad7ceb0">
   <source>Automatic transcription could not finish. Try again.</source>
+<target>ସ୍ୱୟଂଚାଳିତ ଲିପ୍ୟନ୍ତରଣ ସମାପ୍ତ ହୋଇପାରିଲା ନାହିଁ। ପୁଣି ଚେଷ୍ଟା କରନ୍ତୁ।</target>
 </trans-unit>
 <trans-unit id="s652dfa634831c4ac">
   <source>No speech was recognized in the recording.</source>
+<target>ରେକର୍ଡିଂରେ କଥା ଚିହ୍ନଟ ହେଲା ନାହିଁ।</target>
 </trans-unit>
 <trans-unit id="sb096e2c355121468">
   <source>Automatic transcription timed out. Try again.</source>
+<target>ସ୍ୱୟଂଚାଳିତ ଲିପ୍ୟନ୍ତରଣର ସମୟ ସମାପ୍ତ। ପୁଣି ଚେଷ୍ଟା କରନ୍ତୁ।</target>
 </trans-unit>
 <trans-unit id="s7682adbd6cb18c43">
   <source>Slow recording</source>
@@ -686,6 +701,7 @@
 </trans-unit>
 <trans-unit id="sc476adbff390819f">
   <source>The recording could not be played.</source>
+<target>ରେକର୍ଡିଂ ଚଲାଯାଇପାରିଲା ନାହିଁ।</target>
 </trans-unit>
 <trans-unit id="sad5df5643732af8e">
   <source>Recording language</source>
@@ -704,6 +720,7 @@
 </trans-unit>
 <trans-unit id="s74ae056b8a4fe2fc">
   <source>Require a drawing before submitting</source>
+<target>ଦାଖଲ ପୂର୍ବରୁ ଚିତ୍ର ଆବଶ୍ୟକ କରନ୍ତୁ</target>
 </trans-unit>
 <trans-unit id="s25fadd3e7388516c">
   <source>Canvas height</source>
@@ -715,6 +732,7 @@
 </trans-unit>
 <trans-unit id="s9085fd214561bc83">
   <source>Full credit when a drawing is submitted.</source>
+<target>ଚିତ୍ର ଦାଖଲ କଲେ ପୂର୍ଣ୍ଣ ନମ୍ବର।</target>
 </trans-unit>
 <trans-unit id="s070f9dc186e70d69">
   <source>Shows the optional sample for comparison without scoring.</source>
@@ -809,6 +827,7 @@
 </trans-unit>
 <trans-unit id="s3c6170c7cbb3c96c">
   <source>Full credit only if every gap is filled correctly.</source>
+<target>ସମସ୍ତ ଖାଲି ସ୍ଥାନ ସଠିକ୍ ଭରିଲେ ମାତ୍ର ପୂର୍ଣ୍ଣ ନମ୍ବର।</target>
 </trans-unit>
 <trans-unit id="s7cf3abae566db880">
   <source>Per gap</source>
@@ -816,15 +835,18 @@
 </trans-unit>
 <trans-unit id="sf5246d0ef9e92c22">
   <source>Proportional credit for each correctly filled gap.</source>
+<target>ପ୍ରତି ସଠିକ୍ ଭରା ଖାଲି ସ୍ଥାନ ପାଇଁ ଅନୁପାତିକ ନମ୍ବର।</target>
 </trans-unit>
 <trans-unit id="s0767fdab6ae788ae">
   <source>Select the solution text for each gap.</source>
 </trans-unit>
 <trans-unit id="scfd9561b07fa745f">
   <source>Select the right option for each gap.</source>
+<target>ପ୍ରତି ଖାଲି ସ୍ଥାନ ପାଇଁ ସଠିକ୍ ବିକଳ୍ପ ବାଛନ୍ତୁ।</target>
 </trans-unit>
 <trans-unit id="s818176fa88ae0e18">
   <source>All options are already in this group.</source>
+<target>ସମସ୍ତ ବିକଳ୍ପ ଏହି ଗୋଷ୍ଠୀରେ ପୂର୍ବରୁ ଅଛି।</target>
 </trans-unit>
 <trans-unit id="s70945b389a1737de">
   <source>Image Placements</source>
@@ -948,9 +970,11 @@
 </trans-unit>
 <trans-unit id="s7fa1caf807422e65">
   <source>Drag each label onto its marker on the image.</source>
+<target>ପ୍ରତ୍ୟେକ ଲେବଲ୍‌କୁ ଛବିରେ ଥିବା ଚିହ୍ନ ଉପରେ ଟାଣନ୍ତୁ।</target>
 </trans-unit>
 <trans-unit id="sd2f8e252296a0030">
   <source>Click the target region(s) in the image.</source>
+<target>ଛବିରେ ଲକ୍ଷ୍ୟ ଅଞ୍ଚଳ(ଗୁଡ଼ିକ)କୁ କ୍ଲିକ୍ କରନ୍ତୁ।</target>
 </trans-unit>
 <trans-unit id="s0c2e2e9567aa5ea2">
   <source>No image selected.</source>
@@ -1159,6 +1183,7 @@
 </trans-unit>
 <trans-unit id="s799375be5eae1328">
   <source>Credit for each item placed in its exact slot.</source>
+<target>ସଠିକ୍ ସ୍ଥାନରେ ରଖାଯାଇଥିବା ପ୍ରତି ଆଇଟମ୍ ପାଇଁ ନମ୍ବର</target>
 </trans-unit>
 <trans-unit id="s71aa9b3ce66902b9">
   <source>Relative order</source>
@@ -1173,15 +1198,18 @@
 </trans-unit>
 <trans-unit id="s6f1a191f5f38290f">
   <source><x id="0" equiv-text="${right}"/> of <x id="1" equiv-text="${items.length}"/> items are in the right place.</source>
+<target><x id="1" equiv-text="${items.length}"/>ଟି ମଧ୍ୟରୁ <x id="0" equiv-text="${right}"/>ଟି ଆଇଟମ୍ ସଠିକ୍ ସ୍ଥାନରେ ଅଛି।</target>
 </trans-unit>
 <trans-unit id="s48b9e342e71a62a0">
   <source>Arrange the items in the correct order.</source>
 </trans-unit>
 <trans-unit id="s195d8970726dcde5">
   <source>Drag the items, or use the arrows.</source>
+<target>ଆଇଟମଗୁଡ଼ିକୁ ଟାଣନ୍ତୁ କିମ୍ବା ତୀର ବ୍ୟବହାର କରନ୍ତୁ।</target>
 </trans-unit>
 <trans-unit id="sd1b6deb412a019f2">
   <source>Full credit only if every pair matches.</source>
+<target>କେବଳ ପ୍ରତ୍ୟେକ ଯୋଡ଼ି ମେଳ ହେଲେ ପୂର୍ଣ୍ଣ ନମ୍ବର।</target>
 </trans-unit>
 <trans-unit id="s660ce8a94870e7be">
   <source>Per correct pair</source>
@@ -1234,6 +1262,7 @@
 </trans-unit>
 <trans-unit id="s9facbab7555fb0c0">
   <source>The file is not valid GIFT: a brace is not closed.</source>
+<target>ଫାଇଲ୍ ବୈଧ GIFT ନୁହେଁ: ଗୋଟିଏ ବନ୍ଧନୀ ବନ୍ଦ ହୋଇନାହିଁ।</target>
 </trans-unit>
 <trans-unit id="s60d9b7bf2152bbec">
   <source>The file contains no GIFT task that this quiz can import.</source>
@@ -1290,6 +1319,7 @@
 </trans-unit>
 <trans-unit id="se37cff59047ed04d">
   <source>Require a recording before submitting</source>
+<target>ଦାଖଲ ପୂର୍ବରୁ ରେକର୍ଡିଂ ଆବଶ୍ୟକ କରନ୍ତୁ</target>
 </trans-unit>
 <trans-unit id="s7684ff9798b78190">
   <source>Match transcript</source>
@@ -1314,15 +1344,18 @@
 </trans-unit>
 <trans-unit id="s88bb88dfdcdb627d">
   <source>Speech recognition could not connect. Try again.</source>
+<target>ବାକ୍ ଚିହ୍ନଟ ସଂଯୋଗ ହୋଇପାରିଲା ନାହିଁ। ପୁଣି ଚେଷ୍ଟା କରନ୍ତୁ।</target>
 </trans-unit>
 <trans-unit id="s56e2fa9e68dc4501">
   <source>Speech recognition does not support this language.</source>
+<target>ଏହି ଭାଷାରେ ବାକ୍ ଚିହ୍ନଟ ସମର୍ଥିତ ନୁହେଁ।</target>
 </trans-unit>
 <trans-unit id="sa01ea3b8a9cb6730">
   <source>The browser's speech recognition service is unavailable.</source>
 </trans-unit>
 <trans-unit id="sd9ed7407d01ead0c">
   <source>No speech was recognized. Try again.</source>
+<target>କୌଣସି କଥା ଚିହ୍ନଟ ହେଲା ନାହିଁ। ପୁଣି ଚେଷ୍ଟା କରନ୍ତୁ।</target>
 </trans-unit>
 <trans-unit id="s4639f7a3ea067ba3">
   <source>Speech recognition timed out.</source>
@@ -1330,6 +1363,7 @@
 </trans-unit>
 <trans-unit id="s7a0c4c4a03638428">
   <source>Speech recognition could not finish. Try again.</source>
+<target>ବାକ୍ ଚିହ୍ନଟ ସମାପ୍ତ ହୋଇପାରିଲା ନାହିଁ। ପୁଣି ଚେଷ୍ଟା କରନ୍ତୁ।</target>
 </trans-unit>
 <trans-unit id="s0622a6e6cb77254b">
   <source>Transcript</source>
@@ -1393,6 +1427,7 @@
 </trans-unit>
 <trans-unit id="s9f03f75fe691cc42">
   <source>Almost. Check the capitalization.</source>
+<target>ପ୍ରାୟ ଠିକ୍। ବଡ଼ ଓ ଛୋଟ ଅକ୍ଷର ଯାଞ୍ଚ କରନ୍ତୁ।</target>
 </trans-unit>
 <trans-unit id="s191241976c5f89c8">
   <source>Almost. Check the spelling.</source>
@@ -1419,6 +1454,7 @@
 </trans-unit>
 <trans-unit id="sd2ea043c0c38373c">
   <source>Lengthen your answer to meet the minimum.</source>
+<target>ସର୍ବନିମ୍ନ ଲମ୍ବ ପାଇଁ ଉତ୍ତରକୁ ବଢ଼ାନ୍ତୁ।</target>
 </trans-unit>
 <trans-unit id="s8893ece8e3462e5d">
   <source><x id="0" equiv-text="${words}"/>/<x id="1" equiv-text="${maxWords}"/> words</source>

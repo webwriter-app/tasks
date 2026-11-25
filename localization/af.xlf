@@ -252,6 +252,7 @@
 </trans-unit>
 <trans-unit id="sa7deaffdf7f5df45">
   <source>Full credit only if every row is completely correct.</source>
+<target>Volpunte slegs as elke ry heeltemal korrek is.</target>
 </trans-unit>
 <trans-unit id="s1fc7cdaeb2298208">
   <source>Per row</source>
@@ -259,6 +260,7 @@
 </trans-unit>
 <trans-unit id="s82d2d155e7e9ce8f">
   <source>Proportional credit for each fully correct row.</source>
+<target>Eweredige punte vir elke heeltemal korrekte ry.</target>
 </trans-unit>
 <trans-unit id="sc94ed95bae83b5c0">
   <source>Per cell</source>
@@ -266,6 +268,7 @@
 </trans-unit>
 <trans-unit id="scc342659e1e69063">
   <source>Penalized partial credit within multi-select rows.</source>
+<target>Gedeeltelike punte met aftrekkings in rye met veelvuldige keuses.</target>
 </trans-unit>
 <trans-unit id="s96d046d2f7e07e3b">
   <source>Ungraded</source>
@@ -337,9 +340,11 @@
 </trans-unit>
 <trans-unit id="saec69b4e2f2e04e1">
   <source>Full credit only if every gap cell is correct.</source>
+<target>Volpunte slegs as elke gapingsel korrek is.</target>
 </trans-unit>
 <trans-unit id="sdf387eb35c575f35">
   <source>Proportional credit for each correct gap cell.</source>
+<target>Eweredige punte vir elke korrekte gapingsel.</target>
 </trans-unit>
 <trans-unit id="sd345cbba66419e90">
   <source>Proportional credit for each row where all gaps are correct.</source>
@@ -384,12 +389,14 @@
 </trans-unit>
 <trans-unit id="s862ee826ed9e561c">
   <source>Self-assessment</source>
+<target>Selfassessering</target>
 </trans-unit>
 <trans-unit id="s31e4aca212b90444">
   <source>Score is based on self-check rubric items checked after submitting.</source>
 </trans-unit>
 <trans-unit id="safc5dc23506c8384">
   <source>Rubric</source>
+<target>Rubriek</target>
 </trans-unit>
 <trans-unit id="s75576f72d8374e0a">
   <source>Remove criterion: <x id="0" equiv-text="${criterion}"/></source>
@@ -397,6 +404,7 @@
 </trans-unit>
 <trans-unit id="sad144a3342aa6ceb">
   <source>Rubric criterion</source>
+<target>Rubriekmaatstaf</target>
 </trans-unit>
 <trans-unit id="sf9aee319a006c9b4">
   <source>Add</source>
@@ -412,6 +420,7 @@
 </trans-unit>
 <trans-unit id="s65110cc8f3569002">
   <source>Task label</source>
+<target>Taaketiket</target>
 </trans-unit>
 <trans-unit id="s1f2f2be86efd928c">
   <source>Hide scoring</source>
@@ -426,9 +435,11 @@
 </trans-unit>
 <trans-unit id="s77c6bf991aa9839e">
   <source>Self-check</source>
+<target>Selfkontrole</target>
 </trans-unit>
 <trans-unit id="sdce919bbdc89eb6b">
   <source>Configure</source>
+<target>Stel op</target>
 </trans-unit>
 <trans-unit id="sb58bd9e06b83960f">
   <source>Not graded</source>
@@ -436,18 +447,23 @@
 </trans-unit>
 <trans-unit id="sfc63e31ac7c956ed">
   <source>Select</source>
+<target>Kies</target>
 </trans-unit>
 <trans-unit id="s78f9fa174282015c">
   <source>Write</source>
+<target>Skryf</target>
 </trans-unit>
 <trans-unit id="sd42f58d8f01b4e47">
   <source>Arrange</source>
+<target>Rangskik</target>
 </trans-unit>
 <trans-unit id="se23357f112296589">
   <source>Speak</source>
+<target>Praat</target>
 </trans-unit>
 <trans-unit id="s1c0ea772de28e773">
   <source>Draw</source>
+<target>Teken</target>
 </trans-unit>
 <trans-unit id="s8a13240ec237a9ef">
   <source>Other tasks</source>
@@ -455,9 +471,11 @@
 </trans-unit>
 <trans-unit id="s7013a0bd5cf697ec">
   <source>Task type</source>
+<target>Taaktipe</target>
 </trans-unit>
 <trans-unit id="sd19715215fa7c6ca">
   <source>Task Results</source>
+<target>Taakresultate</target>
 </trans-unit>
 <trans-unit id="s42cbd8dca939a9c7">
   <source>Check</source>
@@ -480,12 +498,14 @@
 </trans-unit>
 <trans-unit id="s62b2c51610dc615b">
   <source>The current content or settings require this layout.</source>
+<target>Die huidige inhoud of instellings vereis dié uitleg.</target>
 </trans-unit>
 <trans-unit id="s25e1a07e454c2c11">
   <source>Grid</source>
 </trans-unit>
 <trans-unit id="sb69fe5b15d487851">
   <source>Task/question</source>
+<target>Taak/vraag</target>
 </trans-unit>
 <trans-unit id="s379c18aec5654894">
   <source>Move</source>
@@ -493,6 +513,7 @@
 </trans-unit>
 <trans-unit id="s9f26843287bb592d">
   <source>Groups</source>
+<target>Groepe</target>
 </trans-unit>
 <trans-unit id="sba1bfeaf662fe54e">
   <source>Full credit only if every item is sorted into its right group.</source>
@@ -526,6 +547,7 @@
 </trans-unit>
 <trans-unit id="s635ffba679db4c52">
   <source>Multi</source>
+<target>Veelvuldig</target>
 </trans-unit>
 <trans-unit id="s0229d85de3888d71">
   <source><x id="0" equiv-text="${correct}"/> of <x id="1" equiv-text="${total}"/> items are in all the right groups.</source>
@@ -548,9 +570,11 @@
 </trans-unit>
 <trans-unit id="se8e6a39f5369c253">
   <source>Add item</source>
+<target>Voeg item by</target>
 </trans-unit>
 <trans-unit id="sd9f67fbf3f86efcf">
   <source>Add group</source>
+<target>Voeg groep by</target>
 </trans-unit>
 <trans-unit id="s463b8c4e92751ba5">
   <source>Options</source>
@@ -622,6 +646,7 @@
 </trans-unit>
 <trans-unit id="s12b13f3557a8e6c2">
   <source>Dictation</source>
+<target>Diktee</target>
 </trans-unit>
 <trans-unit id="s64a981f393576a7b">
   <source>Ignore punctuation</source>
@@ -644,9 +669,11 @@
 </trans-unit>
 <trans-unit id="s8beb3150837877a2">
   <source>The recording could not be played for transcription.</source>
+<target>Die opname kon nie vir transkripsie gespeel word nie.</target>
 </trans-unit>
 <trans-unit id="s0769bd26bad7ceb0">
   <source>Automatic transcription could not finish. Try again.</source>
+<target>Outomatiese transkripsie kon nie klaarmaak nie. Probeer weer.</target>
 </trans-unit>
 <trans-unit id="s652dfa634831c4ac">
   <source>No speech was recognized in the recording.</source>
@@ -712,6 +739,7 @@
 </trans-unit>
 <trans-unit id="s37658628514bfa29">
   <source>Sketch</source>
+<target>Skets</target>
 </trans-unit>
 <trans-unit id="s74ae056b8a4fe2fc">
   <source>Require a drawing before submitting</source>
@@ -822,6 +850,7 @@
 </trans-unit>
 <trans-unit id="s3c6170c7cbb3c96c">
   <source>Full credit only if every gap is filled correctly.</source>
+<target>Volpunte slegs as elke gaping korrek ingevul is.</target>
 </trans-unit>
 <trans-unit id="s7cf3abae566db880">
   <source>Per gap</source>
@@ -829,6 +858,7 @@
 </trans-unit>
 <trans-unit id="sf5246d0ef9e92c22">
   <source>Proportional credit for each correctly filled gap.</source>
+<target>Eweredige punte vir elke korrek ingevulde gaping.</target>
 </trans-unit>
 <trans-unit id="s0767fdab6ae788ae">
   <source>Select the solution text for each gap.</source>
@@ -843,6 +873,7 @@
 </trans-unit>
 <trans-unit id="s70945b389a1737de">
   <source>Image Placements</source>
+<target>Posisies op ’n prent</target>
 </trans-unit>
 <trans-unit id="s781e64ea47044bd9">
   <source>Add image</source>
@@ -850,12 +881,15 @@
 </trans-unit>
 <trans-unit id="s4f521327851555e4">
   <source>Item <x id="0" equiv-text="${index + 1}"/></source>
+<target>Item <x id="0" equiv-text="${index + 1}"/></target>
 </trans-unit>
 <trans-unit id="s4c0433e13ae18244">
   <source>Correct item</source>
+<target>Korrekte item</target>
 </trans-unit>
 <trans-unit id="s0b023612a7aac3c6">
   <source>Choose an item</source>
+<target>Kies ’n item</target>
 </trans-unit>
 <trans-unit id="sa6f359971854ca5b">
   <source><x id="0" equiv-text="${label}"/> placed in <x id="1" equiv-text="${zone.label || this.msg(&quot;Zone&quot;)}"/>.</source>
@@ -876,6 +910,7 @@
 </trans-unit>
 <trans-unit id="seaa5fbd29de72476">
   <source>Image Hotspots</source>
+<target>Interaktiewe kolle op ’n prent</target>
 </trans-unit>
 <trans-unit id="sa37e098e69be3dd2">
   <source>Full credit only if every marker matches with no wrong pins.</source>
@@ -901,18 +936,23 @@
 </trans-unit>
 <trans-unit id="s82059beffcb7fed7">
   <source>Resize left edge</source>
+<target>Verander grootte by die linkerkant</target>
 </trans-unit>
 <trans-unit id="s6d5cb65f8a9d4aec">
   <source>Resize right edge</source>
+<target>Verander grootte by die regterkant</target>
 </trans-unit>
 <trans-unit id="s03635bdd07e891f7">
   <source>Resize top edge</source>
+<target>Verander grootte by die bokant</target>
 </trans-unit>
 <trans-unit id="s196f15ed6778fd19">
   <source>Resize bottom edge</source>
+<target>Verander grootte by die onderkant</target>
 </trans-unit>
 <trans-unit id="s14c54ca33d0f3ea9">
   <source>Circle</source>
+<target>Sirkel</target>
 </trans-unit>
 <trans-unit id="s2de969afacdaa7a6">
   <source>Shape</source>
@@ -1007,6 +1047,7 @@
 </trans-unit>
 <trans-unit id="s8654133f4227b6dc">
   <source>Highlights</source>
+<target>Hoogtepunte</target>
 </trans-unit>
 <trans-unit id="scab3980db2755f4c">
   <source>Full credit only if exactly the right words are marked.</source>
@@ -1042,12 +1083,15 @@
 </trans-unit>
 <trans-unit id="s0337af549735d429">
   <source>Input type</source>
+<target>Invoertipe</target>
 </trans-unit>
 <trans-unit id="s0043cbab8a7a7cfc">
   <source>Slider</source>
+<target>Skuifbalk</target>
 </trans-unit>
 <trans-unit id="sbcc77dff2df51943">
   <source>Date/Time</source>
+<target>Datum/tyd</target>
 </trans-unit>
 <trans-unit id="sef6dc9d5fd60c301">
   <source>Within tolerance</source>
@@ -1100,12 +1144,14 @@
 </trans-unit>
 <trans-unit id="s8101e9674e03d8d4">
   <source>Enter a date.</source>
+<target>Voer ’n datum in.</target>
 </trans-unit>
 <trans-unit id="sbf57f251472bcb58">
   <source>Enter the solution time.</source>
 </trans-unit>
 <trans-unit id="s9ef2eb3d0696a8e3">
   <source>Enter a time.</source>
+<target>Voer ’n tyd in.</target>
 </trans-unit>
 <trans-unit id="s7b2019f9159b0153">
   <source>Enter the solution date and time.</source>
@@ -1130,6 +1176,7 @@
 </trans-unit>
 <trans-unit id="s712144d706e5d284">
   <source>Date &amp; time</source>
+<target>Datum en tyd</target>
 </trans-unit>
 <trans-unit id="s1dfd6319b50f4cd7">
   <source>Min</source>
@@ -1210,15 +1257,18 @@
 </trans-unit>
 <trans-unit id="s7dd435285656bfe2">
   <source>Proportional credit for each correctly matched pair.</source>
+<target>Eweredige punte vir elke paar wat korrek gepas is.</target>
 </trans-unit>
 <trans-unit id="s0b0634acdb057929">
   <source>Connect the items by their dots.</source>
 </trans-unit>
 <trans-unit id="sc3f7dffe760c1035">
   <source>Connection removed.</source>
+<target>Verbinding verwyder.</target>
 </trans-unit>
 <trans-unit id="s9bb7da161e1c91f3">
   <source>Connection added.</source>
+<target>Verbinding bygevoeg.</target>
 </trans-unit>
 <trans-unit id="se53e36e5899543e9">
   <source>Left item <x id="0" equiv-text="${index + 1}"/></source>
@@ -1230,18 +1280,23 @@
 </trans-unit>
 <trans-unit id="s9701dad8e792c621">
   <source>Multi-connect</source>
+<target>Veelvuldige verbindings</target>
 </trans-unit>
 <trans-unit id="sb1b5ae4d0380c810">
   <source>Add left item</source>
+<target>Voeg linkeritem by</target>
 </trans-unit>
 <trans-unit id="sc9a03f8477d65aa9">
   <source>Add right item</source>
+<target>Voeg regteritem by</target>
 </trans-unit>
 <trans-unit id="sa5c371b4bb75e590">
   <source>Left</source>
+<target>Links</target>
 </trans-unit>
 <trans-unit id="s366991b9c9287765">
   <source>Right</source>
+<target>Regs</target>
 </trans-unit>
 <trans-unit id="s62c886043b49e255">
   <source>Connect the matching items.</source>
@@ -1252,9 +1307,11 @@
 </trans-unit>
 <trans-unit id="seff6153e80bd6a89">
   <source>Hide task labels</source>
+<target>Versteek taaketikette</target>
 </trans-unit>
 <trans-unit id="s9facbab7555fb0c0">
   <source>The file is not valid GIFT: a brace is not closed.</source>
+<target>Ongeldige GIFT-lêer: ’n krulhakie is nie gesluit nie.</target>
 </trans-unit>
 <trans-unit id="s60d9b7bf2152bbec">
   <source>The file contains no GIFT task that this quiz can import.</source>
@@ -1267,9 +1324,11 @@
 </trans-unit>
 <trans-unit id="s26dc09247b1685c0">
   <source>Go to the task</source>
+<target>Gaan na die taak</target>
 </trans-unit>
 <trans-unit id="s7d0d0d65b174f073">
   <source>Go to task <x id="0" equiv-text="${index}"/></source>
+<target>Gaan na taak <x id="0" equiv-text="${index}"/></target>
 </trans-unit>
 <trans-unit id="s65c455f516ab03af">
   <source><x id="0" equiv-text="${result.correct}"/> correct</source>
@@ -1302,12 +1361,15 @@
 </trans-unit>
 <trans-unit id="se66872955dc59191">
   <source>1 task</source>
+<target>1 taak</target>
 </trans-unit>
 <trans-unit id="sea748bf5cf6f28f3">
   <source><x id="0" equiv-text="${count}"/> tasks</source>
+<target><x id="0" equiv-text="${count}"/> take</target>
 </trans-unit>
 <trans-unit id="s226775a4cc67dbe6">
   <source>Voice recording</source>
+<target>Stemopname</target>
 </trans-unit>
 <trans-unit id="se37cff59047ed04d">
   <source>Require a recording before submitting</source>
@@ -1325,6 +1387,7 @@
 </trans-unit>
 <trans-unit id="s179588dcdddf2174">
   <source>Speech recognition is not supported in this browser.</source>
+<target>Spraakherkenning word nie in hierdie blaaier ondersteun nie.</target>
 </trans-unit>
 <trans-unit id="s3f63f5f9314e6043">
   <source>Microphone access was denied.</source>
@@ -1336,9 +1399,11 @@
 </trans-unit>
 <trans-unit id="s88bb88dfdcdb627d">
   <source>Speech recognition could not connect. Try again.</source>
+<target>Spraakherkenning kon nie koppel nie. Probeer weer.</target>
 </trans-unit>
 <trans-unit id="s56e2fa9e68dc4501">
   <source>Speech recognition does not support this language.</source>
+<target>Spraakherkenning ondersteun nie hierdie taal nie.</target>
 </trans-unit>
 <trans-unit id="sa01ea3b8a9cb6730">
   <source>The browser's speech recognition service is unavailable.</source>
@@ -1353,6 +1418,7 @@
 </trans-unit>
 <trans-unit id="s7a0c4c4a03638428">
   <source>Speech recognition could not finish. Try again.</source>
+<target>Spraakherkenning kon nie voltooi nie. Probeer weer.</target>
 </trans-unit>
 <trans-unit id="s0622a6e6cb77254b">
   <source>Transcript</source>
@@ -1386,6 +1452,7 @@
 </trans-unit>
 <trans-unit id="s6c97064da028dfb4">
   <source>Maximum words</source>
+<target>Maksimum woorde</target>
 </trans-unit>
 <trans-unit id="s620cff015e903b49">
   <source>Minimum characters</source>
@@ -1393,6 +1460,7 @@
 </trans-unit>
 <trans-unit id="sc7dae948a542b133">
   <source>Maximum characters</source>
+<target>Maksimum karakters</target>
 </trans-unit>
 <trans-unit id="s0bec6a958a6d1aeb">
   <source>Show word count</source>
@@ -1407,12 +1475,14 @@
 </trans-unit>
 <trans-unit id="s258c598c40e28b44">
   <source>Full credit when the response meets the answer limits.</source>
+<target>Volpunte wanneer die antwoord aan die limiete voldoen.</target>
 </trans-unit>
 <trans-unit id="s326d5d3ac1de6f34">
   <source>Advanced: Match as regular expression</source>
 </trans-unit>
 <trans-unit id="s59e0eb09a3b46cf1">
   <source>Resize answer field</source>
+<target>Verander die grootte van die antwoordveld</target>
 </trans-unit>
 <trans-unit id="s9f03f75fe691cc42">
   <source>Almost. Check the capitalization.</source>
@@ -1447,6 +1517,7 @@
 </trans-unit>
 <trans-unit id="s8893ece8e3462e5d">
   <source><x id="0" equiv-text="${words}"/>/<x id="1" equiv-text="${maxWords}"/> words</source>
+<target><x id="0" equiv-text="${words}"/>/<x id="1" equiv-text="${maxWords}"/> woorde</target>
 </trans-unit>
 <trans-unit id="sa26fe9ae4bb4e13c">
   <source>1 word</source>
@@ -1462,6 +1533,7 @@
 </trans-unit>
 <trans-unit id="s068999302c9463b8">
   <source><x id="0" equiv-text="${answer.length}"/>/<x id="1" equiv-text="${maxCharacters}"/> characters</source>
+<target><x id="0" equiv-text="${answer.length}"/>/<x id="1" equiv-text="${maxCharacters}"/> karakters</target>
 </trans-unit>
 <trans-unit id="s5796c82cf4f3e6fb">
   <source>1 character</source>

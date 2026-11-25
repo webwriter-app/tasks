@@ -664,6 +664,7 @@
 </trans-unit>
 <trans-unit id="sa7deaffdf7f5df45">
   <source>Full credit only if every row is completely correct.</source>
+<target>Crédit complet uniquement si chaque ligne est entièrement correcte.</target>
 </trans-unit>
 <trans-unit id="s1fc7cdaeb2298208">
   <source>Per row</source>
@@ -671,6 +672,7 @@
 </trans-unit>
 <trans-unit id="s82d2d155e7e9ce8f">
   <source>Proportional credit for each fully correct row.</source>
+<target>Crédit proportionnel pour chaque ligne entièrement correcte.</target>
 </trans-unit>
 <trans-unit id="sc94ed95bae83b5c0">
   <source>Per cell</source>
@@ -678,6 +680,7 @@
 </trans-unit>
 <trans-unit id="scc342659e1e69063">
   <source>Penalized partial credit within multi-select rows.</source>
+<target>Crédit partiel avec pénalité dans les lignes à choix multiples.</target>
 </trans-unit>
 <trans-unit id="s96d046d2f7e07e3b">
   <source>Ungraded</source>
@@ -740,9 +743,11 @@
 </trans-unit>
 <trans-unit id="saec69b4e2f2e04e1">
   <source>Full credit only if every gap cell is correct.</source>
+<target>Crédit complet uniquement si chaque cellule est correcte.</target>
 </trans-unit>
 <trans-unit id="sdf387eb35c575f35">
   <source>Proportional credit for each correct gap cell.</source>
+<target>Crédit proportionnel pour chaque cellule correcte.</target>
 </trans-unit>
 <trans-unit id="sd345cbba66419e90">
   <source>Proportional credit for each row where all gaps are correct.</source>
@@ -836,6 +841,7 @@
 </trans-unit>
 <trans-unit id="s62b2c51610dc615b">
   <source>The current content or settings require this layout.</source>
+<target>Le contenu ou les paramètres actuels nécessitent cette mise en page.</target>
 </trans-unit>
 <trans-unit id="s379c18aec5654894">
   <source>Move</source>
@@ -958,9 +964,11 @@
 </trans-unit>
 <trans-unit id="s8beb3150837877a2">
   <source>The recording could not be played for transcription.</source>
+<target>L’enregistrement n’a pas pu être lu pour transcription.</target>
 </trans-unit>
 <trans-unit id="s0769bd26bad7ceb0">
   <source>Automatic transcription could not finish. Try again.</source>
+<target>La transcription automatique n’a pas abouti. Réessayez.</target>
 </trans-unit>
 <trans-unit id="s652dfa634831c4ac">
   <source>No speech was recognized in the recording.</source>
@@ -1121,6 +1129,7 @@
 </trans-unit>
 <trans-unit id="s3c6170c7cbb3c96c">
   <source>Full credit only if every gap is filled correctly.</source>
+<target>Crédit complet uniquement si chaque espace est correctement rempli.</target>
 </trans-unit>
 <trans-unit id="s7cf3abae566db880">
   <source>Per gap</source>
@@ -1128,6 +1137,7 @@
 </trans-unit>
 <trans-unit id="sf5246d0ef9e92c22">
   <source>Proportional credit for each correctly filled gap.</source>
+<target>Crédit proportionnel pour chaque espace correctement rempli.</target>
 </trans-unit>
 <trans-unit id="scfd9561b07fa745f">
   <source>Select the right option for each gap.</source>
@@ -1397,6 +1407,7 @@
 </trans-unit>
 <trans-unit id="s7dd435285656bfe2">
   <source>Proportional credit for each correctly matched pair.</source>
+<target>Crédit proportionnel pour chaque paire correctement associée.</target>
 </trans-unit>
 <trans-unit id="se53e36e5899543e9">
   <source>Left item <x id="0" equiv-text="${index + 1}"/></source>
@@ -1412,6 +1423,7 @@
 </trans-unit>
 <trans-unit id="s9facbab7555fb0c0">
   <source>The file is not valid GIFT: a brace is not closed.</source>
+<target>Le fichier GIFT n’est pas valide : une accolade n’est pas fermée.</target>
 </trans-unit>
 <trans-unit id="s65c455f516ab03af">
   <source><x id="0" equiv-text="${result.correct}"/> correct</source>
@@ -1449,6 +1461,7 @@
 </trans-unit>
 <trans-unit id="s179588dcdddf2174">
   <source>Speech recognition is not supported in this browser.</source>
+<target>La reconnaissance vocale n’est pas prise en charge par ce navigateur.</target>
 </trans-unit>
 <trans-unit id="s3f63f5f9314e6043">
   <source>Microphone access was denied.</source>
@@ -1460,9 +1473,11 @@
 </trans-unit>
 <trans-unit id="s88bb88dfdcdb627d">
   <source>Speech recognition could not connect. Try again.</source>
+<target>La reconnaissance vocale n’a pas pu se connecter. Réessayez.</target>
 </trans-unit>
 <trans-unit id="s56e2fa9e68dc4501">
   <source>Speech recognition does not support this language.</source>
+<target>La reconnaissance vocale ne prend pas en charge cette langue.</target>
 </trans-unit>
 <trans-unit id="sa01ea3b8a9cb6730">
   <source>The browser's speech recognition service is unavailable.</source>
@@ -1477,6 +1492,7 @@
 </trans-unit>
 <trans-unit id="s7a0c4c4a03638428">
   <source>Speech recognition could not finish. Try again.</source>
+<target>La reconnaissance vocale n’a pas pu aboutir. Réessayez.</target>
 </trans-unit>
 <trans-unit id="s0622a6e6cb77254b">
   <source>Transcript</source>
@@ -1519,6 +1535,7 @@
 </trans-unit>
 <trans-unit id="s258c598c40e28b44">
   <source>Full credit when the response meets the answer limits.</source>
+<target>Crédit complet si la réponse respecte les limites.</target>
 </trans-unit>
 <trans-unit id="s9f03f75fe691cc42">
   <source>Almost. Check the capitalization.</source>

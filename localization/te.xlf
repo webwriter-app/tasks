@@ -218,9 +218,11 @@
 </trans-unit>
 <trans-unit id="s53b4850973728528">
   <source>This view blocks microphone access.</source>
+<target>ఈ వీక్షణ మైక్రోఫోన్ యాక్సెస్‌ను అడ్డుకుంటుంది.</target>
 </trans-unit>
 <trans-unit id="s38f1c1ae5d0356f7">
   <source>The recording could not be saved.</source>
+<target>రికార్డింగ్‌ను సేవ్ చేయడం సాధ్యపడలేదు.</target>
 </trans-unit>
 <trans-unit id="sa9da29c2219e79d4">
   <source>Start recording</source>
@@ -248,6 +250,7 @@
 </trans-unit>
 <trans-unit id="sa7deaffdf7f5df45">
   <source>Full credit only if every row is completely correct.</source>
+<target>ప్రతి వరుస పూర్తిగా సరైనదైతేనే పూర్తి మార్కులు.</target>
 </trans-unit>
 <trans-unit id="s1fc7cdaeb2298208">
   <source>Per row</source>
@@ -255,6 +258,7 @@
 </trans-unit>
 <trans-unit id="s82d2d155e7e9ce8f">
   <source>Proportional credit for each fully correct row.</source>
+<target>పూర్తిగా సరైన ప్రతి వరుసకు అనుపాత మార్కులు.</target>
 </trans-unit>
 <trans-unit id="sc94ed95bae83b5c0">
   <source>Per cell</source>
@@ -262,6 +266,7 @@
 </trans-unit>
 <trans-unit id="scc342659e1e69063">
   <source>Penalized partial credit within multi-select rows.</source>
+<target>బహుళ ఎంపిక వరుసల్లో పాక్షిక మార్కులు తగ్గించబడతాయి.</target>
 </trans-unit>
 <trans-unit id="s96d046d2f7e07e3b">
   <source>Ungraded</source>
@@ -333,15 +338,18 @@
 </trans-unit>
 <trans-unit id="saec69b4e2f2e04e1">
   <source>Full credit only if every gap cell is correct.</source>
+<target>ప్రతి ఖాళీ గడి సరైనదైతేనే పూర్తి మార్కులు.</target>
 </trans-unit>
 <trans-unit id="sdf387eb35c575f35">
   <source>Proportional credit for each correct gap cell.</source>
+<target>ప్రతి సరైన ఖాళీ గడికి అనుపాత మార్కులు.</target>
 </trans-unit>
 <trans-unit id="sd345cbba66419e90">
   <source>Proportional credit for each row where all gaps are correct.</source>
 </trans-unit>
 <trans-unit id="sa200ceda4a34c65c">
   <source>Responses are recorded without scoring.</source>
+<target>స్కోరు లేకుండా ప్రతిస్పందనలు రికార్డ్ చేయబడతాయి.</target>
 </trans-unit>
 <trans-unit id="sb7cfcc79fbcb74d1">
   <source><x id="0" equiv-text="${correctCount}"/> of <x id="1" equiv-text="${activeGaps.length}"/> gaps are correct.</source>
@@ -526,6 +534,7 @@
 </trans-unit>
 <trans-unit id="s0229d85de3888d71">
   <source><x id="0" equiv-text="${correct}"/> of <x id="1" equiv-text="${total}"/> items are in all the right groups.</source>
+<target><x id="1" equiv-text="${total}"/> అంశాల్లో <x id="0" equiv-text="${correct}"/> అన్ని సరైన గుంపుల్లో ఉన్నాయి.</target>
 </trans-unit>
 <trans-unit id="s9ecafed1144dba1f">
   <source><x id="0" equiv-text="${correct}"/> of <x id="1" equiv-text="${total}"/> items are in the right group.</source>
@@ -576,6 +585,7 @@
 </trans-unit>
 <trans-unit id="s88fa46d7b66ff1e6">
   <source>Full credit for selecting the correct option.</source>
+<target>సరైన ఎంపికను ఎంచుకుంటే పూర్తి మార్కులు.</target>
 </trans-unit>
 <trans-unit id="s5d02042067dcb593">
   <source>Enter the statement.</source>
@@ -601,6 +611,7 @@
 </trans-unit>
 <trans-unit id="s4094f9a53a127ce2">
   <source>Found <x id="0" equiv-text="${found}"/> of <x id="1" equiv-text="${correct.size}"/> correct options.</source>
+<target><x id="1" equiv-text="${correct.size}"/>లో <x id="0" equiv-text="${found}"/> సరైన ఎంపికలు కనుగొనబడ్డాయి.</target>
 </trans-unit>
 <trans-unit id="s66070c10ddc25bd7">
   <source>1 wrong option selected.</source>
@@ -623,6 +634,7 @@
 </trans-unit>
 <trans-unit id="se6fee24d1cbbc9db">
   <source>Give partial credit for minor typos</source>
+<target>చిన్న టైపింగ్ తప్పులకు పాక్షిక మార్కులు ఇవ్వండి</target>
 </trans-unit>
 <trans-unit id="s3ec5145dc8e77493">
   <source>Partial credit</source>
@@ -640,12 +652,15 @@
 </trans-unit>
 <trans-unit id="s0769bd26bad7ceb0">
   <source>Automatic transcription could not finish. Try again.</source>
+<target>ఆటోమేటిక్ లిప్యంతరీకరణ పూర్తికాలేదు. మళ్లీ ప్రయత్నించండి.</target>
 </trans-unit>
 <trans-unit id="s652dfa634831c4ac">
   <source>No speech was recognized in the recording.</source>
+<target>రికార్డింగ్‌లో మాట గుర్తించబడలేదు.</target>
 </trans-unit>
 <trans-unit id="sb096e2c355121468">
   <source>Automatic transcription timed out. Try again.</source>
+<target>ఆటోమేటిక్ లిప్యంతరీకరణ సమయం ముగిసింది. మళ్లీ ప్రయత్నించండి.</target>
 </trans-unit>
 <trans-unit id="s7682adbd6cb18c43">
   <source>Slow recording</source>
@@ -687,6 +702,7 @@
 </trans-unit>
 <trans-unit id="sc476adbff390819f">
   <source>The recording could not be played.</source>
+<target>రికార్డింగ్‌ను ప్లే చేయడం సాధ్యపడలేదు.</target>
 </trans-unit>
 <trans-unit id="sad5df5643732af8e">
   <source>Recording language</source>
@@ -705,6 +721,7 @@
 </trans-unit>
 <trans-unit id="s74ae056b8a4fe2fc">
   <source>Require a drawing before submitting</source>
+<target>సమర్పించే ముందు డ్రాయింగ్ తప్పనిసరి చేయండి</target>
 </trans-unit>
 <trans-unit id="s25fadd3e7388516c">
   <source>Canvas height</source>
@@ -716,6 +733,7 @@
 </trans-unit>
 <trans-unit id="s9085fd214561bc83">
   <source>Full credit when a drawing is submitted.</source>
+<target>డ్రాయింగ్ సమర్పించినప్పుడు పూర్తి మార్కులు.</target>
 </trans-unit>
 <trans-unit id="s070f9dc186e70d69">
   <source>Shows the optional sample for comparison without scoring.</source>
@@ -810,6 +828,7 @@
 </trans-unit>
 <trans-unit id="s3c6170c7cbb3c96c">
   <source>Full credit only if every gap is filled correctly.</source>
+<target>ప్రతి ఖాళీని సరిగ్గా నింపితేనే పూర్తి మార్కులు.</target>
 </trans-unit>
 <trans-unit id="s7cf3abae566db880">
   <source>Per gap</source>
@@ -817,15 +836,18 @@
 </trans-unit>
 <trans-unit id="sf5246d0ef9e92c22">
   <source>Proportional credit for each correctly filled gap.</source>
+<target>సరిగ్గా నింపిన ప్రతి ఖాళీకి అనుపాత మార్కులు.</target>
 </trans-unit>
 <trans-unit id="s0767fdab6ae788ae">
   <source>Select the solution text for each gap.</source>
 </trans-unit>
 <trans-unit id="scfd9561b07fa745f">
   <source>Select the right option for each gap.</source>
+<target>ప్రతి ఖాళీకి సరైన ఎంపికను ఎంచుకోండి.</target>
 </trans-unit>
 <trans-unit id="s818176fa88ae0e18">
   <source>All options are already in this group.</source>
+<target>అన్ని ఎంపికలు ఇప్పటికే ఈ గుంపులో ఉన్నాయి.</target>
 </trans-unit>
 <trans-unit id="s70945b389a1737de">
   <source>Image Placements</source>
@@ -949,9 +971,11 @@
 </trans-unit>
 <trans-unit id="s7fa1caf807422e65">
   <source>Drag each label onto its marker on the image.</source>
+<target>ప్రతి లేబుల్‌ను చిత్రంలోని దాని గుర్తుపైకి లాగండి.</target>
 </trans-unit>
 <trans-unit id="sd2f8e252296a0030">
   <source>Click the target region(s) in the image.</source>
+<target>చిత్రంలో లక్ష్య ప్రాంతంపై క్లిక్ చేయండి.</target>
 </trans-unit>
 <trans-unit id="s0c2e2e9567aa5ea2">
   <source>No image selected.</source>
@@ -1160,6 +1184,7 @@
 </trans-unit>
 <trans-unit id="s799375be5eae1328">
   <source>Credit for each item placed in its exact slot.</source>
+<target>ప్రతి అంశాన్ని దాని ఖచ్చితమైన స్థానంలో ఉంచినందుకు మార్కులు</target>
 </trans-unit>
 <trans-unit id="s71aa9b3ce66902b9">
   <source>Relative order</source>
@@ -1174,15 +1199,18 @@
 </trans-unit>
 <trans-unit id="s6f1a191f5f38290f">
   <source><x id="0" equiv-text="${right}"/> of <x id="1" equiv-text="${items.length}"/> items are in the right place.</source>
+<target><x id="1" equiv-text="${items.length}"/> అంశాల్లో <x id="0" equiv-text="${right}"/> సరైన స్థానంలో ఉన్నాయి.</target>
 </trans-unit>
 <trans-unit id="s48b9e342e71a62a0">
   <source>Arrange the items in the correct order.</source>
 </trans-unit>
 <trans-unit id="s195d8970726dcde5">
   <source>Drag the items, or use the arrows.</source>
+<target>అంశాలను లాగండి లేదా బాణాలను ఉపయోగించండి.</target>
 </trans-unit>
 <trans-unit id="sd1b6deb412a019f2">
   <source>Full credit only if every pair matches.</source>
+<target>ప్రతి జత సరిపోతేనే పూర్తి మార్కులు.</target>
 </trans-unit>
 <trans-unit id="s660ce8a94870e7be">
   <source>Per correct pair</source>
@@ -1235,6 +1263,7 @@
 </trans-unit>
 <trans-unit id="s9facbab7555fb0c0">
   <source>The file is not valid GIFT: a brace is not closed.</source>
+<target>ఫైల్ చెల్లుబాటు అయ్యే GIFT కాదు: ఒక కర్లీ బ్రేస్ మూసివేయలేదు.</target>
 </trans-unit>
 <trans-unit id="s60d9b7bf2152bbec">
   <source>The file contains no GIFT task that this quiz can import.</source>
@@ -1291,6 +1320,7 @@
 </trans-unit>
 <trans-unit id="se37cff59047ed04d">
   <source>Require a recording before submitting</source>
+<target>సమర్పించే ముందు రికార్డింగ్ తప్పనిసరి చేయండి</target>
 </trans-unit>
 <trans-unit id="s7684ff9798b78190">
   <source>Match transcript</source>
@@ -1315,15 +1345,18 @@
 </trans-unit>
 <trans-unit id="s88bb88dfdcdb627d">
   <source>Speech recognition could not connect. Try again.</source>
+<target>వాక్కు గుర్తింపు కనెక్ట్ కాలేదు. మళ్లీ ప్రయత్నించండి.</target>
 </trans-unit>
 <trans-unit id="s56e2fa9e68dc4501">
   <source>Speech recognition does not support this language.</source>
+<target>ఈ భాషకు వాక్కు గుర్తింపు మద్దతు లేదు.</target>
 </trans-unit>
 <trans-unit id="sa01ea3b8a9cb6730">
   <source>The browser's speech recognition service is unavailable.</source>
 </trans-unit>
 <trans-unit id="sd9ed7407d01ead0c">
   <source>No speech was recognized. Try again.</source>
+<target>మాట గుర్తించబడలేదు. మళ్లీ ప్రయత్నించండి.</target>
 </trans-unit>
 <trans-unit id="s4639f7a3ea067ba3">
   <source>Speech recognition timed out.</source>
@@ -1331,6 +1364,7 @@
 </trans-unit>
 <trans-unit id="s7a0c4c4a03638428">
   <source>Speech recognition could not finish. Try again.</source>
+<target>వాక్కు గుర్తింపు పూర్తికాలేదు. మళ్లీ ప్రయత్నించండి.</target>
 </trans-unit>
 <trans-unit id="s0622a6e6cb77254b">
   <source>Transcript</source>
@@ -1394,6 +1428,7 @@
 </trans-unit>
 <trans-unit id="s9f03f75fe691cc42">
   <source>Almost. Check the capitalization.</source>
+<target>దాదాపు సరైంది. పెద్దచిన్న అక్షరాలను తనిఖీ చేయండి.</target>
 </trans-unit>
 <trans-unit id="s191241976c5f89c8">
   <source>Almost. Check the spelling.</source>
@@ -1420,6 +1455,7 @@
 </trans-unit>
 <trans-unit id="sd2ea043c0c38373c">
   <source>Lengthen your answer to meet the minimum.</source>
+<target>కనీస పొడవును చేరుకునేలా సమాధానాన్ని పొడిగించండి.</target>
 </trans-unit>
 <trans-unit id="s8893ece8e3462e5d">
   <source><x id="0" equiv-text="${words}"/>/<x id="1" equiv-text="${maxWords}"/> words</source>

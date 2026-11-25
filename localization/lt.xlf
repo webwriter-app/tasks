@@ -252,6 +252,7 @@
 </trans-unit>
 <trans-unit id="sa7deaffdf7f5df45">
   <source>Full credit only if every row is completely correct.</source>
+<target>Visi taškai skiriami tik tada, jei kiekviena eilutė visiškai teisinga.</target>
 </trans-unit>
 <trans-unit id="s1fc7cdaeb2298208">
   <source>Per row</source>
@@ -259,6 +260,7 @@
 </trans-unit>
 <trans-unit id="s82d2d155e7e9ce8f">
   <source>Proportional credit for each fully correct row.</source>
+<target>Proporcingi taškai už kiekvieną visiškai teisingą eilutę.</target>
 </trans-unit>
 <trans-unit id="sc94ed95bae83b5c0">
   <source>Per cell</source>
@@ -266,6 +268,7 @@
 </trans-unit>
 <trans-unit id="scc342659e1e69063">
   <source>Penalized partial credit within multi-select rows.</source>
+<target>Dalinis įvertinimas su bauda kelių pasirinkimų eilutėse.</target>
 </trans-unit>
 <trans-unit id="s96d046d2f7e07e3b">
   <source>Ungraded</source>
@@ -337,9 +340,11 @@
 </trans-unit>
 <trans-unit id="saec69b4e2f2e04e1">
   <source>Full credit only if every gap cell is correct.</source>
+<target>Visi taškai skiriami tik tada, jei teisingas kiekvienas langelis.</target>
 </trans-unit>
 <trans-unit id="sdf387eb35c575f35">
   <source>Proportional credit for each correct gap cell.</source>
+<target>Proporcingi taškai už kiekvieną teisingą langelį.</target>
 </trans-unit>
 <trans-unit id="sd345cbba66419e90">
   <source>Proportional credit for each row where all gaps are correct.</source>
@@ -384,12 +389,14 @@
 </trans-unit>
 <trans-unit id="s862ee826ed9e561c">
   <source>Self-assessment</source>
+<target>Įsivertinimas</target>
 </trans-unit>
 <trans-unit id="s31e4aca212b90444">
   <source>Score is based on self-check rubric items checked after submitting.</source>
 </trans-unit>
 <trans-unit id="safc5dc23506c8384">
   <source>Rubric</source>
+<target>Vertinimo lentelė</target>
 </trans-unit>
 <trans-unit id="s75576f72d8374e0a">
   <source>Remove criterion: <x id="0" equiv-text="${criterion}"/></source>
@@ -397,6 +404,7 @@
 </trans-unit>
 <trans-unit id="sad144a3342aa6ceb">
   <source>Rubric criterion</source>
+<target>Vertinimo kriterijus</target>
 </trans-unit>
 <trans-unit id="sf9aee319a006c9b4">
   <source>Add</source>
@@ -412,6 +420,7 @@
 </trans-unit>
 <trans-unit id="s65110cc8f3569002">
   <source>Task label</source>
+<target>Užduoties etiketė</target>
 </trans-unit>
 <trans-unit id="s1f2f2be86efd928c">
   <source>Hide scoring</source>
@@ -423,12 +432,15 @@
 </trans-unit>
 <trans-unit id="sa8346ce518263c93">
   <source>Answer the task first.</source>
+<target>Pirmiausia atsakykite į užduotį.</target>
 </trans-unit>
 <trans-unit id="s77c6bf991aa9839e">
   <source>Self-check</source>
+<target>Savikontrolė</target>
 </trans-unit>
 <trans-unit id="sdce919bbdc89eb6b">
   <source>Configure</source>
+<target>Konfigūruoti</target>
 </trans-unit>
 <trans-unit id="sb58bd9e06b83960f">
   <source>Not graded</source>
@@ -436,18 +448,23 @@
 </trans-unit>
 <trans-unit id="sfc63e31ac7c956ed">
   <source>Select</source>
+<target>Pasirinkti</target>
 </trans-unit>
 <trans-unit id="s78f9fa174282015c">
   <source>Write</source>
+<target>Rašyti</target>
 </trans-unit>
 <trans-unit id="sd42f58d8f01b4e47">
   <source>Arrange</source>
+<target>Išdėstyti</target>
 </trans-unit>
 <trans-unit id="se23357f112296589">
   <source>Speak</source>
+<target>Kalbėti</target>
 </trans-unit>
 <trans-unit id="s1c0ea772de28e773">
   <source>Draw</source>
+<target>Piešti</target>
 </trans-unit>
 <trans-unit id="s8a13240ec237a9ef">
   <source>Other tasks</source>
@@ -455,9 +472,11 @@
 </trans-unit>
 <trans-unit id="s7013a0bd5cf697ec">
   <source>Task type</source>
+<target>Užduoties tipas</target>
 </trans-unit>
 <trans-unit id="sd19715215fa7c6ca">
   <source>Task Results</source>
+<target>Užduoties rezultatai</target>
 </trans-unit>
 <trans-unit id="s42cbd8dca939a9c7">
   <source>Check</source>
@@ -481,6 +500,7 @@
 </trans-unit>
 <trans-unit id="s62b2c51610dc615b">
   <source>The current content or settings require this layout.</source>
+<target>Dabartiniam turiniui ar nustatymams reikalingas šis išdėstymas.</target>
 </trans-unit>
 <trans-unit id="s25e1a07e454c2c11">
   <source>Grid</source>
@@ -488,6 +508,7 @@
 </trans-unit>
 <trans-unit id="sb69fe5b15d487851">
   <source>Task/question</source>
+<target>Užduotis / klausimas</target>
 </trans-unit>
 <trans-unit id="s379c18aec5654894">
   <source>Move</source>
@@ -495,6 +516,7 @@
 </trans-unit>
 <trans-unit id="s9f26843287bb592d">
   <source>Groups</source>
+<target>Grupės</target>
 </trans-unit>
 <trans-unit id="sba1bfeaf662fe54e">
   <source>Full credit only if every item is sorted into its right group.</source>
@@ -528,6 +550,7 @@
 </trans-unit>
 <trans-unit id="s635ffba679db4c52">
   <source>Multi</source>
+<target>Daugialypis</target>
 </trans-unit>
 <trans-unit id="s0229d85de3888d71">
   <source><x id="0" equiv-text="${correct}"/> of <x id="1" equiv-text="${total}"/> items are in all the right groups.</source>
@@ -550,9 +573,11 @@
 </trans-unit>
 <trans-unit id="se8e6a39f5369c253">
   <source>Add item</source>
+<target>Pridėti elementą</target>
 </trans-unit>
 <trans-unit id="sd9f67fbf3f86efcf">
   <source>Add group</source>
+<target>Pridėti grupę</target>
 </trans-unit>
 <trans-unit id="s463b8c4e92751ba5">
   <source>Options</source>
@@ -597,6 +622,7 @@
 </trans-unit>
 <trans-unit id="s1ec9854f438d7b40">
   <source>Select the correct answer.</source>
+<target>Pasirinkite teisingą atsakymą.</target>
 </trans-unit>
 <trans-unit id="s404c6db5256b2680">
   <source>Choose True or False.</source>
@@ -624,6 +650,7 @@
 </trans-unit>
 <trans-unit id="s12b13f3557a8e6c2">
   <source>Dictation</source>
+<target>Diktavimas</target>
 </trans-unit>
 <trans-unit id="s64a981f393576a7b">
   <source>Ignore punctuation</source>
@@ -646,9 +673,11 @@
 </trans-unit>
 <trans-unit id="s8beb3150837877a2">
   <source>The recording could not be played for transcription.</source>
+<target>Įrašo nepavyko paleisti transkripcijai.</target>
 </trans-unit>
 <trans-unit id="s0769bd26bad7ceb0">
   <source>Automatic transcription could not finish. Try again.</source>
+<target>Automatinės transkripcijos nepavyko užbaigti. Bandykite dar kartą.</target>
 </trans-unit>
 <trans-unit id="s652dfa634831c4ac">
   <source>No speech was recognized in the recording.</source>
@@ -676,6 +705,7 @@
 </trans-unit>
 <trans-unit id="s00e41b3c4a182aa8">
   <source>Solution transcript</source>
+<target>Sprendimo transkripcija</target>
 </trans-unit>
 <trans-unit id="se166026acf69acae">
   <source>Type what you hear</source>
@@ -714,6 +744,7 @@
 </trans-unit>
 <trans-unit id="s37658628514bfa29">
   <source>Sketch</source>
+<target>Eskizas</target>
 </trans-unit>
 <trans-unit id="s74ae056b8a4fe2fc">
   <source>Require a drawing before submitting</source>
@@ -823,6 +854,7 @@
 </trans-unit>
 <trans-unit id="s3c6170c7cbb3c96c">
   <source>Full credit only if every gap is filled correctly.</source>
+<target>Visi taškai skiriami tik teisingai užpildžius kiekvieną spragą.</target>
 </trans-unit>
 <trans-unit id="s7cf3abae566db880">
   <source>Per gap</source>
@@ -830,6 +862,7 @@
 </trans-unit>
 <trans-unit id="sf5246d0ef9e92c22">
   <source>Proportional credit for each correctly filled gap.</source>
+<target>Proporcingi taškai už kiekvieną teisingai užpildytą spragą.</target>
 </trans-unit>
 <trans-unit id="s0767fdab6ae788ae">
   <source>Select the solution text for each gap.</source>
@@ -844,6 +877,7 @@
 </trans-unit>
 <trans-unit id="s70945b389a1737de">
   <source>Image Placements</source>
+<target>Vaizdų išdėstymas</target>
 </trans-unit>
 <trans-unit id="s781e64ea47044bd9">
   <source>Add image</source>
@@ -851,12 +885,15 @@
 </trans-unit>
 <trans-unit id="s4f521327851555e4">
   <source>Item <x id="0" equiv-text="${index + 1}"/></source>
+<target>Elementas <x id="0" equiv-text="${index + 1}"/></target>
 </trans-unit>
 <trans-unit id="s4c0433e13ae18244">
   <source>Correct item</source>
+<target>Teisingas elementas</target>
 </trans-unit>
 <trans-unit id="s0b023612a7aac3c6">
   <source>Choose an item</source>
+<target>Pasirinkite elementą</target>
 </trans-unit>
 <trans-unit id="sa6f359971854ca5b">
   <source><x id="0" equiv-text="${label}"/> placed in <x id="1" equiv-text="${zone.label || this.msg(&quot;Zone&quot;)}"/>.</source>
@@ -864,6 +901,7 @@
 </trans-unit>
 <trans-unit id="s6fcdab6f6cf7461b">
   <source><x id="0" equiv-text="${label}"/> returned to Options.</source>
+<target><x id="0" equiv-text="${label}"/> grąžinta į parinktis.</target>
 </trans-unit>
 <trans-unit id="s703202c2ebdf2d61">
   <source>Zone <x id="0" equiv-text="${index + 1}"/></source>
@@ -874,9 +912,11 @@
 </trans-unit>
 <trans-unit id="s05ba009cda8c6a1b">
   <source>Return selected item</source>
+<target>Grąžinti pasirinktą elementą</target>
 </trans-unit>
 <trans-unit id="seaa5fbd29de72476">
   <source>Image Hotspots</source>
+<target>Vaizdo aktyviosios sritys</target>
 </trans-unit>
 <trans-unit id="sa37e098e69be3dd2">
   <source>Full credit only if every marker matches with no wrong pins.</source>
@@ -902,18 +942,23 @@
 </trans-unit>
 <trans-unit id="s82059beffcb7fed7">
   <source>Resize left edge</source>
+<target>Keisti kairiojo krašto dydį</target>
 </trans-unit>
 <trans-unit id="s6d5cb65f8a9d4aec">
   <source>Resize right edge</source>
+<target>Keisti dešiniojo krašto dydį</target>
 </trans-unit>
 <trans-unit id="s03635bdd07e891f7">
   <source>Resize top edge</source>
+<target>Keisti viršutinio krašto dydį</target>
 </trans-unit>
 <trans-unit id="s196f15ed6778fd19">
   <source>Resize bottom edge</source>
+<target>Keisti apatinio krašto dydį</target>
 </trans-unit>
 <trans-unit id="s14c54ca33d0f3ea9">
   <source>Circle</source>
+<target>Apskritimas</target>
 </trans-unit>
 <trans-unit id="s2de969afacdaa7a6">
   <source>Shape</source>
@@ -1008,6 +1053,7 @@
 </trans-unit>
 <trans-unit id="s8654133f4227b6dc">
   <source>Highlights</source>
+<target>Paryškinimai</target>
 </trans-unit>
 <trans-unit id="scab3980db2755f4c">
   <source>Full credit only if exactly the right words are marked.</source>
@@ -1017,6 +1063,7 @@
 </trans-unit>
 <trans-unit id="sfd71dba826b393cd">
   <source>Hide total marks to find</source>
+<target>Slėpti bendrą likusių taškų skaičių</target>
 </trans-unit>
 <trans-unit id="sd645983eef83ec21">
   <source>Marked</source>
@@ -1043,12 +1090,15 @@
 </trans-unit>
 <trans-unit id="s0337af549735d429">
   <source>Input type</source>
+<target>Įvesties tipas</target>
 </trans-unit>
 <trans-unit id="s0043cbab8a7a7cfc">
   <source>Slider</source>
+<target>Slankiklis</target>
 </trans-unit>
 <trans-unit id="sbcc77dff2df51943">
   <source>Date/Time</source>
+<target>Data / laikas</target>
 </trans-unit>
 <trans-unit id="sef6dc9d5fd60c301">
   <source>Within tolerance</source>
@@ -1098,15 +1148,19 @@
 </trans-unit>
 <trans-unit id="s863f9a65357e7d87">
   <source>Enter the solution date.</source>
+<target>Įveskite sprendimo datą.</target>
 </trans-unit>
 <trans-unit id="s8101e9674e03d8d4">
   <source>Enter a date.</source>
+<target>Įveskite datą.</target>
 </trans-unit>
 <trans-unit id="sbf57f251472bcb58">
   <source>Enter the solution time.</source>
+<target>Įveskite sprendimo laiką.</target>
 </trans-unit>
 <trans-unit id="s9ef2eb3d0696a8e3">
   <source>Enter a time.</source>
+<target>Įveskite laiką.</target>
 </trans-unit>
 <trans-unit id="s7b2019f9159b0153">
   <source>Enter the solution date and time.</source>
@@ -1124,6 +1178,7 @@
 </trans-unit>
 <trans-unit id="sacac52201fe81268">
   <source>Enter the solution number.</source>
+<target>Įveskite sprendimo numerį.</target>
 </trans-unit>
 <trans-unit id="s330046fa1b1b9ec7">
   <source>Enter a number.</source>
@@ -1131,6 +1186,7 @@
 </trans-unit>
 <trans-unit id="s712144d706e5d284">
   <source>Date &amp; time</source>
+<target>Data ir laikas</target>
 </trans-unit>
 <trans-unit id="s1dfd6319b50f4cd7">
   <source>Min</source>
@@ -1210,15 +1266,18 @@
 </trans-unit>
 <trans-unit id="s7dd435285656bfe2">
   <source>Proportional credit for each correctly matched pair.</source>
+<target>Proporcingi taškai už kiekvieną teisingą porą.</target>
 </trans-unit>
 <trans-unit id="s0b0634acdb057929">
   <source>Connect the items by their dots.</source>
 </trans-unit>
 <trans-unit id="sc3f7dffe760c1035">
   <source>Connection removed.</source>
+<target>Jungtis pašalinta.</target>
 </trans-unit>
 <trans-unit id="s9bb7da161e1c91f3">
   <source>Connection added.</source>
+<target>Jungtis pridėta.</target>
 </trans-unit>
 <trans-unit id="se53e36e5899543e9">
   <source>Left item <x id="0" equiv-text="${index + 1}"/></source>
@@ -1230,18 +1289,23 @@
 </trans-unit>
 <trans-unit id="s9701dad8e792c621">
   <source>Multi-connect</source>
+<target>Kelių jungčių</target>
 </trans-unit>
 <trans-unit id="sb1b5ae4d0380c810">
   <source>Add left item</source>
+<target>Pridėti elementą kairėje</target>
 </trans-unit>
 <trans-unit id="sc9a03f8477d65aa9">
   <source>Add right item</source>
+<target>Pridėti elementą dešinėje</target>
 </trans-unit>
 <trans-unit id="sa5c371b4bb75e590">
   <source>Left</source>
+<target>Kairė</target>
 </trans-unit>
 <trans-unit id="s366991b9c9287765">
   <source>Right</source>
+<target>Dešinė</target>
 </trans-unit>
 <trans-unit id="s62c886043b49e255">
   <source>Connect the matching items.</source>
@@ -1252,24 +1316,30 @@
 </trans-unit>
 <trans-unit id="seff6153e80bd6a89">
   <source>Hide task labels</source>
+<target>Slėpti užduočių etiketes</target>
 </trans-unit>
 <trans-unit id="s9facbab7555fb0c0">
   <source>The file is not valid GIFT: a brace is not closed.</source>
+<target>Failas nėra tinkamas GIFT: neuždarytas riestinis skliaustas.</target>
 </trans-unit>
 <trans-unit id="s60d9b7bf2152bbec">
   <source>The file contains no GIFT task that this quiz can import.</source>
 </trans-unit>
 <trans-unit id="s2521b02f548cc7e9">
   <source>1 task is unanswered.</source>
+<target>1 neatsakyta užduotis.</target>
 </trans-unit>
 <trans-unit id="s68765f320e984d2b">
   <source><x id="0" equiv-text="${count}"/> tasks are unanswered.</source>
+<target>Neatsakytos užduotys: <x id="0" equiv-text="${count}"/>.</target>
 </trans-unit>
 <trans-unit id="s26dc09247b1685c0">
   <source>Go to the task</source>
+<target>Eiti į užduotį</target>
 </trans-unit>
 <trans-unit id="s7d0d0d65b174f073">
   <source>Go to task <x id="0" equiv-text="${index}"/></source>
+<target>Eiti į užduotį <x id="0" equiv-text="${index}"/></target>
 </trans-unit>
 <trans-unit id="s65c455f516ab03af">
   <source><x id="0" equiv-text="${result.correct}"/> correct</source>
@@ -1302,12 +1372,15 @@
 </trans-unit>
 <trans-unit id="se66872955dc59191">
   <source>1 task</source>
+<target>1 užduotis</target>
 </trans-unit>
 <trans-unit id="sea748bf5cf6f28f3">
   <source><x id="0" equiv-text="${count}"/> tasks</source>
+<target><x id="0" equiv-text="${count}"/> užduotys</target>
 </trans-unit>
 <trans-unit id="s226775a4cc67dbe6">
   <source>Voice recording</source>
+<target>Balso įrašas</target>
 </trans-unit>
 <trans-unit id="se37cff59047ed04d">
   <source>Require a recording before submitting</source>
@@ -1325,6 +1398,7 @@
 </trans-unit>
 <trans-unit id="s179588dcdddf2174">
   <source>Speech recognition is not supported in this browser.</source>
+<target>Ši naršyklė nepalaiko kalbos atpažinimo.</target>
 </trans-unit>
 <trans-unit id="s3f63f5f9314e6043">
   <source>Microphone access was denied.</source>
@@ -1336,9 +1410,11 @@
 </trans-unit>
 <trans-unit id="s88bb88dfdcdb627d">
   <source>Speech recognition could not connect. Try again.</source>
+<target>Nepavyko prisijungti prie kalbos atpažinimo. Bandykite dar kartą.</target>
 </trans-unit>
 <trans-unit id="s56e2fa9e68dc4501">
   <source>Speech recognition does not support this language.</source>
+<target>Kalbos atpažinimas nepalaiko šios kalbos.</target>
 </trans-unit>
 <trans-unit id="sa01ea3b8a9cb6730">
   <source>The browser's speech recognition service is unavailable.</source>
@@ -1353,6 +1429,7 @@
 </trans-unit>
 <trans-unit id="s7a0c4c4a03638428">
   <source>Speech recognition could not finish. Try again.</source>
+<target>Kalbos atpažinimo nepavyko užbaigti. Bandykite dar kartą.</target>
 </trans-unit>
 <trans-unit id="s0622a6e6cb77254b">
   <source>Transcript</source>
@@ -1379,6 +1456,7 @@
 </trans-unit>
 <trans-unit id="s5b441c947d06bae9">
   <source>Allow readers to resize</source>
+<target>Leisti skaitytojams keisti dydį</target>
 </trans-unit>
 <trans-unit id="sbad6e8411baba23a">
   <source>Minimum words</source>
@@ -1386,6 +1464,7 @@
 </trans-unit>
 <trans-unit id="s6c97064da028dfb4">
   <source>Maximum words</source>
+<target>Didžiausias žodžių skaičius</target>
 </trans-unit>
 <trans-unit id="s620cff015e903b49">
   <source>Minimum characters</source>
@@ -1393,6 +1472,7 @@
 </trans-unit>
 <trans-unit id="sc7dae948a542b133">
   <source>Maximum characters</source>
+<target>Didžiausias simbolių skaičius</target>
 </trans-unit>
 <trans-unit id="s0bec6a958a6d1aeb">
   <source>Show word count</source>
@@ -1407,12 +1487,14 @@
 </trans-unit>
 <trans-unit id="s258c598c40e28b44">
   <source>Full credit when the response meets the answer limits.</source>
+<target>Visi taškai, kai atsakymas atitinka apribojimus.</target>
 </trans-unit>
 <trans-unit id="s326d5d3ac1de6f34">
   <source>Advanced: Match as regular expression</source>
 </trans-unit>
 <trans-unit id="s59e0eb09a3b46cf1">
   <source>Resize answer field</source>
+<target>Keisti atsakymo lauko dydį</target>
 </trans-unit>
 <trans-unit id="s9f03f75fe691cc42">
   <source>Almost. Check the capitalization.</source>
@@ -1447,6 +1529,7 @@
 </trans-unit>
 <trans-unit id="s8893ece8e3462e5d">
   <source><x id="0" equiv-text="${words}"/>/<x id="1" equiv-text="${maxWords}"/> words</source>
+<target><x id="0" equiv-text="${words}"/>/<x id="1" equiv-text="${maxWords}"/> žodžių</target>
 </trans-unit>
 <trans-unit id="sa26fe9ae4bb4e13c">
   <source>1 word</source>
@@ -1462,6 +1545,7 @@
 </trans-unit>
 <trans-unit id="s068999302c9463b8">
   <source><x id="0" equiv-text="${answer.length}"/>/<x id="1" equiv-text="${maxCharacters}"/> characters</source>
+<target><x id="0" equiv-text="${answer.length}"/>/<x id="1" equiv-text="${maxCharacters}"/> simbolių</target>
 </trans-unit>
 <trans-unit id="s5796c82cf4f3e6fb">
   <source>1 character</source>
