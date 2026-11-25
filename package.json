@@ -1,16 +1,11 @@
 {
-  "name": "@webwriter/quiz",
-  "version": "2.0.0",
-  "description": "Add interactive tasks (multiple choice, order, free text, highlighting, or speech input). Make a quiz out of multiple tasks.",
+  "name": "@webwriter/tasks",
+  "version": "3.0.0",
+  "type": "module",
+  "description": "Create interactive quizzes with multiple-choice, ordering, free-text, highlighting, and speech tasks.",
   "keywords": [
     "webwriter-widget",
     "widget-practical",
-    "widget-lang-en",
-    "widget-lang-de",
-    "widget-lang-fr",
-    "widget-lang-es",
-    "widget-lang-it",
-    "widget-lang-nl",
     "isced2011-1",
     "isced2011-2",
     "isced2011-3",
@@ -19,103 +14,338 @@
     "isced2011-6",
     "isced2011-7",
     "isced2011-8",
+    "iscedf2013-00",
+    "widget-editable",
+    "widget-allows-pointer-input",
+    "widget-allows-keyboard-input",
+    "widget-allows-touch-input",
+    "widget-has-content",
+    "widget-responsive",
+    "widget-themeable",
+    "widget-printable",
+    "widget-stateful",
+    "widget-configurable",
+    "widget-reactive",
+    "widget-testable",
+    "widget-supports-shared-dependencies",
     "quiz",
     "choice",
-    "test"
+    "test",
+    "gift",
+    "moodle",
+    "widget-convertible-from-.gift",
+    "widget-convertible-from-ul",
+    "widget-convertible-from-ol",
+    "widget-convertible-to-.gift",
+    "widget-convertible-to-ul",
+    "widget-convertible-to-ol",
+    "widget-lang-en",
+    "widget-lang-en-US",
+    "widget-lang-en-GB",
+    "widget-lang-en-CA",
+    "widget-lang-en-AU",
+    "widget-lang-en-IN",
+    "widget-lang-ar",
+    "widget-lang-bg",
+    "widget-lang-zh",
+    "widget-lang-zh-Hans",
+    "widget-lang-zh-Hant",
+    "widget-lang-hr",
+    "widget-lang-cs",
+    "widget-lang-da",
+    "widget-lang-nl",
+    "widget-lang-et",
+    "widget-lang-fi",
+    "widget-lang-fr",
+    "widget-lang-de",
+    "widget-lang-de-AT",
+    "widget-lang-de-CH",
+    "widget-lang-el",
+    "widget-lang-hu",
+    "widget-lang-ga",
+    "widget-lang-it",
+    "widget-lang-lv",
+    "widget-lang-lt",
+    "widget-lang-mt",
+    "widget-lang-pl",
+    "widget-lang-pt",
+    "widget-lang-pt-PT",
+    "widget-lang-pt-BR",
+    "widget-lang-ro",
+    "widget-lang-ru",
+    "widget-lang-sk",
+    "widget-lang-sl",
+    "widget-lang-es",
+    "widget-lang-sv",
+    "widget-lang-sq",
+    "widget-lang-eu",
+    "widget-lang-bn",
+    "widget-lang-bs",
+    "widget-lang-cnr",
+    "widget-lang-ca",
+    "widget-lang-ca-valencia",
+    "widget-lang-ca-balear",
+    "widget-lang-gl",
+    "widget-lang-gu",
+    "widget-lang-hi",
+    "widget-lang-is",
+    "widget-lang-ja",
+    "widget-lang-kn",
+    "widget-lang-ko",
+    "widget-lang-lb",
+    "widget-lang-mk",
+    "widget-lang-mr",
+    "widget-lang-ne",
+    "widget-lang-no",
+    "widget-lang-nb",
+    "widget-lang-nn",
+    "widget-lang-or",
+    "widget-lang-fa",
+    "widget-lang-pa",
+    "widget-lang-sr",
+    "widget-lang-si",
+    "widget-lang-te",
+    "widget-lang-tr",
+    "widget-lang-uk",
+    "widget-lang-ur",
+    "widget-lang-cy",
+    "widget-lang-ta",
+    "widget-lang-ml",
+    "widget-lang-jv",
+    "widget-lang-id",
+    "widget-lang-ms",
+    "widget-lang-tl",
+    "widget-lang-my",
+    "widget-lang-th",
+    "widget-lang-vi",
+    "widget-lang-km",
+    "widget-lang-kk",
+    "widget-lang-ky",
+    "widget-lang-mn",
+    "widget-lang-uz",
+    "widget-lang-tg",
+    "widget-lang-ka",
+    "widget-lang-hy",
+    "widget-lang-he",
+    "widget-lang-az",
+    "widget-lang-be",
+    "widget-lang-la",
+    "widget-lang-am",
+    "widget-lang-so",
+    "widget-lang-sw",
+    "widget-lang-ha",
+    "widget-lang-af"
   ],
   "license": "MIT",
   "author": "Frederic Salmen <frederic@fsalmen.de>",
-  "repository": "https://github.com/webwriter-app/quiz",
+  "repository": "https://github.com/webwriter-app/tasks",
   "scripts": {
-    "prepublishOnly": "npx @webwriter/build && npm run build:api",
-    "build:api": "tsc -p tsconfig.api.json",
-    "dev": "npx @webwriter/build dev",
+    "prepublishOnly": "node scripts/build-widgets.mjs --shared-dependencies && node scripts/build-exports.mjs",
+    "dev": "node scripts/build-widgets.mjs dev --shared-dependencies",
     "localize": "npx @lit/localize-tools extract && npx @lit/localize-tools build",
     "localize:apply": "node scripts/apply-translations.mjs"
   },
   "dependencies": {
+    "@lit/localize": "^0.12.2",
     "@shoelace-style/shoelace": "^2.20.1",
-    "@webwriter/lit": "^2",
-    "bootstrap-icons": "^1.13.1",
-    "lit": "^3"
+    "@tabler/icons": "^3.53.0",
+    "@webwriter/lit": "^3.4.0",
+    "@webwriter/widget": "^1.6.0",
+    "lit": "^3.3.3"
   },
   "devDependencies": {
-    "@lit/localize-tools": "^0.8",
-    "typescript": "~5.9.0"
+    "@lit/localize-tools": "^0.8.2",
+    "@types/chai": "^5.2.3",
+    "@types/mocha": "^10.0.10",
+    "@webwriter/build": "^1.15.0",
+    "chai": "^6.3.0",
+    "mocha": "^12.0.3",
+    "typescript": "^7.0.2"
   },
   "exports": {
     "./api": {
-      "types": "./dist/api/index.d.ts",
-      "source": "./src/api/index.ts",
-      "import": "./dist/api/index.js",
-      "default": "./dist/api/index.js"
+      "types": "./dist/api/quiz-api.d.ts",
+      "source": "./src/model/quiz-api.ts",
+      "import": "./dist/api/quiz-api.js",
+      "default": "./dist/api/quiz-api.js"
     },
-    "./widgets/webwriter-quiz.*": {
-      "source": "./src/widgets/webwriter-quiz.ts",
-      "default": "./dist/widgets/webwriter-quiz.*"
-    },
-    "./widgets/webwriter-task.*": {
-      "source": "./src/widgets/webwriter-task.ts",
-      "default": "./dist/widgets/webwriter-task.*"
-    },
-    "./widgets/webwriter-task-prompt.*": {
-      "source": "./src/widgets/webwriter-task-prompt.ts",
-      "default": "./dist/widgets/webwriter-task-prompt.*"
+    "./task": {
+      "types": "./dist/types/src/components/webwriter-task.d.ts",
+      "source": "./src/components/webwriter-task.ts",
+      "default": "./dist/task.js"
     },
     "./widgets/webwriter-quiz-hint.*": {
       "source": "./src/widgets/webwriter-quiz-hint.ts",
       "default": "./dist/widgets/webwriter-quiz-hint.*"
     },
+    "./widgets/webwriter-quiz-feedback.*": {
+      "source": "./src/widgets/webwriter-quiz-feedback.ts",
+      "default": "./dist/widgets/webwriter-quiz-feedback.*"
+    },
     "./widgets/webwriter-true-false.*": {
-      "source": "./src/widgets/choice/webwriter-true-false.ts",
+      "source": "./src/widgets/webwriter-true-false.ts",
       "default": "./dist/widgets/webwriter-true-false.*"
     },
+    "./widgets/webwriter-true-false.icon.svg": "./src/icons/true-false.svg",
+    "./snippets/choice.html": "./snippets/choice.html",
     "./widgets/webwriter-choice.*": {
-      "source": "./src/widgets/choice/webwriter-choice.ts",
+      "source": "./src/widgets/webwriter-choice.ts",
       "default": "./dist/widgets/webwriter-choice.*"
     },
+    "./widgets/webwriter-choice.icon.svg": "./src/icons/choice.svg",
+    "./widgets/webwriter-choice-column.*": {
+      "source": "./src/widgets/webwriter-choice-column.ts",
+      "default": "./dist/widgets/webwriter-choice-column.*"
+    },
+    "./widgets/webwriter-choice-row.*": {
+      "source": "./src/widgets/webwriter-choice-row.ts",
+      "default": "./dist/widgets/webwriter-choice-row.*"
+    },
     "./widgets/webwriter-choice-item.*": {
-      "source": "./src/widgets/choice/webwriter-choice-item.ts",
+      "source": "./src/widgets/webwriter-choice-item.ts",
       "default": "./dist/widgets/webwriter-choice-item.*"
     },
     "./widgets/webwriter-order.*": {
-      "source": "./src/widgets/order/webwriter-order.ts",
+      "source": "./src/widgets/webwriter-order.ts",
       "default": "./dist/widgets/webwriter-order.*"
     },
+    "./widgets/webwriter-order.icon.svg": "./src/icons/order.svg",
     "./widgets/webwriter-order-item.*": {
-      "source": "./src/widgets/order/webwriter-order-item.ts",
+      "source": "./src/widgets/webwriter-order-item.ts",
       "default": "./dist/widgets/webwriter-order-item.*"
     },
     "./widgets/webwriter-speech.*": {
-      "source": "./src/widgets/speech/webwriter-speech.ts",
+      "source": "./src/widgets/webwriter-speech.ts",
       "default": "./dist/widgets/webwriter-speech.*"
     },
+    "./widgets/webwriter-speech.icon.svg": "./src/icons/speech.svg",
     "./widgets/webwriter-text.*": {
       "source": "./src/widgets/webwriter-text.ts",
       "default": "./dist/widgets/webwriter-text.*"
     },
+    "./widgets/webwriter-text.icon.svg": "./src/icons/text.svg",
+    "./widgets/webwriter-dictation.*": {
+      "source": "./src/widgets/webwriter-dictation.ts",
+      "default": "./dist/widgets/webwriter-dictation.*"
+    },
+    "./widgets/webwriter-dictation.icon.svg": "./src/icons/dictation.svg",
     "./widgets/webwriter-mark.*": {
       "source": "./src/widgets/webwriter-mark.ts",
       "default": "./dist/widgets/webwriter-mark.*"
     },
+    "./widgets/webwriter-mark.icon.svg": "./src/icons/mark.svg",
     "./widgets/webwriter-gap.*": {
-      "source": "./src/widgets/gap/webwriter-gap.ts",
+      "source": "./src/widgets/webwriter-gap.ts",
       "default": "./dist/widgets/webwriter-gap.*"
     },
+    "./widgets/webwriter-gap.icon.svg": "./src/icons/gap.svg",
     "./widgets/webwriter-gap-item.*": {
-      "source": "./src/widgets/gap/webwriter-gap-item.ts",
+      "source": "./src/widgets/webwriter-gap-item.ts",
       "default": "./dist/widgets/webwriter-gap-item.*"
     },
     "./widgets/webwriter-pairing.*": {
-      "source": "./src/widgets/pairing/webwriter-pairing.ts",
+      "source": "./src/widgets/webwriter-pairing.ts",
       "default": "./dist/widgets/webwriter-pairing.*"
     },
+    "./widgets/webwriter-pairing.icon.svg": "./src/icons/pairing.svg",
+    "./widgets/webwriter-pairing-column.*": {
+      "source": "./src/widgets/webwriter-pairing-column.ts",
+      "default": "./dist/widgets/webwriter-pairing-column.*"
+    },
     "./widgets/webwriter-pairing-item.*": {
-      "source": "./src/widgets/pairing/webwriter-pairing-item.ts",
+      "source": "./src/widgets/webwriter-pairing-item.ts",
       "default": "./dist/widgets/webwriter-pairing-item.*"
     },
+    "./widgets/webwriter-categorize.*": {
+      "source": "./src/widgets/webwriter-categorize.ts",
+      "default": "./dist/widgets/webwriter-categorize.*"
+    },
+    "./widgets/webwriter-categorize.icon.svg": "./src/icons/categorize.svg",
+    "./widgets/webwriter-categorize-item.*": {
+      "source": "./src/widgets/webwriter-categorize-item.ts",
+      "default": "./dist/widgets/webwriter-categorize-item.*"
+    },
+    "./widgets/webwriter-numeric.*": {
+      "source": "./src/widgets/webwriter-numeric.ts",
+      "default": "./dist/widgets/webwriter-numeric.*"
+    },
+    "./widgets/webwriter-numeric.icon.svg": "./src/icons/numeric.svg",
+    "./widgets/webwriter-image.*": {
+      "source": "./src/widgets/webwriter-image.ts",
+      "default": "./dist/widgets/webwriter-image.*"
+    },
+    "./widgets/webwriter-image.icon.svg": "./src/icons/image.svg",
+    "./widgets/webwriter-image-placements.*": {
+      "source": "./src/widgets/webwriter-image-placements.ts",
+      "default": "./dist/widgets/webwriter-image-placements.*"
+    },
+    "./widgets/webwriter-image-placements.icon.svg": "./src/icons/image-placements.svg",
+    "./widgets/webwriter-image-placement-item.*": {
+      "source": "./src/widgets/webwriter-image-placement-item.ts",
+      "default": "./dist/widgets/webwriter-image-placement-item.*"
+    },
+    "./widgets/webwriter-drawing.*": {
+      "source": "./src/widgets/webwriter-drawing.ts",
+      "default": "./dist/widgets/webwriter-drawing.*"
+    },
+    "./widgets/webwriter-drawing.icon.svg": "./src/icons/drawing.svg",
+    "./widgets/webwriter-grid-item.*": {
+      "source": "./src/widgets/webwriter-grid-item.ts",
+      "default": "./dist/widgets/webwriter-grid-item.*"
+    },
+    "./tests/quiz.*": {
+      "source": "./tests/quiz.test.ts",
+      "default": "./dist/tests/quiz.*"
+    },
+    "./tests/pairing.*": {
+      "source": "./tests/pairing.test.ts",
+      "default": "./dist/tests/pairing.*"
+    },
+    "./tests/grids.*": {
+      "source": "./tests/grids.test.ts",
+      "default": "./dist/tests/grids.*"
+    },
+    "./tests/new-types.*": {
+      "source": "./tests/new-types.test.ts",
+      "default": "./dist/tests/new-types.*"
+    },
+    "./tests/lists.*": {
+      "source": "./tests/lists.test.ts",
+      "default": "./dist/tests/lists.*"
+    },
+    "./tests/undo.*": {
+      "source": "./tests/undo.test.ts",
+      "default": "./dist/tests/undo.*"
+    },
+    "./tests/interaction.*": {
+      "source": "./tests/interaction.test.ts",
+      "default": "./dist/tests/interaction.*"
+    },
+    "./tests/gift.*": {
+      "source": "./tests/gift.test.ts",
+      "default": "./dist/tests/gift.*"
+    },
+    "./snippets/true-or-false.html": "./snippets/true-or-false.html",
+    "./snippets/mark.html": "./snippets/mark.html",
+    "./snippets/text.html": "./snippets/text.html",
+    "./snippets/numeric.html": "./snippets/numeric.html",
+    "./snippets/gap.html": "./snippets/gap.html",
+    "./snippets/dictation.html": "./snippets/dictation.html",
+    "./snippets/order.html": "./snippets/order.html",
+    "./snippets/pairing.html": "./snippets/pairing.html",
+    "./snippets/categorize.html": "./snippets/categorize.html",
+    "./snippets/speech.html": "./snippets/speech.html",
+    "./snippets/image.html": "./snippets/image.html",
+    "./snippets/image-placements.html": "./snippets/image-placements.html",
+    "./snippets/drawing.html": "./snippets/drawing.html",
+    "./widgets/webwriter-quiz-results.*": {
+      "source": "./src/widgets/webwriter-quiz-results.ts",
+      "default": "./dist/widgets/webwriter-quiz-results.*"
+    },
+    "./widgets/webwriter-quiz-results.icon.svg": "./src/icons/quiz-results.svg",
+    "./snippets/about-webwriter.html": "./snippets/about-webwriter.html",
     "./migrate.js": {
-      "source": "./src/migrate/index.ts",
+      "source": "./src/migrate.ts",
       "default": "./dist/migrate.js"
     },
     "./icon": "./icon.svg",

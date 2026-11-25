@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
-<file target-language="nl" source-language="en" original="lit-localize-inputs" datatype="plaintext">
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
+<file target-language="nl" source-language="en-US" original="lit-localize-inputs" datatype="plaintext">
 <body>
-<trans-unit id="s54393bfa280ea55b">
-  <source>Prompt</source>
-  <target>Opdracht</target>
+<trans-unit id="s23600058a1e98e13">
+  <source>Add Feedback</source>
+  <target>Feedback toevoegen</target>
 </trans-unit>
-<trans-unit id="s468f08dd3166cf44">
-  <source>Choose Background</source>
-  <target>Achtergrond kiezen</target>
+<trans-unit id="sb69fe5b15d487851">
+  <source>Task/question</source>
+  <target>Taak/vraag</target>
 </trans-unit>
 <trans-unit id="sc01c972e33754d22">
   <source>Feedback if selected</source>
@@ -19,7 +19,7 @@
   <target>Feedback indien niet geselecteerd</target>
 </trans-unit>
 <trans-unit id="s9daa676c05ab2a68">
-  <source>Single Choice</source>
+  <source>Single choice</source>
   <target>Enkelvoudige keuze</target>
 </trans-unit>
 <trans-unit id="s485bbcc5d19e2b20">
@@ -30,18 +30,6 @@
   <source>Mode</source>
   <target>Modus</target>
 </trans-unit>
-<trans-unit id="s3d249bb480032121">
-  <source>List</source>
-  <target>Lijst</target>
-</trans-unit>
-<trans-unit id="sde8252d2a4d268ce">
-  <source>Tiles</source>
-  <target>Tegels</target>
-</trans-unit>
-<trans-unit id="s2e4818861000b13f">
-  <source>Layout</source>
-  <target>Lay-out</target>
-</trans-unit>
 <trans-unit id="sf0fce877a8caebec">
   <source>Randomize Order</source>
   <target>Volgorde willekeurig maken</target>
@@ -50,9 +38,9 @@
   <source>Add Option</source>
   <target>Optie toevoegen</target>
 </trans-unit>
-<trans-unit id="s021fb26da6a25f79">
-  <source>True or False</source>
-  <target>Waar of niet waar</target>
+<trans-unit id="se8e6a39f5369c253">
+  <source>Add item</source>
+  <target>Item toevoegen</target>
 </trans-unit>
 <trans-unit id="s85ea99fb52be3385">
   <source>True</source>
@@ -61,10 +49,6 @@
 <trans-unit id="s7254ca27b16ae2d8">
   <source>False</source>
   <target>Niet waar</target>
-</trans-unit>
-<trans-unit id="sdc9d86c26cff613b">
-  <source>Drag and Drop</source>
-  <target>Slepen en neerzetten</target>
 </trans-unit>
 <trans-unit id="sd24f4d056c0124f6">
   <source>Empty gap</source>
@@ -78,10 +62,6 @@
   <source>No answer</source>
   <target>Geen antwoord</target>
 </trans-unit>
-<trans-unit id="s0d9a7bb29fee2d85">
-  <source>Correct answer</source>
-  <target>Juiste antwoord</target>
-</trans-unit>
 <trans-unit id="seaf97719986faf4f">
   <source>Gap</source>
   <target>Invulveld</target>
@@ -91,16 +71,8 @@
   <target>Invulveld invoegen bij selectie</target>
 </trans-unit>
 <trans-unit id="sbbb7581f20733d79">
-  <source>Freeform input</source>
-  <target>Vrije invoer</target>
-</trans-unit>
-<trans-unit id="sb20f85b66b8eed5b">
-  <source>Drag and drop</source>
-  <target>Slepen en neerzetten</target>
-</trans-unit>
-<trans-unit id="s34adfb0ab932043d">
-  <source>Ignore case</source>
-  <target>Hoofdletters negeren</target>
+  <source>Gap text</source>
+  <target>Invultekst</target>
 </trans-unit>
 <trans-unit id="s721db58b7b0ea2e3">
   <source>Available answers</source>
@@ -109,18 +81,6 @@
 <trans-unit id="s03d845021c14b84f">
   <source>Return to answers</source>
   <target>Terug naar antwoorden</target>
-</trans-unit>
-<trans-unit id="s4802e47fe2e95134">
-  <source>Option</source>
-  <target>Optie</target>
-</trans-unit>
-<trans-unit id="s2ba5f4d8f3bd7c57">
-  <source>Order</source>
-  <target>Volgorde</target>
-</trans-unit>
-<trans-unit id="s2d96dca399230ff3">
-  <source>The layout variant to use.</source>
-  <target>De te gebruiken lay-outvariant.</target>
 </trans-unit>
 <trans-unit id="sd23ee5e66df8400a">
   <source>Direction</source>
@@ -166,18 +126,6 @@
   <source>Grading</source>
   <target>Beoordeling</target>
 </trans-unit>
-<trans-unit id="s57784c3b7df6150c">
-  <source>Partial (Position)</source>
-  <target>Deelpunten (positie)</target>
-</trans-unit>
-<trans-unit id="sb1c40c0af94993b6">
-  <source>Partial (Sequence)</source>
-  <target>Deelpunten (volgorde)</target>
-</trans-unit>
-<trans-unit id="s4058ed60e59264ed">
-  <source>The grading method to use.</source>
-  <target>De te gebruiken beoordelingsmethode.</target>
-</trans-unit>
 <trans-unit id="s52cfa1d198476806">
   <source>Item</source>
   <target>Item</target>
@@ -185,14 +133,6 @@
 <trans-unit id="saadba46653e4ffef">
   <source>Pairing</source>
   <target>Koppelen</target>
-</trans-unit>
-<trans-unit id="sbdc2605da169f810">
-  <source>Add Pair</source>
-  <target>Paar toevoegen</target>
-</trans-unit>
-<trans-unit id="s16e1bead7b9c95ce">
-  <source>Memory</source>
-  <target>Memory</target>
 </trans-unit>
 <trans-unit id="sf4e3c96801ebe794">
   <source>Volume: <x id="0" equiv-text="${this.volume}"/>%</source>
@@ -210,26 +150,6 @@
   <source>An error occurred while accessing the microphone.</source>
   <target>Er is een fout opgetreden bij de toegang tot de microfoon.</target>
 </trans-unit>
-<trans-unit id="s653f729e608b6653">
-  <source>Click to Start Recording</source>
-  <target>Klik om de opname te starten</target>
-</trans-unit>
-<trans-unit id="saa3efba1f0c816b7">
-  <source>Speech</source>
-  <target>Spraak</target>
-</trans-unit>
-<trans-unit id="s49c940aecfef3ea0">
-  <source>Mark</source>
-  <target>Markeren</target>
-</trans-unit>
-<trans-unit id="s678dbf717a0b079d">
-  <source>Pass/Fail</source>
-  <target>Goed/fout</target>
-</trans-unit>
-<trans-unit id="sffeb741d73d302b3">
-  <source>Partial Credit</source>
-  <target>Deelpunten</target>
-</trans-unit>
 <trans-unit id="sb8f0e32715402f50">
   <source>Grading Method</source>
   <target>Beoordelingsmethode</target>
@@ -239,12 +159,8 @@
   <target>Markering op positie aan/uit</target>
 </trans-unit>
 <trans-unit id="s80dc9f56411917df">
-  <source>Text to Highlight</source>
+  <source>Text to highlight</source>
   <target>Te markeren tekst</target>
-</trans-unit>
-<trans-unit id="s3ff3b89e5871fae3">
-  <source>Multiple lines are not supported</source>
-  <target>Meerdere regels worden niet ondersteund</target>
 </trans-unit>
 <trans-unit id="s9dcffdd89c8e0f58">
   <source>Hint</source>
@@ -294,21 +210,9 @@
   <source>Reset answers</source>
   <target>Antwoorden wissen</target>
 </trans-unit>
-<trans-unit id="s53bc6e49623c8f80">
-  <source>Add Question</source>
-  <target>Vraag toevoegen</target>
-</trans-unit>
-<trans-unit id="s729db3aabe406a0a">
-  <source>Question 1</source>
-  <target>Vraag 1</target>
-</trans-unit>
 <trans-unit id="scabf78417c4e5d86">
   <source>Points</source>
   <target>Punten</target>
-</trans-unit>
-<trans-unit id="s729dc6aabe408a53">
-  <source>Question <x id="0" equiv-text="${index + 1}"/></source>
-  <target>Vraag <x id="0" equiv-text="${index + 1}"/></target>
 </trans-unit>
 <trans-unit id="s43f438831bf2524d">
   <source>Unanswered</source>
@@ -338,18 +242,6 @@
   <source>Text</source>
   <target>Tekst</target>
 </trans-unit>
-<trans-unit id="sd2223afb7d6b100d">
-  <source>Type</source>
-  <target>Type</target>
-</trans-unit>
-<trans-unit id="sfe628f6e69f78cca">
-  <source>Long Text</source>
-  <target>Lange tekst</target>
-</trans-unit>
-<trans-unit id="s2317e68a652c8498">
-  <source>Short Text</source>
-  <target>Korte tekst</target>
-</trans-unit>
 <trans-unit id="sbbb97b1c63507dc0">
   <source>Number</source>
   <target>Getal</target>
@@ -362,45 +254,1441 @@
   <source>Time</source>
   <target>Tijd</target>
 </trans-unit>
-<trans-unit id="s9bae45e308549364">
-  <source>Date &amp; Time</source>
+<trans-unit id="s712144d706e5d284">
+  <source>Date &amp; time</source>
   <target>Datum en tijd</target>
+</trans-unit>
+<trans-unit id="s8101e9674e03d8d4">
+  <source>Enter a date.</source>
+  <target>Voer een datum in.</target>
+</trans-unit>
+<trans-unit id="s9ef2eb3d0696a8e3">
+  <source>Enter a time.</source>
+  <target>Voer een tijd in.</target>
 </trans-unit>
 <trans-unit id="sf90be97cb08f3d5a">
   <source>Placeholder</source>
   <target>Voorbeeldtekst</target>
 </trans-unit>
-<trans-unit id="se2af7220fe721133">
-  <source>Free answer</source>
-  <target>Vrij antwoord</target>
-</trans-unit>
 <trans-unit id="sa0a8f80935f767dd">
   <source>Ignore capitalization</source>
   <target>Hoofdlettergebruik negeren</target>
-</trans-unit>
-<trans-unit id="s1705e89d78286348">
-  <source>Message for correct solution</source>
-  <target>Bericht bij juiste oplossing</target>
-</trans-unit>
-<trans-unit id="sea7b286dd4c986fd">
-  <source>Message for wrong solution</source>
-  <target>Bericht bij foute oplossing</target>
 </trans-unit>
 <trans-unit id="sa937fce28916575e">
   <source>Solution</source>
   <target>Oplossing</target>
 </trans-unit>
-<trans-unit id="s73c0e4814878d26e">
-  <source>Snap to grid</source>
-  <target>Uitlijnen op raster</target>
+<trans-unit id="sbb588bb505779122">
+  <source>Feedback</source>
+  <target>Feedback</target>
 </trans-unit>
-<trans-unit id="s5c8e286841ccfd0e">
-  <source>Grid columns</source>
-  <target>Rasterkolommen</target>
+<trans-unit id="s7013a0bd5cf697ec">
+  <source>Task type</source>
+  <target>Taaktype</target>
 </trans-unit>
-<trans-unit id="s96d2f1dc180a46d8">
-  <source>Debug</source>
-  <target>Debug</target>
+<trans-unit id="sa8346ce518263c93">
+  <source>Answer the task first.</source>
+  <target>Beantwoord eerst de taak.</target>
+</trans-unit>
+<trans-unit id="s60d9b7bf2152bbec">
+  <source>The file contains no GIFT task that this quiz can import.</source>
+  <target>Het bestand bevat geen GIFT-taak die deze quiz kan importeren.</target>
+</trans-unit>
+<trans-unit id="s2521b02f548cc7e9">
+  <source>1 task is unanswered.</source>
+  <target>1 taak is onbeantwoord.</target>
+</trans-unit>
+<trans-unit id="s68765f320e984d2b">
+  <source><x id="0" equiv-text="${count}"/> tasks are unanswered.</source>
+  <target><x id="0" equiv-text="${count}"/> taken zijn onbeantwoord.</target>
+</trans-unit>
+<trans-unit id="s26dc09247b1685c0">
+  <source>Go to the task</source>
+  <target>Ga naar de taak</target>
+</trans-unit>
+<trans-unit id="s7d0d0d65b174f073">
+  <source>Go to task <x id="0" equiv-text="${index}"/></source>
+  <target>Ga naar taak <x id="0" equiv-text="${index}"/></target>
+</trans-unit>
+<trans-unit id="seecc1a1785484a8c">
+  <source>Learners submit the task before this card here and see their score.</source>
+  <target>Leerlingen leveren hier de taak vóór deze kaart in en zien hun score.</target>
+</trans-unit>
+<trans-unit id="sf11645ff0230ff59">
+  <source>Insert tasks before this card. Learners submit them here and see their score.</source>
+  <target>Voeg taken vóór deze kaart toe. Leerlingen leveren ze hier in en zien hun score.</target>
+</trans-unit>
+<trans-unit id="se66872955dc59191">
+  <source>1 task</source>
+  <target>1 taak</target>
+</trans-unit>
+<trans-unit id="sea748bf5cf6f28f3">
+  <source><x id="0" equiv-text="${count}"/> tasks</source>
+  <target><x id="0" equiv-text="${count}"/> taken</target>
+</trans-unit>
+<trans-unit id="sfd71dba826b393cd">
+  <source>Hide total marks to find</source>
+  <target>Verberg het aantal te markeren woorden</target>
+</trans-unit>
+<trans-unit id="sdce919bbdc89eb6b">
+  <source>Configure</source>
+  <target>Configureren</target>
+</trans-unit>
+<trans-unit id="s5b441c947d06bae9">
+  <source>Allow readers to resize</source>
+  <target>Laat lezers het formaat aanpassen</target>
+</trans-unit>
+<trans-unit id="s6c97064da028dfb4">
+  <source>Maximum words</source>
+  <target>Maximumaantal woorden</target>
+</trans-unit>
+<trans-unit id="sc7dae948a542b133">
+  <source>Maximum characters</source>
+  <target>Maximumaantal tekens</target>
+</trans-unit>
+<trans-unit id="s59e0eb09a3b46cf1">
+  <source>Resize answer field</source>
+  <target>Formaat van het antwoordveld aanpassen</target>
+</trans-unit>
+<trans-unit id="sa61ba0e06cab9331">
+  <source>Shorten your answer to fit the limit.</source>
+  <target>Kort je antwoord in om binnen de limiet te blijven.</target>
+</trans-unit>
+<trans-unit id="s326d5d3ac1de6f34">
+  <source>Advanced: Match as regular expression</source>
+  <target>Geavanceerd: gebruik een reguliere expressie</target>
+</trans-unit>
+<trans-unit id="sbcc77dff2df51943">
+  <source>Date/Time</source>
+  <target>Datum/tijd</target>
+</trans-unit>
+<trans-unit id="s8893ece8e3462e5d">
+  <source><x id="0" equiv-text="${words}"/>/<x id="1" equiv-text="${maxWords}"/> words</source>
+  <target><x id="0" equiv-text="${words}"/>/<x id="1" equiv-text="${this.wordLimit}"/> woorden</target>
+</trans-unit>
+<trans-unit id="s068999302c9463b8">
+  <source><x id="0" equiv-text="${answer.length}"/>/<x id="1" equiv-text="${maxCharacters}"/> characters</source>
+  <target><x id="0" equiv-text="${answer.length}"/>/<x id="1" equiv-text="${this.characterLimit}"/> tekens</target>
+</trans-unit>
+<trans-unit id="sfc63e31ac7c956ed">
+  <source>Select</source>
+  <target>Selecteren</target>
+</trans-unit>
+<trans-unit id="s78f9fa174282015c">
+  <source>Write</source>
+  <target>Schrijven</target>
+</trans-unit>
+<trans-unit id="sd42f58d8f01b4e47">
+  <source>Arrange</source>
+  <target>Ordenen</target>
+</trans-unit>
+<trans-unit id="se23357f112296589">
+  <source>Speak</source>
+  <target>Spreken</target>
+</trans-unit>
+<trans-unit id="s1c0ea772de28e773">
+  <source>Draw</source>
+  <target>Tekenen</target>
+</trans-unit>
+<trans-unit id="s9f26843287bb592d">
+  <source>Groups</source>
+  <target>Groepen</target>
+</trans-unit>
+<trans-unit id="s25e1a07e454c2c11">
+  <source>Grid</source>
+  <target>Raster</target>
+</trans-unit>
+<trans-unit id="s37658628514bfa29">
+  <source>Sketch</source>
+  <target>Schets</target>
+</trans-unit>
+<trans-unit id="seaa5fbd29de72476">
+  <source>Image Hotspots</source>
+  <target>Interactieve afbeeldingszones</target>
+</trans-unit>
+<trans-unit id="s8654133f4227b6dc">
+  <source>Highlights</source>
+  <target>Markeringen</target>
+</trans-unit>
+<trans-unit id="s5eb9c175b78abf88">
+  <source>Sequence</source>
+  <target>Volgorde</target>
+</trans-unit>
+<trans-unit id="s226775a4cc67dbe6">
+  <source>Voice recording</source>
+  <target>Spraakopname</target>
+</trans-unit>
+<trans-unit id="s3352fb3d4c200919">
+  <source>Single/Multiple Choice</source>
+  <target>Enkelvoudige/meervoudige keuze</target>
+</trans-unit>
+<trans-unit id="s862ee826ed9e561c">
+  <source>Self-assessment</source>
+  <target>Zelfbeoordeling</target>
+</trans-unit>
+<trans-unit id="s31e4aca212b90444">
+  <source>Score is based on self-check rubric items checked after submitting.</source>
+  <target>De score hangt af van de criteria die na het indienen zijn aangevinkt.</target>
+</trans-unit>
+<trans-unit id="safc5dc23506c8384">
+  <source>Rubric</source>
+  <target>Beoordelingsrubriek</target>
+</trans-unit>
+<trans-unit id="sad144a3342aa6ceb">
+  <source>Rubric criterion</source>
+  <target>Beoordelingscriterium</target>
+</trans-unit>
+<trans-unit id="s77c6bf991aa9839e">
+  <source>Self-check</source>
+  <target>Zelfcontrole</target>
+</trans-unit>
+<trans-unit id="s2de969afacdaa7a6">
+  <source>Shape</source>
+  <target>Vorm</target>
+</trans-unit>
+<trans-unit id="s14c54ca33d0f3ea9">
+  <source>Circle</source>
+  <target>Cirkel</target>
+</trans-unit>
+<trans-unit id="s5d0b63df0bad8c2e">
+  <source>Rectangle</source>
+  <target>Rechthoek</target>
+</trans-unit>
+<trans-unit id="s82059beffcb7fed7">
+  <source>Resize left edge</source>
+  <target>Linkerrand verschuiven</target>
+</trans-unit>
+<trans-unit id="s6d5cb65f8a9d4aec">
+  <source>Resize right edge</source>
+  <target>Rechterrand verschuiven</target>
+</trans-unit>
+<trans-unit id="s03635bdd07e891f7">
+  <source>Resize top edge</source>
+  <target>Bovenrand verschuiven</target>
+</trans-unit>
+<trans-unit id="s196f15ed6778fd19">
+  <source>Resize bottom edge</source>
+  <target>Onderrand verschuiven</target>
+</trans-unit>
+<trans-unit id="s12b13f3557a8e6c2">
+  <source>Dictation</source>
+  <target>Dictee</target>
+</trans-unit>
+<trans-unit id="s70945b389a1737de">
+  <source>Image Placements</source>
+  <target>Plaatsingen op de afbeelding</target>
+</trans-unit>
+<trans-unit id="s863f9a65357e7d87">
+  <source>Enter the solution date.</source>
+  <target>Voer de juiste datum in.</target>
+</trans-unit>
+<trans-unit id="sbf57f251472bcb58">
+  <source>Enter the solution time.</source>
+  <target>Voer de juiste tijd in.</target>
+</trans-unit>
+<trans-unit id="s7b2019f9159b0153">
+  <source>Enter the solution date and time.</source>
+  <target>Voer de juiste datum en tijd in.</target>
+</trans-unit>
+<trans-unit id="s8d69dee8addc385a">
+  <source>Set the solution on the slider.</source>
+  <target>Stel de juiste waarde in met de schuifregelaar.</target>
+</trans-unit>
+<trans-unit id="sacac52201fe81268">
+  <source>Enter the solution number.</source>
+  <target>Voer het juiste getal in.</target>
+</trans-unit>
+<trans-unit id="s1ec9854f438d7b40">
+  <source>Select the correct answer.</source>
+  <target>Selecteer het juiste antwoord.</target>
+</trans-unit>
+<trans-unit id="sdd71f5afc90398eb">
+  <source>Select the correct answers.</source>
+  <target>Selecteer de juiste antwoorden.</target>
+</trans-unit>
+<trans-unit id="sea6985b706b63d8c">
+  <source>Enter the rows and choices.</source>
+  <target>Voer de rijen en opties in.</target>
+</trans-unit>
+<trans-unit id="s2e8d398592e3eaa1">
+  <source>Mark the correct choices in each row.</source>
+  <target>Markeer de juiste opties in elke rij.</target>
+</trans-unit>
+<trans-unit id="sdced7e9707b6d9c0">
+  <source>Mark one correct choice per row.</source>
+  <target>Markeer één juiste optie per rij.</target>
+</trans-unit>
+<trans-unit id="s48b9e342e71a62a0">
+  <source>Arrange the items in the correct order.</source>
+  <target>Zet de items in de juiste volgorde.</target>
+</trans-unit>
+<trans-unit id="s77d276c07612f65e">
+  <source>Right-click to mark the solution.</source>
+  <target>Klik met de rechtermuisknop om de oplossing te markeren.</target>
+</trans-unit>
+<trans-unit id="s0767fdab6ae788ae">
+  <source>Select the solution text for each gap.</source>
+  <target>Selecteer de oplossingstekst voor elk gat.</target>
+</trans-unit>
+<trans-unit id="s73658af228bb4a12">
+  <source>Enter the solutions, then mark the gap cells.</source>
+  <target>Voer de oplossingen in en markeer de cellen met gaten.</target>
+</trans-unit>
+<trans-unit id="s4e38b5e50c309443">
+  <source>Record the solution or enter its transcript.</source>
+  <target>Neem de oplossing op of voer het transcript in.</target>
+</trans-unit>
+<trans-unit id="s12bb8a652aa6c4d1">
+  <source>Add audio and enter the solution transcript.</source>
+  <target>Voeg audio toe en voer het juiste transcript in.</target>
+</trans-unit>
+<trans-unit id="s613e777f99178cf3">
+  <source>Add an image to define the solution zones.</source>
+  <target>Voeg een afbeelding toe om de juiste zones te bepalen.</target>
+</trans-unit>
+<trans-unit id="s4f4b1255c353cd38">
+  <source>Add an image to mark the solution hotspots.</source>
+  <target>Voeg een afbeelding toe om de juiste hotspots te markeren.</target>
+</trans-unit>
+<trans-unit id="sd783a9ddacfc12bf">
+  <source>Double-click a correct spot. Drag or click its center to edit.</source>
+  <target>Dubbelklik op een juiste plek. Sleep de hotspot of klik op het midden om die te bewerken.</target>
+</trans-unit>
+<trans-unit id="s62c886043b49e255">
+  <source>Connect the matching items.</source>
+  <target>Verbind de bijbehorende items.</target>
+</trans-unit>
+<trans-unit id="s0b0634acdb057929">
+  <source>Connect the items by their dots.</source>
+  <target>Verbind de items via hun punten.</target>
+</trans-unit>
+<trans-unit id="s9701dad8e792c621">
+  <source>Multi-connect</source>
+  <target>Meervoudig koppelen</target>
+</trans-unit>
+<trans-unit id="sb1b5ae4d0380c810">
+  <source>Add left item</source>
+  <target>Voeg links een item toe</target>
+</trans-unit>
+<trans-unit id="sc9a03f8477d65aa9">
+  <source>Add right item</source>
+  <target>Voeg rechts een item toe</target>
+</trans-unit>
+<trans-unit id="s9bb7da161e1c91f3">
+  <source>Connection added.</source>
+  <target>Verbinding toegevoegd.</target>
+</trans-unit>
+<trans-unit id="sc3f7dffe760c1035">
+  <source>Connection removed.</source>
+  <target>Verbinding verwijderd.</target>
+</trans-unit>
+<trans-unit id="s635ffba679db4c52">
+  <source>Multi</source>
+  <target>Multi</target>
+</trans-unit>
+<trans-unit id="sa5c371b4bb75e590">
+  <source>Left</source>
+  <target>Links</target>
+</trans-unit>
+<trans-unit id="s366991b9c9287765">
+  <source>Right</source>
+  <target>Rechts</target>
+</trans-unit>
+<trans-unit id="sd9f67fbf3f86efcf">
+  <source>Add group</source>
+  <target>Groep toevoegen</target>
+</trans-unit>
+<trans-unit id="sd47b516b630da4a5">
+  <source>True/False</source>
+  <target>Waar of onwaar</target>
+</trans-unit>
+<trans-unit id="s65110cc8f3569002">
+  <source>Task label</source>
+  <target>Taaklabel</target>
+</trans-unit>
+<trans-unit id="seff6153e80bd6a89">
+  <source>Hide task labels</source>
+  <target>Taaklabels verbergen</target>
+</trans-unit>
+<trans-unit id="s0337af549735d429">
+  <source>Input type</source>
+  <target>Invoertype</target>
+</trans-unit>
+<trans-unit id="s0043cbab8a7a7cfc">
+  <source>Slider</source>
+  <target>Schuifregelaar</target>
+</trans-unit>
+<trans-unit id="s00e41b3c4a182aa8">
+  <source>Solution transcript</source>
+  <target>Transcriptie van de oplossing</target>
+</trans-unit>
+<trans-unit id="s4f521327851555e4">
+  <source>Item <x id="0" equiv-text="${index + 1}"/></source>
+  <target>Item <x id="0" equiv-text="${index + 1}"/></target>
+</trans-unit>
+<trans-unit id="s4c0433e13ae18244">
+  <source>Correct item</source>
+  <target>Juiste item</target>
+</trans-unit>
+<trans-unit id="s0b023612a7aac3c6">
+  <source>Choose an item</source>
+  <target>Kies een item</target>
+</trans-unit>
+<trans-unit id="s05ba009cda8c6a1b">
+  <source>Return selected item</source>
+  <target>Geselecteerd item terugzetten</target>
+</trans-unit>
+<trans-unit id="s6fcdab6f6cf7461b">
+  <source><x id="0" equiv-text="${label}"/> returned to Options.</source>
+  <target><x id="0" equiv-text="${label}"/> staat weer bij Opties.</target>
+</trans-unit>
+<trans-unit id="se8a94a95a76e488a">
+  <source>This task needs an image and a correct item for each zone.</source>
+  <target>Deze taak heeft een afbeelding en een juist item voor elke zone nodig.</target>
+</trans-unit>
+<trans-unit id="s4adf3e11ff5354ae">
+  <source>Add a zone, then choose its correct item.</source>
+  <target>Voeg een zone toe en kies het juiste item.</target>
+</trans-unit>
+<trans-unit id="s760dae6a21ba2359">
+  <source>Drag an item to a zone, or select an item and then a zone.</source>
+  <target>Sleep een item naar een zone of selecteer eerst het item en dan de zone.</target>
+</trans-unit>
+<trans-unit id="sba1bfeaf662fe54e">
+  <source>Full credit only if every item is sorted into its right group.</source>
+  <target>Volledige punten als elk item in de juiste groep staat.</target>
+</trans-unit>
+<trans-unit id="s46d5bd7d13f2238f">
+  <source>Proportional credit for each item placed in its right group.</source>
+  <target>De score is evenredig aan het aantal items in de juiste groep.</target>
+</trans-unit>
+<trans-unit id="s9ecafed1144dba1f">
+  <source><x id="0" equiv-text="${correct}"/> of <x id="1" equiv-text="${total}"/> items are in the right group.</source>
+  <target><x id="0" equiv-text="${correct}"/> van de <x id="1" equiv-text="${total}"/> items staan in de juiste groep.</target>
+</trans-unit>
+<trans-unit id="s5a264cb2ba999afa">
+  <source>Place each item in all its correct groups.</source>
+  <target>Plaats elk item in alle groepen waar het thuishoort.</target>
+</trans-unit>
+<trans-unit id="sc53e8091d43b9066">
+  <source>Place each item in its correct group.</source>
+  <target>Plaats elk item in de juiste groep.</target>
+</trans-unit>
+<trans-unit id="sd463fe8f70c3242c">
+  <source>Learners submit the <x id="0" equiv-text="${count}"/> tasks in this group here and see their score.</source>
+  <target>Leerlingen dienen hier de <x id="0" equiv-text="${count}"/> taken in deze groep in en zien hun score.</target>
+</trans-unit>
+<trans-unit id="sd19715215fa7c6ca">
+  <source>Task Results</source>
+  <target>Taakresultaten</target>
+</trans-unit>
+<trans-unit id="s061cc20e3432dead">
+  <source>Pause</source>
+<target>Pauze</target>
+</trans-unit>
+<trans-unit id="scd105819b5a10243">
+  <source>Play</source>
+<target>Afspelen</target>
+</trans-unit>
+<trans-unit id="se5803f79964880b8">
+  <source>Record again</source>
+<target>Opnieuw opnemen</target>
+</trans-unit>
+<trans-unit id="s53b4850973728528">
+  <source>This view blocks microphone access.</source>
+<target>Deze weergave blokkeert de microfoontoegang.</target>
+</trans-unit>
+<trans-unit id="s38f1c1ae5d0356f7">
+  <source>The recording could not be saved.</source>
+<target>De opname kon niet worden opgeslagen.</target>
+</trans-unit>
+<trans-unit id="sa9da29c2219e79d4">
+  <source>Start recording</source>
+<target>Opname starten</target>
+</trans-unit>
+<trans-unit id="s9908b0c9b48b35ad">
+  <source>Finishing recording…</source>
+<target>Opname afronden…</target>
+</trans-unit>
+<trans-unit id="sb32cad250448883a">
+  <source>Stop recording</source>
+<target>Opname stoppen</target>
+</trans-unit>
+<trans-unit id="s2dcbe9c695234958">
+  <source>Add Row</source>
+<target>Rij toevoegen</target>
+</trans-unit>
+<trans-unit id="s136c24957f6ff7ae">
+  <source>Add Column</source>
+<target>Kolom toevoegen</target>
+</trans-unit>
+<trans-unit id="s7ccb6d0c2577eec4">
+  <source>All or nothing</source>
+<target>Alles of niets</target>
+</trans-unit>
+<trans-unit id="sa7deaffdf7f5df45">
+  <source>Full credit only if every row is completely correct.</source>
+<target>Alleen volledige punten als elke rij volledig juist is.</target>
+</trans-unit>
+<trans-unit id="s1fc7cdaeb2298208">
+  <source>Per row</source>
+<target>Per rij</target>
+</trans-unit>
+<trans-unit id="s82d2d155e7e9ce8f">
+  <source>Proportional credit for each fully correct row.</source>
+<target>Evenredige punten voor elke volledig juiste rij.</target>
+</trans-unit>
+<trans-unit id="sc94ed95bae83b5c0">
+  <source>Per cell</source>
+<target>Per cel</target>
+</trans-unit>
+<trans-unit id="scc342659e1e69063">
+  <source>Penalized partial credit within multi-select rows.</source>
+<target>Gedeeltelijke punten met aftrek bij rijen met meerdere keuzes.</target>
+</trans-unit>
+<trans-unit id="s96d046d2f7e07e3b">
+  <source>Ungraded</source>
+<target>Niet beoordeeld</target>
+</trans-unit>
+<trans-unit id="s49749a03640a4d55">
+  <source>Responses are recorded without scoring (survey or rating).</source>
+<target>Antwoorden worden vastgelegd zonder beoordeling (enquête of beoordeling).</target>
+</trans-unit>
+<trans-unit id="scc90a4e72a9e3f79">
+  <source><x id="0" equiv-text="${correctCount}"/> of <x id="1" equiv-text="${rows.length}"/> rows are correct.</source>
+<target><x id="0" equiv-text="${correctCount}"/> van <x id="1" equiv-text="${rows.length}"/> rijen zijn goed.</target>
+</trans-unit>
+<trans-unit id="s444170e956c5ff67">
+  <source>Select all that apply.</source>
+<target>Kies alle toepasselijke antwoorden.</target>
+</trans-unit>
+<trans-unit id="scdd9af653f7a5cb1">
+  <source>Select one option per row.</source>
+<target>Kies één optie per rij.</target>
+</trans-unit>
+<trans-unit id="s2b045181a53644ce">
+  <source>Add column</source>
+<target>Kolom toevoegen</target>
+</trans-unit>
+<trans-unit id="sa013e119fec906fb">
+  <source>Row</source>
+<target>Rij</target>
+</trans-unit>
+<trans-unit id="s9e40e59654c8ad67">
+  <source>Column</source>
+<target>Kolom</target>
+</trans-unit>
+<trans-unit id="sd98791ec2fa7277c">
+  <source>Remove feedback</source>
+<target>Feedback verwijderen</target>
+</trans-unit>
+<trans-unit id="s5e8250fb85d64c23">
+  <source>Close</source>
+<target>Sluiten</target>
+</trans-unit>
+<trans-unit id="s33450ee8e71388ad">
+  <source>Gap options</source>
+<target>Gatopties</target>
+</trans-unit>
+<trans-unit id="s2d30555e682a8525">
+  <source>Add option</source>
+<target>Optie toevoegen</target>
+</trans-unit>
+<trans-unit id="sc47fbba134f97bc1">
+  <source>Remove answer</source>
+<target>Antwoord verwijderen</target>
+</trans-unit>
+<trans-unit id="sd1a1ef004aadb208">
+  <source>Show column headers</source>
+<target>Kolomkoppen tonen</target>
+</trans-unit>
+<trans-unit id="s2a9ad64c546b4f22">
+  <source>Show row headers</source>
+<target>Rijkoppen tonen</target>
+</trans-unit>
+<trans-unit id="saec69b4e2f2e04e1">
+  <source>Full credit only if every gap cell is correct.</source>
+<target>Alleen volledige punten als elke gatcel juist is.</target>
+</trans-unit>
+<trans-unit id="sdf387eb35c575f35">
+  <source>Proportional credit for each correct gap cell.</source>
+<target>Evenredige punten voor elke juiste gatcel.</target>
+</trans-unit>
+<trans-unit id="sd345cbba66419e90">
+  <source>Proportional credit for each row where all gaps are correct.</source>
+<target>Evenredige punten voor elke rij waarin alle gaten goed zijn.</target>
+</trans-unit>
+<trans-unit id="sa200ceda4a34c65c">
+  <source>Responses are recorded without scoring.</source>
+<target>Antwoorden worden vastgelegd zonder beoordeling.</target>
+</trans-unit>
+<trans-unit id="sb7cfcc79fbcb74d1">
+  <source><x id="0" equiv-text="${correctCount}"/> of <x id="1" equiv-text="${activeGaps.length}"/> gaps are correct.</source>
+<target><x id="0" equiv-text="${correctCount}"/> van <x id="1" equiv-text="${activeGaps.length}"/> gaten zijn goed.</target>
+</trans-unit>
+<trans-unit id="sf2efc78397526616">
+  <source>Drag each answer into a gap, or click an answer and then the gap.</source>
+<target>Sleep elk antwoord naar een gat of klik eerst op een antwoord en daarna op het gat.</target>
+</trans-unit>
+<trans-unit id="s3b9533e35fe3715d">
+  <source>Fill in the gaps.</source>
+<target>Vul de lege plekken in.</target>
+</trans-unit>
+<trans-unit id="sa8b55cab62e439b5">
+  <source>Remove column</source>
+<target>Kolom verwijderen</target>
+</trans-unit>
+<trans-unit id="s77318393dfdb0775">
+  <source>Remove row</source>
+<target>Rij verwijderen</target>
+</trans-unit>
+<trans-unit id="saf3c323b553ddc21">
+  <source>Toggle gap</source>
+<target>Gat omschakelen</target>
+</trans-unit>
+<trans-unit id="s500fd71a4232050e">
+  <source>Empty</source>
+<target>Leeg</target>
+</trans-unit>
+<trans-unit id="se285f8462c6283d8">
+  <source>All answers are placed.</source>
+<target>Alle antwoorden zijn geplaatst.</target>
+</trans-unit>
+<trans-unit id="s75576f72d8374e0a">
+  <source>Remove criterion: <x id="0" equiv-text="${criterion}"/></source>
+<target>Criterium verwijderen: <x id="0" equiv-text="${criterion}"/></target>
+</trans-unit>
+<trans-unit id="sf9aee319a006c9b4">
+  <source>Add</source>
+<target>Voeg  toe</target>
+</trans-unit>
+<trans-unit id="s0308ae388d00d28a">
+  <source>Ignore punctuation &amp; accents</source>
+<target>Interpunctie en accenten negeren</target>
+</trans-unit>
+<trans-unit id="s9a5698a5dac7cad1">
+  <source>Ignore minor typos</source>
+<target>Kleine typefouten negeren</target>
+</trans-unit>
+<trans-unit id="s1f2f2be86efd928c">
+  <source>Hide scoring</source>
+<target>Beoordeling verbergen</target>
+</trans-unit>
+<trans-unit id="sb5ada04f142c4972">
+  <source>This task is ungraded.</source>
+<target>Deze taak wordt niet beoordeeld.</target>
+</trans-unit>
+<trans-unit id="sb58bd9e06b83960f">
+  <source>Not graded</source>
+<target>Niet beoordeeld</target>
+</trans-unit>
+<trans-unit id="s8a13240ec237a9ef">
+  <source>Other tasks</source>
+<target>Andere taken</target>
+</trans-unit>
+<trans-unit id="s42cbd8dca939a9c7">
+  <source>Check</source>
+<target>Controleer</target>
+</trans-unit>
+<trans-unit id="scd1dd6ff53d0d01a">
+  <source>Try again</source>
+<target>Probeer het nog eens</target>
+</trans-unit>
+<trans-unit id="s79edd0a02d3adfc5">
+  <source>Add Hint</source>
+<target>Hint toevoegen</target>
+</trans-unit>
+<trans-unit id="s823c091104445186">
+  <source>Remove hint</source>
+<target>Hint verwijderen</target>
+</trans-unit>
+<trans-unit id="s0ac2f44b55475b68">
+  <source>Tolerance</source>
+<target>Tolerantie</target>
+</trans-unit>
+<trans-unit id="s62b2c51610dc615b">
+  <source>The current content or settings require this layout.</source>
+<target>De huidige inhoud of instellingen vereisen deze indeling.</target>
+</trans-unit>
+<trans-unit id="s379c18aec5654894">
+  <source>Move</source>
+<target>Verplaatsen</target>
+</trans-unit>
+<trans-unit id="s08873708079f6e23">
+  <source>Per item</source>
+<target>Per item</target>
+</trans-unit>
+<trans-unit id="scb9da282dc6a8c06">
+  <source>Option <x id="0" equiv-text="${index + 1}"/></source>
+<target>Optie <x id="0" equiv-text="${index + 1}"/></target>
+</trans-unit>
+<trans-unit id="s2a64d2dca3da9b0e">
+  <source>Group <x id="0" equiv-text="${index + 1}"/></source>
+<target>Groep <x id="0" equiv-text="${index + 1}"/></target>
+</trans-unit>
+<trans-unit id="s5468d720047eb162">
+  <source>Add item to <x id="0" equiv-text="${name}"/></source>
+<target>Item toevoegen aan <x id="0" equiv-text="${name}"/></target>
+</trans-unit>
+<trans-unit id="sf643c4a10dba9800">
+  <source>Remove <x id="0" equiv-text="${label}"/> from this group</source>
+<target>Verwijder <x id="0" equiv-text="${label}"/> uit deze groep</target>
+</trans-unit>
+<trans-unit id="sfe592af2e37a2214">
+  <source>Multi-group</source>
+<target>Meerdere groepen</target>
+</trans-unit>
+<trans-unit id="s0229d85de3888d71">
+  <source><x id="0" equiv-text="${correct}"/> of <x id="1" equiv-text="${total}"/> items are in all the right groups.</source>
+<target><x id="0" equiv-text="${correct}"/> van <x id="1" equiv-text="${total}"/> items staan in alle juiste groepen.</target>
+</trans-unit>
+<trans-unit id="sc52e6e561e8f6c78">
+  <source>Drag items into their groups, or use + to choose from Options.</source>
+<target>Sleep items naar hun groepen of gebruik + om uit de opties te kiezen.</target>
+</trans-unit>
+<trans-unit id="sdf9018f953f702be">
+  <source>Drag items into a group, or use + to choose from Options.</source>
+<target>Sleep de items naar een groep of gebruik + om uit de opties te kiezen.</target>
+</trans-unit>
+<trans-unit id="s463b8c4e92751ba5">
+  <source>Options</source>
+<target>Opties</target>
+</trans-unit>
+<trans-unit id="s670aaa17382d2876">
+  <source>Wrong</source>
+<target>Onjuist</target>
+</trans-unit>
+<trans-unit id="s408cd1e9be6e74f0">
+  <source>Missed</source>
+<target>Gemist</target>
+</trans-unit>
+<trans-unit id="s33c59364235732dd">
+  <source>Full credit only if every right option and no wrong option is selected.</source>
+<target>Alleen volledige punten als alle juiste opties en geen onjuiste optie is geselecteerd.</target>
+</trans-unit>
+<trans-unit id="s2118adbd5904ec36">
+  <source>Partial (penalize wrong)</source>
+<target>Gedeeltelijk (aftrek voor fout antwoord)</target>
+</trans-unit>
+<trans-unit id="s1916139f98775735">
+  <source>Right selections add credit; wrong selections subtract from it (min. 0).</source>
+<target>Juiste keuzes leveren punten op; onjuiste trekken punten af (min. 0).</target>
+</trans-unit>
+<trans-unit id="s997c32dc20df1235">
+  <source>Exact match</source>
+<target>Exacte overeenkomst</target>
+</trans-unit>
+<trans-unit id="s88fa46d7b66ff1e6">
+  <source>Full credit for selecting the correct option.</source>
+<target>Volledige punten voor het kiezen van de juiste optie.</target>
+</trans-unit>
+<trans-unit id="s5d02042067dcb593">
+  <source>Enter the statement.</source>
+<target>Voer de uitspraak in.</target>
+</trans-unit>
+<trans-unit id="s568ad4e4e7b1eb44">
+  <source>Enter the choices.</source>
+<target>Voer de keuzes in.</target>
+</trans-unit>
+<trans-unit id="s404c6db5256b2680">
+  <source>Choose True or False.</source>
+<target>Kies waar of onwaar.</target>
+</trans-unit>
+<trans-unit id="s68577a883e958b95">
+  <source>Select one answer.</source>
+<target>Kies één antwoord.</target>
+</trans-unit>
+<trans-unit id="s4094f9a53a127ce2">
+  <source>Found <x id="0" equiv-text="${found}"/> of <x id="1" equiv-text="${correct.size}"/> correct options.</source>
+<target><x id="0" equiv-text="${found}"/> van <x id="1" equiv-text="${correct.size}"/> juiste opties gevonden.</target>
+</trans-unit>
+<trans-unit id="s66070c10ddc25bd7">
+  <source>1 wrong option selected.</source>
+<target>1 onjuiste optie geselecteerd.</target>
+</trans-unit>
+<trans-unit id="sb21f600f6d785eeb">
+  <source><x id="0" equiv-text="${wrong}"/> wrong options selected.</source>
+<target><x id="0" equiv-text="${wrong}"/> onjuiste opties geselecteerd.</target>
+</trans-unit>
+<trans-unit id="sbe4508f09222c889">
+  <source>Single</source>
+<target>Enkel</target>
+</trans-unit>
+<trans-unit id="s64a981f393576a7b">
+  <source>Ignore punctuation</source>
+<target>Interpunctie negeren</target>
+</trans-unit>
+<trans-unit id="se6fee24d1cbbc9db">
+  <source>Give partial credit for minor typos</source>
+<target>Geef gedeeltelijke punten voor kleine typefouten</target>
+</trans-unit>
+<trans-unit id="s3ec5145dc8e77493">
+  <source>Partial credit</source>
+<target>Gedeeltelijke punten</target>
+</trans-unit>
+<trans-unit id="s921ae54cca4fd6a7">
+  <source>Add recording</source>
+<target>Opname toevoegen</target>
+</trans-unit>
+<trans-unit id="s6599a3d76cdf16c6">
+  <source>This browser cannot transcribe recordings automatically.</source>
+<target>Deze browser kan opnamen niet automatisch transcriberen.</target>
+</trans-unit>
+<trans-unit id="s8beb3150837877a2">
+  <source>The recording could not be played for transcription.</source>
+<target>De opname kon niet worden afgespeeld voor transcriptie.</target>
+</trans-unit>
+<trans-unit id="s0769bd26bad7ceb0">
+  <source>Automatic transcription could not finish. Try again.</source>
+<target>Automatische transcriptie kon niet worden voltooid. Probeer het opnieuw.</target>
+</trans-unit>
+<trans-unit id="s652dfa634831c4ac">
+  <source>No speech was recognized in the recording.</source>
+<target>Er is geen spraak herkend in de opname.</target>
+</trans-unit>
+<trans-unit id="sb096e2c355121468">
+  <source>Automatic transcription timed out. Try again.</source>
+<target>Automatische transcriptie is verlopen. Probeer het opnieuw.</target>
+</trans-unit>
+<trans-unit id="s7682adbd6cb18c43">
+  <source>Slow recording</source>
+<target>Langzame opname</target>
+</trans-unit>
+<trans-unit id="s88b857ef66b06bf5">
+  <source>Dictation recording</source>
+<target>Dicteeropname</target>
+</trans-unit>
+<trans-unit id="s7da110cc5d71e597">
+  <source>1 play left</source>
+<target>1 keer spelen over</target>
+</trans-unit>
+<trans-unit id="s3dd2e91200254ee7">
+  <source><x id="0" equiv-text="${remaining}"/> plays left</source>
+<target>Nog <x id="0" equiv-text="${remaining}"/> keer spelen</target>
+</trans-unit>
+<trans-unit id="se166026acf69acae">
+  <source>Type what you hear</source>
+<target>Typ wat je hoort</target>
+</trans-unit>
+<trans-unit id="s4dbda45a874f64ac">
+  <source>Listen and type what you hear.</source>
+<target>Luister en typ wat je hoort.</target>
+</trans-unit>
+<trans-unit id="sa73f2240c86b5168">
+  <source>No recording available.</source>
+<target>Geen opname beschikbaar.</target>
+</trans-unit>
+<trans-unit id="s61fa8e1be7a254b8">
+  <source>Transcribing recording…</source>
+<target>Opname transcriberen…</target>
+</trans-unit>
+<trans-unit id="sc476adbff390819f">
+  <source>The recording could not be played.</source>
+<target>De opname kon niet worden afgespeeld.</target>
+</trans-unit>
+<trans-unit id="sad5df5643732af8e">
+  <source>Recording language</source>
+<target>Opnametaal</target>
+</trans-unit>
+<trans-unit id="s625ef7f3207cf9cb">
+  <source>Cancel transcription</source>
+<target>Transcriptie annuleren</target>
+</trans-unit>
+<trans-unit id="s065289e6cba017c6">
+  <source>Transcribe</source>
+<target>Transcriberen</target>
+</trans-unit>
+<trans-unit id="s74ae056b8a4fe2fc">
+  <source>Require a drawing before submitting</source>
+<target>Vereis een tekening voordat je indient</target>
+</trans-unit>
+<trans-unit id="s25fadd3e7388516c">
+  <source>Canvas height</source>
+<target>Canvashoogte</target>
+</trans-unit>
+<trans-unit id="s4f888fe2eebd3ac4">
+  <source>Completion credit</source>
+<target>Voltooiingspunten</target>
+</trans-unit>
+<trans-unit id="s9085fd214561bc83">
+  <source>Full credit when a drawing is submitted.</source>
+<target>Volledige punten als een tekening wordt ingediend.</target>
+</trans-unit>
+<trans-unit id="s070f9dc186e70d69">
+  <source>Shows the optional sample for comparison without scoring.</source>
+<target>Toont een optioneel voorbeeld ter vergelijking zonder beoordeling.</target>
+</trans-unit>
+<trans-unit id="s8f4be9f086eb530f">
+  <source>Undo</source>
+<target>Ongedaan maken</target>
+</trans-unit>
+<trans-unit id="sb4f1dffbb6be6302">
+  <source>Clear</source>
+<target>Wissen</target>
+</trans-unit>
+<trans-unit id="s8dc59619f423a210">
+  <source>Pen</source>
+<target>Pen</target>
+</trans-unit>
+<trans-unit id="s3cf8a6b47fddf8e7">
+  <source>Line</source>
+<target>Lijn</target>
+</trans-unit>
+<trans-unit id="sbadcfb6aa6ef38b1">
+  <source>Ellipse</source>
+<target>Ellips</target>
+</trans-unit>
+<trans-unit id="s085cd8fee92a2cc5">
+  <source>Eraser</source>
+<target>Gum</target>
+</trans-unit>
+<trans-unit id="s5e3cb80d43a34044">
+  <source>Black</source>
+<target>Zwart</target>
+</trans-unit>
+<trans-unit id="secf3d3a7c1693e2d">
+  <source>Blue</source>
+<target>Blauw</target>
+</trans-unit>
+<trans-unit id="s9ff1de19feac1b7c">
+  <source>Red</source>
+<target>Rood</target>
+</trans-unit>
+<trans-unit id="scf00d78fd5953f1c">
+  <source>Green</source>
+<target>Groen</target>
+</trans-unit>
+<trans-unit id="s6baf78886c99db89">
+  <source>Yellow</source>
+<target>Geel</target>
+</trans-unit>
+<trans-unit id="s56339226771df73e">
+  <source>Drawing tools</source>
+<target>Tekengereedschap</target>
+</trans-unit>
+<trans-unit id="s5a71f1fb3a12c6a7">
+  <source>Tool</source>
+<target>Hulpmiddel</target>
+</trans-unit>
+<trans-unit id="s344ea8f4939cdc98">
+  <source>Color</source>
+<target>Kleur</target>
+</trans-unit>
+<trans-unit id="se615f6ce0dd01061">
+  <source>Stroke width</source>
+<target>Lijnbreedte</target>
+</trans-unit>
+<trans-unit id="s923215988b72aba6">
+  <source>Draw your answer.</source>
+<target>Teken je antwoord.</target>
+</trans-unit>
+<trans-unit id="s0eb6407d01b573ca">
+  <source>Choose a background image.</source>
+<target>Kies een achtergrondafbeelding.</target>
+</trans-unit>
+<trans-unit id="s52a077cf893ca5cb">
+  <source>Draw the solution.</source>
+<target>Teken de oplossing.</target>
+</trans-unit>
+<trans-unit id="s78391e806efb04be">
+  <source>Modify image</source>
+<target>Afbeelding wijzigen</target>
+</trans-unit>
+<trans-unit id="s8f8bbd8053618688">
+  <source>Add background</source>
+<target>Achtergrond toevoegen</target>
+</trans-unit>
+<trans-unit id="sc25a259379b9ddf9">
+  <source>Remove gap</source>
+<target>Gat verwijderen</target>
+</trans-unit>
+<trans-unit id="s3c6170c7cbb3c96c">
+  <source>Full credit only if every gap is filled correctly.</source>
+<target>Alleen volledige punten als elk gat juist is ingevuld.</target>
+</trans-unit>
+<trans-unit id="s7cf3abae566db880">
+  <source>Per gap</source>
+<target>Per gat</target>
+</trans-unit>
+<trans-unit id="sf5246d0ef9e92c22">
+  <source>Proportional credit for each correctly filled gap.</source>
+<target>Evenredige punten voor elk correct ingevuld gat.</target>
+</trans-unit>
+<trans-unit id="scfd9561b07fa745f">
+  <source>Select the right option for each gap.</source>
+<target>Kies de juiste optie voor elk gat.</target>
+</trans-unit>
+<trans-unit id="s818176fa88ae0e18">
+  <source>All options are already in this group.</source>
+<target>Alle opties staan al in deze groep.</target>
+</trans-unit>
+<trans-unit id="s781e64ea47044bd9">
+  <source>Add image</source>
+<target>Afbeelding toevoegen</target>
+</trans-unit>
+<trans-unit id="sa6f359971854ca5b">
+  <source><x id="0" equiv-text="${label}"/> placed in <x id="1" equiv-text="${zone.label || this.msg(&quot;Zone&quot;)}"/>.</source>
+<target><x id="0" equiv-text="${label}"/> geplaatst in <x id="1" equiv-text="${zone.label || this.msg(&quot;Zone&quot;)}"/>.</target>
+</trans-unit>
+<trans-unit id="s703202c2ebdf2d61">
+  <source>Zone <x id="0" equiv-text="${index + 1}"/></source>
+<target>Gebied <x id="0" equiv-text="${index + 1}"/></target>
+</trans-unit>
+<trans-unit id="sa37e098e69be3dd2">
+  <source>Full credit only if every marker matches with no wrong pins.</source>
+<target>Alleen volledige punten als alle markeringen overeenkomen en er geen verkeerde pinnen zijn.</target>
+</trans-unit>
+<trans-unit id="s6dfb48202e30e3f6">
+  <source>Per marker</source>
+<target>Per markering</target>
+</trans-unit>
+<trans-unit id="sb912798fe55d8e34">
+  <source>Credit per matched marker, subtracting extra wrong pins.</source>
+<target>Punten per overeenkomende markering, met aftrek voor extra onjuiste markeringen.</target>
+</trans-unit>
+<trans-unit id="s1667f96d19635ec7">
+  <source>Zone</source>
+<target>Gebied</target>
+</trans-unit>
+<trans-unit id="se2dbf72e263c272e">
+  <source>Label pin</source>
+<target>Labelspeld</target>
+</trans-unit>
+<trans-unit id="sb51270e19988f9bd">
+  <source>Region</source>
+<target>Gebied</target>
+</trans-unit>
+<trans-unit id="sa348c16c7e7e7f9c">
+  <source>Hotspot</source>
+<target>Hotspot</target>
+</trans-unit>
+<trans-unit id="s2b2a10d7e7c742dd">
+  <source>Marker type</source>
+<target>Markeringstype</target>
+</trans-unit>
+<trans-unit id="s81627c2242106fca">
+  <source>Add zone</source>
+<target>Gebied toevoegen</target>
+</trans-unit>
+<trans-unit id="s4a9c975e50c1c4ff">
+  <source>Add hotspot</source>
+<target>Hotspot toevoegen</target>
+</trans-unit>
+<trans-unit id="s626d8911506b0db5">
+  <source>Add label pin</source>
+<target>Labelspeld toevoegen</target>
+</trans-unit>
+<trans-unit id="sbec481c67db2bbeb">
+  <source><x id="0" equiv-text="${correctLabels}"/> of <x id="1" equiv-text="${labelMarkers.length}"/> labels are correct.</source>
+<target><x id="0" equiv-text="${correctLabels}"/> van <x id="1" equiv-text="${labelMarkers.length}"/> labels zijn goed.</target>
+</trans-unit>
+<trans-unit id="s2ae10bcf386b5474">
+  <source><x id="0" equiv-text="${matchedMarkers.size}"/> of <x id="1" equiv-text="${hotspots.length}"/> targets found.</source>
+<target><x id="0" equiv-text="${matchedMarkers.size}"/> van <x id="1" equiv-text="${hotspots.length}"/> doelen gevonden.</target>
+</trans-unit>
+<trans-unit id="s7fa1caf807422e65">
+  <source>Drag each label onto its marker on the image.</source>
+<target>Sleep elk label naar de markering in de afbeelding.</target>
+</trans-unit>
+<trans-unit id="sd2f8e252296a0030">
+  <source>Click the target region(s) in the image.</source>
+<target>Klik op het doelgebied in de afbeelding.</target>
+</trans-unit>
+<trans-unit id="s0c2e2e9567aa5ea2">
+  <source>No image selected.</source>
+<target>Geen afbeelding geselecteerd.</target>
+</trans-unit>
+<trans-unit id="sa894b36f20aab589">
+  <source>Edit zone</source>
+<target>Gebied bewerken</target>
+</trans-unit>
+<trans-unit id="s345eb75f6da5e520">
+  <source>Edit label pin</source>
+<target>Labelspeld bewerken</target>
+</trans-unit>
+<trans-unit id="s6e27fd7a0431d14a">
+  <source>Edit hotspot</source>
+<target>Hotspot bewerken</target>
+</trans-unit>
+<trans-unit id="s1d4fb8833a6ede92">
+  <source>Selected point</source>
+<target>Geselecteerd punt</target>
+</trans-unit>
+<trans-unit id="s8a9eb438abac7c6a">
+  <source>Labels</source>
+<target>Labels</target>
+</trans-unit>
+<trans-unit id="s5ba21ea6d3f246a4">
+  <source>All labels are placed.</source>
+<target>Alle labels zijn geplaatst.</target>
+</trans-unit>
+<trans-unit id="sea4f08110bb8f15d">
+  <source>Remove</source>
+<target>Verwijderen</target>
+</trans-unit>
+<trans-unit id="s5590dbf7e425789d">
+  <source>Label</source>
+<target>Etiket</target>
+</trans-unit>
+<trans-unit id="scab3980db2755f4c">
+  <source>Full credit only if exactly the right words are marked.</source>
+<target>Alleen volledige punten als precies de juiste woorden zijn gemarkeerd.</target>
+</trans-unit>
+<trans-unit id="s301bb7275252a013">
+  <source>Right marks add credit; wrong marks subtract from it (min. 0).</source>
+<target>Juiste markeringen leveren punten op; onjuiste trekken punten af (min. 0).</target>
+</trans-unit>
+<trans-unit id="sd645983eef83ec21">
+  <source>Marked</source>
+<target>Gemarkeerd</target>
+</trans-unit>
+<trans-unit id="s745ad67c65bcea27">
+  <source><x id="0" equiv-text="${toFind}"/> marked</source>
+<target><x id="0" equiv-text="${toFind}"/> gemarkeerd</target>
+</trans-unit>
+<trans-unit id="s959d28a246839d0a">
+  <source>Toggle mark</source>
+<target>Markering omschakelen</target>
+</trans-unit>
+<trans-unit id="s7aba8fc293a40c7d">
+  <source><x id="0" equiv-text="${toFind}"/> to find</source>
+<target><x id="0" equiv-text="${toFind}"/> te vinden</target>
+</trans-unit>
+<trans-unit id="sd0e6c99efa390583">
+  <source>Click the words to mark.</source>
+<target>Klik op de woorden om ze te markeren.</target>
+</trans-unit>
+<trans-unit id="sef6dc9d5fd60c301">
+  <source>Within tolerance</source>
+<target>Binnen tolerantie</target>
+</trans-unit>
+<trans-unit id="sa0f0a930b4567d3c">
+  <source>Full credit within tolerance, with optional linear partial-credit band.</source>
+<target>Volledige punten binnen de tolerantie, met optioneel lineair bereik voor gedeeltelijke punten.</target>
+</trans-unit>
+<trans-unit id="s6fc200fc41be604e">
+  <source>Tolerance (±)</source>
+<target>Tolerantie (±)</target>
+</trans-unit>
+<trans-unit id="s01efb169e6921610">
+  <source>Tolerance type</source>
+<target>Tolerantietype</target>
+</trans-unit>
+<trans-unit id="s27f42912a50df5e1">
+  <source>Absolute (± value)</source>
+<target>Absoluut (± waarde)</target>
+</trans-unit>
+<trans-unit id="se4fd08ea4526ece6">
+  <source>Relative (± %)</source>
+<target>Relatief (± %)</target>
+</trans-unit>
+<trans-unit id="sd47d4d5489d1da3a">
+  <source>Partial credit band</source>
+<target>Gedeeltelijke scoreband</target>
+</trans-unit>
+<trans-unit id="sf88789673a732088">
+  <source>Extra range beyond tolerance where credit decays linearly to zero.</source>
+<target>Extra bereik boven de tolerantie waarbij de score lineair naar nul afneemt.</target>
+</trans-unit>
+<trans-unit id="s8f26e0f086cc2787">
+  <source>Unit</source>
+<target>Eenheid</target>
+</trans-unit>
+<trans-unit id="seb4eae68d45315b7">
+  <source>Minimum</source>
+<target>Minimum</target>
+</trans-unit>
+<trans-unit id="s00decbd8fed4f501">
+  <source>Maximum</source>
+<target>Maximum</target>
+</trans-unit>
+<trans-unit id="sd9994f251f1280cf">
+  <source>Step</source>
+<target>Stap</target>
+</trans-unit>
+<trans-unit id="s20e5183dd45ada26">
+  <source>Enter a date and time.</source>
+<target>Voer een datum en tijd in.</target>
+</trans-unit>
+<trans-unit id="s0ee88abc51ae0f91">
+  <source>Choose a value on the slider.</source>
+<target>Kies een waarde op de schuifregelaar.</target>
+</trans-unit>
+<trans-unit id="s330046fa1b1b9ec7">
+  <source>Enter a number.</source>
+<target>Voer een getal in.</target>
+</trans-unit>
+<trans-unit id="s1dfd6319b50f4cd7">
+  <source>Min</source>
+<target>Minimum</target>
+</trans-unit>
+<trans-unit id="s1e187119b5262c59">
+  <source>Max</source>
+<target>Maximum</target>
+</trans-unit>
+<trans-unit id="sa6a92648588602bf">
+  <source>Answer</source>
+<target>Antwoord</target>
+</trans-unit>
+<trans-unit id="s91b7363f68d1d46e">
+  <source>Right place</source>
+<target>Juiste plek</target>
+</trans-unit>
+<trans-unit id="s4bb40a5590d12e02">
+  <source>Belongs at <x id="0" equiv-text="${this.positionLabel(correctIndex, parent.numberingStyle === &quot;none&quot; ? &quot;numeric&quot; : parent.numberingStyle).replace(/\.$/, &quot;&quot;)}"/></source>
+<target>Hoort bij <x id="0" equiv-text="${this.positionLabel(correctIndex, parent.numberingStyle === &quot;none&quot; ? &quot;numeric&quot; : parent.numberingStyle).replace(/\.$/, &quot;&quot;)}"/></target>
+</trans-unit>
+<trans-unit id="s4ea0f21fc2a338a1">
+  <source>Move up</source>
+<target>Omhoog verplaatsen</target>
+</trans-unit>
+<trans-unit id="sb233557012dcb328">
+  <source>Move down</source>
+<target>Omlaag verplaatsen</target>
+</trans-unit>
+<trans-unit id="sf9f971cde1041ba6">
+  <source>Exact order only</source>
+<target>Alleen exacte volgorde</target>
+</trans-unit>
+<trans-unit id="saf411cadd1a9edb7">
+  <source>Full credit only if every item is in its exact position.</source>
+<target>Alleen volledige punten als elk item op de exacte plek staat.</target>
+</trans-unit>
+<trans-unit id="sc01de0a714566a19">
+  <source>Correct positions</source>
+<target>Juiste posities</target>
+</trans-unit>
+<trans-unit id="s799375be5eae1328">
+  <source>Credit for each item placed in its exact slot.</source>
+<target>Punten voor elk item dat precies op de juiste plek staat.</target>
+</trans-unit>
+<trans-unit id="s71aa9b3ce66902b9">
+  <source>Relative order</source>
+<target>Relatieve volgorde</target>
+</trans-unit>
+<trans-unit id="s2e99d1a5cab100af">
+  <source>Credit for each pair of items ordered correctly relative to each other.</source>
+<target>Punten voor elk paar items dat ten opzichte van elkaar juist is geordend.</target>
+</trans-unit>
+<trans-unit id="s39eb99f4f4c18ebf">
+  <source>Accept reverse order</source>
+<target>Omgekeerde volgorde accepteren</target>
+</trans-unit>
+<trans-unit id="s6f1a191f5f38290f">
+  <source><x id="0" equiv-text="${right}"/> of <x id="1" equiv-text="${items.length}"/> items are in the right place.</source>
+<target><x id="0" equiv-text="${right}"/> van <x id="1" equiv-text="${items.length}"/> items staan op de juiste plek.</target>
+</trans-unit>
+<trans-unit id="s195d8970726dcde5">
+  <source>Drag the items, or use the arrows.</source>
+<target>Sleep de items of gebruik de pijlen.</target>
+</trans-unit>
+<trans-unit id="sd1b6deb412a019f2">
+  <source>Full credit only if every pair matches.</source>
+<target>Alleen volledige punten als elk paar overeenkomt.</target>
+</trans-unit>
+<trans-unit id="s660ce8a94870e7be">
+  <source>Per correct pair</source>
+<target>Per correct paar</target>
+</trans-unit>
+<trans-unit id="s7dd435285656bfe2">
+  <source>Proportional credit for each correctly matched pair.</source>
+<target>Evenredige punten voor elk correct gekoppeld paar.</target>
+</trans-unit>
+<trans-unit id="se53e36e5899543e9">
+  <source>Left item <x id="0" equiv-text="${index + 1}"/></source>
+<target>Linker item <x id="0" equiv-text="${index + 1}"/></target>
+</trans-unit>
+<trans-unit id="secb5bea561069c82">
+  <source>Right item <x id="0" equiv-text="${index + 1}"/></source>
+<target>Rechter item <x id="0" equiv-text="${index + 1}"/></target>
+</trans-unit>
+<trans-unit id="s583fc1a7dcab06b1">
+  <source><x id="0" equiv-text="${count}"/> of <x id="1" equiv-text="${key.length}"/> pairs are correct.</source>
+<target><x id="0" equiv-text="${count}"/> van <x id="1" equiv-text="${key.length}"/> paren zijn goed.</target>
+</trans-unit>
+<trans-unit id="s9facbab7555fb0c0">
+  <source>The file is not valid GIFT: a brace is not closed.</source>
+<target>Het bestand is geen geldige GIFT: een accolade is niet gesloten.</target>
+</trans-unit>
+<trans-unit id="s65c455f516ab03af">
+  <source><x id="0" equiv-text="${result.correct}"/> correct</source>
+<target><x id="0" equiv-text="${result.correct}"/> goed</target>
+</trans-unit>
+<trans-unit id="s743d10fa06e71c23">
+  <source><x id="0" equiv-text="${result.partial}"/> partly correct</source>
+<target><x id="0" equiv-text="${result.partial}"/> gedeeltelijk goed</target>
+</trans-unit>
+<trans-unit id="se5c1970482f19cae">
+  <source><x id="0" equiv-text="${result.incorrect}"/> incorrect</source>
+<target><x id="0" equiv-text="${result.incorrect}"/> onjuist</target>
+</trans-unit>
+<trans-unit id="sb2b44de8a70ae954">
+  <source><x id="0" equiv-text="${this.formatPoints(result.score)}"/> of <x id="1" equiv-text="${this.formatPoints(result.maximum)}"/></source>
+<target><x id="0" equiv-text="${this.formatPoints(result.score)}"/> van <x id="1" equiv-text="${this.formatPoints(result.maximum)}"/></target>
+</trans-unit>
+<trans-unit id="s7d684b6257284e55">
+  <source>Score</source>
+<target>Score</target>
+</trans-unit>
+<trans-unit id="se37cff59047ed04d">
+  <source>Require a recording before submitting</source>
+<target>Vereis een opname voordat je indient</target>
+</trans-unit>
+<trans-unit id="s7684ff9798b78190">
+  <source>Match transcript</source>
+<target>Transcript vergelijken</target>
+</trans-unit>
+<trans-unit id="s7b916547ee1e09ac">
+  <source>Full credit when the spoken words match the reference transcript.</source>
+<target>Volledige punten als de gesproken woorden overeenkomen met het referentietranscript.</target>
+</trans-unit>
+<trans-unit id="s0682ddcaf7be7a77">
+  <source>Give credit word by word, with deductions for missing, extra, or changed words.</source>
+<target>Geef punten per woord, met aftrek voor ontbrekende, extra of gewijzigde woorden.</target>
+</trans-unit>
+<trans-unit id="s179588dcdddf2174">
+  <source>Speech recognition is not supported in this browser.</source>
+<target>Spraakherkenning wordt niet ondersteund in deze browser.</target>
+</trans-unit>
+<trans-unit id="s3f63f5f9314e6043">
+  <source>Microphone access was denied.</source>
+<target>Microfoontoegang is geweigerd.</target>
+</trans-unit>
+<trans-unit id="sd4eff05c54de1cc0">
+  <source>The microphone is unavailable.</source>
+<target>De microfoon is niet beschikbaar.</target>
+</trans-unit>
+<trans-unit id="s88bb88dfdcdb627d">
+  <source>Speech recognition could not connect. Try again.</source>
+<target>Spraakherkenning kon geen verbinding maken. Probeer het opnieuw.</target>
+</trans-unit>
+<trans-unit id="s56e2fa9e68dc4501">
+  <source>Speech recognition does not support this language.</source>
+<target>Spraakherkenning ondersteunt deze taal niet.</target>
+</trans-unit>
+<trans-unit id="sa01ea3b8a9cb6730">
+  <source>The browser's speech recognition service is unavailable.</source>
+<target>De spraakherkenningsservice van de browser is niet beschikbaar.</target>
+</trans-unit>
+<trans-unit id="sd9ed7407d01ead0c">
+  <source>No speech was recognized. Try again.</source>
+<target>Er is geen spraak herkend. Probeer het opnieuw.</target>
+</trans-unit>
+<trans-unit id="s4639f7a3ea067ba3">
+  <source>Speech recognition timed out.</source>
+<target>Spraakherkenning is verlopen.</target>
+</trans-unit>
+<trans-unit id="s7a0c4c4a03638428">
+  <source>Speech recognition could not finish. Try again.</source>
+<target>Spraakherkenning kon niet worden voltooid. Probeer het opnieuw.</target>
+</trans-unit>
+<trans-unit id="s0622a6e6cb77254b">
+  <source>Transcript</source>
+<target>Transcript</target>
+</trans-unit>
+<trans-unit id="sdadcdefc4c36991b">
+  <source>Record your answer.</source>
+<target>Neem je antwoord op.</target>
+</trans-unit>
+<trans-unit id="s3456174fce4f31a7">
+  <source>Recognized answer: <x id="0" equiv-text="${this.recognizedAnswer}"/></source>
+<target>Herkend antwoord: <x id="0" equiv-text="${this.recognizedAnswer}"/></target>
+</trans-unit>
+<trans-unit id="s502f7a2bbeaec091">
+  <source>Transcribing speech…</source>
+<target>Spraak transcriberen…</target>
+</trans-unit>
+<trans-unit id="sf71c79de504af8f7">
+  <source>Interactive content: open the document online</source>
+<target>Interactieve inhoud: open het document online</target>
+</trans-unit>
+<trans-unit id="sbad6e8411baba23a">
+  <source>Minimum words</source>
+<target>Minimum aantal woorden</target>
+</trans-unit>
+<trans-unit id="s620cff015e903b49">
+  <source>Minimum characters</source>
+<target>Minimum aantal tekens</target>
+</trans-unit>
+<trans-unit id="s0bec6a958a6d1aeb">
+  <source>Show word count</source>
+<target>Woordenaantal tonen</target>
+</trans-unit>
+<trans-unit id="sa999618629ec6f6b">
+  <source>Match answer key</source>
+<target>Antwoordsleutel vergelijken</target>
+</trans-unit>
+<trans-unit id="sfbe249ece4a970b8">
+  <source>Full credit when the answer matches an accepted solution.</source>
+<target>Volledige punten als het antwoord overeenkomt met een geaccepteerde oplossing.</target>
+</trans-unit>
+<trans-unit id="s258c598c40e28b44">
+  <source>Full credit when the response meets the answer limits.</source>
+<target>Volledige punten als het antwoord aan de limieten voldoet.</target>
+</trans-unit>
+<trans-unit id="s9f03f75fe691cc42">
+  <source>Almost. Check the capitalization.</source>
+<target>Bijna. Controleer het hoofdlettergebruik.</target>
+</trans-unit>
+<trans-unit id="s191241976c5f89c8">
+  <source>Almost. Check the spelling.</source>
+<target>Bijna. Controleer de spelling.</target>
+</trans-unit>
+<trans-unit id="sa3a7b3637151e12d">
+  <source>Answer limits</source>
+<target>Antwoordlimieten</target>
+</trans-unit>
+<trans-unit id="sefd6ddf636c816cc">
+  <source>Extra solutions &amp; tolerance</source>
+<target>Extra oplossingen en tolerantie</target>
+</trans-unit>
+<trans-unit id="sf202c28e75e3d855">
+  <source>Extra solutions</source>
+<target>Extra oplossingen</target>
+</trans-unit>
+<trans-unit id="s972a62949aa63069">
+  <source>Another accepted answer</source>
+<target>Nog een geaccepteerd antwoord</target>
+</trans-unit>
+<trans-unit id="sd2ea043c0c38373c">
+  <source>Lengthen your answer to meet the minimum.</source>
+<target>Maak je antwoord langer om aan het minimum te voldoen.</target>
+</trans-unit>
+<trans-unit id="sa26fe9ae4bb4e13c">
+  <source>1 word</source>
+<target>1 woord</target>
+</trans-unit>
+<trans-unit id="s7db7a94759a49274">
+  <source><x id="0" equiv-text="${words}"/> words</source>
+<target><x id="0" equiv-text="${words}"/> woorden</target>
+</trans-unit>
+<trans-unit id="s9a231c50b9969eb0">
+  <source><x id="0" equiv-text="${count}"/> (min. <x id="1" equiv-text="${minWords}"/>)</source>
+<target><x id="0" equiv-text="${count}"/> (min. <x id="1" equiv-text="${minWords}"/>)</target>
+</trans-unit>
+<trans-unit id="s5796c82cf4f3e6fb">
+  <source>1 character</source>
+<target>1 teken</target>
+</trans-unit>
+<trans-unit id="s6dbe9cb1faacdff3">
+  <source><x id="0" equiv-text="${answer.length}"/> characters</source>
+<target><x id="0" equiv-text="${answer.length}"/> tekens</target>
+</trans-unit>
+<trans-unit id="s51428c8667d762a0">
+  <source>Enter your answer.</source>
+<target>Voer je antwoord in.</target>
+</trans-unit>
+<trans-unit id="s130ad9c84e53f4ef">
+  <source>Enter the model answer.</source>
+<target>Voer het modelantwoord in.</target>
+</trans-unit>
+<trans-unit id="s488cac76080c5d39">
+  <source>Enter the solution.</source>
+<target>Voer de oplossing in.</target>
+</trans-unit>
+<trans-unit id="sebacf3e0e9d3be58">
+  <source>Model answer</source>
+<target>Modelantwoord</target>
 </trans-unit>
 </body>
 </file>

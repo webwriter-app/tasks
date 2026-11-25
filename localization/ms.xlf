@@ -1,0 +1,1631 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
+<file target-language="ms" source-language="en-US" original="lit-localize-inputs" datatype="plaintext">
+<body>
+<trans-unit id="s23600058a1e98e13">
+  <source>Add Feedback</source>
+  <target>Tambah maklum balas</target>
+</trans-unit>
+<trans-unit id="sc01c972e33754d22">
+  <source>Feedback if selected</source>
+<target>Maklum balas jika dipilih</target></trans-unit>
+<trans-unit id="s31ac9cd289910c65">
+  <source>Feedback if not selected</source>
+<target>Maklum balas jika tidak dipilih</target></trans-unit>
+<trans-unit id="s9daa676c05ab2a68">
+  <source>Single choice</source>
+<target>Pilihan tunggal</target></trans-unit>
+<trans-unit id="s485bbcc5d19e2b20">
+  <source>Multiple Choice</source>
+<target>Pilihan ganda</target></trans-unit>
+<trans-unit id="s159928724265eb05">
+  <source>Add Option</source>
+<target>Tambah pilihan</target></trans-unit>
+<trans-unit id="s37cbecaec58e2192">
+  <source>Mode</source>
+<target>Mode</target></trans-unit>
+<trans-unit id="sf0fce877a8caebec">
+  <source>Randomize Order</source>
+<target>Rawakkan susunan</target></trans-unit>
+<trans-unit id="sb8f0e32715402f50">
+  <source>Grading Method</source>
+<target>Kaedah pemarkahan</target></trans-unit>
+<trans-unit id="s85ea99fb52be3385">
+  <source>True</source>
+<target>Betul</target></trans-unit>
+<trans-unit id="s7254ca27b16ae2d8">
+  <source>False</source>
+<target>Salah</target></trans-unit>
+<trans-unit id="sf90be97cb08f3d5a">
+  <source>Placeholder</source>
+<target>Teks ruang letak</target></trans-unit>
+<trans-unit id="sd24f4d056c0124f6">
+  <source>Empty gap</source>
+<target>Ruang kosong kosong</target></trans-unit>
+<trans-unit id="sdb9694f31d64cfc8">
+  <source>Your answer</source>
+<target>Jawapan Anda</target></trans-unit>
+<trans-unit id="s855bb4e2b08d1a18">
+  <source>No answer</source>
+<target>Tiada jawapan</target></trans-unit>
+<trans-unit id="seaf97719986faf4f">
+  <source>Gap</source>
+<target>Ruang kosong</target></trans-unit>
+<trans-unit id="scc5671964ae0d6f7">
+  <source>Insert gap at selection</source>
+<target>Sisipkan ruang kosong pada pilihan</target></trans-unit>
+<trans-unit id="sbbb7581f20733d79">
+  <source>Gap text</source>
+<target>Input bebas</target></trans-unit>
+<trans-unit id="s2492f5fb1b05b45e">
+  <source>Text</source>
+<target>Teks</target></trans-unit>
+<trans-unit id="s721db58b7b0ea2e3">
+  <source>Available answers</source>
+<target>Jawapan yang tersedia</target></trans-unit>
+<trans-unit id="s03d845021c14b84f">
+  <source>Return to answers</source>
+<target>Kembali ke jawapan</target></trans-unit>
+<trans-unit id="sd23ee5e66df8400a">
+  <source>Direction</source>
+<target>Arah</target></trans-unit>
+<trans-unit id="s94c650bef124bd01">
+  <source>Ascending</source>
+<target>Menaik</target></trans-unit>
+<trans-unit id="s15bdec250a4a55fb">
+  <source>Descending</source>
+<target>Menurun</target></trans-unit>
+<trans-unit id="s21b5ec7253ee5705">
+  <source>The order direction to use.</source>
+<target>Arah susunan yang akan digunakan.</target></trans-unit>
+<trans-unit id="sde7fee183b3bda88">
+  <source>Numbering</source>
+<target>Penomboran</target></trans-unit>
+<trans-unit id="s669b18c6d2d9c95b">
+  <source>None</source>
+<target>Tiada</target></trans-unit>
+<trans-unit id="scc337566a7187408">
+  <source>Numeric</source>
+<target>Numerik</target></trans-unit>
+<trans-unit id="se8a94b4effa2033e">
+  <source>Alphabetic</source>
+<target>Mengikut abjad</target></trans-unit>
+<trans-unit id="s7667ffa7b27a7232">
+  <source>Roman</source>
+<target>Romawi</target></trans-unit>
+<trans-unit id="s36163be9d8064432">
+  <source>The numbering style to use.</source>
+<target>Gaya penomoran yang akan digunakan.</target></trans-unit>
+<trans-unit id="s8685fbc5eca0de27">
+  <source>Grading</source>
+<target>Penilaian</target></trans-unit>
+<trans-unit id="s52cfa1d198476806">
+  <source>Item</source>
+<target>Item</target></trans-unit>
+<trans-unit id="saadba46653e4ffef">
+  <source>Pairing</source>
+<target>Padanan</target></trans-unit>
+<trans-unit id="sf4e3c96801ebe794">
+  <source>Volume: <x id="0" equiv-text="${this.volume}"/>%</source>
+<target>Volume: <x id="0" equiv-text="${this.volume}"/>%</target></trans-unit>
+<trans-unit id="s7acd963aa22be70c">
+  <source>Speed: <x id="0" equiv-text="${this.playbackSpeed}"/>x</source>
+<target>Kelajuan: <x id="0" equiv-text="${this.playbackSpeed}"/>x</target></trans-unit>
+<trans-unit id="s5d86300c6e210017">
+  <source>WebWriter does not have permission to access the microphone.</source>
+<target>WebWriter tidak memiliki izin untuk mengakses mikrofon.</target></trans-unit>
+<trans-unit id="sb5b8485f95c97a79">
+  <source>An error occurred while accessing the microphone.</source>
+<target>Ralat berlaku semasa mengakses mikrofon.</target></trans-unit>
+<trans-unit id="s848dd69654cedb5a">
+  <source>Toggle Marking at Position</source>
+<target>Togol penandaan pada kedudukan ini</target></trans-unit>
+<trans-unit id="s80dc9f56411917df">
+  <source>Text to highlight</source>
+<target>Teks untuk diserlahkan</target></trans-unit>
+<trans-unit id="s9dcffdd89c8e0f58">
+  <source>Hint</source>
+<target>Petunjuk</target></trans-unit>
+<trans-unit id="s7a153886c76b7dcb">
+  <source>Show detailed feedback</source>
+<target>Paparkan umpan balik terperinci</target></trans-unit>
+<trans-unit id="s2f9c7cb1f24c3de8">
+  <source>Require confirmation before submitting</source>
+<target>Minta pengesahan sebelum menghantar</target></trans-unit>
+<trans-unit id="s5ca3b69235e6046b">
+  <source>Require confirmation before resetting</source>
+<target>Minta pengesahan sebelum menetapkan semula</target></trans-unit>
+<trans-unit id="saa48690ce74705d4">
+  <source>Hide points</source>
+<target>Sembunyikan mata</target></trans-unit>
+<trans-unit id="s766f42576852db83">
+  <source>Submit answers?</source>
+<target>Hantar jawapan?</target></trans-unit>
+<trans-unit id="sbcdedcdd8451318c">
+  <source>Reset answers?</source>
+<target>Tetapkan semula jawapan?</target></trans-unit>
+<trans-unit id="s0b733d4a22c3b12f">
+  <source>Submit your answers for evaluation?</source>
+<target>Hantar jawapan Anda untuk dinilai?</target></trans-unit>
+<trans-unit id="s7ac431061b2ebf1a">
+  <source>Reset all answers and start over?</source>
+<target>Tetapkan semula semua jawapan dan mulai lagi?</target></trans-unit>
+<trans-unit id="s2ceb11be2290bb1b">
+  <source>Cancel</source>
+<target>Batal</target></trans-unit>
+<trans-unit id="sb3d4f79d9d8b71e5">
+  <source>Submit</source>
+<target>Hantar</target></trans-unit>
+<trans-unit id="s270d49ea25614a7b">
+  <source>Reset answers</source>
+<target>Tetapkan semula jawapan</target></trans-unit>
+<trans-unit id="scabf78417c4e5d86">
+  <source>Points</source>
+<target>Mata</target></trans-unit>
+<trans-unit id="s43f438831bf2524d">
+  <source>Unanswered</source>
+<target>Belum dijawab</target></trans-unit>
+<trans-unit id="s71ba655ef7772e6c">
+  <source>Incorrect</source>
+<target>Salah</target></trans-unit>
+<trans-unit id="s4158d5fc29a1f991">
+  <source>Correct</source>
+<target>Betul</target></trans-unit>
+<trans-unit id="s19d2c07c1effbdaf">
+  <source>Partially correct</source>
+<target>Betul sebahagian</target></trans-unit>
+<trans-unit id="s73feab3544c345b1">
+  <source>point</source>
+<target>mata</target></trans-unit>
+<trans-unit id="sdd02ad83d7cf88a6">
+  <source>points</source>
+<target>mata</target></trans-unit>
+<trans-unit id="sbbb97b1c63507dc0">
+  <source>Number</source>
+<target>Nombor</target></trans-unit>
+<trans-unit id="sac8252732f2edb19">
+  <source>Date</source>
+<target>Tarikh</target></trans-unit>
+<trans-unit id="s48e186fb300e5464">
+  <source>Time</source>
+<target>Masa</target></trans-unit>
+<trans-unit id="sa0a8f80935f767dd">
+  <source>Ignore capitalization</source>
+<target>Abaikan huruf besar dan kecil</target></trans-unit>
+<trans-unit id="sa937fce28916575e">
+  <source>Solution</source>
+<target>Penyelesaian</target></trans-unit>
+<trans-unit id="sbb588bb505779122">
+  <source>Feedback</source>
+<target>Maklum balas</target></trans-unit>
+<trans-unit id="s3352fb3d4c200919">
+  <source>Single/Multiple Choice</source>
+  <target>Pilihan tunggal / Pilihan ganda</target>
+</trans-unit>
+<trans-unit id="sd47b516b630da4a5">
+  <source>True/False</source>
+  <target>Betul atau Salah</target>
+</trans-unit>
+<trans-unit id="s061cc20e3432dead">
+  <source>Pause</source>
+<target>Jeda</target>
+</trans-unit>
+<trans-unit id="scd105819b5a10243">
+  <source>Play</source>
+<target>Main</target>
+</trans-unit>
+<trans-unit id="se5803f79964880b8">
+  <source>Record again</source>
+<target>Rakam semula</target>
+</trans-unit>
+<trans-unit id="s53b4850973728528">
+  <source>This view blocks microphone access.</source>
+<target>Paparan ini menyekat akses mikrofon.</target>
+</trans-unit>
+<trans-unit id="s38f1c1ae5d0356f7">
+  <source>The recording could not be saved.</source>
+<target>Rakaman tidak dapat disimpan.</target>
+</trans-unit>
+<trans-unit id="sa9da29c2219e79d4">
+  <source>Start recording</source>
+<target>Mulakan rakaman</target>
+</trans-unit>
+<trans-unit id="s9908b0c9b48b35ad">
+  <source>Finishing recording…</source>
+<target>Rakaman sedang ditamatkan…</target>
+</trans-unit>
+<trans-unit id="sb32cad250448883a">
+  <source>Stop recording</source>
+<target>Hentikan rakaman</target>
+</trans-unit>
+<trans-unit id="s2dcbe9c695234958">
+  <source>Add Row</source>
+<target>Tambah baris</target>
+</trans-unit>
+<trans-unit id="s136c24957f6ff7ae">
+  <source>Add Column</source>
+<target>Tambah lajur</target>
+</trans-unit>
+<trans-unit id="s7ccb6d0c2577eec4">
+  <source>All or nothing</source>
+<target>Semua atau tiada</target>
+</trans-unit>
+<trans-unit id="sa7deaffdf7f5df45">
+  <source>Full credit only if every row is completely correct.</source>
+<target>Markah penuh hanya jika setiap baris betul sepenuhnya.</target>
+</trans-unit>
+<trans-unit id="s1fc7cdaeb2298208">
+  <source>Per row</source>
+<target>Setiap baris</target>
+</trans-unit>
+<trans-unit id="s82d2d155e7e9ce8f">
+  <source>Proportional credit for each fully correct row.</source>
+<target>Markah berkadar bagi setiap baris yang betul sepenuhnya.</target>
+</trans-unit>
+<trans-unit id="sc94ed95bae83b5c0">
+  <source>Per cell</source>
+<target>Setiap sel</target>
+</trans-unit>
+<trans-unit id="scc342659e1e69063">
+  <source>Penalized partial credit within multi-select rows.</source>
+<target>Markah separa dikurangkan dalam baris berbilang pilihan.</target>
+</trans-unit>
+<trans-unit id="s96d046d2f7e07e3b">
+  <source>Ungraded</source>
+<target>Belum dinilai</target>
+</trans-unit>
+<trans-unit id="s49749a03640a4d55">
+  <source>Responses are recorded without scoring (survey or rating).</source>
+<target>Respons direkod tanpa pemarkahan (soal selidik atau penarafan).</target>
+</trans-unit>
+<trans-unit id="scc90a4e72a9e3f79">
+  <source><x id="0" equiv-text="${correctCount}"/> of <x id="1" equiv-text="${rows.length}"/> rows are correct.</source>
+<target><x id="0" equiv-text="${correctCount}"/> daripada <x id="1" equiv-text="${rows.length}"/> baris adalah betul.</target>
+</trans-unit>
+<trans-unit id="sea6985b706b63d8c">
+  <source>Enter the rows and choices.</source>
+<target>Masukkan baris dan pilihan.</target>
+</trans-unit>
+<trans-unit id="s2e8d398592e3eaa1">
+  <source>Mark the correct choices in each row.</source>
+<target>Tandakan pilihan yang betul pada setiap baris.</target>
+</trans-unit>
+<trans-unit id="sdced7e9707b6d9c0">
+  <source>Mark one correct choice per row.</source>
+<target>Tandakan satu pilihan yang betul bagi setiap baris.</target>
+</trans-unit>
+<trans-unit id="s444170e956c5ff67">
+  <source>Select all that apply.</source>
+<target>Pilih semua jawapan yang berkenaan.</target>
+</trans-unit>
+<trans-unit id="scdd9af653f7a5cb1">
+  <source>Select one option per row.</source>
+<target>Pilih satu pilihan bagi setiap baris.</target>
+</trans-unit>
+<trans-unit id="s2b045181a53644ce">
+  <source>Add column</source>
+<target>Tambah lajur</target>
+</trans-unit>
+<trans-unit id="sa013e119fec906fb">
+  <source>Row</source>
+<target>Baris</target>
+</trans-unit>
+<trans-unit id="s9e40e59654c8ad67">
+  <source>Column</source>
+<target>Lajur</target>
+</trans-unit>
+<trans-unit id="sd98791ec2fa7277c">
+  <source>Remove feedback</source>
+<target>Buang maklum balas</target>
+</trans-unit>
+<trans-unit id="s5e8250fb85d64c23">
+  <source>Close</source>
+<target>Tutup</target>
+</trans-unit>
+<trans-unit id="s33450ee8e71388ad">
+  <source>Gap options</source>
+<target>Pilihan ruang kosong</target>
+</trans-unit>
+<trans-unit id="s2d30555e682a8525">
+  <source>Add option</source>
+<target>Tambah pilihan</target>
+</trans-unit>
+<trans-unit id="sc47fbba134f97bc1">
+  <source>Remove answer</source>
+<target>Buang jawapan</target>
+</trans-unit>
+<trans-unit id="sd1a1ef004aadb208">
+  <source>Show column headers</source>
+<target>Paparkan pengepala lajur</target>
+</trans-unit>
+<trans-unit id="s2a9ad64c546b4f22">
+  <source>Show row headers</source>
+<target>Paparkan pengepala baris</target>
+</trans-unit>
+<trans-unit id="saec69b4e2f2e04e1">
+  <source>Full credit only if every gap cell is correct.</source>
+<target>Markah penuh hanya jika setiap sel kosong betul.</target>
+</trans-unit>
+<trans-unit id="sdf387eb35c575f35">
+  <source>Proportional credit for each correct gap cell.</source>
+<target>Markah berkadar bagi setiap sel kosong yang betul.</target>
+</trans-unit>
+<trans-unit id="sd345cbba66419e90">
+  <source>Proportional credit for each row where all gaps are correct.</source>
+<target>Markah berkadar bagi setiap baris yang semua ruangnya betul.</target>
+</trans-unit>
+<trans-unit id="sa200ceda4a34c65c">
+  <source>Responses are recorded without scoring.</source>
+<target>Respons direkod tanpa pemarkahan.</target>
+</trans-unit>
+<trans-unit id="sb7cfcc79fbcb74d1">
+  <source><x id="0" equiv-text="${correctCount}"/> of <x id="1" equiv-text="${activeGaps.length}"/> gaps are correct.</source>
+<target><x id="0" equiv-text="${correctCount}"/> daripada <x id="1" equiv-text="${activeGaps.length}"/> ruang adalah betul.</target>
+</trans-unit>
+<trans-unit id="s73658af228bb4a12">
+  <source>Enter the solutions, then mark the gap cells.</source>
+<target>Masukkan penyelesaian, kemudian tandakan sel ruang.</target>
+</trans-unit>
+<trans-unit id="sf2efc78397526616">
+  <source>Drag each answer into a gap, or click an answer and then the gap.</source>
+<target>Seret setiap jawapan ke ruang kosong, atau klik jawapan kemudian ruang itu.</target>
+</trans-unit>
+<trans-unit id="s3b9533e35fe3715d">
+  <source>Fill in the gaps.</source>
+<target>Isi tempat kosong.</target>
+</trans-unit>
+<trans-unit id="sa8b55cab62e439b5">
+  <source>Remove column</source>
+<target>Buang lajur</target>
+</trans-unit>
+<trans-unit id="s77318393dfdb0775">
+  <source>Remove row</source>
+<target>Buang baris</target>
+</trans-unit>
+<trans-unit id="saf3c323b553ddc21">
+  <source>Toggle gap</source>
+<target>Togol ruang kosong</target>
+</trans-unit>
+<trans-unit id="s500fd71a4232050e">
+  <source>Empty</source>
+<target>Kosong</target>
+</trans-unit>
+<trans-unit id="se285f8462c6283d8">
+  <source>All answers are placed.</source>
+<target>Semua jawapan telah diletakkan.</target>
+</trans-unit>
+<trans-unit id="s862ee826ed9e561c">
+  <source>Self-assessment</source>
+<target>Penilaian kendiri</target>
+</trans-unit>
+<trans-unit id="s31e4aca212b90444">
+  <source>Score is based on self-check rubric items checked after submitting.</source>
+<target>Skor berdasarkan item rubrik semakan kendiri yang ditandakan selepas penghantaran.</target>
+</trans-unit>
+<trans-unit id="safc5dc23506c8384">
+  <source>Rubric</source>
+<target>Rubrik</target>
+</trans-unit>
+<trans-unit id="s75576f72d8374e0a">
+  <source>Remove criterion: <x id="0" equiv-text="${criterion}"/></source>
+<target>Buang kriteria: <x id="0" equiv-text="${criterion}"/></target>
+</trans-unit>
+<trans-unit id="sad144a3342aa6ceb">
+  <source>Rubric criterion</source>
+<target>Kriteria rubrik</target>
+</trans-unit>
+<trans-unit id="sf9aee319a006c9b4">
+  <source>Add</source>
+<target>Tambah</target>
+</trans-unit>
+<trans-unit id="s0308ae388d00d28a">
+  <source>Ignore punctuation &amp; accents</source>
+<target>Abaikan tanda baca dan aksen</target>
+</trans-unit>
+<trans-unit id="s9a5698a5dac7cad1">
+  <source>Ignore minor typos</source>
+<target>Abaikan kesilapan taip kecil</target>
+</trans-unit>
+<trans-unit id="s65110cc8f3569002">
+  <source>Task label</source>
+<target>Label tugasan</target>
+</trans-unit>
+<trans-unit id="s1f2f2be86efd928c">
+  <source>Hide scoring</source>
+<target>Sembunyikan pemarkahan</target>
+</trans-unit>
+<trans-unit id="sb5ada04f142c4972">
+  <source>This task is ungraded.</source>
+<target>Tugasan ini tidak digredkan.</target>
+</trans-unit>
+<trans-unit id="sa8346ce518263c93">
+  <source>Answer the task first.</source>
+<target>Jawab tugasan dahulu.</target>
+</trans-unit>
+<trans-unit id="s77c6bf991aa9839e">
+  <source>Self-check</source>
+<target>Semak sendiri</target>
+</trans-unit>
+<trans-unit id="sdce919bbdc89eb6b">
+  <source>Configure</source>
+<target>Konfigur</target>
+</trans-unit>
+<trans-unit id="sb58bd9e06b83960f">
+  <source>Not graded</source>
+<target>Tidak diberi gred</target>
+</trans-unit>
+<trans-unit id="sfc63e31ac7c956ed">
+  <source>Select</source>
+<target>Pilih</target>
+</trans-unit>
+<trans-unit id="s78f9fa174282015c">
+  <source>Write</source>
+<target>Tulis</target>
+</trans-unit>
+<trans-unit id="sd42f58d8f01b4e47">
+  <source>Arrange</source>
+<target>Susun</target>
+</trans-unit>
+<trans-unit id="se23357f112296589">
+  <source>Speak</source>
+<target>Bercakap</target>
+</trans-unit>
+<trans-unit id="s1c0ea772de28e773">
+  <source>Draw</source>
+<target>Lukis</target>
+</trans-unit>
+<trans-unit id="s8a13240ec237a9ef">
+  <source>Other tasks</source>
+<target>Tugasan lain</target>
+</trans-unit>
+<trans-unit id="s7013a0bd5cf697ec">
+  <source>Task type</source>
+<target>Jenis tugasan</target>
+</trans-unit>
+<trans-unit id="sd19715215fa7c6ca">
+  <source>Task Results</source>
+<target>Keputusan tugasan</target>
+</trans-unit>
+<trans-unit id="s42cbd8dca939a9c7">
+  <source>Check</source>
+<target>Sahkan</target>
+</trans-unit>
+<trans-unit id="scd1dd6ff53d0d01a">
+  <source>Try again</source>
+<target>Cuba lagi</target>
+</trans-unit>
+<trans-unit id="s79edd0a02d3adfc5">
+  <source>Add Hint</source>
+<target>Tambah petunjuk</target>
+</trans-unit>
+<trans-unit id="s823c091104445186">
+  <source>Remove hint</source>
+<target>Buang petunjuk</target>
+</trans-unit>
+<trans-unit id="s0ac2f44b55475b68">
+  <source>Tolerance</source>
+<target>Toleransi</target>
+</trans-unit>
+<trans-unit id="s62b2c51610dc615b">
+  <source>The current content or settings require this layout.</source>
+<target>Kandungan atau tetapan semasa memerlukan reka letak ini.</target>
+</trans-unit>
+<trans-unit id="s25e1a07e454c2c11">
+  <source>Grid</source>
+<target>Grid</target>
+</trans-unit>
+<trans-unit id="sb69fe5b15d487851">
+  <source>Task/question</source>
+<target>Tugasan/soalan</target>
+</trans-unit>
+<trans-unit id="s379c18aec5654894">
+  <source>Move</source>
+<target>Alih</target>
+</trans-unit>
+<trans-unit id="s9f26843287bb592d">
+  <source>Groups</source>
+<target>Kumpulan</target>
+</trans-unit>
+<trans-unit id="sba1bfeaf662fe54e">
+  <source>Full credit only if every item is sorted into its right group.</source>
+<target>Markah penuh hanya jika setiap item disusun ke dalam kumpulan yang betul.</target>
+</trans-unit>
+<trans-unit id="s08873708079f6e23">
+  <source>Per item</source>
+<target>Setiap item</target>
+</trans-unit>
+<trans-unit id="s46d5bd7d13f2238f">
+  <source>Proportional credit for each item placed in its right group.</source>
+<target>Markah berkadar bagi setiap item yang diletakkan dalam kumpulan yang betul.</target>
+</trans-unit>
+<trans-unit id="scb9da282dc6a8c06">
+  <source>Option <x id="0" equiv-text="${index + 1}"/></source>
+<target>Pilihan <x id="0" equiv-text="${index + 1}"/></target>
+</trans-unit>
+<trans-unit id="s2a64d2dca3da9b0e">
+  <source>Group <x id="0" equiv-text="${index + 1}"/></source>
+<target>Kumpulan <x id="0" equiv-text="${index + 1}"/></target>
+</trans-unit>
+<trans-unit id="s5468d720047eb162">
+  <source>Add item to <x id="0" equiv-text="${name}"/></source>
+<target>Tambah item pada <x id="0" equiv-text="${name}"/></target>
+</trans-unit>
+<trans-unit id="sf643c4a10dba9800">
+  <source>Remove <x id="0" equiv-text="${label}"/> from this group</source>
+<target>Alih keluar <x id="0" equiv-text="${label}"/> daripada kumpulan ini</target>
+</trans-unit>
+<trans-unit id="sfe592af2e37a2214">
+  <source>Multi-group</source>
+<target>Pelbagai kumpulan</target>
+</trans-unit>
+<trans-unit id="s635ffba679db4c52">
+  <source>Multi</source>
+<target>Berbilang</target>
+</trans-unit>
+<trans-unit id="s0229d85de3888d71">
+  <source><x id="0" equiv-text="${correct}"/> of <x id="1" equiv-text="${total}"/> items are in all the right groups.</source>
+<target><x id="0" equiv-text="${correct}"/> daripada <x id="1" equiv-text="${total}"/> item berada dalam semua kumpulan yang betul.</target>
+</trans-unit>
+<trans-unit id="s9ecafed1144dba1f">
+  <source><x id="0" equiv-text="${correct}"/> of <x id="1" equiv-text="${total}"/> items are in the right group.</source>
+<target><x id="0" equiv-text="${correct}"/> daripada <x id="1" equiv-text="${total}"/> item berada dalam kumpulan yang betul.</target>
+</trans-unit>
+<trans-unit id="s5a264cb2ba999afa">
+  <source>Place each item in all its correct groups.</source>
+<target>Letakkan setiap item dalam semua kumpulan yang betul.</target>
+</trans-unit>
+<trans-unit id="sc52e6e561e8f6c78">
+  <source>Drag items into their groups, or use + to choose from Options.</source>
+<target>Seret item ke kumpulannya atau gunakan + untuk memilih daripada Pilihan.</target>
+</trans-unit>
+<trans-unit id="sc53e8091d43b9066">
+  <source>Place each item in its correct group.</source>
+<target>Letakkan setiap item dalam kumpulan yang betul.</target>
+</trans-unit>
+<trans-unit id="sdf9018f953f702be">
+  <source>Drag items into a group, or use + to choose from Options.</source>
+<target>Seret item ke dalam kumpulan atau gunakan + untuk memilih daripada Pilihan.</target>
+</trans-unit>
+<trans-unit id="se8e6a39f5369c253">
+  <source>Add item</source>
+<target>Tambah item</target>
+</trans-unit>
+<trans-unit id="sd9f67fbf3f86efcf">
+  <source>Add group</source>
+<target>Tambah kumpulan</target>
+</trans-unit>
+<trans-unit id="s463b8c4e92751ba5">
+  <source>Options</source>
+<target>Pilihan</target>
+</trans-unit>
+<trans-unit id="s670aaa17382d2876">
+  <source>Wrong</source>
+<target>Salah</target>
+</trans-unit>
+<trans-unit id="s408cd1e9be6e74f0">
+  <source>Missed</source>
+<target>Terlepas</target>
+</trans-unit>
+<trans-unit id="s33c59364235732dd">
+  <source>Full credit only if every right option and no wrong option is selected.</source>
+<target>Markah penuh hanya jika semua pilihan yang betul dan tiada pilihan yang salah dipilih.</target>
+</trans-unit>
+<trans-unit id="s2118adbd5904ec36">
+  <source>Partial (penalize wrong)</source>
+<target>Sebahagian (penalti untuk jawapan salah)</target>
+</trans-unit>
+<trans-unit id="s1916139f98775735">
+  <source>Right selections add credit; wrong selections subtract from it (min. 0).</source>
+<target>Pilihan yang betul menambah markah; pilihan yang salah menolaknya (min. 0).</target>
+</trans-unit>
+<trans-unit id="s997c32dc20df1235">
+  <source>Exact match</source>
+<target>Padanan tepat</target>
+</trans-unit>
+<trans-unit id="s88fa46d7b66ff1e6">
+  <source>Full credit for selecting the correct option.</source>
+<target>Markah penuh untuk memilih pilihan yang betul.</target>
+</trans-unit>
+<trans-unit id="s5d02042067dcb593">
+  <source>Enter the statement.</source>
+<target>Masukkan pernyataan.</target>
+</trans-unit>
+<trans-unit id="s568ad4e4e7b1eb44">
+  <source>Enter the choices.</source>
+<target>Masukkan pilihan.</target>
+</trans-unit>
+<trans-unit id="sdd71f5afc90398eb">
+  <source>Select the correct answers.</source>
+<target>Pilih jawapan yang betul.</target>
+</trans-unit>
+<trans-unit id="s1ec9854f438d7b40">
+  <source>Select the correct answer.</source>
+<target>Pilih jawapan yang betul.</target>
+</trans-unit>
+<trans-unit id="s404c6db5256b2680">
+  <source>Choose True or False.</source>
+<target>Pilih Betul atau Salah.</target>
+</trans-unit>
+<trans-unit id="s68577a883e958b95">
+  <source>Select one answer.</source>
+<target>Pilih satu jawapan.</target>
+</trans-unit>
+<trans-unit id="s4094f9a53a127ce2">
+  <source>Found <x id="0" equiv-text="${found}"/> of <x id="1" equiv-text="${correct.size}"/> correct options.</source>
+<target><x id="0" equiv-text="${found}"/> daripada <x id="1" equiv-text="${correct.size}"/> pilihan yang betul ditemui.</target>
+</trans-unit>
+<trans-unit id="s66070c10ddc25bd7">
+  <source>1 wrong option selected.</source>
+<target>1 pilihan salah dipilih.</target>
+</trans-unit>
+<trans-unit id="sb21f600f6d785eeb">
+  <source><x id="0" equiv-text="${wrong}"/> wrong options selected.</source>
+<target><x id="0" equiv-text="${wrong}"/> pilihan yang salah dipilih.</target>
+</trans-unit>
+<trans-unit id="sbe4508f09222c889">
+  <source>Single</source>
+<target>Tunggal</target>
+</trans-unit>
+<trans-unit id="s12b13f3557a8e6c2">
+  <source>Dictation</source>
+<target>Dikte</target>
+</trans-unit>
+<trans-unit id="s64a981f393576a7b">
+  <source>Ignore punctuation</source>
+<target>Abaikan tanda baca</target>
+</trans-unit>
+<trans-unit id="se6fee24d1cbbc9db">
+  <source>Give partial credit for minor typos</source>
+<target>Berikan markah separa untuk kesilapan taip kecil</target>
+</trans-unit>
+<trans-unit id="s3ec5145dc8e77493">
+  <source>Partial credit</source>
+<target>Kredit separa</target>
+</trans-unit>
+<trans-unit id="s921ae54cca4fd6a7">
+  <source>Add recording</source>
+<target>Tambah rakaman</target>
+</trans-unit>
+<trans-unit id="s6599a3d76cdf16c6">
+  <source>This browser cannot transcribe recordings automatically.</source>
+<target>Pelayar ini tidak dapat mentranskripsikan rakaman secara automatik.</target>
+</trans-unit>
+<trans-unit id="s8beb3150837877a2">
+  <source>The recording could not be played for transcription.</source>
+<target>Rakaman tidak dapat dimainkan untuk transkripsi.</target>
+</trans-unit>
+<trans-unit id="s0769bd26bad7ceb0">
+  <source>Automatic transcription could not finish. Try again.</source>
+<target>Transkripsi automatik tidak dapat diselesaikan. Cuba lagi.</target>
+</trans-unit>
+<trans-unit id="s652dfa634831c4ac">
+  <source>No speech was recognized in the recording.</source>
+<target>Tiada pertuturan dikenal pasti dalam rakaman.</target>
+</trans-unit>
+<trans-unit id="sb096e2c355121468">
+  <source>Automatic transcription timed out. Try again.</source>
+<target>Transkripsi automatik tamat masa. Cuba lagi.</target>
+</trans-unit>
+<trans-unit id="s7682adbd6cb18c43">
+  <source>Slow recording</source>
+<target>Rakaman perlahan</target>
+</trans-unit>
+<trans-unit id="s88b857ef66b06bf5">
+  <source>Dictation recording</source>
+<target>Rakaman imlak</target>
+</trans-unit>
+<trans-unit id="s7da110cc5d71e597">
+  <source>1 play left</source>
+<target>1 percubaan lagi</target>
+</trans-unit>
+<trans-unit id="s3dd2e91200254ee7">
+  <source><x id="0" equiv-text="${remaining}"/> plays left</source>
+<target>Baki <x id="0" equiv-text="${remaining}"/> permainan</target>
+</trans-unit>
+<trans-unit id="s00e41b3c4a182aa8">
+  <source>Solution transcript</source>
+<target>Transkrip penyelesaian</target>
+</trans-unit>
+<trans-unit id="se166026acf69acae">
+  <source>Type what you hear</source>
+<target>Taip apa yang anda dengar</target>
+</trans-unit>
+<trans-unit id="s12bb8a652aa6c4d1">
+  <source>Add audio and enter the solution transcript.</source>
+<target>Tambah audio dan masukkan transkrip penyelesaian.</target>
+</trans-unit>
+<trans-unit id="s4dbda45a874f64ac">
+  <source>Listen and type what you hear.</source>
+<target>Dengar dan taip apa yang anda dengar.</target>
+</trans-unit>
+<trans-unit id="sa73f2240c86b5168">
+  <source>No recording available.</source>
+<target>Tiada rakaman tersedia.</target>
+</trans-unit>
+<trans-unit id="s61fa8e1be7a254b8">
+  <source>Transcribing recording…</source>
+<target>Rakaman sedang ditranskripsikan…</target>
+</trans-unit>
+<trans-unit id="sc476adbff390819f">
+  <source>The recording could not be played.</source>
+<target>Rakaman tidak dapat dimainkan.</target>
+</trans-unit>
+<trans-unit id="sad5df5643732af8e">
+  <source>Recording language</source>
+<target>Bahasa rakaman</target>
+</trans-unit>
+<trans-unit id="s625ef7f3207cf9cb">
+  <source>Cancel transcription</source>
+<target>Batalkan transkripsi</target>
+</trans-unit>
+<trans-unit id="s065289e6cba017c6">
+  <source>Transcribe</source>
+<target>Transkripsikan</target>
+</trans-unit>
+<trans-unit id="s37658628514bfa29">
+  <source>Sketch</source>
+<target>Lakar</target>
+</trans-unit>
+<trans-unit id="s74ae056b8a4fe2fc">
+  <source>Require a drawing before submitting</source>
+<target>Wajibkan lukisan sebelum menghantar</target>
+</trans-unit>
+<trans-unit id="s25fadd3e7388516c">
+  <source>Canvas height</source>
+<target>Ketinggian kanvas</target>
+</trans-unit>
+<trans-unit id="s4f888fe2eebd3ac4">
+  <source>Completion credit</source>
+<target>Kredit penyelesaian</target>
+</trans-unit>
+<trans-unit id="s9085fd214561bc83">
+  <source>Full credit when a drawing is submitted.</source>
+<target>Markah penuh apabila lukisan dihantar.</target>
+</trans-unit>
+<trans-unit id="s070f9dc186e70d69">
+  <source>Shows the optional sample for comparison without scoring.</source>
+<target>Memaparkan sampel pilihan untuk perbandingan tanpa pemarkahan.</target>
+</trans-unit>
+<trans-unit id="s8f4be9f086eb530f">
+  <source>Undo</source>
+<target>Buat asal</target>
+</trans-unit>
+<trans-unit id="sb4f1dffbb6be6302">
+  <source>Clear</source>
+<target>Kosongkan</target>
+</trans-unit>
+<trans-unit id="s8dc59619f423a210">
+  <source>Pen</source>
+<target>Pen</target>
+</trans-unit>
+<trans-unit id="s3cf8a6b47fddf8e7">
+  <source>Line</source>
+<target>Garis</target>
+</trans-unit>
+<trans-unit id="s5d0b63df0bad8c2e">
+  <source>Rectangle</source>
+<target>Persegi panjang</target>
+</trans-unit>
+<trans-unit id="sbadcfb6aa6ef38b1">
+  <source>Ellipse</source>
+<target>Elips</target>
+</trans-unit>
+<trans-unit id="s085cd8fee92a2cc5">
+  <source>Eraser</source>
+<target>Pemadam</target>
+</trans-unit>
+<trans-unit id="s5e3cb80d43a34044">
+  <source>Black</source>
+<target>Hitam</target>
+</trans-unit>
+<trans-unit id="secf3d3a7c1693e2d">
+  <source>Blue</source>
+<target>Biru</target>
+</trans-unit>
+<trans-unit id="s9ff1de19feac1b7c">
+  <source>Red</source>
+<target>Merah</target>
+</trans-unit>
+<trans-unit id="scf00d78fd5953f1c">
+  <source>Green</source>
+<target>Hijau</target>
+</trans-unit>
+<trans-unit id="s6baf78886c99db89">
+  <source>Yellow</source>
+<target>Kuning</target>
+</trans-unit>
+<trans-unit id="s56339226771df73e">
+  <source>Drawing tools</source>
+<target>Alat lukisan</target>
+</trans-unit>
+<trans-unit id="s5a71f1fb3a12c6a7">
+  <source>Tool</source>
+<target>Alat</target>
+</trans-unit>
+<trans-unit id="s344ea8f4939cdc98">
+  <source>Color</source>
+<target>Warna</target>
+</trans-unit>
+<trans-unit id="se615f6ce0dd01061">
+  <source>Stroke width</source>
+<target>Lebar garis</target>
+</trans-unit>
+<trans-unit id="s923215988b72aba6">
+  <source>Draw your answer.</source>
+<target>Lukis jawapan anda.</target>
+</trans-unit>
+<trans-unit id="s0eb6407d01b573ca">
+  <source>Choose a background image.</source>
+<target>Pilih imej latar belakang.</target>
+</trans-unit>
+<trans-unit id="s52a077cf893ca5cb">
+  <source>Draw the solution.</source>
+<target>Lukis penyelesaian.</target>
+</trans-unit>
+<trans-unit id="s78391e806efb04be">
+  <source>Modify image</source>
+<target>Ubah imej</target>
+</trans-unit>
+<trans-unit id="s8f8bbd8053618688">
+  <source>Add background</source>
+<target>Tambah latar belakang</target>
+</trans-unit>
+<trans-unit id="sc25a259379b9ddf9">
+  <source>Remove gap</source>
+<target>Buang ruang kosong</target>
+</trans-unit>
+<trans-unit id="s3c6170c7cbb3c96c">
+  <source>Full credit only if every gap is filled correctly.</source>
+<target>Markah penuh hanya jika setiap ruang diisi dengan betul.</target>
+</trans-unit>
+<trans-unit id="s7cf3abae566db880">
+  <source>Per gap</source>
+<target>Setiap ruang kosong</target>
+</trans-unit>
+<trans-unit id="sf5246d0ef9e92c22">
+  <source>Proportional credit for each correctly filled gap.</source>
+<target>Markah berkadar bagi setiap ruang yang diisi dengan betul.</target>
+</trans-unit>
+<trans-unit id="s0767fdab6ae788ae">
+  <source>Select the solution text for each gap.</source>
+<target>Pilih teks penyelesaian bagi setiap ruang.</target>
+</trans-unit>
+<trans-unit id="scfd9561b07fa745f">
+  <source>Select the right option for each gap.</source>
+<target>Pilih pilihan yang betul bagi setiap ruang</target>
+</trans-unit>
+<trans-unit id="s818176fa88ae0e18">
+  <source>All options are already in this group.</source>
+<target>Semua pilihan sudah berada dalam kumpulan ini.</target>
+</trans-unit>
+<trans-unit id="s70945b389a1737de">
+  <source>Image Placements</source>
+<target>Peletakan imej</target>
+</trans-unit>
+<trans-unit id="s781e64ea47044bd9">
+  <source>Add image</source>
+<target>Tambah imej</target>
+</trans-unit>
+<trans-unit id="s4f521327851555e4">
+  <source>Item <x id="0" equiv-text="${index + 1}"/></source>
+<target>Item <x id="0" equiv-text="${index + 1}"/></target>
+</trans-unit>
+<trans-unit id="s4c0433e13ae18244">
+  <source>Correct item</source>
+<target>Item yang betul</target>
+</trans-unit>
+<trans-unit id="s0b023612a7aac3c6">
+  <source>Choose an item</source>
+<target>Pilih item</target>
+</trans-unit>
+<trans-unit id="sa6f359971854ca5b">
+  <source><x id="0" equiv-text="${label}"/> placed in <x id="1" equiv-text="${zone.label || this.msg(&quot;Zone&quot;)}"/>.</source>
+<target><x id="0" equiv-text="${label}"/> diletakkan di <x id="1" equiv-text="${zone.label || this.msg(&quot;Zone&quot;)}"/>.</target>
+</trans-unit>
+<trans-unit id="s6fcdab6f6cf7461b">
+  <source><x id="0" equiv-text="${label}"/> returned to Options.</source>
+<target><x id="0" equiv-text="${label}"/> dikembalikan kepada Pilihan.</target>
+</trans-unit>
+<trans-unit id="s703202c2ebdf2d61">
+  <source>Zone <x id="0" equiv-text="${index + 1}"/></source>
+<target>Zon <x id="0" equiv-text="${index + 1}"/></target>
+</trans-unit>
+<trans-unit id="se8a94a95a76e488a">
+  <source>This task needs an image and a correct item for each zone.</source>
+<target>Tugasan ini memerlukan imej dan item yang betul untuk setiap zon.</target>
+</trans-unit>
+<trans-unit id="s05ba009cda8c6a1b">
+  <source>Return selected item</source>
+<target>Pulangkan item yang dipilih</target>
+</trans-unit>
+<trans-unit id="seaa5fbd29de72476">
+  <source>Image Hotspots</source>
+<target>Titik panas imej</target>
+</trans-unit>
+<trans-unit id="sa37e098e69be3dd2">
+  <source>Full credit only if every marker matches with no wrong pins.</source>
+<target>Markah penuh hanya jika semua penanda sepadan tanpa pin yang salah.</target>
+</trans-unit>
+<trans-unit id="s6dfb48202e30e3f6">
+  <source>Per marker</source>
+<target>Setiap penanda</target>
+</trans-unit>
+<trans-unit id="sb912798fe55d8e34">
+  <source>Credit per matched marker, subtracting extra wrong pins.</source>
+<target>Markah bagi setiap penanda yang sepadan; tolak penanda salah tambahan.</target>
+</trans-unit>
+<trans-unit id="s1667f96d19635ec7">
+  <source>Zone</source>
+<target>Zon</target>
+</trans-unit>
+<trans-unit id="se2dbf72e263c272e">
+  <source>Label pin</source>
+<target>Pin label</target>
+</trans-unit>
+<trans-unit id="sb51270e19988f9bd">
+  <source>Region</source>
+<target>Wilayah</target>
+</trans-unit>
+<trans-unit id="s82059beffcb7fed7">
+  <source>Resize left edge</source>
+<target>Ubah saiz tepi kiri</target>
+</trans-unit>
+<trans-unit id="s6d5cb65f8a9d4aec">
+  <source>Resize right edge</source>
+<target>Ubah saiz tepi kanan</target>
+</trans-unit>
+<trans-unit id="s03635bdd07e891f7">
+  <source>Resize top edge</source>
+<target>Ubah saiz tepi atas</target>
+</trans-unit>
+<trans-unit id="s196f15ed6778fd19">
+  <source>Resize bottom edge</source>
+<target>Ubah saiz tepi bawah</target>
+</trans-unit>
+<trans-unit id="s14c54ca33d0f3ea9">
+  <source>Circle</source>
+<target>Bulatan</target>
+</trans-unit>
+<trans-unit id="s2de969afacdaa7a6">
+  <source>Shape</source>
+<target>Bentuk</target>
+</trans-unit>
+<trans-unit id="sa348c16c7e7e7f9c">
+  <source>Hotspot</source>
+<target>Titik panas</target>
+</trans-unit>
+<trans-unit id="s2b2a10d7e7c742dd">
+  <source>Marker type</source>
+<target>Jenis penanda</target>
+</trans-unit>
+<trans-unit id="s81627c2242106fca">
+  <source>Add zone</source>
+<target>Tambah zon</target>
+</trans-unit>
+<trans-unit id="s4a9c975e50c1c4ff">
+  <source>Add hotspot</source>
+<target>Tambah titik panas</target>
+</trans-unit>
+<trans-unit id="s626d8911506b0db5">
+  <source>Add label pin</source>
+<target>Tambah pin label</target>
+</trans-unit>
+<trans-unit id="s613e777f99178cf3">
+  <source>Add an image to define the solution zones.</source>
+<target>Tambah imej untuk menentukan zon penyelesaian.</target>
+</trans-unit>
+<trans-unit id="s4f4b1255c353cd38">
+  <source>Add an image to mark the solution hotspots.</source>
+<target>Tambah imej untuk menandakan titik panas penyelesaian.</target>
+</trans-unit>
+<trans-unit id="s4adf3e11ff5354ae">
+  <source>Add a zone, then choose its correct item.</source>
+<target>Tambah zon, kemudian pilih item yang betul.</target>
+</trans-unit>
+<trans-unit id="sd783a9ddacfc12bf">
+  <source>Double-click a correct spot. Drag or click its center to edit.</source>
+<target>Klik dua kali tempat yang betul. Seret atau klik bahagian tengahnya untuk mengedit.</target>
+</trans-unit>
+<trans-unit id="s760dae6a21ba2359">
+  <source>Drag an item to a zone, or select an item and then a zone.</source>
+<target>Seret item ke zon, atau pilih item kemudian zon.</target>
+</trans-unit>
+<trans-unit id="sbec481c67db2bbeb">
+  <source><x id="0" equiv-text="${correctLabels}"/> of <x id="1" equiv-text="${labelMarkers.length}"/> labels are correct.</source>
+<target><x id="0" equiv-text="${correctLabels}"/> daripada <x id="1" equiv-text="${labelMarkers.length}"/> label adalah betul.</target>
+</trans-unit>
+<trans-unit id="s2ae10bcf386b5474">
+  <source><x id="0" equiv-text="${matchedMarkers.size}"/> of <x id="1" equiv-text="${hotspots.length}"/> targets found.</source>
+<target><x id="0" equiv-text="${matchedMarkers.size}"/> daripada <x id="1" equiv-text="${hotspots.length}"/> sasaran ditemui.</target>
+</trans-unit>
+<trans-unit id="s7fa1caf807422e65">
+  <source>Drag each label onto its marker on the image.</source>
+<target>Seret setiap label ke penandanya pada imej.</target>
+</trans-unit>
+<trans-unit id="sd2f8e252296a0030">
+  <source>Click the target region(s) in the image.</source>
+<target>Klik kawasan sasaran dalam imej.</target>
+</trans-unit>
+<trans-unit id="s0c2e2e9567aa5ea2">
+  <source>No image selected.</source>
+<target>Tiada imej dipilih.</target>
+</trans-unit>
+<trans-unit id="sa894b36f20aab589">
+  <source>Edit zone</source>
+<target>Sunting zon</target>
+</trans-unit>
+<trans-unit id="s345eb75f6da5e520">
+  <source>Edit label pin</source>
+<target>Sunting pin label</target>
+</trans-unit>
+<trans-unit id="s6e27fd7a0431d14a">
+  <source>Edit hotspot</source>
+<target>Sunting titik panas</target>
+</trans-unit>
+<trans-unit id="s1d4fb8833a6ede92">
+  <source>Selected point</source>
+<target>Titik dipilih</target>
+</trans-unit>
+<trans-unit id="s8a9eb438abac7c6a">
+  <source>Labels</source>
+<target>Label</target>
+</trans-unit>
+<trans-unit id="s5ba21ea6d3f246a4">
+  <source>All labels are placed.</source>
+<target>Semua label telah diletakkan.</target>
+</trans-unit>
+<trans-unit id="sea4f08110bb8f15d">
+  <source>Remove</source>
+<target>Alih keluar</target>
+</trans-unit>
+<trans-unit id="s5590dbf7e425789d">
+  <source>Label</source>
+<target>Label</target>
+</trans-unit>
+<trans-unit id="s8654133f4227b6dc">
+  <source>Highlights</source>
+<target>Sorotan</target>
+</trans-unit>
+<trans-unit id="scab3980db2755f4c">
+  <source>Full credit only if exactly the right words are marked.</source>
+<target>Markah penuh hanya jika perkataan yang betul sahaja ditandakan.</target>
+</trans-unit>
+<trans-unit id="s301bb7275252a013">
+  <source>Right marks add credit; wrong marks subtract from it (min. 0).</source>
+<target>Tanda yang betul menambah markah; tanda salah menolaknya (min. 0).</target>
+</trans-unit>
+<trans-unit id="sfd71dba826b393cd">
+  <source>Hide total marks to find</source>
+<target>Sembunyikan jumlah markah untuk dicari</target>
+</trans-unit>
+<trans-unit id="sd645983eef83ec21">
+  <source>Marked</source>
+<target>Ditandakan</target>
+</trans-unit>
+<trans-unit id="s77d276c07612f65e">
+  <source>Right-click to mark the solution.</source>
+<target>Klik kanan untuk menandakan penyelesaian.</target>
+</trans-unit>
+<trans-unit id="s745ad67c65bcea27">
+  <source><x id="0" equiv-text="${toFind}"/> marked</source>
+<target><x id="0" equiv-text="${toFind}"/> ditandakan</target>
+</trans-unit>
+<trans-unit id="s959d28a246839d0a">
+  <source>Toggle mark</source>
+<target>Togol tanda</target>
+</trans-unit>
+<trans-unit id="s7aba8fc293a40c7d">
+  <source><x id="0" equiv-text="${toFind}"/> to find</source>
+<target><x id="0" equiv-text="${toFind}"/> untuk dicari</target>
+</trans-unit>
+<trans-unit id="sd0e6c99efa390583">
+  <source>Click the words to mark.</source>
+<target>Klik perkataan untuk menandainya.</target>
+</trans-unit>
+<trans-unit id="s0337af549735d429">
+  <source>Input type</source>
+<target>Jenis input</target>
+</trans-unit>
+<trans-unit id="s0043cbab8a7a7cfc">
+  <source>Slider</source>
+<target>Pelungsur</target>
+</trans-unit>
+<trans-unit id="sbcc77dff2df51943">
+  <source>Date/Time</source>
+<target>Tarikh/masa</target>
+</trans-unit>
+<trans-unit id="sef6dc9d5fd60c301">
+  <source>Within tolerance</source>
+<target>Dalam toleransi</target>
+</trans-unit>
+<trans-unit id="sa0f0a930b4567d3c">
+  <source>Full credit within tolerance, with optional linear partial-credit band.</source>
+<target>Markah penuh dalam had toleransi, dengan julat markah separa linear pilihan.</target>
+</trans-unit>
+<trans-unit id="s6fc200fc41be604e">
+  <source>Tolerance (±)</source>
+<target>Toleransi (±)</target>
+</trans-unit>
+<trans-unit id="s01efb169e6921610">
+  <source>Tolerance type</source>
+<target>Jenis toleransi</target>
+</trans-unit>
+<trans-unit id="s27f42912a50df5e1">
+  <source>Absolute (± value)</source>
+<target>Mutlak (± nilai)</target>
+</trans-unit>
+<trans-unit id="se4fd08ea4526ece6">
+  <source>Relative (± %)</source>
+<target>Relatif (± %)</target>
+</trans-unit>
+<trans-unit id="sd47d4d5489d1da3a">
+  <source>Partial credit band</source>
+<target>Julat kredit separa</target>
+</trans-unit>
+<trans-unit id="sf88789673a732088">
+  <source>Extra range beyond tolerance where credit decays linearly to zero.</source>
+<target>Julat tambahan di luar toleransi apabila markah menurun secara linear hingga sifar.</target>
+</trans-unit>
+<trans-unit id="s8f26e0f086cc2787">
+  <source>Unit</source>
+<target>Unit</target>
+</trans-unit>
+<trans-unit id="seb4eae68d45315b7">
+  <source>Minimum</source>
+<target>Minimum</target>
+</trans-unit>
+<trans-unit id="s00decbd8fed4f501">
+  <source>Maximum</source>
+<target>Maksimum</target>
+</trans-unit>
+<trans-unit id="sd9994f251f1280cf">
+  <source>Step</source>
+<target>Langkah</target>
+</trans-unit>
+<trans-unit id="s863f9a65357e7d87">
+  <source>Enter the solution date.</source>
+<target>Masukkan tarikh penyelesaian.</target>
+</trans-unit>
+<trans-unit id="s8101e9674e03d8d4">
+  <source>Enter a date.</source>
+<target>Masukkan tarikh.</target>
+</trans-unit>
+<trans-unit id="sbf57f251472bcb58">
+  <source>Enter the solution time.</source>
+<target>Masukkan masa penyelesaian.</target>
+</trans-unit>
+<trans-unit id="s9ef2eb3d0696a8e3">
+  <source>Enter a time.</source>
+<target>Masukkan masa.</target>
+</trans-unit>
+<trans-unit id="s7b2019f9159b0153">
+  <source>Enter the solution date and time.</source>
+<target>Masukkan tarikh dan masa penyelesaian.</target>
+</trans-unit>
+<trans-unit id="s20e5183dd45ada26">
+  <source>Enter a date and time.</source>
+<target>Masukkan tarikh dan masa.</target>
+</trans-unit>
+<trans-unit id="s8d69dee8addc385a">
+  <source>Set the solution on the slider.</source>
+<target>Tetapkan penyelesaian pada pelungsur.</target>
+</trans-unit>
+<trans-unit id="s0ee88abc51ae0f91">
+  <source>Choose a value on the slider.</source>
+<target>Pilih nilai pada pelungsur.</target>
+</trans-unit>
+<trans-unit id="sacac52201fe81268">
+  <source>Enter the solution number.</source>
+<target>Masukkan nombor penyelesaian.</target>
+</trans-unit>
+<trans-unit id="s330046fa1b1b9ec7">
+  <source>Enter a number.</source>
+<target>Masukkan nombor.</target>
+</trans-unit>
+<trans-unit id="s712144d706e5d284">
+  <source>Date &amp; time</source>
+<target>Tarikh dan masa</target>
+</trans-unit>
+<trans-unit id="s1dfd6319b50f4cd7">
+  <source>Min</source>
+<target>Minimum</target>
+</trans-unit>
+<trans-unit id="s1e187119b5262c59">
+  <source>Max</source>
+<target>Maksimum</target>
+</trans-unit>
+<trans-unit id="sa6a92648588602bf">
+  <source>Answer</source>
+<target>Jawapan</target>
+</trans-unit>
+<trans-unit id="s91b7363f68d1d46e">
+  <source>Right place</source>
+<target>Tempat yang betul</target>
+</trans-unit>
+<trans-unit id="s4bb40a5590d12e02">
+  <source>Belongs at <x id="0" equiv-text="${this.positionLabel(correctIndex, parent.numberingStyle === &quot;none&quot; ? &quot;numeric&quot; : parent.numberingStyle).replace(/\.$/, &quot;&quot;)}"/></source>
+<target>Termasuk pada <x id="0" equiv-text="${this.positionLabel(correctIndex, parent.numberingStyle === &quot;none&quot; ? &quot;numeric&quot; : parent.numberingStyle).replace(/\.$/, &quot;&quot;)}"/></target>
+</trans-unit>
+<trans-unit id="s4ea0f21fc2a338a1">
+  <source>Move up</source>
+<target>Pindah ke atas</target>
+</trans-unit>
+<trans-unit id="sb233557012dcb328">
+  <source>Move down</source>
+<target>Pindah ke bawah</target>
+</trans-unit>
+<trans-unit id="s5eb9c175b78abf88">
+  <source>Sequence</source>
+<target>Jujukan</target>
+</trans-unit>
+<trans-unit id="sf9f971cde1041ba6">
+  <source>Exact order only</source>
+<target>Hanya susunan tepat</target>
+</trans-unit>
+<trans-unit id="saf411cadd1a9edb7">
+  <source>Full credit only if every item is in its exact position.</source>
+<target>Markah penuh hanya jika setiap item berada tepat pada kedudukannya.</target>
+</trans-unit>
+<trans-unit id="sc01de0a714566a19">
+  <source>Correct positions</source>
+<target>Kedudukan yang betul</target>
+</trans-unit>
+<trans-unit id="s799375be5eae1328">
+  <source>Credit for each item placed in its exact slot.</source>
+<target>Markah bagi setiap item yang diletakkan dalam slot tepatnya.</target>
+</trans-unit>
+<trans-unit id="s71aa9b3ce66902b9">
+  <source>Relative order</source>
+<target>Susunan relatif</target>
+</trans-unit>
+<trans-unit id="s2e99d1a5cab100af">
+  <source>Credit for each pair of items ordered correctly relative to each other.</source>
+<target>Mata bagi setiap pasangan item yang disusun dengan betul berbanding satu sama lain.</target>
+</trans-unit>
+<trans-unit id="s39eb99f4f4c18ebf">
+  <source>Accept reverse order</source>
+<target>Terima susunan terbalik</target>
+</trans-unit>
+<trans-unit id="s6f1a191f5f38290f">
+  <source><x id="0" equiv-text="${right}"/> of <x id="1" equiv-text="${items.length}"/> items are in the right place.</source>
+<target><x id="0" equiv-text="${right}"/> daripada <x id="1" equiv-text="${items.length}"/> item berada di tempat yang betul.</target>
+</trans-unit>
+<trans-unit id="s48b9e342e71a62a0">
+  <source>Arrange the items in the correct order.</source>
+<target>Susun item mengikut urutan yang betul.</target>
+</trans-unit>
+<trans-unit id="s195d8970726dcde5">
+  <source>Drag the items, or use the arrows.</source>
+<target>Seret item atau gunakan anak panah.</target>
+</trans-unit>
+<trans-unit id="sd1b6deb412a019f2">
+  <source>Full credit only if every pair matches.</source>
+<target>Markah penuh hanya jika setiap pasangan sepadan.</target>
+</trans-unit>
+<trans-unit id="s660ce8a94870e7be">
+  <source>Per correct pair</source>
+<target>Bagi setiap pasangan betul</target>
+</trans-unit>
+<trans-unit id="s7dd435285656bfe2">
+  <source>Proportional credit for each correctly matched pair.</source>
+<target>Markah berkadar bagi setiap pasangan yang dipadankan dengan betul.</target>
+</trans-unit>
+<trans-unit id="s0b0634acdb057929">
+  <source>Connect the items by their dots.</source>
+<target>Sambungkan item melalui titiknya.</target>
+</trans-unit>
+<trans-unit id="sc3f7dffe760c1035">
+  <source>Connection removed.</source>
+<target>Sambungan dialih keluar.</target>
+</trans-unit>
+<trans-unit id="s9bb7da161e1c91f3">
+  <source>Connection added.</source>
+<target>Sambungan ditambah.</target>
+</trans-unit>
+<trans-unit id="se53e36e5899543e9">
+  <source>Left item <x id="0" equiv-text="${index + 1}"/></source>
+<target>Item kiri <x id="0" equiv-text="${index + 1}"/></target>
+</trans-unit>
+<trans-unit id="secb5bea561069c82">
+  <source>Right item <x id="0" equiv-text="${index + 1}"/></source>
+<target>Item kanan <x id="0" equiv-text="${index + 1}"/></target>
+</trans-unit>
+<trans-unit id="s9701dad8e792c621">
+  <source>Multi-connect</source>
+<target>Berbilang sambungan</target>
+</trans-unit>
+<trans-unit id="sb1b5ae4d0380c810">
+  <source>Add left item</source>
+<target>Tambah item kiri</target>
+</trans-unit>
+<trans-unit id="sc9a03f8477d65aa9">
+  <source>Add right item</source>
+<target>Tambah item kanan</target>
+</trans-unit>
+<trans-unit id="sa5c371b4bb75e590">
+  <source>Left</source>
+<target>Kiri</target>
+</trans-unit>
+<trans-unit id="s366991b9c9287765">
+  <source>Right</source>
+<target>Kanan</target>
+</trans-unit>
+<trans-unit id="s62c886043b49e255">
+  <source>Connect the matching items.</source>
+<target>Sambungkan item yang sepadan.</target>
+</trans-unit>
+<trans-unit id="s583fc1a7dcab06b1">
+  <source><x id="0" equiv-text="${count}"/> of <x id="1" equiv-text="${key.length}"/> pairs are correct.</source>
+<target><x id="0" equiv-text="${count}"/> daripada <x id="1" equiv-text="${key.length}"/> pasangan adalah betul.</target>
+</trans-unit>
+<trans-unit id="seff6153e80bd6a89">
+  <source>Hide task labels</source>
+<target>Sembunyikan label tugasan</target>
+</trans-unit>
+<trans-unit id="s9facbab7555fb0c0">
+  <source>The file is not valid GIFT: a brace is not closed.</source>
+<target>Fail ini bukan GIFT yang sah: satu kurungan berombak tidak ditutup.</target>
+</trans-unit>
+<trans-unit id="s60d9b7bf2152bbec">
+  <source>The file contains no GIFT task that this quiz can import.</source>
+<target>Fail ini tidak mengandungi tugasan GIFT yang boleh diimport oleh kuiz ini.</target>
+</trans-unit>
+<trans-unit id="s2521b02f548cc7e9">
+  <source>1 task is unanswered.</source>
+<target>1 tugasan belum dijawab.</target>
+</trans-unit>
+<trans-unit id="s68765f320e984d2b">
+  <source><x id="0" equiv-text="${count}"/> tasks are unanswered.</source>
+<target><x id="0" equiv-text="${count}"/> tugasan belum dijawab.</target>
+</trans-unit>
+<trans-unit id="s26dc09247b1685c0">
+  <source>Go to the task</source>
+<target>Pergi ke tugasan</target>
+</trans-unit>
+<trans-unit id="s7d0d0d65b174f073">
+  <source>Go to task <x id="0" equiv-text="${index}"/></source>
+<target>Pergi ke tugasan <x id="0" equiv-text="${index}"/></target>
+</trans-unit>
+<trans-unit id="s65c455f516ab03af">
+  <source><x id="0" equiv-text="${result.correct}"/> correct</source>
+<target><x id="0" equiv-text="${result.correct}"/> betul</target>
+</trans-unit>
+<trans-unit id="s743d10fa06e71c23">
+  <source><x id="0" equiv-text="${result.partial}"/> partly correct</source>
+<target><x id="0" equiv-text="${result.partial}"/> sebahagiannya betul</target>
+</trans-unit>
+<trans-unit id="se5c1970482f19cae">
+  <source><x id="0" equiv-text="${result.incorrect}"/> incorrect</source>
+<target><x id="0" equiv-text="${result.incorrect}"/> salah</target>
+</trans-unit>
+<trans-unit id="sb2b44de8a70ae954">
+  <source><x id="0" equiv-text="${this.formatPoints(result.score)}"/> of <x id="1" equiv-text="${this.formatPoints(result.maximum)}"/></source>
+<target><x id="0" equiv-text="${this.formatPoints(result.score)}"/> daripada <x id="1" equiv-text="${this.formatPoints(result.maximum)}"/></target>
+</trans-unit>
+<trans-unit id="s7d684b6257284e55">
+  <source>Score</source>
+<target>Skor</target>
+</trans-unit>
+<trans-unit id="sd463fe8f70c3242c">
+  <source>Learners submit the <x id="0" equiv-text="${count}"/> tasks in this group here and see their score.</source>
+<target>Pelajar menghantar <x id="0" equiv-text="${count}"/> tugasan dalam kumpulan ini di sini dan melihat skor mereka.</target>
+</trans-unit>
+<trans-unit id="seecc1a1785484a8c">
+  <source>Learners submit the task before this card here and see their score.</source>
+<target>Pelajar menghantar tugasan sebelum kad ini di sini dan melihat skor mereka.</target>
+</trans-unit>
+<trans-unit id="sf11645ff0230ff59">
+  <source>Insert tasks before this card. Learners submit them here and see their score.</source>
+<target>Sisipkan tugasan sebelum kad ini. Pelajar menghantarnya di sini dan melihat skor mereka.</target>
+</trans-unit>
+<trans-unit id="se66872955dc59191">
+  <source>1 task</source>
+<target>1 tugasan</target>
+</trans-unit>
+<trans-unit id="sea748bf5cf6f28f3">
+  <source><x id="0" equiv-text="${count}"/> tasks</source>
+<target><x id="0" equiv-text="${count}"/> tugasan</target>
+</trans-unit>
+<trans-unit id="s226775a4cc67dbe6">
+  <source>Voice recording</source>
+<target>Rakaman suara</target>
+</trans-unit>
+<trans-unit id="se37cff59047ed04d">
+  <source>Require a recording before submitting</source>
+<target>Wajibkan rakaman sebelum menghantar</target>
+</trans-unit>
+<trans-unit id="s7684ff9798b78190">
+  <source>Match transcript</source>
+<target>Padankan dengan transkrip</target>
+</trans-unit>
+<trans-unit id="s7b916547ee1e09ac">
+  <source>Full credit when the spoken words match the reference transcript.</source>
+<target>Markah penuh apabila perkataan yang disebut sepadan dengan transkrip rujukan.</target>
+</trans-unit>
+<trans-unit id="s0682ddcaf7be7a77">
+  <source>Give credit word by word, with deductions for missing, extra, or changed words.</source>
+<target>Berikan markah perkataan demi perkataan, dengan potongan bagi perkataan yang hilang, tambahan atau diubah.</target>
+</trans-unit>
+<trans-unit id="s179588dcdddf2174">
+  <source>Speech recognition is not supported in this browser.</source>
+<target>Pengecaman pertuturan tidak disokong dalam pelayar ini.</target>
+</trans-unit>
+<trans-unit id="s3f63f5f9314e6043">
+  <source>Microphone access was denied.</source>
+<target>Akses mikrofon ditolak.</target>
+</trans-unit>
+<trans-unit id="sd4eff05c54de1cc0">
+  <source>The microphone is unavailable.</source>
+<target>Mikrofon tidak tersedia.</target>
+</trans-unit>
+<trans-unit id="s88bb88dfdcdb627d">
+  <source>Speech recognition could not connect. Try again.</source>
+<target>Pengecaman pertuturan tidak dapat disambungkan. Cuba lagi.</target>
+</trans-unit>
+<trans-unit id="s56e2fa9e68dc4501">
+  <source>Speech recognition does not support this language.</source>
+<target>Pengecaman pertuturan tidak menyokong bahasa ini.</target>
+</trans-unit>
+<trans-unit id="sa01ea3b8a9cb6730">
+  <source>The browser's speech recognition service is unavailable.</source>
+<target>Perkhidmatan pengecaman pertuturan pelayar tidak tersedia.</target>
+</trans-unit>
+<trans-unit id="sd9ed7407d01ead0c">
+  <source>No speech was recognized. Try again.</source>
+<target>Tiada pertuturan dikenal pasti. Cuba lagi.</target>
+</trans-unit>
+<trans-unit id="s4639f7a3ea067ba3">
+  <source>Speech recognition timed out.</source>
+<target>Pengecaman pertuturan tamat masa.</target>
+</trans-unit>
+<trans-unit id="s7a0c4c4a03638428">
+  <source>Speech recognition could not finish. Try again.</source>
+<target>Pengecaman pertuturan tidak dapat diselesaikan. Cuba lagi.</target>
+</trans-unit>
+<trans-unit id="s0622a6e6cb77254b">
+  <source>Transcript</source>
+<target>Transkrip</target>
+</trans-unit>
+<trans-unit id="s4e38b5e50c309443">
+  <source>Record the solution or enter its transcript.</source>
+<target>Rakam penyelesaian atau masukkan transkripnya.</target>
+</trans-unit>
+<trans-unit id="sdadcdefc4c36991b">
+  <source>Record your answer.</source>
+<target>Rakam jawapan anda.</target>
+</trans-unit>
+<trans-unit id="s3456174fce4f31a7">
+  <source>Recognized answer: <x id="0" equiv-text="${this.recognizedAnswer}"/></source>
+<target>Jawapan yang dikenal pasti: <x id="0" equiv-text="${this.recognizedAnswer}"/></target>
+</trans-unit>
+<trans-unit id="s502f7a2bbeaec091">
+  <source>Transcribing speech…</source>
+<target>Pertuturan sedang ditranskripsikan…</target>
+</trans-unit>
+<trans-unit id="sf71c79de504af8f7">
+  <source>Interactive content: open the document online</source>
+<target>Kandungan interaktif: buka dokumen dalam talian</target>
+</trans-unit>
+<trans-unit id="s5b441c947d06bae9">
+  <source>Allow readers to resize</source>
+<target>Benarkan pembaca mengubah saiz</target>
+</trans-unit>
+<trans-unit id="sbad6e8411baba23a">
+  <source>Minimum words</source>
+<target>Minimum perkataan</target>
+</trans-unit>
+<trans-unit id="s6c97064da028dfb4">
+  <source>Maximum words</source>
+<target>Maksimum perkataan</target>
+</trans-unit>
+<trans-unit id="s620cff015e903b49">
+  <source>Minimum characters</source>
+<target>Minimum aksara</target>
+</trans-unit>
+<trans-unit id="sc7dae948a542b133">
+  <source>Maximum characters</source>
+<target>Maksimum aksara</target>
+</trans-unit>
+<trans-unit id="s0bec6a958a6d1aeb">
+  <source>Show word count</source>
+<target>Paparkan bilangan perkataan</target>
+</trans-unit>
+<trans-unit id="sa999618629ec6f6b">
+  <source>Match answer key</source>
+<target>Padankan dengan kunci jawapan</target>
+</trans-unit>
+<trans-unit id="sfbe249ece4a970b8">
+  <source>Full credit when the answer matches an accepted solution.</source>
+<target>Markah penuh apabila jawapan sepadan dengan penyelesaian yang diterima.</target>
+</trans-unit>
+<trans-unit id="s258c598c40e28b44">
+  <source>Full credit when the response meets the answer limits.</source>
+<target>Markah penuh apabila jawapan memenuhi had.</target>
+</trans-unit>
+<trans-unit id="s326d5d3ac1de6f34">
+  <source>Advanced: Match as regular expression</source>
+<target>Lanjutan: padankan sebagai ungkapan nalar</target>
+</trans-unit>
+<trans-unit id="s59e0eb09a3b46cf1">
+  <source>Resize answer field</source>
+<target>Ubah saiz medan jawapan</target>
+</trans-unit>
+<trans-unit id="s9f03f75fe691cc42">
+  <source>Almost. Check the capitalization.</source>
+<target>Hampir. Semak penggunaan huruf besar dan kecil.</target>
+</trans-unit>
+<trans-unit id="s191241976c5f89c8">
+  <source>Almost. Check the spelling.</source>
+<target>Hampir betul. Semak ejaan.</target>
+</trans-unit>
+<trans-unit id="sa3a7b3637151e12d">
+  <source>Answer limits</source>
+<target>Had jawapan</target>
+</trans-unit>
+<trans-unit id="sefd6ddf636c816cc">
+  <source>Extra solutions &amp; tolerance</source>
+<target>Penyelesaian tambahan dan toleransi</target>
+</trans-unit>
+<trans-unit id="sf202c28e75e3d855">
+  <source>Extra solutions</source>
+<target>Penyelesaian tambahan</target>
+</trans-unit>
+<trans-unit id="s972a62949aa63069">
+  <source>Another accepted answer</source>
+<target>Satu lagi jawapan yang diterima</target>
+</trans-unit>
+<trans-unit id="sa61ba0e06cab9331">
+  <source>Shorten your answer to fit the limit.</source>
+<target>Pendekkan jawapan supaya mematuhi had.</target>
+</trans-unit>
+<trans-unit id="sd2ea043c0c38373c">
+  <source>Lengthen your answer to meet the minimum.</source>
+<target>Panjangkan jawapan supaya mencapai panjang minimum.</target>
+</trans-unit>
+<trans-unit id="s8893ece8e3462e5d">
+  <source><x id="0" equiv-text="${words}"/>/<x id="1" equiv-text="${maxWords}"/> words</source>
+<target><x id="0" equiv-text="${words}"/>/<x id="1" equiv-text="${maxWords}"/> perkataan</target>
+</trans-unit>
+<trans-unit id="sa26fe9ae4bb4e13c">
+  <source>1 word</source>
+<target>1 perkataan</target>
+</trans-unit>
+<trans-unit id="s7db7a94759a49274">
+  <source><x id="0" equiv-text="${words}"/> words</source>
+<target><x id="0" equiv-text="${words}"/> perkataan</target>
+</trans-unit>
+<trans-unit id="s9a231c50b9969eb0">
+  <source><x id="0" equiv-text="${count}"/> (min. <x id="1" equiv-text="${minWords}"/>)</source>
+<target><x id="0" equiv-text="${count}"/> (min. <x id="1" equiv-text="${minWords}"/>)</target>
+</trans-unit>
+<trans-unit id="s068999302c9463b8">
+  <source><x id="0" equiv-text="${answer.length}"/>/<x id="1" equiv-text="${maxCharacters}"/> characters</source>
+<target><x id="0" equiv-text="${answer.length}"/>/<x id="1" equiv-text="${maxCharacters}"/> aksara</target>
+</trans-unit>
+<trans-unit id="s5796c82cf4f3e6fb">
+  <source>1 character</source>
+<target>1 aksara</target>
+</trans-unit>
+<trans-unit id="s6dbe9cb1faacdff3">
+  <source><x id="0" equiv-text="${answer.length}"/> characters</source>
+<target><x id="0" equiv-text="${answer.length}"/> aksara</target>
+</trans-unit>
+<trans-unit id="s51428c8667d762a0">
+  <source>Enter your answer.</source>
+<target>Masukkan jawapan anda.</target>
+</trans-unit>
+<trans-unit id="s130ad9c84e53f4ef">
+  <source>Enter the model answer.</source>
+<target>Masukkan jawapan model.</target>
+</trans-unit>
+<trans-unit id="s488cac76080c5d39">
+  <source>Enter the solution.</source>
+<target>Masukkan penyelesaian.</target>
+</trans-unit>
+<trans-unit id="sebacf3e0e9d3be58">
+  <source>Model answer</source>
+<target>Jawapan contoh</target>
+</trans-unit>
+</body>
+</file>
+</xliff>
