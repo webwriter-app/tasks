@@ -1571,7 +1571,7 @@ Mentions distance">
 				sessions[1].onerror({ error: "network" });
 				await done(task);
 				assert.isTrue(sessions[1].aborted);
-				assert.include(root.querySelector(".dictation-status")?.textContent, "could not finish");
+				assert.include(root.querySelector(".dictation-status")?.textContent, "La transcription automatique n’a pas abouti. Réessayez.");
 				assert.equal(task.transcript, "Bonjour à tous.");
 
 				button.click();
@@ -1590,7 +1590,7 @@ Mentions distance">
 				await done(task);
 				assert.isTrue(sessions[2].aborted);
 				assert.equal(stoppedTracks, 3);
-				assert.include(root.querySelector(".dictation-status")?.textContent, "timed out");
+				assert.include(root.querySelector(".dictation-status")?.textContent, "Délai de transcription automatique dépassé. Réessayez.");
 				assert.isFalse(entry.readOnly);
 				assert.equal(entry.value, "Bonjour à tous.");
 				assert.isUndefined(getDeadline());
@@ -1805,7 +1805,7 @@ Mentions distance">
 				await done(task);
 				const progress = recorder.querySelector(".speech-progress")!;
 				assert.equal(recorder.shadowRoot!.querySelector<HTMLSlotElement>('slot[name="progress"]')!.assignedElements()[0], progress);
-				assert.equal(progress.textContent, "Transcribing speech…");
+				assert.equal(progress.textContent, "Transcription de la parole…");
 				assert.equal(getComputedStyle(progress).fontSize, getComputedStyle(root.querySelector(".task-helper .helper")!).fontSize);
 				assert.equal(getComputedStyle(progress).textAlign, "end");
 				sessions[0].onresult({ results: [result("Bonjour"), result("interim", false)] });
@@ -1814,7 +1814,7 @@ Mentions distance">
 					stopRecording(recorder);
 					assert.isTrue(sessions[0].stopped);
 					await done(task);
-					assert.equal(progress.textContent, "Finishing recording…");
+					assert.equal(progress.textContent, "Finalisation de l’enregistrement…");
 					sessions[0].onresult({ results: [result("Bonjour"), result("à tous.")] });
 					sessions[0].onend();
 					await until(() => task.solution, "author audio saved");
