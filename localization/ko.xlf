@@ -219,9 +219,11 @@
 </trans-unit>
 <trans-unit id="s53b4850973728528">
   <source>This view blocks microphone access.</source>
+<target>이 보기에서 마이크 접근이 차단됩니다.</target>
 </trans-unit>
 <trans-unit id="s38f1c1ae5d0356f7">
   <source>The recording could not be saved.</source>
+<target>녹음을 저장할 수 없습니다.</target>
 </trans-unit>
 <trans-unit id="sa9da29c2219e79d4">
   <source>Start recording</source>
@@ -229,6 +231,7 @@
 </trans-unit>
 <trans-unit id="s9908b0c9b48b35ad">
   <source>Finishing recording…</source>
+<target>녹음 마무리 중…</target>
 </trans-unit>
 <trans-unit id="sb32cad250448883a">
   <source>Stop recording</source>
@@ -272,6 +275,7 @@
 </trans-unit>
 <trans-unit id="scc90a4e72a9e3f79">
   <source><x id="0" equiv-text="${correctCount}"/> of <x id="1" equiv-text="${rows.length}"/> rows are correct.</source>
+<target>행 <x id="1" equiv-text="${rows.length}"/>개 중 <x id="0" equiv-text="${correctCount}"/>개가 정답입니다.</target>
 </trans-unit>
 <trans-unit id="sea6985b706b63d8c">
   <source>Enter the rows and choices.</source>
@@ -288,6 +292,7 @@
 </trans-unit>
 <trans-unit id="scdd9af653f7a5cb1">
   <source>Select one option per row.</source>
+<target>각 행에서 옵션 하나를 선택하세요.</target>
 </trans-unit>
 <trans-unit id="s2b045181a53644ce">
   <source>Add column</source>
@@ -323,6 +328,7 @@
 </trans-unit>
 <trans-unit id="sd1a1ef004aadb208">
   <source>Show column headers</source>
+<target>열 머리글 표시</target>
 </trans-unit>
 <trans-unit id="s2a9ad64c546b4f22">
   <source>Show row headers</source>
@@ -339,9 +345,11 @@
 </trans-unit>
 <trans-unit id="sa200ceda4a34c65c">
   <source>Responses are recorded without scoring.</source>
+<target>응답은 채점 없이 기록됩니다.</target>
 </trans-unit>
 <trans-unit id="sb7cfcc79fbcb74d1">
   <source><x id="0" equiv-text="${correctCount}"/> of <x id="1" equiv-text="${activeGaps.length}"/> gaps are correct.</source>
+<target>빈칸 <x id="1" equiv-text="${activeGaps.length}"/>개 중 <x id="0" equiv-text="${correctCount}"/>개가 정답입니다.</target>
 </trans-unit>
 <trans-unit id="s73658af228bb4a12">
   <source>Enter the solutions, then mark the gap cells.</source>
@@ -371,6 +379,7 @@
 </trans-unit>
 <trans-unit id="se285f8462c6283d8">
   <source>All answers are placed.</source>
+<target>모든 답변이 배치되었습니다.</target>
 </trans-unit>
 <trans-unit id="s862ee826ed9e561c">
   <source>Self-assessment</source>
@@ -383,6 +392,7 @@
 </trans-unit>
 <trans-unit id="s75576f72d8374e0a">
   <source>Remove criterion: <x id="0" equiv-text="${criterion}"/></source>
+<target>기준 제거: <x id="0" equiv-text="${criterion}"/></target>
 </trans-unit>
 <trans-unit id="sad144a3342aa6ceb">
   <source>Rubric criterion</source>
@@ -393,9 +403,11 @@
 </trans-unit>
 <trans-unit id="s0308ae388d00d28a">
   <source>Ignore punctuation &amp; accents</source>
+<target>문장 부호와 악센트 무시</target>
 </trans-unit>
 <trans-unit id="s9a5698a5dac7cad1">
   <source>Ignore minor typos</source>
+<target>사소한 오타 무시</target>
 </trans-unit>
 <trans-unit id="s65110cc8f3569002">
   <source>Task label</source>
@@ -406,6 +418,7 @@
 </trans-unit>
 <trans-unit id="sb5ada04f142c4972">
   <source>This task is ungraded.</source>
+<target>이 과제는 채점되지 않습니다.</target>
 </trans-unit>
 <trans-unit id="sa8346ce518263c93">
   <source>Answer the task first.</source>
@@ -506,6 +519,7 @@
 </trans-unit>
 <trans-unit id="sf643c4a10dba9800">
   <source>Remove <x id="0" equiv-text="${label}"/> from this group</source>
+<target>이 그룹에서 <x id="0" equiv-text="${label}"/> 제거</target>
 </trans-unit>
 <trans-unit id="sfe592af2e37a2214">
   <source>Multi-group</source>
@@ -516,6 +530,7 @@
 </trans-unit>
 <trans-unit id="s0229d85de3888d71">
   <source><x id="0" equiv-text="${correct}"/> of <x id="1" equiv-text="${total}"/> items are in all the right groups.</source>
+<target>항목 <x id="1" equiv-text="${total}"/>개 중 <x id="0" equiv-text="${correct}"/>개가 모든 올바른 그룹에 있습니다.</target>
 </trans-unit>
 <trans-unit id="s9ecafed1144dba1f">
   <source><x id="0" equiv-text="${correct}"/> of <x id="1" equiv-text="${total}"/> items are in the right group.</source>
@@ -555,6 +570,7 @@
 </trans-unit>
 <trans-unit id="s2118adbd5904ec36">
   <source>Partial (penalize wrong)</source>
+<target>부분 점수(오답 감점)</target>
 </trans-unit>
 <trans-unit id="s1916139f98775735">
   <source>Right selections add credit; wrong selections subtract from it (min. 0).</source>
@@ -565,12 +581,15 @@
 </trans-unit>
 <trans-unit id="s88fa46d7b66ff1e6">
   <source>Full credit for selecting the correct option.</source>
+<target>올바른 옵션을 선택하면 만점을 받습니다.</target>
 </trans-unit>
 <trans-unit id="s5d02042067dcb593">
   <source>Enter the statement.</source>
+<target>문장을 입력하세요.</target>
 </trans-unit>
 <trans-unit id="s568ad4e4e7b1eb44">
   <source>Enter the choices.</source>
+<target>선택 항목을 입력하세요.</target>
 </trans-unit>
 <trans-unit id="sdd71f5afc90398eb">
   <source>Select the correct answers.</source>
@@ -588,12 +607,15 @@
 </trans-unit>
 <trans-unit id="s4094f9a53a127ce2">
   <source>Found <x id="0" equiv-text="${found}"/> of <x id="1" equiv-text="${correct.size}"/> correct options.</source>
+<target>정답 옵션 <x id="1" equiv-text="${correct.size}"/>개 중 <x id="0" equiv-text="${found}"/>개를 찾았습니다.</target>
 </trans-unit>
 <trans-unit id="s66070c10ddc25bd7">
   <source>1 wrong option selected.</source>
+<target>잘못된 옵션 1개가 선택되었습니다.</target>
 </trans-unit>
 <trans-unit id="sb21f600f6d785eeb">
   <source><x id="0" equiv-text="${wrong}"/> wrong options selected.</source>
+<target>잘못된 옵션 <x id="0" equiv-text="${wrong}"/>개가 선택되었습니다.</target>
 </trans-unit>
 <trans-unit id="sbe4508f09222c889">
   <source>Single</source>
@@ -604,9 +626,11 @@
 </trans-unit>
 <trans-unit id="s64a981f393576a7b">
   <source>Ignore punctuation</source>
+<target>문장 부호 무시</target>
 </trans-unit>
 <trans-unit id="se6fee24d1cbbc9db">
   <source>Give partial credit for minor typos</source>
+<target>사소한 오타에 부분 점수 부여</target>
 </trans-unit>
 <trans-unit id="s3ec5145dc8e77493">
   <source>Partial credit</source>
@@ -627,9 +651,11 @@
 </trans-unit>
 <trans-unit id="s652dfa634831c4ac">
   <source>No speech was recognized in the recording.</source>
+<target>녹음에서 음성이 인식되지 않았습니다.</target>
 </trans-unit>
 <trans-unit id="sb096e2c355121468">
   <source>Automatic transcription timed out. Try again.</source>
+<target>자동 받아쓰기 시간이 초과되었습니다. 다시 시도하세요.</target>
 </trans-unit>
 <trans-unit id="s7682adbd6cb18c43">
   <source>Slow recording</source>
@@ -637,6 +663,7 @@
 </trans-unit>
 <trans-unit id="s88b857ef66b06bf5">
   <source>Dictation recording</source>
+<target>받아쓰기 녹음</target>
 </trans-unit>
 <trans-unit id="s7da110cc5d71e597">
   <source>1 play left</source>
@@ -651,6 +678,7 @@
 </trans-unit>
 <trans-unit id="se166026acf69acae">
   <source>Type what you hear</source>
+<target>들은 내용을 입력하세요</target>
 </trans-unit>
 <trans-unit id="s12bb8a652aa6c4d1">
   <source>Add audio and enter the solution transcript.</source>
@@ -661,18 +689,23 @@
 </trans-unit>
 <trans-unit id="sa73f2240c86b5168">
   <source>No recording available.</source>
+<target>사용 가능한 녹음이 없습니다.</target>
 </trans-unit>
 <trans-unit id="s61fa8e1be7a254b8">
   <source>Transcribing recording…</source>
+<target>녹음 받아쓰는 중…</target>
 </trans-unit>
 <trans-unit id="sc476adbff390819f">
   <source>The recording could not be played.</source>
+<target>녹음을 재생할 수 없습니다.</target>
 </trans-unit>
 <trans-unit id="sad5df5643732af8e">
   <source>Recording language</source>
+<target>녹음 언어</target>
 </trans-unit>
 <trans-unit id="s625ef7f3207cf9cb">
   <source>Cancel transcription</source>
+<target>스크립트 취소</target>
 </trans-unit>
 <trans-unit id="s065289e6cba017c6">
   <source>Transcribe</source>
@@ -683,6 +716,7 @@
 </trans-unit>
 <trans-unit id="s74ae056b8a4fe2fc">
   <source>Require a drawing before submitting</source>
+<target>제출 전에 그리기 필수</target>
 </trans-unit>
 <trans-unit id="s25fadd3e7388516c">
   <source>Canvas height</source>
@@ -694,6 +728,7 @@
 </trans-unit>
 <trans-unit id="s9085fd214561bc83">
   <source>Full credit when a drawing is submitted.</source>
+<target>그림을 제출하면 만점을 받습니다.</target>
 </trans-unit>
 <trans-unit id="s070f9dc186e70d69">
   <source>Shows the optional sample for comparison without scoring.</source>
@@ -767,9 +802,11 @@
 </trans-unit>
 <trans-unit id="s0eb6407d01b573ca">
   <source>Choose a background image.</source>
+<target>배경 이미지를 선택하세요.</target>
 </trans-unit>
 <trans-unit id="s52a077cf893ca5cb">
   <source>Draw the solution.</source>
+<target>해답을 그리세요.</target>
 </trans-unit>
 <trans-unit id="s78391e806efb04be">
   <source>Modify image</source>
@@ -798,9 +835,11 @@
 </trans-unit>
 <trans-unit id="scfd9561b07fa745f">
   <source>Select the right option for each gap.</source>
+<target>각 빈칸에 올바른 옵션을 선택하세요.</target>
 </trans-unit>
 <trans-unit id="s818176fa88ae0e18">
   <source>All options are already in this group.</source>
+<target>모든 옵션이 이미 이 그룹에 있습니다.</target>
 </trans-unit>
 <trans-unit id="s70945b389a1737de">
   <source>Image Placements</source>
@@ -820,6 +859,7 @@
 </trans-unit>
 <trans-unit id="sa6f359971854ca5b">
   <source><x id="0" equiv-text="${label}"/> placed in <x id="1" equiv-text="${zone.label || this.msg(&quot;Zone&quot;)}"/>.</source>
+<target><x id="0" equiv-text="${label}"/>을(를) <x id="1" equiv-text="${zone.label || this.msg(&quot;Zone&quot;)}"/>에 배치했습니다.</target>
 </trans-unit>
 <trans-unit id="s6fcdab6f6cf7461b">
   <source><x id="0" equiv-text="${label}"/> returned to Options.</source>
@@ -915,18 +955,23 @@
 </trans-unit>
 <trans-unit id="sbec481c67db2bbeb">
   <source><x id="0" equiv-text="${correctLabels}"/> of <x id="1" equiv-text="${labelMarkers.length}"/> labels are correct.</source>
+<target>라벨 <x id="1" equiv-text="${labelMarkers.length}"/>개 중 <x id="0" equiv-text="${correctLabels}"/>개가 정답입니다.</target>
 </trans-unit>
 <trans-unit id="s2ae10bcf386b5474">
   <source><x id="0" equiv-text="${matchedMarkers.size}"/> of <x id="1" equiv-text="${hotspots.length}"/> targets found.</source>
+<target>대상 <x id="1" equiv-text="${hotspots.length}"/>개 중 <x id="0" equiv-text="${matchedMarkers.size}"/>개를 찾았습니다.</target>
 </trans-unit>
 <trans-unit id="s7fa1caf807422e65">
   <source>Drag each label onto its marker on the image.</source>
+<target>각 라벨을 이미지의 마커로 드래그하세요.</target>
 </trans-unit>
 <trans-unit id="sd2f8e252296a0030">
   <source>Click the target region(s) in the image.</source>
+<target>이미지에서 대상 영역을 클릭하세요.</target>
 </trans-unit>
 <trans-unit id="s0c2e2e9567aa5ea2">
   <source>No image selected.</source>
+<target>선택된 이미지가 없습니다.</target>
 </trans-unit>
 <trans-unit id="sa894b36f20aab589">
   <source>Edit zone</source>
@@ -950,6 +995,7 @@
 </trans-unit>
 <trans-unit id="s5ba21ea6d3f246a4">
   <source>All labels are placed.</source>
+<target>모든 라벨이 배치되었습니다.</target>
 </trans-unit>
 <trans-unit id="sea4f08110bb8f15d">
   <source>Remove</source>
@@ -992,6 +1038,7 @@
 </trans-unit>
 <trans-unit id="sd0e6c99efa390583">
   <source>Click the words to mark.</source>
+<target>표시할 단어를 클릭하세요.</target>
 </trans-unit>
 <trans-unit id="s0337af549735d429">
   <source>Input type</source>
@@ -1027,6 +1074,7 @@
 </trans-unit>
 <trans-unit id="sd47d4d5489d1da3a">
   <source>Partial credit band</source>
+<target>부분 점수 범위</target>
 </trans-unit>
 <trans-unit id="sf88789673a732088">
   <source>Extra range beyond tolerance where credit decays linearly to zero.</source>
@@ -1064,12 +1112,14 @@
 </trans-unit>
 <trans-unit id="s20e5183dd45ada26">
   <source>Enter a date and time.</source>
+<target>날짜와 시간을 입력하세요.</target>
 </trans-unit>
 <trans-unit id="s8d69dee8addc385a">
   <source>Set the solution on the slider.</source>
 </trans-unit>
 <trans-unit id="s0ee88abc51ae0f91">
   <source>Choose a value on the slider.</source>
+<target>슬라이더에서 값을 선택하세요.</target>
 </trans-unit>
 <trans-unit id="sacac52201fe81268">
   <source>Enter the solution number.</source>
@@ -1126,6 +1176,7 @@
 </trans-unit>
 <trans-unit id="s799375be5eae1328">
   <source>Credit for each item placed in its exact slot.</source>
+<target>항목을 정확한 슬롯에 배치할 때마다 점수를 받습니다.</target>
 </trans-unit>
 <trans-unit id="s71aa9b3ce66902b9">
   <source>Relative order</source>
@@ -1136,18 +1187,22 @@
 </trans-unit>
 <trans-unit id="s39eb99f4f4c18ebf">
   <source>Accept reverse order</source>
+<target>역순 허용</target>
 </trans-unit>
 <trans-unit id="s6f1a191f5f38290f">
   <source><x id="0" equiv-text="${right}"/> of <x id="1" equiv-text="${items.length}"/> items are in the right place.</source>
+<target>항목 <x id="1" equiv-text="${items.length}"/>개 중 <x id="0" equiv-text="${right}"/>개가 올바른 위치에 있습니다.</target>
 </trans-unit>
 <trans-unit id="s48b9e342e71a62a0">
   <source>Arrange the items in the correct order.</source>
 </trans-unit>
 <trans-unit id="s195d8970726dcde5">
   <source>Drag the items, or use the arrows.</source>
+<target>항목을 드래그하거나 화살표를 사용하세요.</target>
 </trans-unit>
 <trans-unit id="sd1b6deb412a019f2">
   <source>Full credit only if every pair matches.</source>
+<target>모든 쌍이 일치해야 만점을 받습니다.</target>
 </trans-unit>
 <trans-unit id="s660ce8a94870e7be">
   <source>Per correct pair</source>
@@ -1193,6 +1248,7 @@
 </trans-unit>
 <trans-unit id="s583fc1a7dcab06b1">
   <source><x id="0" equiv-text="${count}"/> of <x id="1" equiv-text="${key.length}"/> pairs are correct.</source>
+<target>쌍 <x id="1" equiv-text="${key.length}"/>개 중 <x id="0" equiv-text="${count}"/>개가 정답입니다.</target>
 </trans-unit>
 <trans-unit id="seff6153e80bd6a89">
   <source>Hide task labels</source>
@@ -1221,6 +1277,7 @@
 </trans-unit>
 <trans-unit id="s743d10fa06e71c23">
   <source><x id="0" equiv-text="${result.partial}"/> partly correct</source>
+<target><x id="0" equiv-text="${result.partial}"/>개 부분 정답</target>
 </trans-unit>
 <trans-unit id="se5c1970482f19cae">
   <source><x id="0" equiv-text="${result.incorrect}"/> incorrect</source>
@@ -1254,6 +1311,7 @@
 </trans-unit>
 <trans-unit id="se37cff59047ed04d">
   <source>Require a recording before submitting</source>
+<target>제출 전에 녹음 필수</target>
 </trans-unit>
 <trans-unit id="s7684ff9798b78190">
   <source>Match transcript</source>
@@ -1270,9 +1328,11 @@
 </trans-unit>
 <trans-unit id="s3f63f5f9314e6043">
   <source>Microphone access was denied.</source>
+<target>마이크 접근이 거부되었습니다.</target>
 </trans-unit>
 <trans-unit id="sd4eff05c54de1cc0">
   <source>The microphone is unavailable.</source>
+<target>마이크를 사용할 수 없습니다.</target>
 </trans-unit>
 <trans-unit id="s88bb88dfdcdb627d">
   <source>Speech recognition could not connect. Try again.</source>
@@ -1285,9 +1345,11 @@
 </trans-unit>
 <trans-unit id="sd9ed7407d01ead0c">
   <source>No speech was recognized. Try again.</source>
+<target>음성이 인식되지 않았습니다. 다시 시도하세요.</target>
 </trans-unit>
 <trans-unit id="s4639f7a3ea067ba3">
   <source>Speech recognition timed out.</source>
+<target>음성 인식 시간이 초과되었습니다.</target>
 </trans-unit>
 <trans-unit id="s7a0c4c4a03638428">
   <source>Speech recognition could not finish. Try again.</source>
@@ -1305,9 +1367,11 @@
 </trans-unit>
 <trans-unit id="s3456174fce4f31a7">
   <source>Recognized answer: <x id="0" equiv-text="${this.recognizedAnswer}"/></source>
+<target>인식된 답변: <x id="0" equiv-text="${this.recognizedAnswer}"/></target>
 </trans-unit>
 <trans-unit id="s502f7a2bbeaec091">
   <source>Transcribing speech…</source>
+<target>음성 받아쓰는 중…</target>
 </trans-unit>
 <trans-unit id="sf71c79de504af8f7">
   <source>Interactive content: open the document online</source>
@@ -1325,6 +1389,7 @@
 </trans-unit>
 <trans-unit id="s620cff015e903b49">
   <source>Minimum characters</source>
+<target>최소 글자 수</target>
 </trans-unit>
 <trans-unit id="sc7dae948a542b133">
   <source>Maximum characters</source>
@@ -1351,9 +1416,11 @@
 </trans-unit>
 <trans-unit id="s9f03f75fe691cc42">
   <source>Almost. Check the capitalization.</source>
+<target>거의 맞았습니다. 대소문자를 확인하세요.</target>
 </trans-unit>
 <trans-unit id="s191241976c5f89c8">
   <source>Almost. Check the spelling.</source>
+<target>거의 맞았습니다. 철자를 확인하세요.</target>
 </trans-unit>
 <trans-unit id="sa3a7b3637151e12d">
   <source>Answer limits</source>
@@ -1361,6 +1428,7 @@
 </trans-unit>
 <trans-unit id="sefd6ddf636c816cc">
   <source>Extra solutions &amp; tolerance</source>
+<target>추가 해답 및 허용 오차</target>
 </trans-unit>
 <trans-unit id="sf202c28e75e3d855">
   <source>Extra solutions</source>
@@ -1368,12 +1436,14 @@
 </trans-unit>
 <trans-unit id="s972a62949aa63069">
   <source>Another accepted answer</source>
+<target>다른 허용 답변</target>
 </trans-unit>
 <trans-unit id="sa61ba0e06cab9331">
   <source>Shorten your answer to fit the limit.</source>
 </trans-unit>
 <trans-unit id="sd2ea043c0c38373c">
   <source>Lengthen your answer to meet the minimum.</source>
+<target>최소 길이를 충족하도록 답변을 늘리세요.</target>
 </trans-unit>
 <trans-unit id="s8893ece8e3462e5d">
   <source><x id="0" equiv-text="${words}"/>/<x id="1" equiv-text="${maxWords}"/> words</source>
@@ -1407,9 +1477,11 @@
 </trans-unit>
 <trans-unit id="s130ad9c84e53f4ef">
   <source>Enter the model answer.</source>
+<target>모범 답안을 입력하세요.</target>
 </trans-unit>
 <trans-unit id="s488cac76080c5d39">
   <source>Enter the solution.</source>
+<target>해답을 입력하세요.</target>
 </trans-unit>
 <trans-unit id="sebacf3e0e9d3be58">
   <source>Model answer</source>

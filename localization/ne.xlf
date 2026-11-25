@@ -273,6 +273,7 @@
 </trans-unit>
 <trans-unit id="scc90a4e72a9e3f79">
   <source><x id="0" equiv-text="${correctCount}"/> of <x id="1" equiv-text="${rows.length}"/> rows are correct.</source>
+<target><x id="1" equiv-text="${rows.length}"/> मध्ये <x id="0" equiv-text="${correctCount}"/> पङ्क्ति सही छन्।</target>
 </trans-unit>
 <trans-unit id="sea6985b706b63d8c">
   <source>Enter the rows and choices.</source>
@@ -289,6 +290,7 @@
 </trans-unit>
 <trans-unit id="scdd9af653f7a5cb1">
   <source>Select one option per row.</source>
+<target>प्रत्येक पङ्क्तिमा एउटा विकल्प छान्नुहोस्।</target>
 </trans-unit>
 <trans-unit id="s2b045181a53644ce">
   <source>Add column</source>
@@ -344,6 +346,7 @@
 </trans-unit>
 <trans-unit id="sb7cfcc79fbcb74d1">
   <source><x id="0" equiv-text="${correctCount}"/> of <x id="1" equiv-text="${activeGaps.length}"/> gaps are correct.</source>
+<target><x id="1" equiv-text="${activeGaps.length}"/> मध्ये <x id="0" equiv-text="${correctCount}"/> खाली ठाउँ सही छन्।</target>
 </trans-unit>
 <trans-unit id="s73658af228bb4a12">
   <source>Enter the solutions, then mark the gap cells.</source>
@@ -373,6 +376,7 @@
 </trans-unit>
 <trans-unit id="se285f8462c6283d8">
   <source>All answers are placed.</source>
+<target>सबै उत्तर राखिएका छन्।</target>
 </trans-unit>
 <trans-unit id="s862ee826ed9e561c">
   <source>Self-assessment</source>
@@ -396,6 +400,7 @@
 </trans-unit>
 <trans-unit id="s0308ae388d00d28a">
   <source>Ignore punctuation &amp; accents</source>
+<target>विराम चिह्न र उच्चारण चिह्न बेवास्ता गर्नुहोस्</target>
 </trans-unit>
 <trans-unit id="s9a5698a5dac7cad1">
   <source>Ignore minor typos</source>
@@ -510,6 +515,7 @@
 </trans-unit>
 <trans-unit id="sf643c4a10dba9800">
   <source>Remove <x id="0" equiv-text="${label}"/> from this group</source>
+<target>यो समूहबाट <x id="0" equiv-text="${label}"/> हटाउनुहोस्</target>
 </trans-unit>
 <trans-unit id="sfe592af2e37a2214">
   <source>Multi-group</source>
@@ -559,6 +565,7 @@
 </trans-unit>
 <trans-unit id="s2118adbd5904ec36">
   <source>Partial (penalize wrong)</source>
+<target>आंशिक (गलत उत्तरमा दण्ड)</target>
 </trans-unit>
 <trans-unit id="s1916139f98775735">
   <source>Right selections add credit; wrong selections subtract from it (min. 0).</source>
@@ -597,9 +604,11 @@
 </trans-unit>
 <trans-unit id="s66070c10ddc25bd7">
   <source>1 wrong option selected.</source>
+<target>१ गलत विकल्प चयन गरियो।</target>
 </trans-unit>
 <trans-unit id="sb21f600f6d785eeb">
   <source><x id="0" equiv-text="${wrong}"/> wrong options selected.</source>
+<target><x id="0" equiv-text="${wrong}"/> गलत विकल्प चयन गरिए।</target>
 </trans-unit>
 <trans-unit id="sbe4508f09222c889">
   <source>Single</source>
@@ -670,9 +679,11 @@
 </trans-unit>
 <trans-unit id="sa73f2240c86b5168">
   <source>No recording available.</source>
+<target>रेकर्डिङ उपलब्ध छैन।</target>
 </trans-unit>
 <trans-unit id="s61fa8e1be7a254b8">
   <source>Transcribing recording…</source>
+<target>रेकर्डिङको पाठ उतारिँदै…</target>
 </trans-unit>
 <trans-unit id="sc476adbff390819f">
   <source>The recording could not be played.</source>
@@ -778,6 +789,7 @@
 </trans-unit>
 <trans-unit id="s0eb6407d01b573ca">
   <source>Choose a background image.</source>
+<target>पृष्ठभूमि चित्र छान्नुहोस्।</target>
 </trans-unit>
 <trans-unit id="s52a077cf893ca5cb">
   <source>Draw the solution.</source>
@@ -928,9 +940,11 @@
 </trans-unit>
 <trans-unit id="sbec481c67db2bbeb">
   <source><x id="0" equiv-text="${correctLabels}"/> of <x id="1" equiv-text="${labelMarkers.length}"/> labels are correct.</source>
+<target><x id="1" equiv-text="${labelMarkers.length}"/> मध्ये <x id="0" equiv-text="${correctLabels}"/> लेबल सही छन्।</target>
 </trans-unit>
 <trans-unit id="s2ae10bcf386b5474">
   <source><x id="0" equiv-text="${matchedMarkers.size}"/> of <x id="1" equiv-text="${hotspots.length}"/> targets found.</source>
+<target><x id="1" equiv-text="${hotspots.length}"/> मध्ये <x id="0" equiv-text="${matchedMarkers.size}"/> लक्ष्य भेटिए।</target>
 </trans-unit>
 <trans-unit id="s7fa1caf807422e65">
   <source>Drag each label onto its marker on the image.</source>
@@ -1007,6 +1021,7 @@
 </trans-unit>
 <trans-unit id="sd0e6c99efa390583">
   <source>Click the words to mark.</source>
+<target>शब्दहरू चिन्ह लगाउन तिनमा क्लिक गर्नुहोस्।</target>
 </trans-unit>
 <trans-unit id="s0337af549735d429">
   <source>Input type</source>
@@ -1087,6 +1102,7 @@
 </trans-unit>
 <trans-unit id="s0ee88abc51ae0f91">
   <source>Choose a value on the slider.</source>
+<target>स्लाइडरमा एउटा मान छान्नुहोस्।</target>
 </trans-unit>
 <trans-unit id="sacac52201fe81268">
   <source>Enter the solution number.</source>
@@ -1211,6 +1227,7 @@
 </trans-unit>
 <trans-unit id="s583fc1a7dcab06b1">
   <source><x id="0" equiv-text="${count}"/> of <x id="1" equiv-text="${key.length}"/> pairs are correct.</source>
+<target><x id="1" equiv-text="${key.length}"/> मध्ये <x id="0" equiv-text="${count}"/> जोडी सही छन्।</target>
 </trans-unit>
 <trans-unit id="seff6153e80bd6a89">
   <source>Hide task labels</source>
@@ -1289,9 +1306,11 @@
 </trans-unit>
 <trans-unit id="s3f63f5f9314e6043">
   <source>Microphone access was denied.</source>
+<target>माइक्रोफोन पहुँच अस्वीकार गरियो।</target>
 </trans-unit>
 <trans-unit id="sd4eff05c54de1cc0">
   <source>The microphone is unavailable.</source>
+<target>माइक्रोफोन उपलब्ध छैन।</target>
 </trans-unit>
 <trans-unit id="s88bb88dfdcdb627d">
   <source>Speech recognition could not connect. Try again.</source>
@@ -1307,6 +1326,7 @@
 </trans-unit>
 <trans-unit id="s4639f7a3ea067ba3">
   <source>Speech recognition timed out.</source>
+<target>वाक् पहिचानको समय सकियो।</target>
 </trans-unit>
 <trans-unit id="s7a0c4c4a03638428">
   <source>Speech recognition could not finish. Try again.</source>
@@ -1376,6 +1396,7 @@
 </trans-unit>
 <trans-unit id="s191241976c5f89c8">
   <source>Almost. Check the spelling.</source>
+<target>लगभग। हिज्जे जाँच्नुहोस्।</target>
 </trans-unit>
 <trans-unit id="sa3a7b3637151e12d">
   <source>Answer limits</source>
@@ -1383,6 +1404,7 @@
 </trans-unit>
 <trans-unit id="sefd6ddf636c816cc">
   <source>Extra solutions &amp; tolerance</source>
+<target>थप समाधान र सहनशीलता</target>
 </trans-unit>
 <trans-unit id="sf202c28e75e3d855">
   <source>Extra solutions</source>
@@ -1390,6 +1412,7 @@
 </trans-unit>
 <trans-unit id="s972a62949aa63069">
   <source>Another accepted answer</source>
+<target>अर्को स्वीकारिएको उत्तर</target>
 </trans-unit>
 <trans-unit id="sa61ba0e06cab9331">
   <source>Shorten your answer to fit the limit.</source>
@@ -1429,6 +1452,7 @@
 </trans-unit>
 <trans-unit id="s130ad9c84e53f4ef">
   <source>Enter the model answer.</source>
+<target>मोडेल उत्तर प्रविष्ट गर्नुहोस्।</target>
 </trans-unit>
 <trans-unit id="s488cac76080c5d39">
   <source>Enter the solution.</source>

@@ -218,9 +218,11 @@
 </trans-unit>
 <trans-unit id="s53b4850973728528">
   <source>This view blocks microphone access.</source>
+<target>Muuqaalkani wuxuu xannibaa isticmaalka makarafoonka.</target>
 </trans-unit>
 <trans-unit id="s38f1c1ae5d0356f7">
   <source>The recording could not be saved.</source>
+<target>Duubista lama kaydin karin.</target>
 </trans-unit>
 <trans-unit id="sa9da29c2219e79d4">
   <source>Start recording</source>
@@ -272,6 +274,7 @@
 </trans-unit>
 <trans-unit id="scc90a4e72a9e3f79">
   <source><x id="0" equiv-text="${correctCount}"/> of <x id="1" equiv-text="${rows.length}"/> rows are correct.</source>
+<target><x id="0" equiv-text="${correctCount}"/> ka mid ah <x id="1" equiv-text="${rows.length}"/> saf ayaa sax ah.</target>
 </trans-unit>
 <trans-unit id="sea6985b706b63d8c">
   <source>Enter the rows and choices.</source>
@@ -288,6 +291,7 @@
 </trans-unit>
 <trans-unit id="scdd9af653f7a5cb1">
   <source>Select one option per row.</source>
+<target>Saf kasta ka dooro hal ikhtiyaar.</target>
 </trans-unit>
 <trans-unit id="s2b045181a53644ce">
   <source>Add column</source>
@@ -340,9 +344,11 @@
 </trans-unit>
 <trans-unit id="sa200ceda4a34c65c">
   <source>Responses are recorded without scoring.</source>
+<target>Jawaabaha waa la kaydiyaa iyada oo aan la siin dhibco.</target>
 </trans-unit>
 <trans-unit id="sb7cfcc79fbcb74d1">
   <source><x id="0" equiv-text="${correctCount}"/> of <x id="1" equiv-text="${activeGaps.length}"/> gaps are correct.</source>
+<target><x id="0" equiv-text="${correctCount}"/> ka mid ah <x id="1" equiv-text="${activeGaps.length}"/> meelood oo bannaan ayaa sax ah.</target>
 </trans-unit>
 <trans-unit id="s73658af228bb4a12">
   <source>Enter the solutions, then mark the gap cells.</source>
@@ -372,6 +378,7 @@
 </trans-unit>
 <trans-unit id="se285f8462c6283d8">
   <source>All answers are placed.</source>
+<target>Dhammaan jawaabaha waa la dhigay.</target>
 </trans-unit>
 <trans-unit id="s862ee826ed9e561c">
   <source>Self-assessment</source>
@@ -395,6 +402,7 @@
 </trans-unit>
 <trans-unit id="s0308ae388d00d28a">
   <source>Ignore punctuation &amp; accents</source>
+<target>Iska indho tir calaamadaha qoraalka iyo astaamaha dhawaaqa</target>
 </trans-unit>
 <trans-unit id="s9a5698a5dac7cad1">
   <source>Ignore minor typos</source>
@@ -509,6 +517,7 @@
 </trans-unit>
 <trans-unit id="sf643c4a10dba9800">
   <source>Remove <x id="0" equiv-text="${label}"/> from this group</source>
+<target><x id="0" equiv-text="${label}"/> ka saar kooxdan</target>
 </trans-unit>
 <trans-unit id="sfe592af2e37a2214">
   <source>Multi-group</source>
@@ -519,6 +528,7 @@
 </trans-unit>
 <trans-unit id="s0229d85de3888d71">
   <source><x id="0" equiv-text="${correct}"/> of <x id="1" equiv-text="${total}"/> items are in all the right groups.</source>
+<target><x id="0" equiv-text="${correct}"/> ka mid ah <x id="1" equiv-text="${total}"/> shay ayaa ku jira dhammaan kooxaha saxda ah.</target>
 </trans-unit>
 <trans-unit id="s9ecafed1144dba1f">
   <source><x id="0" equiv-text="${correct}"/> of <x id="1" equiv-text="${total}"/> items are in the right group.</source>
@@ -558,6 +568,7 @@
 </trans-unit>
 <trans-unit id="s2118adbd5904ec36">
   <source>Partial (penalize wrong)</source>
+<target>Qayb ahaan (dhibco ka jar khaladaadka)</target>
 </trans-unit>
 <trans-unit id="s1916139f98775735">
   <source>Right selections add credit; wrong selections subtract from it (min. 0).</source>
@@ -568,6 +579,7 @@
 </trans-unit>
 <trans-unit id="s88fa46d7b66ff1e6">
   <source>Full credit for selecting the correct option.</source>
+<target>Dhibco buuxa marka la doorto ikhtiyaarka saxda ah.</target>
 </trans-unit>
 <trans-unit id="s5d02042067dcb593">
   <source>Enter the statement.</source>
@@ -593,12 +605,15 @@
 </trans-unit>
 <trans-unit id="s4094f9a53a127ce2">
   <source>Found <x id="0" equiv-text="${found}"/> of <x id="1" equiv-text="${correct.size}"/> correct options.</source>
+<target><x id="0" equiv-text="${found}"/> ka mid ah <x id="1" equiv-text="${correct.size}"/> ikhtiyaar oo sax ah ayaa la helay.</target>
 </trans-unit>
 <trans-unit id="s66070c10ddc25bd7">
   <source>1 wrong option selected.</source>
+<target>1 ikhtiyaar oo khaldan ayaa la doortay.</target>
 </trans-unit>
 <trans-unit id="sb21f600f6d785eeb">
   <source><x id="0" equiv-text="${wrong}"/> wrong options selected.</source>
+<target><x id="0" equiv-text="${wrong}"/> ikhtiyaar oo khaldan ayaa la doortay.</target>
 </trans-unit>
 <trans-unit id="sbe4508f09222c889">
   <source>Single</source>
@@ -613,6 +628,7 @@
 </trans-unit>
 <trans-unit id="se6fee24d1cbbc9db">
   <source>Give partial credit for minor typos</source>
+<target>Sii dhibco qayb ah khaladaadka qoraalka ee yaryar</target>
 </trans-unit>
 <trans-unit id="s3ec5145dc8e77493">
   <source>Partial credit</source>
@@ -633,9 +649,11 @@
 </trans-unit>
 <trans-unit id="s652dfa634831c4ac">
   <source>No speech was recognized in the recording.</source>
+<target>Hadal lagama aqoonsan duubista.</target>
 </trans-unit>
 <trans-unit id="sb096e2c355121468">
   <source>Automatic transcription timed out. Try again.</source>
+<target>Wakhtigii qoraal-u-beddelidda otomaatiga ahaa wuu dhammaaday. Mar kale isku day.</target>
 </trans-unit>
 <trans-unit id="s7682adbd6cb18c43">
   <source>Slow recording</source>
@@ -669,12 +687,15 @@
 </trans-unit>
 <trans-unit id="sa73f2240c86b5168">
   <source>No recording available.</source>
+<target>Duubis lama heli karo.</target>
 </trans-unit>
 <trans-unit id="s61fa8e1be7a254b8">
   <source>Transcribing recording…</source>
+<target>Duubista ayaa qoraal loo beddelayaa…</target>
 </trans-unit>
 <trans-unit id="sc476adbff390819f">
   <source>The recording could not be played.</source>
+<target>Duubista lama ciyaari karin.</target>
 </trans-unit>
 <trans-unit id="sad5df5643732af8e">
   <source>Recording language</source>
@@ -693,6 +714,7 @@
 </trans-unit>
 <trans-unit id="s74ae056b8a4fe2fc">
   <source>Require a drawing before submitting</source>
+<target>Dalbo sawir ka hor inta aan la gudbin</target>
 </trans-unit>
 <trans-unit id="s25fadd3e7388516c">
   <source>Canvas height</source>
@@ -704,6 +726,7 @@
 </trans-unit>
 <trans-unit id="s9085fd214561bc83">
   <source>Full credit when a drawing is submitted.</source>
+<target>Dhibco buuxa marka sawir la gudbiyo.</target>
 </trans-unit>
 <trans-unit id="s070f9dc186e70d69">
   <source>Shows the optional sample for comparison without scoring.</source>
@@ -778,6 +801,7 @@
 </trans-unit>
 <trans-unit id="s0eb6407d01b573ca">
   <source>Choose a background image.</source>
+<target>Dooro sawirka gadaasha.</target>
 </trans-unit>
 <trans-unit id="s52a077cf893ca5cb">
   <source>Draw the solution.</source>
@@ -810,9 +834,11 @@
 </trans-unit>
 <trans-unit id="scfd9561b07fa745f">
   <source>Select the right option for each gap.</source>
+<target>Dooro ikhtiyaarka saxda ah ee meel kasta oo bannaan.</target>
 </trans-unit>
 <trans-unit id="s818176fa88ae0e18">
   <source>All options are already in this group.</source>
+<target>Dhammaan ikhtiyaarradu hore ayay kooxdan ugu jiraan.</target>
 </trans-unit>
 <trans-unit id="s70945b389a1737de">
   <source>Image Placements</source>
@@ -928,15 +954,19 @@
 </trans-unit>
 <trans-unit id="sbec481c67db2bbeb">
   <source><x id="0" equiv-text="${correctLabels}"/> of <x id="1" equiv-text="${labelMarkers.length}"/> labels are correct.</source>
+<target><x id="0" equiv-text="${correctLabels}"/> ka mid ah <x id="1" equiv-text="${labelMarkers.length}"/> calaamadood ayaa sax ah.</target>
 </trans-unit>
 <trans-unit id="s2ae10bcf386b5474">
   <source><x id="0" equiv-text="${matchedMarkers.size}"/> of <x id="1" equiv-text="${hotspots.length}"/> targets found.</source>
+<target><x id="0" equiv-text="${matchedMarkers.size}"/> ka mid ah <x id="1" equiv-text="${hotspots.length}"/> bartilmaameed ayaa la helay.</target>
 </trans-unit>
 <trans-unit id="s7fa1caf807422e65">
   <source>Drag each label onto its marker on the image.</source>
+<target>U jiid calaamad kasta meesha u dhiganta ee sawirka.</target>
 </trans-unit>
 <trans-unit id="sd2f8e252296a0030">
   <source>Click the target region(s) in the image.</source>
+<target>Guji meelaha bartilmaameedka ah ee sawirka ku jira.</target>
 </trans-unit>
 <trans-unit id="s0c2e2e9567aa5ea2">
   <source>No image selected.</source>
@@ -1007,6 +1037,7 @@
 </trans-unit>
 <trans-unit id="sd0e6c99efa390583">
   <source>Click the words to mark.</source>
+<target>Guji erayada si aad u calaamadiso.</target>
 </trans-unit>
 <trans-unit id="s0337af549735d429">
   <source>Input type</source>
@@ -1087,6 +1118,7 @@
 </trans-unit>
 <trans-unit id="s0ee88abc51ae0f91">
   <source>Choose a value on the slider.</source>
+<target>Qiime ka dooro qalabka jiidista.</target>
 </trans-unit>
 <trans-unit id="sacac52201fe81268">
   <source>Enter the solution number.</source>
@@ -1143,6 +1175,7 @@
 </trans-unit>
 <trans-unit id="s799375be5eae1328">
   <source>Credit for each item placed in its exact slot.</source>
+<target>Dhibco ayaa loo bixiyaa shay kasta oo la dhigo booskiisa saxda ah.</target>
 </trans-unit>
 <trans-unit id="s71aa9b3ce66902b9">
   <source>Relative order</source>
@@ -1157,15 +1190,18 @@
 </trans-unit>
 <trans-unit id="s6f1a191f5f38290f">
   <source><x id="0" equiv-text="${right}"/> of <x id="1" equiv-text="${items.length}"/> items are in the right place.</source>
+<target><x id="0" equiv-text="${right}"/> ka mid ah <x id="1" equiv-text="${items.length}"/> shay ayaa yaal meeshii saxda ahayd.</target>
 </trans-unit>
 <trans-unit id="s48b9e342e71a62a0">
   <source>Arrange the items in the correct order.</source>
 </trans-unit>
 <trans-unit id="s195d8970726dcde5">
   <source>Drag the items, or use the arrows.</source>
+<target>Jiid walxaha, ama isticmaal furayaasha fallaaraha.</target>
 </trans-unit>
 <trans-unit id="sd1b6deb412a019f2">
   <source>Full credit only if every pair matches.</source>
+<target>Dhibcaha buuxa waxaa la bixiyaa keliya haddii lammaane kasta is waafaqo.</target>
 </trans-unit>
 <trans-unit id="s660ce8a94870e7be">
   <source>Per correct pair</source>
@@ -1211,6 +1247,7 @@
 </trans-unit>
 <trans-unit id="s583fc1a7dcab06b1">
   <source><x id="0" equiv-text="${count}"/> of <x id="1" equiv-text="${key.length}"/> pairs are correct.</source>
+<target><x id="0" equiv-text="${count}"/> ka mid ah <x id="1" equiv-text="${key.length}"/> lammaane ayaa sax ah.</target>
 </trans-unit>
 <trans-unit id="seff6153e80bd6a89">
   <source>Hide task labels</source>
@@ -1273,6 +1310,7 @@
 </trans-unit>
 <trans-unit id="se37cff59047ed04d">
   <source>Require a recording before submitting</source>
+<target>Dalbo duubis ka hor inta aan la gudbin</target>
 </trans-unit>
 <trans-unit id="s7684ff9798b78190">
   <source>Match transcript</source>
@@ -1289,9 +1327,11 @@
 </trans-unit>
 <trans-unit id="s3f63f5f9314e6043">
   <source>Microphone access was denied.</source>
+<target>Ogolaanshaha makarafoonka waa la diiday.</target>
 </trans-unit>
 <trans-unit id="sd4eff05c54de1cc0">
   <source>The microphone is unavailable.</source>
+<target>Makarafoonka lama heli karo.</target>
 </trans-unit>
 <trans-unit id="s88bb88dfdcdb627d">
   <source>Speech recognition could not connect. Try again.</source>
@@ -1304,9 +1344,11 @@
 </trans-unit>
 <trans-unit id="sd9ed7407d01ead0c">
   <source>No speech was recognized. Try again.</source>
+<target>Hadal lama aqoonsan. Mar kale isku day.</target>
 </trans-unit>
 <trans-unit id="s4639f7a3ea067ba3">
   <source>Speech recognition timed out.</source>
+<target>Waqtigii aqoonsiga hadalku wuu dhammaaday.</target>
 </trans-unit>
 <trans-unit id="s7a0c4c4a03638428">
   <source>Speech recognition could not finish. Try again.</source>
@@ -1373,9 +1415,11 @@
 </trans-unit>
 <trans-unit id="s9f03f75fe691cc42">
   <source>Almost. Check the capitalization.</source>
+<target>Way ku dhowdahay. Hubi xarfaha waaweyn iyo kuwa yaryar.</target>
 </trans-unit>
 <trans-unit id="s191241976c5f89c8">
   <source>Almost. Check the spelling.</source>
+<target>Way ku dhowdahay. Hubi higgaadda.</target>
 </trans-unit>
 <trans-unit id="sa3a7b3637151e12d">
   <source>Answer limits</source>
@@ -1383,6 +1427,7 @@
 </trans-unit>
 <trans-unit id="sefd6ddf636c816cc">
   <source>Extra solutions &amp; tolerance</source>
+<target>Xallo dheeraad ah iyo kala duwanaanshaha la oggol yahay</target>
 </trans-unit>
 <trans-unit id="sf202c28e75e3d855">
   <source>Extra solutions</source>
@@ -1390,12 +1435,14 @@
 </trans-unit>
 <trans-unit id="s972a62949aa63069">
   <source>Another accepted answer</source>
+<target>Jawaab kale oo la aqbalayo</target>
 </trans-unit>
 <trans-unit id="sa61ba0e06cab9331">
   <source>Shorten your answer to fit the limit.</source>
 </trans-unit>
 <trans-unit id="sd2ea043c0c38373c">
   <source>Lengthen your answer to meet the minimum.</source>
+<target>Dheeree jawaabtaada si ay u gaadho xadka ugu yar.</target>
 </trans-unit>
 <trans-unit id="s8893ece8e3462e5d">
   <source><x id="0" equiv-text="${words}"/>/<x id="1" equiv-text="${maxWords}"/> words</source>
@@ -1429,6 +1476,7 @@
 </trans-unit>
 <trans-unit id="s130ad9c84e53f4ef">
   <source>Enter the model answer.</source>
+<target>Geli jawaabta tusaalaha ah.</target>
 </trans-unit>
 <trans-unit id="s488cac76080c5d39">
   <source>Enter the solution.</source>

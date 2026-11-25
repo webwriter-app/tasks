@@ -228,6 +228,7 @@
 </trans-unit>
 <trans-unit id="s9908b0c9b48b35ad">
   <source>Finishing recording…</source>
+<target>రికార్డింగ్ ముగుస్తోంది…</target>
 </trans-unit>
 <trans-unit id="sb32cad250448883a">
   <source>Stop recording</source>
@@ -271,6 +272,7 @@
 </trans-unit>
 <trans-unit id="scc90a4e72a9e3f79">
   <source><x id="0" equiv-text="${correctCount}"/> of <x id="1" equiv-text="${rows.length}"/> rows are correct.</source>
+<target><x id="1" equiv-text="${rows.length}"/> వరుసలలో <x id="0" equiv-text="${correctCount}"/> సరైనవి.</target>
 </trans-unit>
 <trans-unit id="sea6985b706b63d8c">
   <source>Enter the rows and choices.</source>
@@ -287,6 +289,7 @@
 </trans-unit>
 <trans-unit id="scdd9af653f7a5cb1">
   <source>Select one option per row.</source>
+<target>ప్రతి వరుసకు ఒక ఎంపికను ఎంచుకోండి.</target>
 </trans-unit>
 <trans-unit id="s2b045181a53644ce">
   <source>Add column</source>
@@ -322,6 +325,7 @@
 </trans-unit>
 <trans-unit id="sd1a1ef004aadb208">
   <source>Show column headers</source>
+<target>నిలువు వరుస శీర్షికలను చూపండి</target>
 </trans-unit>
 <trans-unit id="s2a9ad64c546b4f22">
   <source>Show row headers</source>
@@ -341,6 +345,7 @@
 </trans-unit>
 <trans-unit id="sb7cfcc79fbcb74d1">
   <source><x id="0" equiv-text="${correctCount}"/> of <x id="1" equiv-text="${activeGaps.length}"/> gaps are correct.</source>
+<target><x id="1" equiv-text="${activeGaps.length}"/> ఖాళీలలో <x id="0" equiv-text="${correctCount}"/> సరైనవి.</target>
 </trans-unit>
 <trans-unit id="s73658af228bb4a12">
   <source>Enter the solutions, then mark the gap cells.</source>
@@ -370,6 +375,7 @@
 </trans-unit>
 <trans-unit id="se285f8462c6283d8">
   <source>All answers are placed.</source>
+<target>అన్ని సమాధానాలు ఉంచబడ్డాయి.</target>
 </trans-unit>
 <trans-unit id="s862ee826ed9e561c">
   <source>Self-assessment</source>
@@ -382,6 +388,7 @@
 </trans-unit>
 <trans-unit id="s75576f72d8374e0a">
   <source>Remove criterion: <x id="0" equiv-text="${criterion}"/></source>
+<target>ప్రమాణాన్ని తొలగించండి: <x id="0" equiv-text="${criterion}"/></target>
 </trans-unit>
 <trans-unit id="sad144a3342aa6ceb">
   <source>Rubric criterion</source>
@@ -392,6 +399,7 @@
 </trans-unit>
 <trans-unit id="s0308ae388d00d28a">
   <source>Ignore punctuation &amp; accents</source>
+<target>విరామచిహ్నాలు, యాస గుర్తులను పట్టించుకోకండి</target>
 </trans-unit>
 <trans-unit id="s9a5698a5dac7cad1">
   <source>Ignore minor typos</source>
@@ -406,6 +414,7 @@
 </trans-unit>
 <trans-unit id="sb5ada04f142c4972">
   <source>This task is ungraded.</source>
+<target>ఈ పనికి గ్రేడ్ ఇవ్వబడదు.</target>
 </trans-unit>
 <trans-unit id="sa8346ce518263c93">
   <source>Answer the task first.</source>
@@ -506,6 +515,7 @@
 </trans-unit>
 <trans-unit id="sf643c4a10dba9800">
   <source>Remove <x id="0" equiv-text="${label}"/> from this group</source>
+<target>ఈ గుంపు నుంచి <x id="0" equiv-text="${label}"/>ని తీసివేయండి</target>
 </trans-unit>
 <trans-unit id="sfe592af2e37a2214">
   <source>Multi-group</source>
@@ -555,6 +565,7 @@
 </trans-unit>
 <trans-unit id="s2118adbd5904ec36">
   <source>Partial (penalize wrong)</source>
+<target>పాక్షికం (తప్పు సమాధానాలకు తగ్గింపు)</target>
 </trans-unit>
 <trans-unit id="s1916139f98775735">
   <source>Right selections add credit; wrong selections subtract from it (min. 0).</source>
@@ -568,6 +579,7 @@
 </trans-unit>
 <trans-unit id="s5d02042067dcb593">
   <source>Enter the statement.</source>
+<target>వాక్యాన్ని నమోదు చేయండి.</target>
 </trans-unit>
 <trans-unit id="s568ad4e4e7b1eb44">
   <source>Enter the choices.</source>
@@ -592,9 +604,11 @@
 </trans-unit>
 <trans-unit id="s66070c10ddc25bd7">
   <source>1 wrong option selected.</source>
+<target>1 తప్పు ఎంపిక ఎంచుకోబడింది.</target>
 </trans-unit>
 <trans-unit id="sb21f600f6d785eeb">
   <source><x id="0" equiv-text="${wrong}"/> wrong options selected.</source>
+<target><x id="0" equiv-text="${wrong}"/> తప్పు ఎంపికలు ఎంచుకోబడ్డాయి.</target>
 </trans-unit>
 <trans-unit id="sbe4508f09222c889">
   <source>Single</source>
@@ -665,9 +679,11 @@
 </trans-unit>
 <trans-unit id="sa73f2240c86b5168">
   <source>No recording available.</source>
+<target>రికార్డింగ్ అందుబాటులో లేదు.</target>
 </trans-unit>
 <trans-unit id="s61fa8e1be7a254b8">
   <source>Transcribing recording…</source>
+<target>రికార్డింగ్‌ను లిప్యంతరీకరిస్తోంది…</target>
 </trans-unit>
 <trans-unit id="sc476adbff390819f">
   <source>The recording could not be played.</source>
@@ -678,6 +694,7 @@
 </trans-unit>
 <trans-unit id="s625ef7f3207cf9cb">
   <source>Cancel transcription</source>
+<target>లిప్యంతరీకరణను రద్దు చేయండి</target>
 </trans-unit>
 <trans-unit id="s065289e6cba017c6">
   <source>Transcribe</source>
@@ -773,6 +790,7 @@
 </trans-unit>
 <trans-unit id="s0eb6407d01b573ca">
   <source>Choose a background image.</source>
+<target>నేపథ్య చిత్రాన్ని ఎంచుకోండి.</target>
 </trans-unit>
 <trans-unit id="s52a077cf893ca5cb">
   <source>Draw the solution.</source>
@@ -923,9 +941,11 @@
 </trans-unit>
 <trans-unit id="sbec481c67db2bbeb">
   <source><x id="0" equiv-text="${correctLabels}"/> of <x id="1" equiv-text="${labelMarkers.length}"/> labels are correct.</source>
+<target><x id="1" equiv-text="${labelMarkers.length}"/> లేబుళ్లలో <x id="0" equiv-text="${correctLabels}"/> సరైనవి.</target>
 </trans-unit>
 <trans-unit id="s2ae10bcf386b5474">
   <source><x id="0" equiv-text="${matchedMarkers.size}"/> of <x id="1" equiv-text="${hotspots.length}"/> targets found.</source>
+<target><x id="1" equiv-text="${hotspots.length}"/> లక్ష్యాల్లో <x id="0" equiv-text="${matchedMarkers.size}"/> కనుగొనబడ్డాయి.</target>
 </trans-unit>
 <trans-unit id="s7fa1caf807422e65">
   <source>Drag each label onto its marker on the image.</source>
@@ -959,6 +979,7 @@
 </trans-unit>
 <trans-unit id="s5ba21ea6d3f246a4">
   <source>All labels are placed.</source>
+<target>అన్ని లేబుళ్లు ఉంచబడ్డాయి.</target>
 </trans-unit>
 <trans-unit id="sea4f08110bb8f15d">
   <source>Remove</source>
@@ -1001,6 +1022,7 @@
 </trans-unit>
 <trans-unit id="sd0e6c99efa390583">
   <source>Click the words to mark.</source>
+<target>పదాలను గుర్తించడానికి వాటిపై క్లిక్ చేయండి.</target>
 </trans-unit>
 <trans-unit id="s0337af549735d429">
   <source>Input type</source>
@@ -1036,6 +1058,7 @@
 </trans-unit>
 <trans-unit id="sd47d4d5489d1da3a">
   <source>Partial credit band</source>
+<target>పాక్షిక క్రెడిట్ పరిధి</target>
 </trans-unit>
 <trans-unit id="sf88789673a732088">
   <source>Extra range beyond tolerance where credit decays linearly to zero.</source>
@@ -1073,12 +1096,14 @@
 </trans-unit>
 <trans-unit id="s20e5183dd45ada26">
   <source>Enter a date and time.</source>
+<target>తేదీ మరియు సమయాన్ని నమోదు చేయండి.</target>
 </trans-unit>
 <trans-unit id="s8d69dee8addc385a">
   <source>Set the solution on the slider.</source>
 </trans-unit>
 <trans-unit id="s0ee88abc51ae0f91">
   <source>Choose a value on the slider.</source>
+<target>స్లైడర్‌పై ఒక విలువను ఎంచుకోండి.</target>
 </trans-unit>
 <trans-unit id="sacac52201fe81268">
   <source>Enter the solution number.</source>
@@ -1145,6 +1170,7 @@
 </trans-unit>
 <trans-unit id="s39eb99f4f4c18ebf">
   <source>Accept reverse order</source>
+<target>వ్యతిరేక క్రమాన్ని అంగీకరించు</target>
 </trans-unit>
 <trans-unit id="s6f1a191f5f38290f">
   <source><x id="0" equiv-text="${right}"/> of <x id="1" equiv-text="${items.length}"/> items are in the right place.</source>
@@ -1202,6 +1228,7 @@
 </trans-unit>
 <trans-unit id="s583fc1a7dcab06b1">
   <source><x id="0" equiv-text="${count}"/> of <x id="1" equiv-text="${key.length}"/> pairs are correct.</source>
+<target><x id="1" equiv-text="${key.length}"/> జతల్లో <x id="0" equiv-text="${count}"/> సరైనవి.</target>
 </trans-unit>
 <trans-unit id="seff6153e80bd6a89">
   <source>Hide task labels</source>
@@ -1280,9 +1307,11 @@
 </trans-unit>
 <trans-unit id="s3f63f5f9314e6043">
   <source>Microphone access was denied.</source>
+<target>మైక్రోఫోన్ యాక్సెస్ నిరాకరించబడింది.</target>
 </trans-unit>
 <trans-unit id="sd4eff05c54de1cc0">
   <source>The microphone is unavailable.</source>
+<target>మైక్రోఫోన్ అందుబాటులో లేదు.</target>
 </trans-unit>
 <trans-unit id="s88bb88dfdcdb627d">
   <source>Speech recognition could not connect. Try again.</source>
@@ -1298,6 +1327,7 @@
 </trans-unit>
 <trans-unit id="s4639f7a3ea067ba3">
   <source>Speech recognition timed out.</source>
+<target>వాక్కు గుర్తింపు సమయం ముగిసింది.</target>
 </trans-unit>
 <trans-unit id="s7a0c4c4a03638428">
   <source>Speech recognition could not finish. Try again.</source>
@@ -1315,9 +1345,11 @@
 </trans-unit>
 <trans-unit id="s3456174fce4f31a7">
   <source>Recognized answer: <x id="0" equiv-text="${this.recognizedAnswer}"/></source>
+<target>గుర్తించిన సమాధానం: <x id="0" equiv-text="${this.recognizedAnswer}"/></target>
 </trans-unit>
 <trans-unit id="s502f7a2bbeaec091">
   <source>Transcribing speech…</source>
+<target>మాటలను లిప్యంతరీకరిస్తోంది…</target>
 </trans-unit>
 <trans-unit id="sf71c79de504af8f7">
   <source>Interactive content: open the document online</source>
@@ -1365,6 +1397,7 @@
 </trans-unit>
 <trans-unit id="s191241976c5f89c8">
   <source>Almost. Check the spelling.</source>
+<target>దాదాపు సరైంది. అక్షరక్రమాన్ని తనిఖీ చేయండి.</target>
 </trans-unit>
 <trans-unit id="sa3a7b3637151e12d">
   <source>Answer limits</source>
@@ -1372,6 +1405,7 @@
 </trans-unit>
 <trans-unit id="sefd6ddf636c816cc">
   <source>Extra solutions &amp; tolerance</source>
+<target>అదనపు పరిష్కారాలు మరియు అనుమతి పరిమితి</target>
 </trans-unit>
 <trans-unit id="sf202c28e75e3d855">
   <source>Extra solutions</source>
@@ -1379,6 +1413,7 @@
 </trans-unit>
 <trans-unit id="s972a62949aa63069">
   <source>Another accepted answer</source>
+<target>మరొక ఆమోదిత సమాధానం</target>
 </trans-unit>
 <trans-unit id="sa61ba0e06cab9331">
   <source>Shorten your answer to fit the limit.</source>
@@ -1418,6 +1453,7 @@
 </trans-unit>
 <trans-unit id="s130ad9c84e53f4ef">
   <source>Enter the model answer.</source>
+<target>మోడల్ సమాధానాన్ని నమోదు చేయండి.</target>
 </trans-unit>
 <trans-unit id="s488cac76080c5d39">
   <source>Enter the solution.</source>

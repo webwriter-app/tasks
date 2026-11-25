@@ -695,9 +695,11 @@
 </trans-unit>
 <trans-unit id="s53b4850973728528">
   <source>This view blocks microphone access.</source>
+<target>Questa visualizzazione blocca l’accesso al microfono.</target>
 </trans-unit>
 <trans-unit id="s38f1c1ae5d0356f7">
   <source>The recording could not be saved.</source>
+<target>Impossibile salvare la registrazione.</target>
 </trans-unit>
 <trans-unit id="sa9da29c2219e79d4">
   <source>Start recording</source>
@@ -749,6 +751,7 @@
 </trans-unit>
 <trans-unit id="scc90a4e72a9e3f79">
   <source><x id="0" equiv-text="${correctCount}"/> of <x id="1" equiv-text="${rows.length}"/> rows are correct.</source>
+<target><x id="0" equiv-text="${correctCount}"/> righe su <x id="1" equiv-text="${rows.length}"/> sono corrette.</target>
 </trans-unit>
 <trans-unit id="s444170e956c5ff67">
   <source>Select all that apply.</source>
@@ -756,6 +759,7 @@
 </trans-unit>
 <trans-unit id="scdd9af653f7a5cb1">
   <source>Select one option per row.</source>
+<target>Seleziona un’opzione per riga.</target>
 </trans-unit>
 <trans-unit id="s2b045181a53644ce">
   <source>Add column</source>
@@ -808,9 +812,11 @@
 </trans-unit>
 <trans-unit id="sa200ceda4a34c65c">
   <source>Responses are recorded without scoring.</source>
+<target>Le risposte vengono registrate senza valutazione.</target>
 </trans-unit>
 <trans-unit id="sb7cfcc79fbcb74d1">
   <source><x id="0" equiv-text="${correctCount}"/> of <x id="1" equiv-text="${activeGaps.length}"/> gaps are correct.</source>
+<target><x id="0" equiv-text="${correctCount}"/> spazi su <x id="1" equiv-text="${activeGaps.length}"/> sono corretti.</target>
 </trans-unit>
 <trans-unit id="sf2efc78397526616">
   <source>Drag each answer into a gap, or click an answer and then the gap.</source>
@@ -837,6 +843,7 @@
 </trans-unit>
 <trans-unit id="se285f8462c6283d8">
   <source>All answers are placed.</source>
+<target>Tutte le risposte sono state inserite.</target>
 </trans-unit>
 <trans-unit id="s75576f72d8374e0a">
   <source>Remove criterion: <x id="0" equiv-text="${criterion}"/></source>
@@ -848,6 +855,7 @@
 </trans-unit>
 <trans-unit id="s0308ae388d00d28a">
   <source>Ignore punctuation &amp; accents</source>
+<target>Ignora punteggiatura e accenti</target>
 </trans-unit>
 <trans-unit id="s9a5698a5dac7cad1">
   <source>Ignore minor typos</source>
@@ -914,6 +922,7 @@
 </trans-unit>
 <trans-unit id="sf643c4a10dba9800">
   <source>Remove <x id="0" equiv-text="${label}"/> from this group</source>
+<target>Rimuovi <x id="0" equiv-text="${label}"/> da questo gruppo</target>
 </trans-unit>
 <trans-unit id="sfe592af2e37a2214">
   <source>Multi-group</source>
@@ -921,6 +930,7 @@
 </trans-unit>
 <trans-unit id="s0229d85de3888d71">
   <source><x id="0" equiv-text="${correct}"/> of <x id="1" equiv-text="${total}"/> items are in all the right groups.</source>
+<target><x id="0" equiv-text="${correct}"/> di <x id="1" equiv-text="${total}"/> elementi sono nei gruppi corretti.</target>
 </trans-unit>
 <trans-unit id="sc52e6e561e8f6c78">
   <source>Drag items into their groups, or use + to choose from Options.</source>
@@ -945,6 +955,7 @@
 </trans-unit>
 <trans-unit id="s2118adbd5904ec36">
   <source>Partial (penalize wrong)</source>
+<target>Parziale (penalizza gli errori)</target>
 </trans-unit>
 <trans-unit id="s1916139f98775735">
   <source>Right selections add credit; wrong selections subtract from it (min. 0).</source>
@@ -955,6 +966,7 @@
 </trans-unit>
 <trans-unit id="s88fa46d7b66ff1e6">
   <source>Full credit for selecting the correct option.</source>
+<target>Credito massimo per la selezione dell’opzione corretta.</target>
 </trans-unit>
 <trans-unit id="s5d02042067dcb593">
   <source>Enter the statement.</source>
@@ -974,12 +986,15 @@
 </trans-unit>
 <trans-unit id="s4094f9a53a127ce2">
   <source>Found <x id="0" equiv-text="${found}"/> of <x id="1" equiv-text="${correct.size}"/> correct options.</source>
+<target>Trovate <x id="0" equiv-text="${found}"/> di <x id="1" equiv-text="${correct.size}"/> opzioni corrette.</target>
 </trans-unit>
 <trans-unit id="s66070c10ddc25bd7">
   <source>1 wrong option selected.</source>
+<target>1 opzione errata selezionata.</target>
 </trans-unit>
 <trans-unit id="sb21f600f6d785eeb">
   <source><x id="0" equiv-text="${wrong}"/> wrong options selected.</source>
+<target><x id="0" equiv-text="${wrong}"/> opzioni errate selezionate.</target>
 </trans-unit>
 <trans-unit id="sbe4508f09222c889">
   <source>Single</source>
@@ -991,6 +1006,7 @@
 </trans-unit>
 <trans-unit id="se6fee24d1cbbc9db">
   <source>Give partial credit for minor typos</source>
+<target>Assegna credito parziale per errori minori</target>
 </trans-unit>
 <trans-unit id="s3ec5145dc8e77493">
   <source>Partial credit</source>
@@ -1011,9 +1027,11 @@
 </trans-unit>
 <trans-unit id="s652dfa634831c4ac">
   <source>No speech was recognized in the recording.</source>
+<target>Non è stato riconosciuto alcun parlato nella registrazione.</target>
 </trans-unit>
 <trans-unit id="sb096e2c355121468">
   <source>Automatic transcription timed out. Try again.</source>
+<target>Trascrizione automatica scaduta. Riprova.</target>
 </trans-unit>
 <trans-unit id="s7682adbd6cb18c43">
   <source>Slow recording</source>
@@ -1041,12 +1059,15 @@
 </trans-unit>
 <trans-unit id="sa73f2240c86b5168">
   <source>No recording available.</source>
+<target>Nessuna registrazione disponibile.</target>
 </trans-unit>
 <trans-unit id="s61fa8e1be7a254b8">
   <source>Transcribing recording…</source>
+<target>Trascrizione della registrazione…</target>
 </trans-unit>
 <trans-unit id="sc476adbff390819f">
   <source>The recording could not be played.</source>
+<target>Impossibile riprodurre la registrazione.</target>
 </trans-unit>
 <trans-unit id="sad5df5643732af8e">
   <source>Recording language</source>
@@ -1062,6 +1083,7 @@
 </trans-unit>
 <trans-unit id="s74ae056b8a4fe2fc">
   <source>Require a drawing before submitting</source>
+<target>Richiedi un disegno prima dell’invio</target>
 </trans-unit>
 <trans-unit id="s25fadd3e7388516c">
   <source>Canvas height</source>
@@ -1073,6 +1095,7 @@
 </trans-unit>
 <trans-unit id="s9085fd214561bc83">
   <source>Full credit when a drawing is submitted.</source>
+<target>Credito massimo se viene inviato un disegno.</target>
 </trans-unit>
 <trans-unit id="s070f9dc186e70d69">
   <source>Shows the optional sample for comparison without scoring.</source>
@@ -1142,6 +1165,7 @@
 </trans-unit>
 <trans-unit id="s0eb6407d01b573ca">
   <source>Choose a background image.</source>
+<target>Scegli un’immagine di sfondo.</target>
 </trans-unit>
 <trans-unit id="s52a077cf893ca5cb">
   <source>Draw the solution.</source>
@@ -1171,9 +1195,11 @@
 </trans-unit>
 <trans-unit id="scfd9561b07fa745f">
   <source>Select the right option for each gap.</source>
+<target>Seleziona l’opzione giusta per ogni spazio.</target>
 </trans-unit>
 <trans-unit id="s818176fa88ae0e18">
   <source>All options are already in this group.</source>
+<target>Tutte le opzioni sono già in questo gruppo.</target>
 </trans-unit>
 <trans-unit id="s781e64ea47044bd9">
   <source>Add image</source>
@@ -1231,15 +1257,19 @@
 </trans-unit>
 <trans-unit id="sbec481c67db2bbeb">
   <source><x id="0" equiv-text="${correctLabels}"/> of <x id="1" equiv-text="${labelMarkers.length}"/> labels are correct.</source>
+<target><x id="0" equiv-text="${correctLabels}"/> etichette su <x id="1" equiv-text="${labelMarkers.length}"/> sono corrette.</target>
 </trans-unit>
 <trans-unit id="s2ae10bcf386b5474">
   <source><x id="0" equiv-text="${matchedMarkers.size}"/> of <x id="1" equiv-text="${hotspots.length}"/> targets found.</source>
+<target>Trovati <x id="0" equiv-text="${matchedMarkers.size}"/> di <x id="1" equiv-text="${hotspots.length}"/> obiettivi.</target>
 </trans-unit>
 <trans-unit id="s7fa1caf807422e65">
   <source>Drag each label onto its marker on the image.</source>
+<target>Trascina ogni etichetta sul relativo marcatore nell’immagine.</target>
 </trans-unit>
 <trans-unit id="sd2f8e252296a0030">
   <source>Click the target region(s) in the image.</source>
+<target>Fai clic sulle regioni obiettivo nell’immagine.</target>
 </trans-unit>
 <trans-unit id="s0c2e2e9567aa5ea2">
   <source>No image selected.</source>
@@ -1301,6 +1331,7 @@
 </trans-unit>
 <trans-unit id="sd0e6c99efa390583">
   <source>Click the words to mark.</source>
+<target>Fai clic sulle parole per contrassegnarle.</target>
 </trans-unit>
 <trans-unit id="sef6dc9d5fd60c301">
   <source>Within tolerance</source>
@@ -1354,6 +1385,7 @@
 </trans-unit>
 <trans-unit id="s0ee88abc51ae0f91">
   <source>Choose a value on the slider.</source>
+<target>Scegli un valore sul cursore.</target>
 </trans-unit>
 <trans-unit id="s330046fa1b1b9ec7">
   <source>Enter a number.</source>
@@ -1398,6 +1430,7 @@
 </trans-unit>
 <trans-unit id="s799375be5eae1328">
   <source>Credit for each item placed in its exact slot.</source>
+<target>Punti per ogni elemento collocato nello slot esatto.</target>
 </trans-unit>
 <trans-unit id="s71aa9b3ce66902b9">
   <source>Relative order</source>
@@ -1412,12 +1445,15 @@
 </trans-unit>
 <trans-unit id="s6f1a191f5f38290f">
   <source><x id="0" equiv-text="${right}"/> of <x id="1" equiv-text="${items.length}"/> items are in the right place.</source>
+<target><x id="0" equiv-text="${right}"/> di <x id="1" equiv-text="${items.length}"/> elementi sono nella posizione corretta.</target>
 </trans-unit>
 <trans-unit id="s195d8970726dcde5">
   <source>Drag the items, or use the arrows.</source>
+<target>Trascina gli elementi o usa le frecce.</target>
 </trans-unit>
 <trans-unit id="sd1b6deb412a019f2">
   <source>Full credit only if every pair matches.</source>
+<target>Credito massimo solo se ogni coppia corrisponde.</target>
 </trans-unit>
 <trans-unit id="s660ce8a94870e7be">
   <source>Per correct pair</source>
@@ -1436,6 +1472,7 @@
 </trans-unit>
 <trans-unit id="s583fc1a7dcab06b1">
   <source><x id="0" equiv-text="${count}"/> of <x id="1" equiv-text="${key.length}"/> pairs are correct.</source>
+<target><x id="0" equiv-text="${count}"/> coppie su <x id="1" equiv-text="${key.length}"/> sono corrette.</target>
 </trans-unit>
 <trans-unit id="s9facbab7555fb0c0">
   <source>The file is not valid GIFT: a brace is not closed.</source>
@@ -1462,6 +1499,7 @@
 </trans-unit>
 <trans-unit id="se37cff59047ed04d">
   <source>Require a recording before submitting</source>
+<target>Richiedi una registrazione prima dell’invio</target>
 </trans-unit>
 <trans-unit id="s7684ff9798b78190">
   <source>Match transcript</source>
@@ -1478,9 +1516,11 @@
 </trans-unit>
 <trans-unit id="s3f63f5f9314e6043">
   <source>Microphone access was denied.</source>
+<target>Accesso al microfono negato.</target>
 </trans-unit>
 <trans-unit id="sd4eff05c54de1cc0">
   <source>The microphone is unavailable.</source>
+<target>Il microfono non è disponibile.</target>
 </trans-unit>
 <trans-unit id="s88bb88dfdcdb627d">
   <source>Speech recognition could not connect. Try again.</source>
@@ -1493,9 +1533,11 @@
 </trans-unit>
 <trans-unit id="sd9ed7407d01ead0c">
   <source>No speech was recognized. Try again.</source>
+<target>Nessun parlato riconosciuto. Riprova.</target>
 </trans-unit>
 <trans-unit id="s4639f7a3ea067ba3">
   <source>Speech recognition timed out.</source>
+<target>Riconoscimento vocale scaduto.</target>
 </trans-unit>
 <trans-unit id="s7a0c4c4a03638428">
   <source>Speech recognition could not finish. Try again.</source>
@@ -1544,9 +1586,11 @@
 </trans-unit>
 <trans-unit id="s9f03f75fe691cc42">
   <source>Almost. Check the capitalization.</source>
+<target>Quasi. Controlla l’uso delle maiuscole.</target>
 </trans-unit>
 <trans-unit id="s191241976c5f89c8">
   <source>Almost. Check the spelling.</source>
+<target>Quasi. Controlla l’ortografia.</target>
 </trans-unit>
 <trans-unit id="sa3a7b3637151e12d">
   <source>Answer limits</source>
@@ -1554,6 +1598,7 @@
 </trans-unit>
 <trans-unit id="sefd6ddf636c816cc">
   <source>Extra solutions &amp; tolerance</source>
+<target>Soluzioni aggiuntive e tolleranza</target>
 </trans-unit>
 <trans-unit id="sf202c28e75e3d855">
   <source>Extra solutions</source>
@@ -1561,9 +1606,11 @@
 </trans-unit>
 <trans-unit id="s972a62949aa63069">
   <source>Another accepted answer</source>
+<target>Un’altra risposta accettata</target>
 </trans-unit>
 <trans-unit id="sd2ea043c0c38373c">
   <source>Lengthen your answer to meet the minimum.</source>
+<target>Allunga la risposta per raggiungere il minimo.</target>
 </trans-unit>
 <trans-unit id="sa26fe9ae4bb4e13c">
   <source>1 word</source>
@@ -1591,6 +1638,7 @@
 </trans-unit>
 <trans-unit id="s130ad9c84e53f4ef">
   <source>Enter the model answer.</source>
+<target>Inserisci la risposta modello.</target>
 </trans-unit>
 <trans-unit id="s488cac76080c5d39">
   <source>Enter the solution.</source>
