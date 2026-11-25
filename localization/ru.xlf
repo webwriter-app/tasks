@@ -216,6 +216,7 @@
 </trans-unit>
 <trans-unit id="se5803f79964880b8">
   <source>Record again</source>
+<target>Записать ещё раз</target>
 </trans-unit>
 <trans-unit id="s53b4850973728528">
   <source>This view blocks microphone access.</source>
@@ -225,12 +226,14 @@
 </trans-unit>
 <trans-unit id="sa9da29c2219e79d4">
   <source>Start recording</source>
+<target>Начать запись</target>
 </trans-unit>
 <trans-unit id="s9908b0c9b48b35ad">
   <source>Finishing recording…</source>
 </trans-unit>
 <trans-unit id="sb32cad250448883a">
   <source>Stop recording</source>
+<target>Остановить запись</target>
 </trans-unit>
 <trans-unit id="s2dcbe9c695234958">
   <source>Add Row</source>
@@ -258,6 +261,7 @@
 </trans-unit>
 <trans-unit id="s96d046d2f7e07e3b">
   <source>Ungraded</source>
+<target>Без оценки</target>
 </trans-unit>
 <trans-unit id="s49749a03640a4d55">
   <source>Responses are recorded without scoring (survey or rating).</source>
@@ -276,6 +280,7 @@
 </trans-unit>
 <trans-unit id="s444170e956c5ff67">
   <source>Select all that apply.</source>
+<target>Выберите все подходящие варианты.</target>
 </trans-unit>
 <trans-unit id="scdd9af653f7a5cb1">
   <source>Select one option per row.</source>
@@ -334,6 +339,7 @@
 </trans-unit>
 <trans-unit id="s3b9533e35fe3715d">
   <source>Fill in the gaps.</source>
+<target>Заполните пропуски.</target>
 </trans-unit>
 <trans-unit id="sa8b55cab62e439b5">
   <source>Remove column</source>
@@ -346,6 +352,7 @@
 </trans-unit>
 <trans-unit id="s500fd71a4232050e">
   <source>Empty</source>
+<target>Пусто</target>
 </trans-unit>
 <trans-unit id="se285f8462c6283d8">
   <source>All answers are placed.</source>
@@ -395,6 +402,7 @@
 </trans-unit>
 <trans-unit id="sb58bd9e06b83960f">
   <source>Not graded</source>
+<target>Не оценено</target>
 </trans-unit>
 <trans-unit id="sfc63e31ac7c956ed">
   <source>Select</source>
@@ -449,6 +457,7 @@
 </trans-unit>
 <trans-unit id="s379c18aec5654894">
   <source>Move</source>
+<target>Переместить</target>
 </trans-unit>
 <trans-unit id="s9f26843287bb592d">
   <source>Groups</source>
@@ -506,9 +515,11 @@
 </trans-unit>
 <trans-unit id="s463b8c4e92751ba5">
   <source>Options</source>
+<target>Параметры</target>
 </trans-unit>
 <trans-unit id="s670aaa17382d2876">
   <source>Wrong</source>
+<target>Неверно</target>
 </trans-unit>
 <trans-unit id="s408cd1e9be6e74f0">
   <source>Missed</source>
@@ -542,9 +553,11 @@
 </trans-unit>
 <trans-unit id="s404c6db5256b2680">
   <source>Choose True or False.</source>
+<target>Выберите «Верно» или «Неверно».</target>
 </trans-unit>
 <trans-unit id="s68577a883e958b95">
   <source>Select one answer.</source>
+<target>Выберите один ответ.</target>
 </trans-unit>
 <trans-unit id="s4094f9a53a127ce2">
   <source>Found <x id="0" equiv-text="${found}"/> of <x id="1" equiv-text="${correct.size}"/> correct options.</source>
@@ -569,6 +582,7 @@
 </trans-unit>
 <trans-unit id="s3ec5145dc8e77493">
   <source>Partial credit</source>
+<target>Частичный балл</target>
 </trans-unit>
 <trans-unit id="s921ae54cca4fd6a7">
   <source>Add recording</source>
@@ -611,6 +625,7 @@
 </trans-unit>
 <trans-unit id="s4dbda45a874f64ac">
   <source>Listen and type what you hear.</source>
+<target>Прослушайте и напишите то, что услышали.</target>
 </trans-unit>
 <trans-unit id="sa73f2240c86b5168">
   <source>No recording available.</source>
@@ -641,6 +656,7 @@
 </trans-unit>
 <trans-unit id="s4f888fe2eebd3ac4">
   <source>Completion credit</source>
+<target>Баллы за выполнение</target>
 </trans-unit>
 <trans-unit id="s9085fd214561bc83">
   <source>Full credit when a drawing is submitted.</source>
@@ -650,6 +666,7 @@
 </trans-unit>
 <trans-unit id="s8f4be9f086eb530f">
   <source>Undo</source>
+<target>Отменить</target>
 </trans-unit>
 <trans-unit id="sb4f1dffbb6be6302">
   <source>Clear</source>
@@ -697,6 +714,7 @@
 </trans-unit>
 <trans-unit id="s5a71f1fb3a12c6a7">
   <source>Tool</source>
+<target>Инструмент</target>
 </trans-unit>
 <trans-unit id="s344ea8f4939cdc98">
   <source>Color</source>
@@ -708,6 +726,7 @@
 </trans-unit>
 <trans-unit id="s923215988b72aba6">
   <source>Draw your answer.</source>
+<target>Нарисуйте свой ответ.</target>
 </trans-unit>
 <trans-unit id="s0eb6407d01b573ca">
   <source>Choose a background image.</source>
@@ -989,6 +1008,7 @@
 </trans-unit>
 <trans-unit id="s330046fa1b1b9ec7">
   <source>Enter a number.</source>
+<target>Введите число.</target>
 </trans-unit>
 <trans-unit id="s712144d706e5d284">
   <source>Date &amp; time</source>
@@ -1003,6 +1023,7 @@
 </trans-unit>
 <trans-unit id="sa6a92648588602bf">
   <source>Answer</source>
+<target>Ответ</target>
 </trans-unit>
 <trans-unit id="s91b7363f68d1d46e">
   <source>Right place</source>
@@ -1130,6 +1151,7 @@
 </trans-unit>
 <trans-unit id="s7d684b6257284e55">
   <source>Score</source>
+<target>Баллы</target>
 </trans-unit>
 <trans-unit id="sd463fe8f70c3242c">
   <source>Learners submit the <x id="0" equiv-text="${count}"/> tasks in this group here and see their score.</source>
@@ -1196,6 +1218,7 @@
 </trans-unit>
 <trans-unit id="sdadcdefc4c36991b">
   <source>Record your answer.</source>
+<target>Запишите свой ответ.</target>
 </trans-unit>
 <trans-unit id="s3456174fce4f31a7">
   <source>Recognized answer: <x id="0" equiv-text="${this.recognizedAnswer}"/></source>
@@ -1287,6 +1310,7 @@
 </trans-unit>
 <trans-unit id="s51428c8667d762a0">
   <source>Enter your answer.</source>
+<target>Введите ответ.</target>
 </trans-unit>
 <trans-unit id="s130ad9c84e53f4ef">
   <source>Enter the model answer.</source>
