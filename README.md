@@ -1,5 +1,5 @@
-# Tasks (`@webwriter/tasks@3.0.0`)
-[License: MIT](LICENSE) | Version: 3.0.0
+# Tasks (`@webwriter/tasks@3.0.1`)
+[License: MIT](LICENSE) | Version: 3.0.1
 
 Create interactive quizzes with multiple-choice, ordering, free-text, highlighting, and speech tasks.
 

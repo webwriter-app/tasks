@@ -1,6 +1,6 @@
 {
   "name": "@webwriter/tasks",
-  "version": "3.0.0",
+  "version": "3.0.1",
   "type": "module",
   "description": "Create interactive quizzes with multiple-choice, ordering, free-text, highlighting, and speech tasks.",
   "keywords": [
