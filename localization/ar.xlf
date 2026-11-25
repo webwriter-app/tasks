@@ -212,6 +212,7 @@
 </trans-unit>
 <trans-unit id="scd105819b5a10243">
   <source>Play</source>
+<target>تشغيل</target>
 </trans-unit>
 <trans-unit id="se5803f79964880b8">
   <source>Record again</source>
@@ -282,12 +283,15 @@
 </trans-unit>
 <trans-unit id="sea6985b706b63d8c">
   <source>Enter the rows and choices.</source>
+<target>أدخل الصفوف والخيارات.</target>
 </trans-unit>
 <trans-unit id="s2e8d398592e3eaa1">
   <source>Mark the correct choices in each row.</source>
+<target>حدّد الخيارات الصحيحة في كل صف.</target>
 </trans-unit>
 <trans-unit id="sdced7e9707b6d9c0">
   <source>Mark one correct choice per row.</source>
+<target>حدّد خيارًا صحيحًا واحدًا لكل صف.</target>
 </trans-unit>
 <trans-unit id="s444170e956c5ff67">
   <source>Select all that apply.</source>
@@ -358,6 +362,7 @@
 </trans-unit>
 <trans-unit id="s73658af228bb4a12">
   <source>Enter the solutions, then mark the gap cells.</source>
+<target>أدخل الحلول، ثم حدّد خلايا الفجوات.</target>
 </trans-unit>
 <trans-unit id="sf2efc78397526616">
   <source>Drag each answer into a gap, or click an answer and then the gap.</source>
@@ -431,6 +436,7 @@
 </trans-unit>
 <trans-unit id="sa8346ce518263c93">
   <source>Answer the task first.</source>
+<target>أجب عن المهمة أولًا.</target>
 </trans-unit>
 <trans-unit id="s77c6bf991aa9839e">
   <source>Self-check</source>
@@ -556,15 +562,18 @@
 </trans-unit>
 <trans-unit id="s9ecafed1144dba1f">
   <source><x id="0" equiv-text="${correct}"/> of <x id="1" equiv-text="${total}"/> items are in the right group.</source>
+<target>يوجد <x id="0" equiv-text="${correct}"/> من <x id="1" equiv-text="${total}"/> عناصر في المجموعة الصحيحة.</target>
 </trans-unit>
 <trans-unit id="s5a264cb2ba999afa">
   <source>Place each item in all its correct groups.</source>
+<target>ضع كل عنصر في جميع مجموعاته الصحيحة.</target>
 </trans-unit>
 <trans-unit id="sc52e6e561e8f6c78">
   <source>Drag items into their groups, or use + to choose from Options.</source>
 </trans-unit>
 <trans-unit id="sc53e8091d43b9066">
   <source>Place each item in its correct group.</source>
+<target>ضع كل عنصر في مجموعته الصحيحة.</target>
 </trans-unit>
 <trans-unit id="sdf9018f953f702be">
   <source>Drag items into a group, or use + to choose from Options.</source>
@@ -617,9 +626,11 @@
 </trans-unit>
 <trans-unit id="sdd71f5afc90398eb">
   <source>Select the correct answers.</source>
+<target>اختر الإجابات الصحيحة.</target>
 </trans-unit>
 <trans-unit id="s1ec9854f438d7b40">
   <source>Select the correct answer.</source>
+<target>اختر الإجابة الصحيحة.</target>
 </trans-unit>
 <trans-unit id="s404c6db5256b2680">
   <source>Choose True or False.</source>
@@ -702,6 +713,7 @@
 </trans-unit>
 <trans-unit id="s00e41b3c4a182aa8">
   <source>Solution transcript</source>
+<target>نص الحل</target>
 </trans-unit>
 <trans-unit id="se166026acf69acae">
   <source>Type what you hear</source>
@@ -709,6 +721,7 @@
 </trans-unit>
 <trans-unit id="s12bb8a652aa6c4d1">
   <source>Add audio and enter the solution transcript.</source>
+<target>أضف صوتًا وأدخل نص الحل.</target>
 </trans-unit>
 <trans-unit id="s4dbda45a874f64ac">
   <source>Listen and type what you hear.</source>
@@ -863,6 +876,7 @@
 </trans-unit>
 <trans-unit id="s0767fdab6ae788ae">
   <source>Select the solution text for each gap.</source>
+<target>اختر نص الحل لكل فجوة.</target>
 </trans-unit>
 <trans-unit id="scfd9561b07fa745f">
   <source>Select the right option for each gap.</source>
@@ -898,6 +912,7 @@
 </trans-unit>
 <trans-unit id="s6fcdab6f6cf7461b">
   <source><x id="0" equiv-text="${label}"/> returned to Options.</source>
+<target>تمت إعادة <x id="0" equiv-text="${label}"/> إلى الخيارات.</target>
 </trans-unit>
 <trans-unit id="s703202c2ebdf2d61">
   <source>Zone <x id="0" equiv-text="${index + 1}"/></source>
@@ -908,6 +923,7 @@
 </trans-unit>
 <trans-unit id="s05ba009cda8c6a1b">
   <source>Return selected item</source>
+<target>إرجاع العنصر المحدد</target>
 </trans-unit>
 <trans-unit id="seaa5fbd29de72476">
   <source>Image Hotspots</source>
@@ -981,12 +997,15 @@
 </trans-unit>
 <trans-unit id="s613e777f99178cf3">
   <source>Add an image to define the solution zones.</source>
+<target>أضف صورة لتحديد مناطق الحل.</target>
 </trans-unit>
 <trans-unit id="s4f4b1255c353cd38">
   <source>Add an image to mark the solution hotspots.</source>
+<target>أضف صورة لتحديد النقاط التفاعلية للحل.</target>
 </trans-unit>
 <trans-unit id="s4adf3e11ff5354ae">
   <source>Add a zone, then choose its correct item.</source>
+<target>أضف منطقة، ثم اختر العنصر الصحيح لها.</target>
 </trans-unit>
 <trans-unit id="sd783a9ddacfc12bf">
   <source>Double-click a correct spot. Drag or click its center to edit.</source>
@@ -1058,6 +1077,7 @@
 </trans-unit>
 <trans-unit id="sfd71dba826b393cd">
   <source>Hide total marks to find</source>
+<target>إخفاء إجمالي العلامات المطلوب العثور عليها</target>
 </trans-unit>
 <trans-unit id="sd645983eef83ec21">
   <source>Marked</source>
@@ -1065,6 +1085,7 @@
 </trans-unit>
 <trans-unit id="s77d276c07612f65e">
   <source>Right-click to mark the solution.</source>
+<target>انقر بزر الماوس الأيمن لتحديد الحل.</target>
 </trans-unit>
 <trans-unit id="s745ad67c65bcea27">
   <source><x id="0" equiv-text="${toFind}"/> marked</source>
@@ -1142,6 +1163,7 @@
 </trans-unit>
 <trans-unit id="s863f9a65357e7d87">
   <source>Enter the solution date.</source>
+<target>أدخل تاريخ الحل.</target>
 </trans-unit>
 <trans-unit id="s8101e9674e03d8d4">
   <source>Enter a date.</source>
@@ -1149,6 +1171,7 @@
 </trans-unit>
 <trans-unit id="sbf57f251472bcb58">
   <source>Enter the solution time.</source>
+<target>أدخل وقت الحل.</target>
 </trans-unit>
 <trans-unit id="s9ef2eb3d0696a8e3">
   <source>Enter a time.</source>
@@ -1156,6 +1179,7 @@
 </trans-unit>
 <trans-unit id="s7b2019f9159b0153">
   <source>Enter the solution date and time.</source>
+<target>أدخل تاريخ الحل ووقته.</target>
 </trans-unit>
 <trans-unit id="s20e5183dd45ada26">
   <source>Enter a date and time.</source>
@@ -1163,6 +1187,7 @@
 </trans-unit>
 <trans-unit id="s8d69dee8addc385a">
   <source>Set the solution on the slider.</source>
+<target>حدّد الحل على شريط التمرير.</target>
 </trans-unit>
 <trans-unit id="s0ee88abc51ae0f91">
   <source>Choose a value on the slider.</source>
@@ -1170,6 +1195,7 @@
 </trans-unit>
 <trans-unit id="sacac52201fe81268">
   <source>Enter the solution number.</source>
+<target>أدخل رقم الحل.</target>
 </trans-unit>
 <trans-unit id="s330046fa1b1b9ec7">
   <source>Enter a number.</source>
@@ -1243,6 +1269,7 @@
 </trans-unit>
 <trans-unit id="s48b9e342e71a62a0">
   <source>Arrange the items in the correct order.</source>
+<target>رتّب العناصر بالترتيب الصحيح.</target>
 </trans-unit>
 <trans-unit id="s195d8970726dcde5">
   <source>Drag the items, or use the arrows.</source>
@@ -1262,6 +1289,7 @@
 </trans-unit>
 <trans-unit id="s0b0634acdb057929">
   <source>Connect the items by their dots.</source>
+<target>اربط العناصر بنقاطها.</target>
 </trans-unit>
 <trans-unit id="sc3f7dffe760c1035">
   <source>Connection removed.</source>
@@ -1301,6 +1329,7 @@
 </trans-unit>
 <trans-unit id="s62c886043b49e255">
   <source>Connect the matching items.</source>
+<target>اربط العناصر المتطابقة.</target>
 </trans-unit>
 <trans-unit id="s583fc1a7dcab06b1">
   <source><x id="0" equiv-text="${count}"/> of <x id="1" equiv-text="${key.length}"/> pairs are correct.</source>
@@ -1319,9 +1348,11 @@
 </trans-unit>
 <trans-unit id="s2521b02f548cc7e9">
   <source>1 task is unanswered.</source>
+<target>مهمة واحدة بلا إجابة.</target>
 </trans-unit>
 <trans-unit id="s68765f320e984d2b">
   <source><x id="0" equiv-text="${count}"/> tasks are unanswered.</source>
+<target>هناك <x id="0" equiv-text="${count}"/> مهام بلا إجابة.</target>
 </trans-unit>
 <trans-unit id="s26dc09247b1685c0">
   <source>Go to the task</source>
@@ -1427,6 +1458,7 @@
 </trans-unit>
 <trans-unit id="s4e38b5e50c309443">
   <source>Record the solution or enter its transcript.</source>
+<target>سجّل الحل أو أدخل نصه.</target>
 </trans-unit>
 <trans-unit id="sdadcdefc4c36991b">
   <source>Record your answer.</source>
@@ -1446,6 +1478,7 @@
 </trans-unit>
 <trans-unit id="s5b441c947d06bae9">
   <source>Allow readers to resize</source>
+<target>السماح للقراء بتغيير الحجم</target>
 </trans-unit>
 <trans-unit id="sbad6e8411baba23a">
   <source>Minimum words</source>
@@ -1480,6 +1513,7 @@
 </trans-unit>
 <trans-unit id="s326d5d3ac1de6f34">
   <source>Advanced: Match as regular expression</source>
+<target>متقدم: تطابق كتعبير نمطي</target>
 </trans-unit>
 <trans-unit id="s59e0eb09a3b46cf1">
   <source>Resize answer field</source>
@@ -1511,6 +1545,7 @@
 </trans-unit>
 <trans-unit id="sa61ba0e06cab9331">
   <source>Shorten your answer to fit the limit.</source>
+<target>قصّر إجابتك لتناسب الحد.</target>
 </trans-unit>
 <trans-unit id="sd2ea043c0c38373c">
   <source>Lengthen your answer to meet the minimum.</source>

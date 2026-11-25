@@ -283,12 +283,15 @@
 </trans-unit>
 <trans-unit id="sea6985b706b63d8c">
   <source>Enter the rows and choices.</source>
+<target>輸入列和選項。</target>
 </trans-unit>
 <trans-unit id="s2e8d398592e3eaa1">
   <source>Mark the correct choices in each row.</source>
+<target>標記每列中的正確選項。</target>
 </trans-unit>
 <trans-unit id="sdced7e9707b6d9c0">
   <source>Mark one correct choice per row.</source>
+<target>每列標記一個正確選項。</target>
 </trans-unit>
 <trans-unit id="s444170e956c5ff67">
   <source>Select all that apply.</source>
@@ -359,6 +362,7 @@
 </trans-unit>
 <trans-unit id="s73658af228bb4a12">
   <source>Enter the solutions, then mark the gap cells.</source>
+<target>輸入解答，然後標記空格儲存格。</target>
 </trans-unit>
 <trans-unit id="sf2efc78397526616">
   <source>Drag each answer into a gap, or click an answer and then the gap.</source>
@@ -432,6 +436,7 @@
 </trans-unit>
 <trans-unit id="sa8346ce518263c93">
   <source>Answer the task first.</source>
+<target>請先回答此任務。</target>
 </trans-unit>
 <trans-unit id="s77c6bf991aa9839e">
   <source>Self-check</source>
@@ -556,15 +561,18 @@
 </trans-unit>
 <trans-unit id="s9ecafed1144dba1f">
   <source><x id="0" equiv-text="${correct}"/> of <x id="1" equiv-text="${total}"/> items are in the right group.</source>
+<target><x id="1" equiv-text="${total}"/> 個項目中有 <x id="0" equiv-text="${correct}"/> 個在正確的群組中。</target>
 </trans-unit>
 <trans-unit id="s5a264cb2ba999afa">
   <source>Place each item in all its correct groups.</source>
+<target>將每個項目放入所有正確的群組。</target>
 </trans-unit>
 <trans-unit id="sc52e6e561e8f6c78">
   <source>Drag items into their groups, or use + to choose from Options.</source>
 </trans-unit>
 <trans-unit id="sc53e8091d43b9066">
   <source>Place each item in its correct group.</source>
+<target>將每個項目放入正確的群組。</target>
 </trans-unit>
 <trans-unit id="sdf9018f953f702be">
   <source>Drag items into a group, or use + to choose from Options.</source>
@@ -617,9 +625,11 @@
 </trans-unit>
 <trans-unit id="sdd71f5afc90398eb">
   <source>Select the correct answers.</source>
+<target>選擇正確答案。</target>
 </trans-unit>
 <trans-unit id="s1ec9854f438d7b40">
   <source>Select the correct answer.</source>
+<target>選擇正確答案。</target>
 </trans-unit>
 <trans-unit id="s404c6db5256b2680">
   <source>Choose True or False.</source>
@@ -702,6 +712,7 @@
 </trans-unit>
 <trans-unit id="s00e41b3c4a182aa8">
   <source>Solution transcript</source>
+<target>解答轉錄</target>
 </trans-unit>
 <trans-unit id="se166026acf69acae">
   <source>Type what you hear</source>
@@ -709,6 +720,7 @@
 </trans-unit>
 <trans-unit id="s12bb8a652aa6c4d1">
   <source>Add audio and enter the solution transcript.</source>
+<target>新增音訊並輸入解答轉錄文字。</target>
 </trans-unit>
 <trans-unit id="s4dbda45a874f64ac">
   <source>Listen and type what you hear.</source>
@@ -779,9 +791,11 @@
 </trans-unit>
 <trans-unit id="s5d0b63df0bad8c2e">
   <source>Rectangle</source>
+<target>矩形</target>
 </trans-unit>
 <trans-unit id="sbadcfb6aa6ef38b1">
   <source>Ellipse</source>
+<target>橢圓</target>
 </trans-unit>
 <trans-unit id="s085cd8fee92a2cc5">
   <source>Eraser</source>
@@ -792,12 +806,15 @@
 </trans-unit>
 <trans-unit id="secf3d3a7c1693e2d">
   <source>Blue</source>
+<target>藍色</target>
 </trans-unit>
 <trans-unit id="s9ff1de19feac1b7c">
   <source>Red</source>
+<target>紅色</target>
 </trans-unit>
 <trans-unit id="scf00d78fd5953f1c">
   <source>Green</source>
+<target>綠色</target>
 </trans-unit>
 <trans-unit id="s6baf78886c99db89">
   <source>Yellow</source>
@@ -855,6 +872,7 @@
 </trans-unit>
 <trans-unit id="s0767fdab6ae788ae">
   <source>Select the solution text for each gap.</source>
+<target>為每個空格選擇解答文字。</target>
 </trans-unit>
 <trans-unit id="scfd9561b07fa745f">
   <source>Select the right option for each gap.</source>
@@ -889,6 +907,7 @@
 </trans-unit>
 <trans-unit id="s6fcdab6f6cf7461b">
   <source><x id="0" equiv-text="${label}"/> returned to Options.</source>
+<target><x id="0" equiv-text="${label}"/> 已返回選項。</target>
 </trans-unit>
 <trans-unit id="s703202c2ebdf2d61">
   <source>Zone <x id="0" equiv-text="${index + 1}"/></source>
@@ -899,6 +918,7 @@
 </trans-unit>
 <trans-unit id="s05ba009cda8c6a1b">
   <source>Return selected item</source>
+<target>返回所選項目</target>
 </trans-unit>
 <trans-unit id="seaa5fbd29de72476">
   <source>Image Hotspots</source>
@@ -971,12 +991,15 @@
 </trans-unit>
 <trans-unit id="s613e777f99178cf3">
   <source>Add an image to define the solution zones.</source>
+<target>新增圖片以定義解答區域。</target>
 </trans-unit>
 <trans-unit id="s4f4b1255c353cd38">
   <source>Add an image to mark the solution hotspots.</source>
+<target>新增圖片以標記解答熱點。</target>
 </trans-unit>
 <trans-unit id="s4adf3e11ff5354ae">
   <source>Add a zone, then choose its correct item.</source>
+<target>新增區域，然後為它選擇正確項目。</target>
 </trans-unit>
 <trans-unit id="sd783a9ddacfc12bf">
   <source>Double-click a correct spot. Drag or click its center to edit.</source>
@@ -1048,6 +1071,7 @@
 </trans-unit>
 <trans-unit id="sfd71dba826b393cd">
   <source>Hide total marks to find</source>
+<target>隱藏待尋找的總分數</target>
 </trans-unit>
 <trans-unit id="sd645983eef83ec21">
   <source>Marked</source>
@@ -1055,6 +1079,7 @@
 </trans-unit>
 <trans-unit id="s77d276c07612f65e">
   <source>Right-click to mark the solution.</source>
+<target>按一下滑鼠右鍵以標記解答。</target>
 </trans-unit>
 <trans-unit id="s745ad67c65bcea27">
   <source><x id="0" equiv-text="${toFind}"/> marked</source>
@@ -1131,6 +1156,7 @@
 </trans-unit>
 <trans-unit id="s863f9a65357e7d87">
   <source>Enter the solution date.</source>
+<target>輸入解答日期。</target>
 </trans-unit>
 <trans-unit id="s8101e9674e03d8d4">
   <source>Enter a date.</source>
@@ -1138,6 +1164,7 @@
 </trans-unit>
 <trans-unit id="sbf57f251472bcb58">
   <source>Enter the solution time.</source>
+<target>輸入解答時間。</target>
 </trans-unit>
 <trans-unit id="s9ef2eb3d0696a8e3">
   <source>Enter a time.</source>
@@ -1145,6 +1172,7 @@
 </trans-unit>
 <trans-unit id="s7b2019f9159b0153">
   <source>Enter the solution date and time.</source>
+<target>輸入解答日期和時間。</target>
 </trans-unit>
 <trans-unit id="s20e5183dd45ada26">
   <source>Enter a date and time.</source>
@@ -1152,6 +1180,7 @@
 </trans-unit>
 <trans-unit id="s8d69dee8addc385a">
   <source>Set the solution on the slider.</source>
+<target>在滑桿上設定解答。</target>
 </trans-unit>
 <trans-unit id="s0ee88abc51ae0f91">
   <source>Choose a value on the slider.</source>
@@ -1159,6 +1188,7 @@
 </trans-unit>
 <trans-unit id="sacac52201fe81268">
   <source>Enter the solution number.</source>
+<target>輸入解答數字。</target>
 </trans-unit>
 <trans-unit id="s330046fa1b1b9ec7">
   <source>Enter a number.</source>
@@ -1170,9 +1200,11 @@
 </trans-unit>
 <trans-unit id="s1dfd6319b50f4cd7">
   <source>Min</source>
+<target>最小值</target>
 </trans-unit>
 <trans-unit id="s1e187119b5262c59">
   <source>Max</source>
+<target>最大值</target>
 </trans-unit>
 <trans-unit id="sa6a92648588602bf">
   <source>Answer</source>
@@ -1230,6 +1262,7 @@
 </trans-unit>
 <trans-unit id="s48b9e342e71a62a0">
   <source>Arrange the items in the correct order.</source>
+<target>依正確順序排列項目。</target>
 </trans-unit>
 <trans-unit id="s195d8970726dcde5">
   <source>Drag the items, or use the arrows.</source>
@@ -1249,6 +1282,7 @@
 </trans-unit>
 <trans-unit id="s0b0634acdb057929">
   <source>Connect the items by their dots.</source>
+<target>透過圓點連結項目。</target>
 </trans-unit>
 <trans-unit id="sc3f7dffe760c1035">
   <source>Connection removed.</source>
@@ -1288,6 +1322,7 @@
 </trans-unit>
 <trans-unit id="s62c886043b49e255">
   <source>Connect the matching items.</source>
+<target>連結相符的項目。</target>
 </trans-unit>
 <trans-unit id="s583fc1a7dcab06b1">
   <source><x id="0" equiv-text="${count}"/> of <x id="1" equiv-text="${key.length}"/> pairs are correct.</source>
@@ -1306,9 +1341,11 @@
 </trans-unit>
 <trans-unit id="s2521b02f548cc7e9">
   <source>1 task is unanswered.</source>
+<target>有 1 項任務未作答。</target>
 </trans-unit>
 <trans-unit id="s68765f320e984d2b">
   <source><x id="0" equiv-text="${count}"/> tasks are unanswered.</source>
+<target>有 <x id="0" equiv-text="${count}"/> 項任務未作答。</target>
 </trans-unit>
 <trans-unit id="s26dc09247b1685c0">
   <source>Go to the task</source>
@@ -1414,6 +1451,7 @@
 </trans-unit>
 <trans-unit id="s4e38b5e50c309443">
   <source>Record the solution or enter its transcript.</source>
+<target>錄製解答或輸入其轉錄文字。</target>
 </trans-unit>
 <trans-unit id="sdadcdefc4c36991b">
   <source>Record your answer.</source>
@@ -1433,6 +1471,7 @@
 </trans-unit>
 <trans-unit id="s5b441c947d06bae9">
   <source>Allow readers to resize</source>
+<target>允許讀者調整大小</target>
 </trans-unit>
 <trans-unit id="sbad6e8411baba23a">
   <source>Minimum words</source>
@@ -1467,6 +1506,7 @@
 </trans-unit>
 <trans-unit id="s326d5d3ac1de6f34">
   <source>Advanced: Match as regular expression</source>
+<target>進階：以正規表示式比對</target>
 </trans-unit>
 <trans-unit id="s59e0eb09a3b46cf1">
   <source>Resize answer field</source>
@@ -1498,6 +1538,7 @@
 </trans-unit>
 <trans-unit id="sa61ba0e06cab9331">
   <source>Shorten your answer to fit the limit.</source>
+<target>縮短答案以符合限制。</target>
 </trans-unit>
 <trans-unit id="sd2ea043c0c38373c">
   <source>Lengthen your answer to meet the minimum.</source>

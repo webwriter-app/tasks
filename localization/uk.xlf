@@ -388,12 +388,14 @@
 </trans-unit>
 <trans-unit id="s862ee826ed9e561c">
   <source>Self-assessment</source>
+<target>Самооцінювання</target>
 </trans-unit>
 <trans-unit id="s31e4aca212b90444">
   <source>Score is based on self-check rubric items checked after submitting.</source>
 </trans-unit>
 <trans-unit id="safc5dc23506c8384">
   <source>Rubric</source>
+<target>Критерії оцінювання</target>
 </trans-unit>
 <trans-unit id="s75576f72d8374e0a">
   <source>Remove criterion: <x id="0" equiv-text="${criterion}"/></source>
@@ -416,6 +418,7 @@
 </trans-unit>
 <trans-unit id="s65110cc8f3569002">
   <source>Task label</source>
+<target>Мітка завдання</target>
 </trans-unit>
 <trans-unit id="s1f2f2be86efd928c">
   <source>Hide scoring</source>
@@ -430,9 +433,11 @@
 </trans-unit>
 <trans-unit id="s77c6bf991aa9839e">
   <source>Self-check</source>
+<target>Самоперевірка</target>
 </trans-unit>
 <trans-unit id="sdce919bbdc89eb6b">
   <source>Configure</source>
+<target>Налаштувати</target>
 </trans-unit>
 <trans-unit id="sb58bd9e06b83960f">
   <source>Not graded</source>
@@ -440,18 +445,23 @@
 </trans-unit>
 <trans-unit id="sfc63e31ac7c956ed">
   <source>Select</source>
+<target>Вибрати</target>
 </trans-unit>
 <trans-unit id="s78f9fa174282015c">
   <source>Write</source>
+<target>Писати</target>
 </trans-unit>
 <trans-unit id="sd42f58d8f01b4e47">
   <source>Arrange</source>
+<target>Упорядкувати</target>
 </trans-unit>
 <trans-unit id="se23357f112296589">
   <source>Speak</source>
+<target>Говорити</target>
 </trans-unit>
 <trans-unit id="s1c0ea772de28e773">
   <source>Draw</source>
+<target>Малювати</target>
 </trans-unit>
 <trans-unit id="s8a13240ec237a9ef">
   <source>Other tasks</source>
@@ -459,9 +469,11 @@
 </trans-unit>
 <trans-unit id="s7013a0bd5cf697ec">
   <source>Task type</source>
+<target>Тип завдання</target>
 </trans-unit>
 <trans-unit id="sd19715215fa7c6ca">
   <source>Task Results</source>
+<target>Результати завдань</target>
 </trans-unit>
 <trans-unit id="s42cbd8dca939a9c7">
   <source>Check</source>
@@ -485,6 +497,7 @@
 </trans-unit>
 <trans-unit id="s62b2c51610dc615b">
   <source>The current content or settings require this layout.</source>
+<target>Поточний вміст або налаштування вимагають цього макета.</target>
 </trans-unit>
 <trans-unit id="s25e1a07e454c2c11">
   <source>Grid</source>
@@ -492,6 +505,7 @@
 </trans-unit>
 <trans-unit id="sb69fe5b15d487851">
   <source>Task/question</source>
+<target>Завдання/запитання</target>
 </trans-unit>
 <trans-unit id="s379c18aec5654894">
   <source>Move</source>
@@ -499,6 +513,7 @@
 </trans-unit>
 <trans-unit id="s9f26843287bb592d">
   <source>Groups</source>
+<target>Групи</target>
 </trans-unit>
 <trans-unit id="sba1bfeaf662fe54e">
   <source>Full credit only if every item is sorted into its right group.</source>
@@ -532,6 +547,7 @@
 </trans-unit>
 <trans-unit id="s635ffba679db4c52">
   <source>Multi</source>
+<target>Кілька</target>
 </trans-unit>
 <trans-unit id="s0229d85de3888d71">
   <source><x id="0" equiv-text="${correct}"/> of <x id="1" equiv-text="${total}"/> items are in all the right groups.</source>
@@ -554,9 +570,11 @@
 </trans-unit>
 <trans-unit id="se8e6a39f5369c253">
   <source>Add item</source>
+<target>Додати елемент</target>
 </trans-unit>
 <trans-unit id="sd9f67fbf3f86efcf">
   <source>Add group</source>
+<target>Додати групу</target>
 </trans-unit>
 <trans-unit id="s463b8c4e92751ba5">
   <source>Options</source>
@@ -628,6 +646,7 @@
 </trans-unit>
 <trans-unit id="s12b13f3557a8e6c2">
   <source>Dictation</source>
+<target>Диктант</target>
 </trans-unit>
 <trans-unit id="s64a981f393576a7b">
   <source>Ignore punctuation</source>
@@ -650,6 +669,7 @@
 </trans-unit>
 <trans-unit id="s8beb3150837877a2">
   <source>The recording could not be played for transcription.</source>
+<target>Не вдалося відтворити запис для транскрибування.</target>
 </trans-unit>
 <trans-unit id="s0769bd26bad7ceb0">
   <source>Automatic transcription could not finish. Try again.</source>
@@ -719,6 +739,7 @@
 </trans-unit>
 <trans-unit id="s37658628514bfa29">
   <source>Sketch</source>
+<target>Ескіз</target>
 </trans-unit>
 <trans-unit id="s74ae056b8a4fe2fc">
   <source>Require a drawing before submitting</source>
@@ -858,12 +879,15 @@
 </trans-unit>
 <trans-unit id="s4f521327851555e4">
   <source>Item <x id="0" equiv-text="${index + 1}"/></source>
+<target>Елемент <x id="0" equiv-text="${index + 1}"/></target>
 </trans-unit>
 <trans-unit id="s4c0433e13ae18244">
   <source>Correct item</source>
+<target>Правильний елемент</target>
 </trans-unit>
 <trans-unit id="s0b023612a7aac3c6">
   <source>Choose an item</source>
+<target>Виберіть елемент</target>
 </trans-unit>
 <trans-unit id="sa6f359971854ca5b">
   <source><x id="0" equiv-text="${label}"/> placed in <x id="1" equiv-text="${zone.label || this.msg(&quot;Zone&quot;)}"/>.</source>
@@ -884,6 +908,7 @@
 </trans-unit>
 <trans-unit id="seaa5fbd29de72476">
   <source>Image Hotspots</source>
+<target>Мітки на зображенні</target>
 </trans-unit>
 <trans-unit id="sa37e098e69be3dd2">
   <source>Full credit only if every marker matches with no wrong pins.</source>
@@ -915,12 +940,14 @@
 </trans-unit>
 <trans-unit id="s03635bdd07e891f7">
   <source>Resize top edge</source>
+<target>Змінити розмір верхнього краю</target>
 </trans-unit>
 <trans-unit id="s196f15ed6778fd19">
   <source>Resize bottom edge</source>
 </trans-unit>
 <trans-unit id="s14c54ca33d0f3ea9">
   <source>Circle</source>
+<target>Коло</target>
 </trans-unit>
 <trans-unit id="s2de969afacdaa7a6">
   <source>Shape</source>
@@ -1015,6 +1042,7 @@
 </trans-unit>
 <trans-unit id="s8654133f4227b6dc">
   <source>Highlights</source>
+<target>Основні моменти</target>
 </trans-unit>
 <trans-unit id="scab3980db2755f4c">
   <source>Full credit only if exactly the right words are marked.</source>
@@ -1050,12 +1078,15 @@
 </trans-unit>
 <trans-unit id="s0337af549735d429">
   <source>Input type</source>
+<target>Тип введення</target>
 </trans-unit>
 <trans-unit id="s0043cbab8a7a7cfc">
   <source>Slider</source>
+<target>Повзунок</target>
 </trans-unit>
 <trans-unit id="sbcc77dff2df51943">
   <source>Date/Time</source>
+<target>Дата й час</target>
 </trans-unit>
 <trans-unit id="sef6dc9d5fd60c301">
   <source>Within tolerance</source>
@@ -1108,12 +1139,14 @@
 </trans-unit>
 <trans-unit id="s8101e9674e03d8d4">
   <source>Enter a date.</source>
+<target>Введіть дату.</target>
 </trans-unit>
 <trans-unit id="sbf57f251472bcb58">
   <source>Enter the solution time.</source>
 </trans-unit>
 <trans-unit id="s9ef2eb3d0696a8e3">
   <source>Enter a time.</source>
+<target>Введіть час.</target>
 </trans-unit>
 <trans-unit id="s7b2019f9159b0153">
   <source>Enter the solution date and time.</source>
@@ -1138,6 +1171,7 @@
 </trans-unit>
 <trans-unit id="s712144d706e5d284">
   <source>Date &amp; time</source>
+<target>Дата й час</target>
 </trans-unit>
 <trans-unit id="s1dfd6319b50f4cd7">
   <source>Min</source>
@@ -1218,6 +1252,7 @@
 </trans-unit>
 <trans-unit id="s7dd435285656bfe2">
   <source>Proportional credit for each correctly matched pair.</source>
+<target>Пропорційний бал за кожну правильно зіставлену пару.</target>
 </trans-unit>
 <trans-unit id="s0b0634acdb057929">
   <source>Connect the items by their dots.</source>
@@ -1238,18 +1273,23 @@
 </trans-unit>
 <trans-unit id="s9701dad8e792c621">
   <source>Multi-connect</source>
+<target>Кілька з’єднань</target>
 </trans-unit>
 <trans-unit id="sb1b5ae4d0380c810">
   <source>Add left item</source>
+<target>Додати лівий елемент</target>
 </trans-unit>
 <trans-unit id="sc9a03f8477d65aa9">
   <source>Add right item</source>
+<target>Додати правий елемент</target>
 </trans-unit>
 <trans-unit id="sa5c371b4bb75e590">
   <source>Left</source>
+<target>Ліворуч</target>
 </trans-unit>
 <trans-unit id="s366991b9c9287765">
   <source>Right</source>
+<target>Праворуч</target>
 </trans-unit>
 <trans-unit id="s62c886043b49e255">
   <source>Connect the matching items.</source>
@@ -1276,9 +1316,11 @@
 </trans-unit>
 <trans-unit id="s26dc09247b1685c0">
   <source>Go to the task</source>
+<target>Перейти до завдання</target>
 </trans-unit>
 <trans-unit id="s7d0d0d65b174f073">
   <source>Go to task <x id="0" equiv-text="${index}"/></source>
+<target>Перейти до завдання <x id="0" equiv-text="${index}"/></target>
 </trans-unit>
 <trans-unit id="s65c455f516ab03af">
   <source><x id="0" equiv-text="${result.correct}"/> correct</source>
@@ -1311,9 +1353,11 @@
 </trans-unit>
 <trans-unit id="se66872955dc59191">
   <source>1 task</source>
+<target>1 завдання</target>
 </trans-unit>
 <trans-unit id="sea748bf5cf6f28f3">
   <source><x id="0" equiv-text="${count}"/> tasks</source>
+<target><x id="0" equiv-text="${count}"/> завдань</target>
 </trans-unit>
 <trans-unit id="s226775a4cc67dbe6">
   <source>Voice recording</source>
@@ -1334,6 +1378,7 @@
 </trans-unit>
 <trans-unit id="s179588dcdddf2174">
   <source>Speech recognition is not supported in this browser.</source>
+<target>Цей браузер не підтримує розпізнавання мовлення.</target>
 </trans-unit>
 <trans-unit id="s3f63f5f9314e6043">
   <source>Microphone access was denied.</source>
@@ -1398,6 +1443,7 @@
 </trans-unit>
 <trans-unit id="s6c97064da028dfb4">
   <source>Maximum words</source>
+<target>Максимум слів</target>
 </trans-unit>
 <trans-unit id="s620cff015e903b49">
   <source>Minimum characters</source>
@@ -1419,6 +1465,7 @@
 </trans-unit>
 <trans-unit id="s258c598c40e28b44">
   <source>Full credit when the response meets the answer limits.</source>
+<target>Повний бал, якщо відповідь відповідає обмеженням.</target>
 </trans-unit>
 <trans-unit id="s326d5d3ac1de6f34">
   <source>Advanced: Match as regular expression</source>
@@ -1459,6 +1506,7 @@
 </trans-unit>
 <trans-unit id="s8893ece8e3462e5d">
   <source><x id="0" equiv-text="${words}"/>/<x id="1" equiv-text="${maxWords}"/> words</source>
+<target><x id="0" equiv-text="${words}"/>/<x id="1" equiv-text="${maxWords}"/> слів</target>
 </trans-unit>
 <trans-unit id="sa26fe9ae4bb4e13c">
   <source>1 word</source>

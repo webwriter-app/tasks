@@ -688,6 +688,7 @@
 </trans-unit>
 <trans-unit id="scd105819b5a10243">
   <source>Play</source>
+<target>Afspelen</target>
 </trans-unit>
 <trans-unit id="se5803f79964880b8">
   <source>Record again</source>
@@ -1114,6 +1115,7 @@
 </trans-unit>
 <trans-unit id="sb4f1dffbb6be6302">
   <source>Clear</source>
+<target>Wissen</target>
 </trans-unit>
 <trans-unit id="s8dc59619f423a210">
   <source>Pen</source>
@@ -1403,9 +1405,11 @@
 </trans-unit>
 <trans-unit id="s1dfd6319b50f4cd7">
   <source>Min</source>
+<target>Minimum</target>
 </trans-unit>
 <trans-unit id="s1e187119b5262c59">
   <source>Max</source>
+<target>Maximum</target>
 </trans-unit>
 <trans-unit id="sa6a92648588602bf">
   <source>Answer</source>

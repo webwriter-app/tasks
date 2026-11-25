@@ -1100,6 +1100,7 @@
 </trans-unit>
 <trans-unit id="s344ea8f4939cdc98">
   <source>Color</source>
+<target>Color</target>
 </trans-unit>
 <trans-unit id="se615f6ce0dd01061">
   <source>Stroke width</source>

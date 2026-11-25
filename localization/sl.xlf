@@ -283,12 +283,15 @@
 </trans-unit>
 <trans-unit id="sea6985b706b63d8c">
   <source>Enter the rows and choices.</source>
+<target>Vnesi vrstice in možnosti.</target>
 </trans-unit>
 <trans-unit id="s2e8d398592e3eaa1">
   <source>Mark the correct choices in each row.</source>
+<target>Označi pravilne možnosti v vsaki vrstici.</target>
 </trans-unit>
 <trans-unit id="sdced7e9707b6d9c0">
   <source>Mark one correct choice per row.</source>
+<target>V vsaki vrstici označi eno pravilno možnost.</target>
 </trans-unit>
 <trans-unit id="s444170e956c5ff67">
   <source>Select all that apply.</source>
@@ -359,6 +362,7 @@
 </trans-unit>
 <trans-unit id="s73658af228bb4a12">
   <source>Enter the solutions, then mark the gap cells.</source>
+<target>Vnesi rešitve in nato označi celice vrzeli.</target>
 </trans-unit>
 <trans-unit id="sf2efc78397526616">
   <source>Drag each answer into a gap, or click an answer and then the gap.</source>
@@ -558,15 +562,18 @@
 </trans-unit>
 <trans-unit id="s9ecafed1144dba1f">
   <source><x id="0" equiv-text="${correct}"/> of <x id="1" equiv-text="${total}"/> items are in the right group.</source>
+<target><x id="0" equiv-text="${correct}"/> od <x id="1" equiv-text="${total}"/> elementov je v pravi skupini.</target>
 </trans-unit>
 <trans-unit id="s5a264cb2ba999afa">
   <source>Place each item in all its correct groups.</source>
+<target>Vsak element postavi v vse prave skupine.</target>
 </trans-unit>
 <trans-unit id="sc52e6e561e8f6c78">
   <source>Drag items into their groups, or use + to choose from Options.</source>
 </trans-unit>
 <trans-unit id="sc53e8091d43b9066">
   <source>Place each item in its correct group.</source>
+<target>Vsak element postavi v pravo skupino.</target>
 </trans-unit>
 <trans-unit id="sdf9018f953f702be">
   <source>Drag items into a group, or use + to choose from Options.</source>
@@ -619,6 +626,7 @@
 </trans-unit>
 <trans-unit id="sdd71f5afc90398eb">
   <source>Select the correct answers.</source>
+<target>Izberi pravilne odgovore.</target>
 </trans-unit>
 <trans-unit id="s1ec9854f438d7b40">
   <source>Select the correct answer.</source>
@@ -713,6 +721,7 @@
 </trans-unit>
 <trans-unit id="s12bb8a652aa6c4d1">
   <source>Add audio and enter the solution transcript.</source>
+<target>Dodaj zvok in vnesi prepis rešitve.</target>
 </trans-unit>
 <trans-unit id="s4dbda45a874f64ac">
   <source>Listen and type what you hear.</source>
@@ -867,6 +876,7 @@
 </trans-unit>
 <trans-unit id="s0767fdab6ae788ae">
   <source>Select the solution text for each gap.</source>
+<target>Izberi besedilo rešitve za vsako vrzel.</target>
 </trans-unit>
 <trans-unit id="scfd9561b07fa745f">
   <source>Select the right option for each gap.</source>
@@ -987,12 +997,15 @@
 </trans-unit>
 <trans-unit id="s613e777f99178cf3">
   <source>Add an image to define the solution zones.</source>
+<target>Dodaj sliko za določitev območij rešitve.</target>
 </trans-unit>
 <trans-unit id="s4f4b1255c353cd38">
   <source>Add an image to mark the solution hotspots.</source>
+<target>Dodaj sliko za označitev občutljivih območij rešitve.</target>
 </trans-unit>
 <trans-unit id="s4adf3e11ff5354ae">
   <source>Add a zone, then choose its correct item.</source>
+<target>Dodaj območje in nato izberi pravi element.</target>
 </trans-unit>
 <trans-unit id="sd783a9ddacfc12bf">
   <source>Double-click a correct spot. Drag or click its center to edit.</source>
@@ -1072,6 +1085,7 @@
 </trans-unit>
 <trans-unit id="s77d276c07612f65e">
   <source>Right-click to mark the solution.</source>
+<target>Z desno tipko klikni, da označiš rešitev.</target>
 </trans-unit>
 <trans-unit id="s745ad67c65bcea27">
   <source><x id="0" equiv-text="${toFind}"/> marked</source>
@@ -1165,6 +1179,7 @@
 </trans-unit>
 <trans-unit id="s7b2019f9159b0153">
   <source>Enter the solution date and time.</source>
+<target>Vnesi datum in čas rešitve.</target>
 </trans-unit>
 <trans-unit id="s20e5183dd45ada26">
   <source>Enter a date and time.</source>
@@ -1172,6 +1187,7 @@
 </trans-unit>
 <trans-unit id="s8d69dee8addc385a">
   <source>Set the solution on the slider.</source>
+<target>Nastavi rešitev na drsniku.</target>
 </trans-unit>
 <trans-unit id="s0ee88abc51ae0f91">
   <source>Choose a value on the slider.</source>
@@ -1191,6 +1207,7 @@
 </trans-unit>
 <trans-unit id="s1dfd6319b50f4cd7">
   <source>Min</source>
+<target>Min</target>
 </trans-unit>
 <trans-unit id="s1e187119b5262c59">
   <source>Max</source>
@@ -1252,6 +1269,7 @@
 </trans-unit>
 <trans-unit id="s48b9e342e71a62a0">
   <source>Arrange the items in the correct order.</source>
+<target>Razporedi elemente v pravilnem vrstnem redu.</target>
 </trans-unit>
 <trans-unit id="s195d8970726dcde5">
   <source>Drag the items, or use the arrows.</source>
@@ -1271,6 +1289,7 @@
 </trans-unit>
 <trans-unit id="s0b0634acdb057929">
   <source>Connect the items by their dots.</source>
+<target>Poveži elemente prek pik.</target>
 </trans-unit>
 <trans-unit id="sc3f7dffe760c1035">
   <source>Connection removed.</source>
@@ -1310,6 +1329,7 @@
 </trans-unit>
 <trans-unit id="s62c886043b49e255">
   <source>Connect the matching items.</source>
+<target>Poveži ujemajoče se elemente.</target>
 </trans-unit>
 <trans-unit id="s583fc1a7dcab06b1">
   <source><x id="0" equiv-text="${count}"/> of <x id="1" equiv-text="${key.length}"/> pairs are correct.</source>
@@ -1438,6 +1458,7 @@
 </trans-unit>
 <trans-unit id="s4e38b5e50c309443">
   <source>Record the solution or enter its transcript.</source>
+<target>Posnemi rešitev ali vnesi njen prepis.</target>
 </trans-unit>
 <trans-unit id="sdadcdefc4c36991b">
   <source>Record your answer.</source>
@@ -1492,6 +1513,7 @@
 </trans-unit>
 <trans-unit id="s326d5d3ac1de6f34">
   <source>Advanced: Match as regular expression</source>
+<target>Napredno: ujemanje kot regularni izraz</target>
 </trans-unit>
 <trans-unit id="s59e0eb09a3b46cf1">
   <source>Resize answer field</source>
@@ -1523,6 +1545,7 @@
 </trans-unit>
 <trans-unit id="sa61ba0e06cab9331">
   <source>Shorten your answer to fit the limit.</source>
+<target>Skrajšaj odgovor, da bo ustrezal omejitvi.</target>
 </trans-unit>
 <trans-unit id="sd2ea043c0c38373c">
   <source>Lengthen your answer to meet the minimum.</source>

@@ -621,9 +621,11 @@
 </trans-unit>
 <trans-unit id="s061cc20e3432dead">
   <source>Pause</source>
+<target>Pause</target>
 </trans-unit>
 <trans-unit id="scd105819b5a10243">
   <source>Play</source>
+<target>Abspielen</target>
 </trans-unit>
 <trans-unit id="se5803f79964880b8">
   <source>Record again</source>
@@ -1062,6 +1064,7 @@
 </trans-unit>
 <trans-unit id="sbadcfb6aa6ef38b1">
   <source>Ellipse</source>
+<target>Ellipse</target>
 </trans-unit>
 <trans-unit id="s085cd8fee92a2cc5">
   <source>Eraser</source>
@@ -1339,9 +1342,11 @@
 </trans-unit>
 <trans-unit id="s1dfd6319b50f4cd7">
   <source>Min</source>
+<target>Minimum</target>
 </trans-unit>
 <trans-unit id="s1e187119b5262c59">
   <source>Max</source>
+<target>Maximum</target>
 </trans-unit>
 <trans-unit id="sa6a92648588602bf">
   <source>Answer</source>
