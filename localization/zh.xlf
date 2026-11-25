@@ -245,6 +245,7 @@
 </trans-unit>
 <trans-unit id="s7ccb6d0c2577eec4">
   <source>All or nothing</source>
+<target>全有或全无</target>
 </trans-unit>
 <trans-unit id="sa7deaffdf7f5df45">
   <source>Full credit only if every row is completely correct.</source>
@@ -303,6 +304,7 @@
 </trans-unit>
 <trans-unit id="sd98791ec2fa7277c">
   <source>Remove feedback</source>
+<target>删除反馈</target>
 </trans-unit>
 <trans-unit id="s5e8250fb85d64c23">
   <source>Close</source>
@@ -310,6 +312,7 @@
 </trans-unit>
 <trans-unit id="s33450ee8e71388ad">
   <source>Gap options</source>
+<target>空格选项</target>
 </trans-unit>
 <trans-unit id="s2d30555e682a8525">
   <source>Add option</source>
@@ -317,12 +320,14 @@
 </trans-unit>
 <trans-unit id="sc47fbba134f97bc1">
   <source>Remove answer</source>
+<target>删除答案</target>
 </trans-unit>
 <trans-unit id="sd1a1ef004aadb208">
   <source>Show column headers</source>
 </trans-unit>
 <trans-unit id="s2a9ad64c546b4f22">
   <source>Show row headers</source>
+<target>显示行标题</target>
 </trans-unit>
 <trans-unit id="saec69b4e2f2e04e1">
   <source>Full credit only if every gap cell is correct.</source>
@@ -398,6 +403,7 @@
 </trans-unit>
 <trans-unit id="s1f2f2be86efd928c">
   <source>Hide scoring</source>
+<target>隐藏评分</target>
 </trans-unit>
 <trans-unit id="sb5ada04f142c4972">
   <source>This task is ungraded.</source>
@@ -432,6 +438,7 @@
 </trans-unit>
 <trans-unit id="s8a13240ec237a9ef">
   <source>Other tasks</source>
+<target>其他任务</target>
 </trans-unit>
 <trans-unit id="s7013a0bd5cf697ec">
   <source>Task type</source>
@@ -453,6 +460,7 @@
 </trans-unit>
 <trans-unit id="s823c091104445186">
   <source>Remove hint</source>
+<target>删除提示</target>
 </trans-unit>
 <trans-unit id="s0ac2f44b55475b68">
   <source>Tolerance</source>
@@ -495,12 +503,14 @@
 </trans-unit>
 <trans-unit id="s5468d720047eb162">
   <source>Add item to <x id="0" equiv-text="${name}"/></source>
+<target>向 <x id="0" equiv-text="${name}"/> 添加项目</target>
 </trans-unit>
 <trans-unit id="sf643c4a10dba9800">
   <source>Remove <x id="0" equiv-text="${label}"/> from this group</source>
 </trans-unit>
 <trans-unit id="sfe592af2e37a2214">
   <source>Multi-group</source>
+<target>多个组</target>
 </trans-unit>
 <trans-unit id="s635ffba679db4c52">
   <source>Multi</source>
@@ -552,6 +562,7 @@
 </trans-unit>
 <trans-unit id="s997c32dc20df1235">
   <source>Exact match</source>
+<target>完全匹配</target>
 </trans-unit>
 <trans-unit id="s88fa46d7b66ff1e6">
   <source>Full credit for selecting the correct option.</source>
@@ -604,6 +615,7 @@
 </trans-unit>
 <trans-unit id="s921ae54cca4fd6a7">
   <source>Add recording</source>
+<target>添加录音</target>
 </trans-unit>
 <trans-unit id="s6599a3d76cdf16c6">
   <source>This browser cannot transcribe recordings automatically.</source>
@@ -622,15 +634,18 @@
 </trans-unit>
 <trans-unit id="s7682adbd6cb18c43">
   <source>Slow recording</source>
+<target>慢速录音</target>
 </trans-unit>
 <trans-unit id="s88b857ef66b06bf5">
   <source>Dictation recording</source>
 </trans-unit>
 <trans-unit id="s7da110cc5d71e597">
   <source>1 play left</source>
+<target>剩余 1 次播放</target>
 </trans-unit>
 <trans-unit id="s3dd2e91200254ee7">
   <source><x id="0" equiv-text="${remaining}"/> plays left</source>
+<target>还剩 <x id="0" equiv-text="${remaining}"/> 次</target>
 </trans-unit>
 <trans-unit id="s00e41b3c4a182aa8">
   <source>Solution transcript</source>
@@ -672,6 +687,7 @@
 </trans-unit>
 <trans-unit id="s25fadd3e7388516c">
   <source>Canvas height</source>
+<target>画布高度</target>
 </trans-unit>
 <trans-unit id="s4f888fe2eebd3ac4">
   <source>Completion credit</source>
@@ -733,6 +749,7 @@
 </trans-unit>
 <trans-unit id="s56339226771df73e">
   <source>Drawing tools</source>
+<target>绘图工具</target>
 </trans-unit>
 <trans-unit id="s5a71f1fb3a12c6a7">
   <source>Tool</source>
@@ -758,9 +775,11 @@
 </trans-unit>
 <trans-unit id="s78391e806efb04be">
   <source>Modify image</source>
+<target>修改图像</target>
 </trans-unit>
 <trans-unit id="s8f8bbd8053618688">
   <source>Add background</source>
+<target>添加背景</target>
 </trans-unit>
 <trans-unit id="sc25a259379b9ddf9">
   <source>Remove gap</source>
@@ -867,6 +886,7 @@
 </trans-unit>
 <trans-unit id="s2b2a10d7e7c742dd">
   <source>Marker type</source>
+<target>标记类型</target>
 </trans-unit>
 <trans-unit id="s81627c2242106fca">
   <source>Add zone</source>
@@ -874,9 +894,11 @@
 </trans-unit>
 <trans-unit id="s4a9c975e50c1c4ff">
   <source>Add hotspot</source>
+<target>添加热点</target>
 </trans-unit>
 <trans-unit id="s626d8911506b0db5">
   <source>Add label pin</source>
+<target>添加标签图钉</target>
 </trans-unit>
 <trans-unit id="s613e777f99178cf3">
   <source>Add an image to define the solution zones.</source>
@@ -914,12 +936,15 @@
 </trans-unit>
 <trans-unit id="s345eb75f6da5e520">
   <source>Edit label pin</source>
+<target>编辑标签图钉</target>
 </trans-unit>
 <trans-unit id="s6e27fd7a0431d14a">
   <source>Edit hotspot</source>
+<target>编辑热点</target>
 </trans-unit>
 <trans-unit id="s1d4fb8833a6ede92">
   <source>Selected point</source>
+<target>已选点</target>
 </trans-unit>
 <trans-unit id="s8a9eb438abac7c6a">
   <source>Labels</source>
@@ -961,9 +986,11 @@
 </trans-unit>
 <trans-unit id="s959d28a246839d0a">
   <source>Toggle mark</source>
+<target>切换标记</target>
 </trans-unit>
 <trans-unit id="s7aba8fc293a40c7d">
   <source><x id="0" equiv-text="${toFind}"/> to find</source>
+<target>还需找到 <x id="0" equiv-text="${toFind}"/> 个</target>
 </trans-unit>
 <trans-unit id="sd0e6c99efa390583">
   <source>Click the words to mark.</source>
@@ -979,12 +1006,14 @@
 </trans-unit>
 <trans-unit id="sef6dc9d5fd60c301">
   <source>Within tolerance</source>
+<target>在容差范围内</target>
 </trans-unit>
 <trans-unit id="sa0f0a930b4567d3c">
   <source>Full credit within tolerance, with optional linear partial-credit band.</source>
 </trans-unit>
 <trans-unit id="s6fc200fc41be604e">
   <source>Tolerance (±)</source>
+<target>容差 (±)</target>
 </trans-unit>
 <trans-unit id="s01efb169e6921610">
   <source>Tolerance type</source>
@@ -1068,9 +1097,11 @@
 </trans-unit>
 <trans-unit id="s91b7363f68d1d46e">
   <source>Right place</source>
+<target>正确位置</target>
 </trans-unit>
 <trans-unit id="s4bb40a5590d12e02">
   <source>Belongs at <x id="0" equiv-text="${this.positionLabel(correctIndex, parent.numberingStyle === &quot;none&quot; ? &quot;numeric&quot; : parent.numberingStyle).replace(/\.$/, &quot;&quot;)}"/></source>
+<target>属于 <x id="0" equiv-text="${this.positionLabel(correctIndex, parent.numberingStyle === &quot;none&quot; ? &quot;numeric&quot; : parent.numberingStyle).replace(/\.$/, &quot;&quot;)}"/></target>
 </trans-unit>
 <trans-unit id="s4ea0f21fc2a338a1">
   <source>Move up</source>
@@ -1086,18 +1117,21 @@
 </trans-unit>
 <trans-unit id="sf9f971cde1041ba6">
   <source>Exact order only</source>
+<target>仅限精确顺序</target>
 </trans-unit>
 <trans-unit id="saf411cadd1a9edb7">
   <source>Full credit only if every item is in its exact position.</source>
 </trans-unit>
 <trans-unit id="sc01de0a714566a19">
   <source>Correct positions</source>
+<target>正确位置</target>
 </trans-unit>
 <trans-unit id="s799375be5eae1328">
   <source>Credit for each item placed in its exact slot.</source>
 </trans-unit>
 <trans-unit id="s71aa9b3ce66902b9">
   <source>Relative order</source>
+<target>相对顺序</target>
 </trans-unit>
 <trans-unit id="s2e99d1a5cab100af">
   <source>Credit for each pair of items ordered correctly relative to each other.</source>
@@ -1119,6 +1153,7 @@
 </trans-unit>
 <trans-unit id="s660ce8a94870e7be">
   <source>Per correct pair</source>
+<target>每对正确项</target>
 </trans-unit>
 <trans-unit id="s7dd435285656bfe2">
   <source>Proportional credit for each correctly matched pair.</source>
@@ -1134,9 +1169,11 @@
 </trans-unit>
 <trans-unit id="se53e36e5899543e9">
   <source>Left item <x id="0" equiv-text="${index + 1}"/></source>
+<target>左侧项目 <x id="0" equiv-text="${index + 1}"/></target>
 </trans-unit>
 <trans-unit id="secb5bea561069c82">
   <source>Right item <x id="0" equiv-text="${index + 1}"/></source>
+<target>右侧项目 <x id="0" equiv-text="${index + 1}"/></target>
 </trans-unit>
 <trans-unit id="s9701dad8e792c621">
   <source>Multi-connect</source>
@@ -1182,12 +1219,14 @@
 </trans-unit>
 <trans-unit id="s65c455f516ab03af">
   <source><x id="0" equiv-text="${result.correct}"/> correct</source>
+<target><x id="0" equiv-text="${result.correct}"/> 个正确</target>
 </trans-unit>
 <trans-unit id="s743d10fa06e71c23">
   <source><x id="0" equiv-text="${result.partial}"/> partly correct</source>
 </trans-unit>
 <trans-unit id="se5c1970482f19cae">
   <source><x id="0" equiv-text="${result.incorrect}"/> incorrect</source>
+<target><x id="0" equiv-text="${result.incorrect}"/> 个错误</target>
 </trans-unit>
 <trans-unit id="sb2b44de8a70ae954">
   <source><x id="0" equiv-text="${this.formatPoints(result.score)}"/> of <x id="1" equiv-text="${this.formatPoints(result.maximum)}"/></source>
@@ -1220,6 +1259,7 @@
 </trans-unit>
 <trans-unit id="s7684ff9798b78190">
   <source>Match transcript</source>
+<target>匹配转录文本</target>
 </trans-unit>
 <trans-unit id="s7b916547ee1e09ac">
   <source>Full credit when the spoken words match the reference transcript.</source>
@@ -1280,6 +1320,7 @@
 </trans-unit>
 <trans-unit id="sbad6e8411baba23a">
   <source>Minimum words</source>
+<target>最少词数</target>
 </trans-unit>
 <trans-unit id="s6c97064da028dfb4">
   <source>Maximum words</source>
@@ -1292,9 +1333,11 @@
 </trans-unit>
 <trans-unit id="s0bec6a958a6d1aeb">
   <source>Show word count</source>
+<target>显示词数</target>
 </trans-unit>
 <trans-unit id="sa999618629ec6f6b">
   <source>Match answer key</source>
+<target>匹配答案键</target>
 </trans-unit>
 <trans-unit id="sfbe249ece4a970b8">
   <source>Full credit when the answer matches an accepted solution.</source>
@@ -1316,12 +1359,14 @@
 </trans-unit>
 <trans-unit id="sa3a7b3637151e12d">
   <source>Answer limits</source>
+<target>答案限制</target>
 </trans-unit>
 <trans-unit id="sefd6ddf636c816cc">
   <source>Extra solutions &amp; tolerance</source>
 </trans-unit>
 <trans-unit id="sf202c28e75e3d855">
   <source>Extra solutions</source>
+<target>额外解答</target>
 </trans-unit>
 <trans-unit id="s972a62949aa63069">
   <source>Another accepted answer</source>
@@ -1345,6 +1390,7 @@
 </trans-unit>
 <trans-unit id="s9a231c50b9969eb0">
   <source><x id="0" equiv-text="${count}"/> (min. <x id="1" equiv-text="${minWords}"/>)</source>
+<target><x id="0" equiv-text="${count}"/>（最少 <x id="1" equiv-text="${minWords}"/>）</target>
 </trans-unit>
 <trans-unit id="s068999302c9463b8">
   <source><x id="0" equiv-text="${answer.length}"/>/<x id="1" equiv-text="${maxCharacters}"/> characters</source>
@@ -1355,6 +1401,7 @@
 </trans-unit>
 <trans-unit id="s6dbe9cb1faacdff3">
   <source><x id="0" equiv-text="${answer.length}"/> characters</source>
+<target><x id="0" equiv-text="${answer.length}"/> 个字符</target>
 </trans-unit>
 <trans-unit id="s51428c8667d762a0">
   <source>Enter your answer.</source>
@@ -1368,6 +1415,7 @@
 </trans-unit>
 <trans-unit id="sebacf3e0e9d3be58">
   <source>Model answer</source>
+<target>参考答案</target>
 </trans-unit>
 </body>
 </file>

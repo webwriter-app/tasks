@@ -229,6 +229,7 @@
 </trans-unit>
 <trans-unit id="s9908b0c9b48b35ad">
   <source>Finishing recording…</source>
+<target>Ձայնագրությունն ավարտվում է…</target>
 </trans-unit>
 <trans-unit id="sb32cad250448883a">
   <source>Stop recording</source>
@@ -244,6 +245,7 @@
 </trans-unit>
 <trans-unit id="s7ccb6d0c2577eec4">
   <source>All or nothing</source>
+<target>Ամբողջը կամ ոչինչ</target>
 </trans-unit>
 <trans-unit id="sa7deaffdf7f5df45">
   <source>Full credit only if every row is completely correct.</source>
@@ -302,6 +304,7 @@
 </trans-unit>
 <trans-unit id="sd98791ec2fa7277c">
   <source>Remove feedback</source>
+<target>Հեռացնել արձագանքը</target>
 </trans-unit>
 <trans-unit id="s5e8250fb85d64c23">
   <source>Close</source>
@@ -321,9 +324,11 @@
 </trans-unit>
 <trans-unit id="sd1a1ef004aadb208">
   <source>Show column headers</source>
+<target>Ցույց տալ սյունակների վերնագրերը</target>
 </trans-unit>
 <trans-unit id="s2a9ad64c546b4f22">
   <source>Show row headers</source>
+<target>Ցույց տալ տողերի վերնագրերը</target>
 </trans-unit>
 <trans-unit id="saec69b4e2f2e04e1">
   <source>Full credit only if every gap cell is correct.</source>
@@ -380,6 +385,7 @@
 </trans-unit>
 <trans-unit id="s75576f72d8374e0a">
   <source>Remove criterion: <x id="0" equiv-text="${criterion}"/></source>
+<target>Հեռացնել չափանիշը՝ <x id="0" equiv-text="${criterion}"/></target>
 </trans-unit>
 <trans-unit id="sad144a3342aa6ceb">
   <source>Rubric criterion</source>
@@ -393,6 +399,7 @@
 </trans-unit>
 <trans-unit id="s9a5698a5dac7cad1">
   <source>Ignore minor typos</source>
+<target>Անտեսել վրիպակները</target>
 </trans-unit>
 <trans-unit id="s65110cc8f3569002">
   <source>Task label</source>
@@ -403,6 +410,7 @@
 </trans-unit>
 <trans-unit id="sb5ada04f142c4972">
   <source>This task is ungraded.</source>
+<target>Այս առաջադրանքը չի գնահատվում։</target>
 </trans-unit>
 <trans-unit id="sa8346ce518263c93">
   <source>Answer the task first.</source>
@@ -499,6 +507,7 @@
 </trans-unit>
 <trans-unit id="s5468d720047eb162">
   <source>Add item to <x id="0" equiv-text="${name}"/></source>
+<target>Ավելացնել տարր <x id="0" equiv-text="${name}"/>-ում</target>
 </trans-unit>
 <trans-unit id="sf643c4a10dba9800">
   <source>Remove <x id="0" equiv-text="${label}"/> from this group</source>
@@ -564,9 +573,11 @@
 </trans-unit>
 <trans-unit id="s5d02042067dcb593">
   <source>Enter the statement.</source>
+<target>Մուտքագրեք պնդումը։</target>
 </trans-unit>
 <trans-unit id="s568ad4e4e7b1eb44">
   <source>Enter the choices.</source>
+<target>Մուտքագրեք ընտրանքները։</target>
 </trans-unit>
 <trans-unit id="sdd71f5afc90398eb">
   <source>Select the correct answers.</source>
@@ -600,6 +611,7 @@
 </trans-unit>
 <trans-unit id="s64a981f393576a7b">
   <source>Ignore punctuation</source>
+<target>Անտեսել կետադրությունը</target>
 </trans-unit>
 <trans-unit id="se6fee24d1cbbc9db">
   <source>Give partial credit for minor typos</source>
@@ -629,9 +641,11 @@
 </trans-unit>
 <trans-unit id="s7682adbd6cb18c43">
   <source>Slow recording</source>
+<target>Դանդաղ ձայնագրություն</target>
 </trans-unit>
 <trans-unit id="s88b857ef66b06bf5">
   <source>Dictation recording</source>
+<target>Թելադրության ձայնագրություն</target>
 </trans-unit>
 <trans-unit id="s7da110cc5d71e597">
   <source>1 play left</source>
@@ -639,12 +653,14 @@
 </trans-unit>
 <trans-unit id="s3dd2e91200254ee7">
   <source><x id="0" equiv-text="${remaining}"/> plays left</source>
+<target>Մնացել է լսելու <x id="0" equiv-text="${remaining}"/> հնարավորություն</target>
 </trans-unit>
 <trans-unit id="s00e41b3c4a182aa8">
   <source>Solution transcript</source>
 </trans-unit>
 <trans-unit id="se166026acf69acae">
   <source>Type what you hear</source>
+<target>Մուտքագրեք լսածը</target>
 </trans-unit>
 <trans-unit id="s12bb8a652aa6c4d1">
   <source>Add audio and enter the solution transcript.</source>
@@ -664,9 +680,11 @@
 </trans-unit>
 <trans-unit id="sad5df5643732af8e">
   <source>Recording language</source>
+<target>Ձայնագրության լեզուն</target>
 </trans-unit>
 <trans-unit id="s625ef7f3207cf9cb">
   <source>Cancel transcription</source>
+<target>Չեղարկել տեքստի փոխարկումը</target>
 </trans-unit>
 <trans-unit id="s065289e6cba017c6">
   <source>Transcribe</source>
@@ -765,6 +783,7 @@
 </trans-unit>
 <trans-unit id="s52a077cf893ca5cb">
   <source>Draw the solution.</source>
+<target>Նկարեք լուծումը։</target>
 </trans-unit>
 <trans-unit id="s78391e806efb04be">
   <source>Modify image</source>
@@ -772,6 +791,7 @@
 </trans-unit>
 <trans-unit id="s8f8bbd8053618688">
   <source>Add background</source>
+<target>Ավելացնել ֆոն</target>
 </trans-unit>
 <trans-unit id="sc25a259379b9ddf9">
   <source>Remove gap</source>
@@ -814,6 +834,7 @@
 </trans-unit>
 <trans-unit id="sa6f359971854ca5b">
   <source><x id="0" equiv-text="${label}"/> placed in <x id="1" equiv-text="${zone.label || this.msg(&quot;Zone&quot;)}"/>.</source>
+<target><x id="0" equiv-text="${label}"/>-ը տեղադրվեց <x id="1" equiv-text="${zone.label || this.msg(&quot;Zone&quot;)}"/>-ում։</target>
 </trans-unit>
 <trans-unit id="s6fcdab6f6cf7461b">
   <source><x id="0" equiv-text="${label}"/> returned to Options.</source>
@@ -921,6 +942,7 @@
 </trans-unit>
 <trans-unit id="s0c2e2e9567aa5ea2">
   <source>No image selected.</source>
+<target>Պատկեր ընտրված չէ։</target>
 </trans-unit>
 <trans-unit id="sa894b36f20aab589">
   <source>Edit zone</source>
@@ -928,6 +950,7 @@
 </trans-unit>
 <trans-unit id="s345eb75f6da5e520">
   <source>Edit label pin</source>
+<target>Խմբագրել պիտակի նշիչը</target>
 </trans-unit>
 <trans-unit id="s6e27fd7a0431d14a">
   <source>Edit hotspot</source>
@@ -935,6 +958,7 @@
 </trans-unit>
 <trans-unit id="s1d4fb8833a6ede92">
   <source>Selected point</source>
+<target>Ընտրված կետ</target>
 </trans-unit>
 <trans-unit id="s8a9eb438abac7c6a">
   <source>Labels</source>
@@ -942,6 +966,7 @@
 </trans-unit>
 <trans-unit id="s5ba21ea6d3f246a4">
   <source>All labels are placed.</source>
+<target>Բոլոր պիտակները տեղադրված են։</target>
 </trans-unit>
 <trans-unit id="sea4f08110bb8f15d">
   <source>Remove</source>
@@ -996,12 +1021,14 @@
 </trans-unit>
 <trans-unit id="sef6dc9d5fd60c301">
   <source>Within tolerance</source>
+<target>Թույլատրելի շեղման սահմաններում</target>
 </trans-unit>
 <trans-unit id="sa0f0a930b4567d3c">
   <source>Full credit within tolerance, with optional linear partial-credit band.</source>
 </trans-unit>
 <trans-unit id="s6fc200fc41be604e">
   <source>Tolerance (±)</source>
+<target>Թույլատրելի շեղում (±)</target>
 </trans-unit>
 <trans-unit id="s01efb169e6921610">
   <source>Tolerance type</source>
@@ -1017,6 +1044,7 @@
 </trans-unit>
 <trans-unit id="sd47d4d5489d1da3a">
   <source>Partial credit band</source>
+<target>Մասնակի միավորի միջակայք</target>
 </trans-unit>
 <trans-unit id="sf88789673a732088">
   <source>Extra range beyond tolerance where credit decays linearly to zero.</source>
@@ -1054,6 +1082,7 @@
 </trans-unit>
 <trans-unit id="s20e5183dd45ada26">
   <source>Enter a date and time.</source>
+<target>Մուտքագրեք ամսաթիվը և ժամը։</target>
 </trans-unit>
 <trans-unit id="s8d69dee8addc385a">
   <source>Set the solution on the slider.</source>
@@ -1089,6 +1118,7 @@
 </trans-unit>
 <trans-unit id="s4bb40a5590d12e02">
   <source>Belongs at <x id="0" equiv-text="${this.positionLabel(correctIndex, parent.numberingStyle === &quot;none&quot; ? &quot;numeric&quot; : parent.numberingStyle).replace(/\.$/, &quot;&quot;)}"/></source>
+<target>Պետք է լինի <x id="0" equiv-text="${this.positionLabel(correctIndex, parent.numberingStyle === &quot;none&quot; ? &quot;numeric&quot; : parent.numberingStyle).replace(/\.$/, &quot;&quot;)}"/> տեղում</target>
 </trans-unit>
 <trans-unit id="s4ea0f21fc2a338a1">
   <source>Move up</source>
@@ -1104,24 +1134,28 @@
 </trans-unit>
 <trans-unit id="sf9f971cde1041ba6">
   <source>Exact order only</source>
+<target>Միայն ճշգրիտ հերթականություն</target>
 </trans-unit>
 <trans-unit id="saf411cadd1a9edb7">
   <source>Full credit only if every item is in its exact position.</source>
 </trans-unit>
 <trans-unit id="sc01de0a714566a19">
   <source>Correct positions</source>
+<target>Ճիշտ դիրքեր</target>
 </trans-unit>
 <trans-unit id="s799375be5eae1328">
   <source>Credit for each item placed in its exact slot.</source>
 </trans-unit>
 <trans-unit id="s71aa9b3ce66902b9">
   <source>Relative order</source>
+<target>Հարաբերական հերթականություն</target>
 </trans-unit>
 <trans-unit id="s2e99d1a5cab100af">
   <source>Credit for each pair of items ordered correctly relative to each other.</source>
 </trans-unit>
 <trans-unit id="s39eb99f4f4c18ebf">
   <source>Accept reverse order</source>
+<target>Ընդունել հակառակ հերթականությունը</target>
 </trans-unit>
 <trans-unit id="s6f1a191f5f38290f">
   <source><x id="0" equiv-text="${right}"/> of <x id="1" equiv-text="${items.length}"/> items are in the right place.</source>
@@ -1137,6 +1171,7 @@
 </trans-unit>
 <trans-unit id="s660ce8a94870e7be">
   <source>Per correct pair</source>
+<target>Յուրաքանչյուր ճիշտ զույգի համար</target>
 </trans-unit>
 <trans-unit id="s7dd435285656bfe2">
   <source>Proportional credit for each correctly matched pair.</source>
@@ -1156,6 +1191,7 @@
 </trans-unit>
 <trans-unit id="secb5bea561069c82">
   <source>Right item <x id="0" equiv-text="${index + 1}"/></source>
+<target>Աջ տարր <x id="0" equiv-text="${index + 1}"/></target>
 </trans-unit>
 <trans-unit id="s9701dad8e792c621">
   <source>Multi-connect</source>
@@ -1205,9 +1241,11 @@
 </trans-unit>
 <trans-unit id="s743d10fa06e71c23">
   <source><x id="0" equiv-text="${result.partial}"/> partly correct</source>
+<target><x id="0" equiv-text="${result.partial}"/> մասամբ ճիշտ</target>
 </trans-unit>
 <trans-unit id="se5c1970482f19cae">
   <source><x id="0" equiv-text="${result.incorrect}"/> incorrect</source>
+<target><x id="0" equiv-text="${result.incorrect}"/> սխալ</target>
 </trans-unit>
 <trans-unit id="sb2b44de8a70ae954">
   <source><x id="0" equiv-text="${this.formatPoints(result.score)}"/> of <x id="1" equiv-text="${this.formatPoints(result.maximum)}"/></source>
@@ -1240,6 +1278,7 @@
 </trans-unit>
 <trans-unit id="s7684ff9798b78190">
   <source>Match transcript</source>
+<target>Համեմատել ձայնագրության տեքստի հետ</target>
 </trans-unit>
 <trans-unit id="s7b916547ee1e09ac">
   <source>Full credit when the spoken words match the reference transcript.</source>
@@ -1287,9 +1326,11 @@
 </trans-unit>
 <trans-unit id="s3456174fce4f31a7">
   <source>Recognized answer: <x id="0" equiv-text="${this.recognizedAnswer}"/></source>
+<target>Ճանաչված պատասխան՝ <x id="0" equiv-text="${this.recognizedAnswer}"/></target>
 </trans-unit>
 <trans-unit id="s502f7a2bbeaec091">
   <source>Transcribing speech…</source>
+<target>Խոսքը փոխարկվում է տեքստի…</target>
 </trans-unit>
 <trans-unit id="sf71c79de504af8f7">
   <source>Interactive content: open the document online</source>
@@ -1307,15 +1348,18 @@
 </trans-unit>
 <trans-unit id="s620cff015e903b49">
   <source>Minimum characters</source>
+<target>Նիշերի նվազագույն քանակը</target>
 </trans-unit>
 <trans-unit id="sc7dae948a542b133">
   <source>Maximum characters</source>
 </trans-unit>
 <trans-unit id="s0bec6a958a6d1aeb">
   <source>Show word count</source>
+<target>Ցույց տալ բառերի քանակը</target>
 </trans-unit>
 <trans-unit id="sa999618629ec6f6b">
   <source>Match answer key</source>
+<target>Համեմատել պատասխանների բանալու հետ</target>
 </trans-unit>
 <trans-unit id="sfbe249ece4a970b8">
   <source>Full credit when the answer matches an accepted solution.</source>
@@ -1344,6 +1388,7 @@
 </trans-unit>
 <trans-unit id="sf202c28e75e3d855">
   <source>Extra solutions</source>
+<target>Լրացուցիչ լուծումներ</target>
 </trans-unit>
 <trans-unit id="s972a62949aa63069">
   <source>Another accepted answer</source>
@@ -1367,6 +1412,7 @@
 </trans-unit>
 <trans-unit id="s9a231c50b9969eb0">
   <source><x id="0" equiv-text="${count}"/> (min. <x id="1" equiv-text="${minWords}"/>)</source>
+<target><x id="0" equiv-text="${count}"/> (նվազ. <x id="1" equiv-text="${minWords}"/>)</target>
 </trans-unit>
 <trans-unit id="s068999302c9463b8">
   <source><x id="0" equiv-text="${answer.length}"/>/<x id="1" equiv-text="${maxCharacters}"/> characters</source>
@@ -1377,6 +1423,7 @@
 </trans-unit>
 <trans-unit id="s6dbe9cb1faacdff3">
   <source><x id="0" equiv-text="${answer.length}"/> characters</source>
+<target><x id="0" equiv-text="${answer.length}"/> նիշ</target>
 </trans-unit>
 <trans-unit id="s51428c8667d762a0">
   <source>Enter your answer.</source>
@@ -1387,6 +1434,7 @@
 </trans-unit>
 <trans-unit id="s488cac76080c5d39">
   <source>Enter the solution.</source>
+<target>Մուտքագրեք լուծումը։</target>
 </trans-unit>
 <trans-unit id="sebacf3e0e9d3be58">
   <source>Model answer</source>
