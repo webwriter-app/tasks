@@ -400,6 +400,7 @@
 </trans-unit>
 <trans-unit id="s31e4aca212b90444">
   <source>Score is based on self-check rubric items checked after submitting.</source>
+<target>ලකුණු පදනම් වන්නේ ඉදිරිපත් කිරීමෙන් පසු සලකුණු කළ ස්වයං-පරීක්ෂා ඇගයීම් අයිතම මතය.</target>
 </trans-unit>
 <trans-unit id="safc5dc23506c8384">
   <source>Rubric</source>
@@ -527,6 +528,7 @@
 </trans-unit>
 <trans-unit id="sba1bfeaf662fe54e">
   <source>Full credit only if every item is sorted into its right group.</source>
+<target>සෑම අයිතමයක්ම නිවැරදි සමූහයට වර්ග කළ විට පමණක් සම්පූර්ණ ලකුණු.</target>
 </trans-unit>
 <trans-unit id="s08873708079f6e23">
   <source>Per item</source>
@@ -534,6 +536,7 @@
 </trans-unit>
 <trans-unit id="s46d5bd7d13f2238f">
   <source>Proportional credit for each item placed in its right group.</source>
+<target>නිවැරදි සමූහයේ තැබූ එක් එක් අයිතමය සඳහා සමානුපාතික ලකුණු.</target>
 </trans-unit>
 <trans-unit id="scb9da282dc6a8c06">
   <source>Option <x id="0" equiv-text="${index + 1}"/></source>
@@ -605,6 +608,7 @@
 </trans-unit>
 <trans-unit id="s33c59364235732dd">
   <source>Full credit only if every right option and no wrong option is selected.</source>
+<target>නිවැරදි විකල්ප සියල්ල සහ වැරදි විකල්ප කිසිවක් තෝරා නොමැති විට පමණක් සම්පූර්ණ ලකුණු.</target>
 </trans-unit>
 <trans-unit id="s2118adbd5904ec36">
   <source>Partial (penalize wrong)</source>
@@ -612,6 +616,7 @@
 </trans-unit>
 <trans-unit id="s1916139f98775735">
   <source>Right selections add credit; wrong selections subtract from it (min. 0).</source>
+<target>නිවැරදි තේරීම් ලකුණු එක් කරයි; වැරදි තේරීම් ලකුණු අඩු කරයි (අවම 0).</target>
 </trans-unit>
 <trans-unit id="s997c32dc20df1235">
   <source>Exact match</source>
@@ -927,6 +932,7 @@
 </trans-unit>
 <trans-unit id="se8a94a95a76e488a">
   <source>This task needs an image and a correct item for each zone.</source>
+<target>මෙම කාර්යයට රූපයක් සහ එක් එක් කලාපය සඳහා නිවැරදි අයිතමයක් අවශ්‍යයි.</target>
 </trans-unit>
 <trans-unit id="s05ba009cda8c6a1b">
   <source>Return selected item</source>
@@ -1018,9 +1024,11 @@
 </trans-unit>
 <trans-unit id="sd783a9ddacfc12bf">
   <source>Double-click a correct spot. Drag or click its center to edit.</source>
+<target>නිවැරදි ස්ථානය දෙවරක් ක්ලික් කරන්න. සංස්කරණය කිරීමට මැද ඇදගෙන යන්න හෝ ක්ලික් කරන්න.</target>
 </trans-unit>
 <trans-unit id="s760dae6a21ba2359">
   <source>Drag an item to a zone, or select an item and then a zone.</source>
+<target>අයිතමයක් කලාපයකට ඇද දමන්න, නැතහොත් අයිතමයක් තෝරා ඉන්පසු කලාපයක් තෝරන්න.</target>
 </trans-unit>
 <trans-unit id="sbec481c67db2bbeb">
   <source><x id="0" equiv-text="${correctLabels}"/> of <x id="1" equiv-text="${labelMarkers.length}"/> labels are correct.</source>
@@ -1132,6 +1140,7 @@
 </trans-unit>
 <trans-unit id="sa0f0a930b4567d3c">
   <source>Full credit within tolerance, with optional linear partial-credit band.</source>
+<target>ඉවසීමේ සීමාව තුළ සම්පූර්ණ ලකුණු, විකල්ප රේඛීය අර්ධ-ලකුණු පරාසයක් සමඟ.</target>
 </trans-unit>
 <trans-unit id="s6fc200fc41be604e">
   <source>Tolerance (±)</source>
@@ -1271,6 +1280,7 @@
 </trans-unit>
 <trans-unit id="s2e99d1a5cab100af">
   <source>Credit for each pair of items ordered correctly relative to each other.</source>
+<target>එකිනෙකට සාපේක්ෂව නිවැරදිව පෙළගස්වා ඇති සෑම අයිතම යුගලයක් සඳහාම ලකුණු.</target>
 </trans-unit>
 <trans-unit id="s39eb99f4f4c18ebf">
   <source>Accept reverse order</source>
@@ -1358,6 +1368,7 @@
 </trans-unit>
 <trans-unit id="s60d9b7bf2152bbec">
   <source>The file contains no GIFT task that this quiz can import.</source>
+<target>මෙම ප්‍රශ්නාවලියට ආයාත කළ හැකි GIFT කාර්යයක් ගොනුවේ නැත.</target>
 </trans-unit>
 <trans-unit id="s2521b02f548cc7e9">
   <source>1 task is unanswered.</source>
@@ -1397,12 +1408,15 @@
 </trans-unit>
 <trans-unit id="sd463fe8f70c3242c">
   <source>Learners submit the <x id="0" equiv-text="${count}"/> tasks in this group here and see their score.</source>
+<target>ඉගෙනුම්කරුවන් මෙම කණ්ඩායමේ <x id="0" equiv-text="${count}"/> කාර්ය මෙහි ඉදිරිපත් කර ලකුණු දකියි.</target>
 </trans-unit>
 <trans-unit id="seecc1a1785484a8c">
   <source>Learners submit the task before this card here and see their score.</source>
+<target>ඉගෙනුම්කරුවන් මෙම කාඩ්පතට පෙර කාර්යය මෙහි ඉදිරිපත් කර ලකුණු දකියි.</target>
 </trans-unit>
 <trans-unit id="sf11645ff0230ff59">
   <source>Insert tasks before this card. Learners submit them here and see their score.</source>
+<target>මෙම කාඩ්පතට පෙර කාර්ය ඇතුළත් කරන්න. ඉගෙනුම්කරුවන් ඒවා මෙහි ඉදිරිපත් කර ලකුණු දකියි.</target>
 </trans-unit>
 <trans-unit id="se66872955dc59191">
   <source>1 task</source>
@@ -1430,6 +1444,7 @@
 </trans-unit>
 <trans-unit id="s0682ddcaf7be7a77">
   <source>Give credit word by word, with deductions for missing, extra, or changed words.</source>
+<target>වචනයෙන් වචනයට ලකුණු දෙන්න; අතුරුදන්, අමතර හෝ වෙනස් කළ වචන සඳහා අඩු කරන්න.</target>
 </trans-unit>
 <trans-unit id="s179588dcdddf2174">
   <source>Speech recognition is not supported in this browser.</source>

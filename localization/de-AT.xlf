@@ -901,6 +901,7 @@
 </trans-unit>
 <trans-unit id="s33c59364235732dd">
   <source>Full credit only if every right option and no wrong option is selected.</source>
+<target>Volle Punktzahl nur, wenn alle richtigen und keine falschen Optionen ausgewählt sind.</target>
 </trans-unit>
 <trans-unit id="s2118adbd5904ec36">
   <source>Partial (penalize wrong)</source>
@@ -908,6 +909,7 @@
 </trans-unit>
 <trans-unit id="s1916139f98775735">
   <source>Right selections add credit; wrong selections subtract from it (min. 0).</source>
+<target>Richtige Auswahl bringt Punkte, falsche zieht Punkte ab (min. 0).</target>
 </trans-unit>
 <trans-unit id="s997c32dc20df1235">
   <source>Exact match</source>
@@ -1299,6 +1301,7 @@
 </trans-unit>
 <trans-unit id="sa0f0a930b4567d3c">
   <source>Full credit within tolerance, with optional linear partial-credit band.</source>
+<target>Volle Punktzahl innerhalb der Toleranz, mit optionalem linearem Bereich für Teilpunkte.</target>
 </trans-unit>
 <trans-unit id="s6fc200fc41be604e">
   <source>Tolerance (±)</source>
@@ -1402,6 +1405,7 @@
 </trans-unit>
 <trans-unit id="s2e99d1a5cab100af">
   <source>Credit for each pair of items ordered correctly relative to each other.</source>
+<target>Punkte für jedes Paar von Elementen, das relativ zueinander richtig geordnet ist.</target>
 </trans-unit>
 <trans-unit id="s39eb99f4f4c18ebf">
   <source>Accept reverse order</source>
@@ -1477,6 +1481,7 @@
 </trans-unit>
 <trans-unit id="s0682ddcaf7be7a77">
   <source>Give credit word by word, with deductions for missing, extra, or changed words.</source>
+<target>Punkte pro Wort, mit Abzug für fehlende, zusätzliche oder geänderte Wörter.</target>
 </trans-unit>
 <trans-unit id="s179588dcdddf2174">
   <source>Speech recognition is not supported in this browser.</source>

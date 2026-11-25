@@ -400,6 +400,7 @@
 </trans-unit>
 <trans-unit id="s31e4aca212b90444">
   <source>Score is based on self-check rubric items checked after submitting.</source>
+<target>점수는 제출 후 자체 확인 평가 기준에서 선택한 항목을 기반으로 합니다.</target>
 </trans-unit>
 <trans-unit id="safc5dc23506c8384">
   <source>Rubric</source>
@@ -527,6 +528,7 @@
 </trans-unit>
 <trans-unit id="sba1bfeaf662fe54e">
   <source>Full credit only if every item is sorted into its right group.</source>
+<target>모든 항목이 올바른 그룹에 정렬되어야 만점을 받습니다.</target>
 </trans-unit>
 <trans-unit id="s08873708079f6e23">
   <source>Per item</source>
@@ -534,6 +536,7 @@
 </trans-unit>
 <trans-unit id="s46d5bd7d13f2238f">
   <source>Proportional credit for each item placed in its right group.</source>
+<target>올바른 그룹에 배치된 항목마다 비례 점수를 부여합니다.</target>
 </trans-unit>
 <trans-unit id="scb9da282dc6a8c06">
   <source>Option <x id="0" equiv-text="${index + 1}"/></source>
@@ -605,6 +608,7 @@
 </trans-unit>
 <trans-unit id="s33c59364235732dd">
   <source>Full credit only if every right option and no wrong option is selected.</source>
+<target>모든 정답 옵션을 선택하고 오답 옵션은 선택하지 않아야 만점을 받습니다.</target>
 </trans-unit>
 <trans-unit id="s2118adbd5904ec36">
   <source>Partial (penalize wrong)</source>
@@ -612,6 +616,7 @@
 </trans-unit>
 <trans-unit id="s1916139f98775735">
   <source>Right selections add credit; wrong selections subtract from it (min. 0).</source>
+<target>정답 선택은 점수를 더하고 오답 선택은 감점합니다(최소 0점).</target>
 </trans-unit>
 <trans-unit id="s997c32dc20df1235">
   <source>Exact match</source>
@@ -927,6 +932,7 @@
 </trans-unit>
 <trans-unit id="se8a94a95a76e488a">
   <source>This task needs an image and a correct item for each zone.</source>
+<target>이 과제에는 이미지와 각 영역에 해당하는 정답 항목이 필요합니다.</target>
 </trans-unit>
 <trans-unit id="s05ba009cda8c6a1b">
   <source>Return selected item</source>
@@ -1018,9 +1024,11 @@
 </trans-unit>
 <trans-unit id="sd783a9ddacfc12bf">
   <source>Double-click a correct spot. Drag or click its center to edit.</source>
+<target>올바른 지점을 두 번 클릭하세요. 편집하려면 중앙을 드래그하거나 클릭하세요.</target>
 </trans-unit>
 <trans-unit id="s760dae6a21ba2359">
   <source>Drag an item to a zone, or select an item and then a zone.</source>
+<target>항목을 영역으로 드래그하거나 항목을 선택한 다음 영역을 선택하세요.</target>
 </trans-unit>
 <trans-unit id="sbec481c67db2bbeb">
   <source><x id="0" equiv-text="${correctLabels}"/> of <x id="1" equiv-text="${labelMarkers.length}"/> labels are correct.</source>
@@ -1132,6 +1140,7 @@
 </trans-unit>
 <trans-unit id="sa0f0a930b4567d3c">
   <source>Full credit within tolerance, with optional linear partial-credit band.</source>
+<target>허용 오차 내에서 만점을 받고, 선택적으로 선형 부분 점수 범위를 설정합니다.</target>
 </trans-unit>
 <trans-unit id="s6fc200fc41be604e">
   <source>Tolerance (±)</source>
@@ -1271,6 +1280,7 @@
 </trans-unit>
 <trans-unit id="s2e99d1a5cab100af">
   <source>Credit for each pair of items ordered correctly relative to each other.</source>
+<target>서로 올바른 순서로 정렬된 항목 쌍마다 점수를 부여합니다.</target>
 </trans-unit>
 <trans-unit id="s39eb99f4f4c18ebf">
   <source>Accept reverse order</source>
@@ -1358,6 +1368,7 @@
 </trans-unit>
 <trans-unit id="s60d9b7bf2152bbec">
   <source>The file contains no GIFT task that this quiz can import.</source>
+<target>파일에 이 퀴즈가 가져올 수 있는 GIFT 과제가 없습니다.</target>
 </trans-unit>
 <trans-unit id="s2521b02f548cc7e9">
   <source>1 task is unanswered.</source>
@@ -1397,12 +1408,15 @@
 </trans-unit>
 <trans-unit id="sd463fe8f70c3242c">
   <source>Learners submit the <x id="0" equiv-text="${count}"/> tasks in this group here and see their score.</source>
+<target>학습자는 이 그룹의 과제 <x id="0" equiv-text="${count}"/>개를 여기서 제출하고 점수를 확인합니다.</target>
 </trans-unit>
 <trans-unit id="seecc1a1785484a8c">
   <source>Learners submit the task before this card here and see their score.</source>
+<target>학습자는 이 카드 앞의 과제를 여기서 제출하고 점수를 확인합니다.</target>
 </trans-unit>
 <trans-unit id="sf11645ff0230ff59">
   <source>Insert tasks before this card. Learners submit them here and see their score.</source>
+<target>이 카드 앞에 과제를 삽입하세요. 학습자는 여기서 제출하고 점수를 확인합니다.</target>
 </trans-unit>
 <trans-unit id="se66872955dc59191">
   <source>1 task</source>
@@ -1430,6 +1444,7 @@
 </trans-unit>
 <trans-unit id="s0682ddcaf7be7a77">
   <source>Give credit word by word, with deductions for missing, extra, or changed words.</source>
+<target>단어별로 점수를 부여하고 누락, 추가 또는 변경된 단어는 감점합니다.</target>
 </trans-unit>
 <trans-unit id="s179588dcdddf2174">
   <source>Speech recognition is not supported in this browser.</source>

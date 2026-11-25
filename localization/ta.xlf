@@ -400,6 +400,7 @@
 </trans-unit>
 <trans-unit id="s31e4aca212b90444">
   <source>Score is based on self-check rubric items checked after submitting.</source>
+<target>சமர்ப்பித்த பிறகு குறிக்கப்பட்ட சுயமதிப்பீட்டு அளவுகோல் உருப்படிகளை அடிப்படையாகக் கொண்டு மதிப்பெண் வழங்கப்படும்.</target>
 </trans-unit>
 <trans-unit id="safc5dc23506c8384">
   <source>Rubric</source>
@@ -527,6 +528,7 @@
 </trans-unit>
 <trans-unit id="sba1bfeaf662fe54e">
   <source>Full credit only if every item is sorted into its right group.</source>
+<target>ஒவ்வொரு உருப்படியும் சரியான குழுவில் வரிசைப்படுத்தப்பட்டால் மட்டுமே முழு மதிப்பெண்.</target>
 </trans-unit>
 <trans-unit id="s08873708079f6e23">
   <source>Per item</source>
@@ -534,6 +536,7 @@
 </trans-unit>
 <trans-unit id="s46d5bd7d13f2238f">
   <source>Proportional credit for each item placed in its right group.</source>
+<target>சரியான குழுவில் வைக்கப்படும் ஒவ்வொரு உருப்படிக்கும் விகிதாசார மதிப்பெண்.</target>
 </trans-unit>
 <trans-unit id="scb9da282dc6a8c06">
   <source>Option <x id="0" equiv-text="${index + 1}"/></source>
@@ -605,6 +608,7 @@
 </trans-unit>
 <trans-unit id="s33c59364235732dd">
   <source>Full credit only if every right option and no wrong option is selected.</source>
+<target>அனைத்து சரியான தேர்வுகளும் தேர்ந்தெடுக்கப்பட்டு தவறானவை எதுவும் தேர்ந்தெடுக்கப்படாவிட்டால் மட்டுமே முழு மதிப்பெண்.</target>
 </trans-unit>
 <trans-unit id="s2118adbd5904ec36">
   <source>Partial (penalize wrong)</source>
@@ -612,6 +616,7 @@
 </trans-unit>
 <trans-unit id="s1916139f98775735">
   <source>Right selections add credit; wrong selections subtract from it (min. 0).</source>
+<target>சரியான தேர்வுகள் மதிப்பெண் சேர்க்கும்; தவறானவை கழிக்கும் (குறைந்தபட்சம் 0).</target>
 </trans-unit>
 <trans-unit id="s997c32dc20df1235">
   <source>Exact match</source>
@@ -927,6 +932,7 @@
 </trans-unit>
 <trans-unit id="se8a94a95a76e488a">
   <source>This task needs an image and a correct item for each zone.</source>
+<target>இந்தப் பணிக்கு படம் மற்றும் ஒவ்வொரு மண்டலத்துக்கும் சரியான உருப்படி தேவை.</target>
 </trans-unit>
 <trans-unit id="s05ba009cda8c6a1b">
   <source>Return selected item</source>
@@ -1018,9 +1024,11 @@
 </trans-unit>
 <trans-unit id="sd783a9ddacfc12bf">
   <source>Double-click a correct spot. Drag or click its center to edit.</source>
+<target>சரியான இடத்தில் இருமுறை சொடுக்கவும். திருத்த அதன் மையத்தை இழுக்கவும் அல்லது சொடுக்கவும்.</target>
 </trans-unit>
 <trans-unit id="s760dae6a21ba2359">
   <source>Drag an item to a zone, or select an item and then a zone.</source>
+<target>ஒரு உருப்படியை மண்டலத்துக்கு இழுக்கவும் அல்லது முதலில் உருப்படியையும் பின்னர் மண்டலத்தையும் தேர்ந்தெடுக்கவும்.</target>
 </trans-unit>
 <trans-unit id="sbec481c67db2bbeb">
   <source><x id="0" equiv-text="${correctLabels}"/> of <x id="1" equiv-text="${labelMarkers.length}"/> labels are correct.</source>
@@ -1132,6 +1140,7 @@
 </trans-unit>
 <trans-unit id="sa0f0a930b4567d3c">
   <source>Full credit within tolerance, with optional linear partial-credit band.</source>
+<target>சகிப்புத்தன்மை வரம்புக்குள் முழு மதிப்பெண்; விருப்பமான நேரியல் பகுதி மதிப்பெண் வரம்புடன்.</target>
 </trans-unit>
 <trans-unit id="s6fc200fc41be604e">
   <source>Tolerance (±)</source>
@@ -1271,6 +1280,7 @@
 </trans-unit>
 <trans-unit id="s2e99d1a5cab100af">
   <source>Credit for each pair of items ordered correctly relative to each other.</source>
+<target>ஒவ்வொரு உருப்படி ஜோடியும் ஒன்றுக்கொன்று சரியான வரிசையில் அமைந்ததற்குப் புள்ளிகள்.</target>
 </trans-unit>
 <trans-unit id="s39eb99f4f4c18ebf">
   <source>Accept reverse order</source>
@@ -1358,6 +1368,7 @@
 </trans-unit>
 <trans-unit id="s60d9b7bf2152bbec">
   <source>The file contains no GIFT task that this quiz can import.</source>
+<target>இந்த வினாடி வினா இறக்குமதி செய்யக்கூடிய GIFT பணிகள் கோப்பில் இல்லை.</target>
 </trans-unit>
 <trans-unit id="s2521b02f548cc7e9">
   <source>1 task is unanswered.</source>
@@ -1397,12 +1408,15 @@
 </trans-unit>
 <trans-unit id="sd463fe8f70c3242c">
   <source>Learners submit the <x id="0" equiv-text="${count}"/> tasks in this group here and see their score.</source>
+<target>கற்றவர்கள் இந்தக் குழுவின் <x id="0" equiv-text="${count}"/> பணிகளை இங்கே சமர்ப்பித்து மதிப்பெண்ணைப் பார்க்கிறார்கள்.</target>
 </trans-unit>
 <trans-unit id="seecc1a1785484a8c">
   <source>Learners submit the task before this card here and see their score.</source>
+<target>இந்த அட்டைக்கு முந்தைய பணியை கற்றவர்கள் இங்கே சமர்ப்பித்து மதிப்பெண்ணைப் பார்க்கிறார்கள்.</target>
 </trans-unit>
 <trans-unit id="sf11645ff0230ff59">
   <source>Insert tasks before this card. Learners submit them here and see their score.</source>
+<target>இந்த அட்டைக்கு முன் பணிகளைச் செருகவும். கற்றவர்கள் அவற்றை இங்கே சமர்ப்பித்து மதிப்பெண்ணைப் பார்க்கிறார்கள்.</target>
 </trans-unit>
 <trans-unit id="se66872955dc59191">
   <source>1 task</source>
@@ -1430,6 +1444,7 @@
 </trans-unit>
 <trans-unit id="s0682ddcaf7be7a77">
   <source>Give credit word by word, with deductions for missing, extra, or changed words.</source>
+<target>ஒவ்வொரு சொல்லுக்கும் மதிப்பெண் வழங்கி, விடுபட்ட, கூடுதல் அல்லது மாற்றப்பட்ட சொற்களுக்கு கழிக்கவும்.</target>
 </trans-unit>
 <trans-unit id="s179588dcdddf2174">
   <source>Speech recognition is not supported in this browser.</source>

@@ -400,6 +400,7 @@
 </trans-unit>
 <trans-unit id="s31e4aca212b90444">
   <source>Score is based on self-check rubric items checked after submitting.</source>
+<target>Skóre vychází z položek sebehodnoticí rubriky označených po odevzdání.</target>
 </trans-unit>
 <trans-unit id="safc5dc23506c8384">
   <source>Rubric</source>
@@ -527,6 +528,7 @@
 </trans-unit>
 <trans-unit id="sba1bfeaf662fe54e">
   <source>Full credit only if every item is sorted into its right group.</source>
+<target>Plný počet bodů pouze tehdy, jsou-li všechny položky zařazeny do správné skupiny.</target>
 </trans-unit>
 <trans-unit id="s08873708079f6e23">
   <source>Per item</source>
@@ -534,6 +536,7 @@
 </trans-unit>
 <trans-unit id="s46d5bd7d13f2238f">
   <source>Proportional credit for each item placed in its right group.</source>
+<target>Poměrné body za každou položku ve správné skupině.</target>
 </trans-unit>
 <trans-unit id="scb9da282dc6a8c06">
   <source>Option <x id="0" equiv-text="${index + 1}"/></source>
@@ -605,6 +608,7 @@
 </trans-unit>
 <trans-unit id="s33c59364235732dd">
   <source>Full credit only if every right option and no wrong option is selected.</source>
+<target>Plný počet bodů pouze při výběru všech správných možností a žádné špatné.</target>
 </trans-unit>
 <trans-unit id="s2118adbd5904ec36">
   <source>Partial (penalize wrong)</source>
@@ -612,6 +616,7 @@
 </trans-unit>
 <trans-unit id="s1916139f98775735">
   <source>Right selections add credit; wrong selections subtract from it (min. 0).</source>
+<target>Správné volby přidávají body, špatné je odečítají (min. 0).</target>
 </trans-unit>
 <trans-unit id="s997c32dc20df1235">
   <source>Exact match</source>
@@ -927,6 +932,7 @@
 </trans-unit>
 <trans-unit id="se8a94a95a76e488a">
   <source>This task needs an image and a correct item for each zone.</source>
+<target>Tato úloha vyžaduje obrázek a správnou položku pro každou oblast.</target>
 </trans-unit>
 <trans-unit id="s05ba009cda8c6a1b">
   <source>Return selected item</source>
@@ -1018,9 +1024,11 @@
 </trans-unit>
 <trans-unit id="sd783a9ddacfc12bf">
   <source>Double-click a correct spot. Drag or click its center to edit.</source>
+<target>Dvakrát klikněte na správné místo. Upravte ho přetažením nebo kliknutím na střed.</target>
 </trans-unit>
 <trans-unit id="s760dae6a21ba2359">
   <source>Drag an item to a zone, or select an item and then a zone.</source>
+<target>Přetáhněte položku do oblasti nebo vyberte položku a potom oblast.</target>
 </trans-unit>
 <trans-unit id="sbec481c67db2bbeb">
   <source><x id="0" equiv-text="${correctLabels}"/> of <x id="1" equiv-text="${labelMarkers.length}"/> labels are correct.</source>
@@ -1132,6 +1140,7 @@
 </trans-unit>
 <trans-unit id="sa0f0a930b4567d3c">
   <source>Full credit within tolerance, with optional linear partial-credit band.</source>
+<target>Plný počet bodů v rámci tolerance s volitelným lineárním rozsahem částečných bodů.</target>
 </trans-unit>
 <trans-unit id="s6fc200fc41be604e">
   <source>Tolerance (±)</source>
@@ -1271,6 +1280,7 @@
 </trans-unit>
 <trans-unit id="s2e99d1a5cab100af">
   <source>Credit for each pair of items ordered correctly relative to each other.</source>
+<target>Body za každou dvojici položek správně seřazených vůči sobě.</target>
 </trans-unit>
 <trans-unit id="s39eb99f4f4c18ebf">
   <source>Accept reverse order</source>
@@ -1358,6 +1368,7 @@
 </trans-unit>
 <trans-unit id="s60d9b7bf2152bbec">
   <source>The file contains no GIFT task that this quiz can import.</source>
+<target>Soubor neobsahuje úlohu GIFT, kterou lze do tohoto kvízu importovat.</target>
 </trans-unit>
 <trans-unit id="s2521b02f548cc7e9">
   <source>1 task is unanswered.</source>
@@ -1397,12 +1408,15 @@
 </trans-unit>
 <trans-unit id="sd463fe8f70c3242c">
   <source>Learners submit the <x id="0" equiv-text="${count}"/> tasks in this group here and see their score.</source>
+<target>Žáci zde odevzdají <x id="0" equiv-text="${count}"/> úloh v této skupině a uvidí své skóre.</target>
 </trans-unit>
 <trans-unit id="seecc1a1785484a8c">
   <source>Learners submit the task before this card here and see their score.</source>
+<target>Žáci zde odevzdají úlohu před touto kartou a uvidí své skóre.</target>
 </trans-unit>
 <trans-unit id="sf11645ff0230ff59">
   <source>Insert tasks before this card. Learners submit them here and see their score.</source>
+<target>Vložte úlohy před tuto kartu. Žáci je zde odevzdají a uvidí své skóre.</target>
 </trans-unit>
 <trans-unit id="se66872955dc59191">
   <source>1 task</source>
@@ -1430,6 +1444,7 @@
 </trans-unit>
 <trans-unit id="s0682ddcaf7be7a77">
   <source>Give credit word by word, with deductions for missing, extra, or changed words.</source>
+<target>Body za každé slovo, se srážkami za chybějící, nadbytečná či změněná slova.</target>
 </trans-unit>
 <trans-unit id="s179588dcdddf2174">
   <source>Speech recognition is not supported in this browser.</source>

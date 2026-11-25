@@ -528,6 +528,7 @@
 </trans-unit>
 <trans-unit id="sba1bfeaf662fe54e">
   <source>Full credit only if every item is sorted into its right group.</source>
+<target>အရာအားလုံးကို မှန်ကန်သောအုပ်စုထဲ စီထားမှသာ အမှတ်ပြည့်ရသည်။</target>
 </trans-unit>
 <trans-unit id="s08873708079f6e23">
   <source>Per item</source>
@@ -535,6 +536,7 @@
 </trans-unit>
 <trans-unit id="s46d5bd7d13f2238f">
   <source>Proportional credit for each item placed in its right group.</source>
+<target>မှန်ကန်သောအုပ်စုထဲ ထည့်ထားသော အရာတစ်ခုစီအတွက် အချိုးကျအမှတ်ပေးသည်။</target>
 </trans-unit>
 <trans-unit id="scb9da282dc6a8c06">
   <source>Option <x id="0" equiv-text="${index + 1}"/></source>
@@ -606,6 +608,7 @@
 </trans-unit>
 <trans-unit id="s33c59364235732dd">
   <source>Full credit only if every right option and no wrong option is selected.</source>
+<target>မှန်ကန်သောရွေးချယ်မှုအားလုံးကို ရွေးပြီး မှားသောရွေးချယ်မှုမရှိမှသာ အမှတ်ပြည့်ရသည်။</target>
 </trans-unit>
 <trans-unit id="s2118adbd5904ec36">
   <source>Partial (penalize wrong)</source>
@@ -613,6 +616,7 @@
 </trans-unit>
 <trans-unit id="s1916139f98775735">
   <source>Right selections add credit; wrong selections subtract from it (min. 0).</source>
+<target>မှန်ကန်သောရွေးချယ်မှုက အမှတ်တိုးစေပြီး မှားသောရွေးချယ်မှုက လျှော့စေသည် (အနည်းဆုံး 0)။</target>
 </trans-unit>
 <trans-unit id="s997c32dc20df1235">
   <source>Exact match</source>
@@ -928,6 +932,7 @@
 </trans-unit>
 <trans-unit id="se8a94a95a76e488a">
   <source>This task needs an image and a correct item for each zone.</source>
+<target>ဤလုပ်ဆောင်ချက်အတွက် ပုံတစ်ပုံနှင့် အုပ်စုတစ်ခုစီအတွက် မှန်ကန်သောအရာတစ်ခု လိုအပ်သည်။</target>
 </trans-unit>
 <trans-unit id="s05ba009cda8c6a1b">
   <source>Return selected item</source>
@@ -1019,9 +1024,11 @@
 </trans-unit>
 <trans-unit id="sd783a9ddacfc12bf">
   <source>Double-click a correct spot. Drag or click its center to edit.</source>
+<target>မှန်ကန်သောနေရာကို နှစ်ချက်နှိပ်ပါ။ ပြင်ရန် အလယ်ဗဟိုကို ဆွဲပါ သို့မဟုတ် နှိပ်ပါ။</target>
 </trans-unit>
 <trans-unit id="s760dae6a21ba2359">
   <source>Drag an item to a zone, or select an item and then a zone.</source>
+<target>အရာကို အုပ်စုထဲသို့ ဆွဲထည့်ပါ၊ သို့မဟုတ် အရာကိုရွေးပြီးနောက် အုပ်စုကိုရွေးပါ။</target>
 </trans-unit>
 <trans-unit id="sbec481c67db2bbeb">
   <source><x id="0" equiv-text="${correctLabels}"/> of <x id="1" equiv-text="${labelMarkers.length}"/> labels are correct.</source>
@@ -1133,6 +1140,7 @@
 </trans-unit>
 <trans-unit id="sa0f0a930b4567d3c">
   <source>Full credit within tolerance, with optional linear partial-credit band.</source>
+<target>ခွင့်ပြုအတိုင်းအတာအတွင်း အမှတ်ပြည့်ရနိုင်ပြီး အချိုးကျတစ်စိတ်တစ်ပိုင်းအမှတ်လည်း ရွေးချယ်နိုင်သည်။</target>
 </trans-unit>
 <trans-unit id="s6fc200fc41be604e">
   <source>Tolerance (±)</source>
@@ -1272,6 +1280,7 @@
 </trans-unit>
 <trans-unit id="s2e99d1a5cab100af">
   <source>Credit for each pair of items ordered correctly relative to each other.</source>
+<target>အခြားအရာဝတ္ထုတစ်စုံစီကို မှန်ကန်စွာအစီအစဉ်ချထားပါက အမှတ်ပေးသည်။</target>
 </trans-unit>
 <trans-unit id="s39eb99f4f4c18ebf">
   <source>Accept reverse order</source>
@@ -1359,6 +1368,7 @@
 </trans-unit>
 <trans-unit id="s60d9b7bf2152bbec">
   <source>The file contains no GIFT task that this quiz can import.</source>
+<target>ဤဖိုင်တွင် ဤမေးခွန်းလွှာက တင်သွင်းနိုင်သော GIFT လုပ်ဆောင်ချက်မပါပါ။</target>
 </trans-unit>
 <trans-unit id="s2521b02f548cc7e9">
   <source>1 task is unanswered.</source>
@@ -1402,6 +1412,7 @@
 </trans-unit>
 <trans-unit id="seecc1a1785484a8c">
   <source>Learners submit the task before this card here and see their score.</source>
+<target>လေ့လာသူများသည် ဤကတ်မတိုင်မီ လုပ်ဆောင်ချက်များကို တင်သွင်းပြီး ၎င်းတို့၏အမှတ်ကို ဤနေရာတွင် ကြည့်နိုင်သည်။</target>
 </trans-unit>
 <trans-unit id="sf11645ff0230ff59">
   <source>Insert tasks before this card. Learners submit them here and see their score.</source>
@@ -1433,6 +1444,7 @@
 </trans-unit>
 <trans-unit id="s0682ddcaf7be7a77">
   <source>Give credit word by word, with deductions for missing, extra, or changed words.</source>
+<target>စကားလုံးတစ်လုံးစီအလိုက် အမှတ်ပေးပြီး ပျောက်နေ၊ ပိုနေ၊ သို့မဟုတ် ပြောင်းထားသောစကားလုံးများအတွက် လျှော့သည်။</target>
 </trans-unit>
 <trans-unit id="s179588dcdddf2174">
   <source>Speech recognition is not supported in this browser.</source>

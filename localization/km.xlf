@@ -528,6 +528,7 @@
 </trans-unit>
 <trans-unit id="sba1bfeaf662fe54e">
   <source>Full credit only if every item is sorted into its right group.</source>
+<target>ពិន្ទុពេញ លុះត្រាតែធាតុទាំងអស់ត្រូវបានតម្រៀបក្នុងក្រុមត្រឹមត្រូវ។</target>
 </trans-unit>
 <trans-unit id="s08873708079f6e23">
   <source>Per item</source>
@@ -535,6 +536,7 @@
 </trans-unit>
 <trans-unit id="s46d5bd7d13f2238f">
   <source>Proportional credit for each item placed in its right group.</source>
+<target>ពិន្ទុតាមសមាមាត្រសម្រាប់ធាតុនីមួយៗដែលដាក់ក្នុងក្រុមត្រឹមត្រូវ។</target>
 </trans-unit>
 <trans-unit id="scb9da282dc6a8c06">
   <source>Option <x id="0" equiv-text="${index + 1}"/></source>
@@ -606,6 +608,7 @@
 </trans-unit>
 <trans-unit id="s33c59364235732dd">
   <source>Full credit only if every right option and no wrong option is selected.</source>
+<target>ទទួលពិន្ទុពេញ លុះត្រាតែជ្រើសរើសជម្រើសត្រឹមត្រូវទាំងអស់ និងមិនជ្រើសរើសជម្រើសខុស។</target>
 </trans-unit>
 <trans-unit id="s2118adbd5904ec36">
   <source>Partial (penalize wrong)</source>
@@ -613,6 +616,7 @@
 </trans-unit>
 <trans-unit id="s1916139f98775735">
   <source>Right selections add credit; wrong selections subtract from it (min. 0).</source>
+<target>ការជ្រើសត្រឹមត្រូវបន្ថែមពិន្ទុ ការជ្រើសខុសដកពិន្ទុ (អប្បបរមា 0)។</target>
 </trans-unit>
 <trans-unit id="s997c32dc20df1235">
   <source>Exact match</source>
@@ -928,6 +932,7 @@
 </trans-unit>
 <trans-unit id="se8a94a95a76e488a">
   <source>This task needs an image and a correct item for each zone.</source>
+<target>កិច្ចការនេះត្រូវការរូបភាព និងធាតុត្រឹមត្រូវមួយសម្រាប់តំបន់នីមួយៗ។</target>
 </trans-unit>
 <trans-unit id="s05ba009cda8c6a1b">
   <source>Return selected item</source>
@@ -1019,9 +1024,11 @@
 </trans-unit>
 <trans-unit id="sd783a9ddacfc12bf">
   <source>Double-click a correct spot. Drag or click its center to edit.</source>
+<target>ចុចពីរដងលើទីតាំងត្រឹមត្រូវ។ អូស ឬចុចកណ្តាលដើម្បីកែប្រែ។</target>
 </trans-unit>
 <trans-unit id="s760dae6a21ba2359">
   <source>Drag an item to a zone, or select an item and then a zone.</source>
+<target>អូសធាតុទៅក្នុងតំបន់ ឬជ្រើសធាតុ រួចជ្រើសតំបន់។</target>
 </trans-unit>
 <trans-unit id="sbec481c67db2bbeb">
   <source><x id="0" equiv-text="${correctLabels}"/> of <x id="1" equiv-text="${labelMarkers.length}"/> labels are correct.</source>
@@ -1133,6 +1140,7 @@
 </trans-unit>
 <trans-unit id="sa0f0a930b4567d3c">
   <source>Full credit within tolerance, with optional linear partial-credit band.</source>
+<target>ទទួលពិន្ទុពេញក្នុងកម្រិតអនុគ្រោះ និងអាចប្រើជួរពិន្ទុផ្នែកតាមលីនេអ៊ែរ។</target>
 </trans-unit>
 <trans-unit id="s6fc200fc41be604e">
   <source>Tolerance (±)</source>
@@ -1272,6 +1280,7 @@
 </trans-unit>
 <trans-unit id="s2e99d1a5cab100af">
   <source>Credit for each pair of items ordered correctly relative to each other.</source>
+<target>ទទួលពិន្ទុសម្រាប់គូនីមួយៗដែលរៀបតាមលំដាប់ត្រឹមត្រូវ។</target>
 </trans-unit>
 <trans-unit id="s39eb99f4f4c18ebf">
   <source>Accept reverse order</source>
@@ -1359,6 +1368,7 @@
 </trans-unit>
 <trans-unit id="s60d9b7bf2152bbec">
   <source>The file contains no GIFT task that this quiz can import.</source>
+<target>ឯកសារនេះគ្មានកិច្ចការ GIFT ដែលសំណួរនេះអាចនាំចូលបានទេ។</target>
 </trans-unit>
 <trans-unit id="s2521b02f548cc7e9">
   <source>1 task is unanswered.</source>
@@ -1402,6 +1412,7 @@
 </trans-unit>
 <trans-unit id="seecc1a1785484a8c">
   <source>Learners submit the task before this card here and see their score.</source>
+<target>អ្នកសិក្សាដាក់ស្នើកិច្ចការមុនកាតនេះនៅទីនេះ ហើយមើលពិន្ទុរបស់ពួកគេ។</target>
 </trans-unit>
 <trans-unit id="sf11645ff0230ff59">
   <source>Insert tasks before this card. Learners submit them here and see their score.</source>
@@ -1433,6 +1444,7 @@
 </trans-unit>
 <trans-unit id="s0682ddcaf7be7a77">
   <source>Give credit word by word, with deductions for missing, extra, or changed words.</source>
+<target>ផ្តល់ពិន្ទុតាមពាក្យ និងដកពិន្ទុសម្រាប់ពាក្យខ្វះ លើស ឬបានផ្លាស់ប្តូរ។</target>
 </trans-unit>
 <trans-unit id="s179588dcdddf2174">
   <source>Speech recognition is not supported in this browser.</source>
