@@ -1,6 +1,6 @@
 {
   "name": "@webwriter/tasks",
-  "version": "3.0.1",
+  "version": "3.1.0",
   "type": "module",
   "description": "Create interactive quizzes with multiple-choice, ordering, free-text, highlighting, and speech tasks.",
   "keywords": [
@@ -349,6 +349,7 @@
       "default": "./dist/migrate.js"
     },
     "./icon": "./icon.svg",
+    "./preview": "./assets/preview.mp4",
     "./editing-config.json": "./editing-config.json",
     "./custom-elements.json": "./custom-elements.json"
   },
